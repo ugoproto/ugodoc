@@ -39,8 +39,8 @@ theme: readthedocs
 markdown_extensions:
   - wikilinks # internal links with [[bracketed]]
   - smarty # additional characters
-  - subscript
-  - superscript
+#  - subscript
+#  - superscript
   - nl2br # new line to break
   - toc:
        title: Content
