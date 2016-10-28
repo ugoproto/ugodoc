@@ -1,16 +1,18 @@
 # Let there be light!
 
-A website dedicated to searching and retrieving documentation about Data Science.
+A Data Science documentation website.
 
-- Collection
+**Content**
+
+- Collection (a catalogue of documents)
 - CLI
-	- About Linux bash, Windows shell
+	- Documents about Linux bash, Windows shell
 - Resources for Data Science
-	- About digital humanities, Git, storytelling
+	- Documents about digital humanities, Git, storytelling
 - SQL
-	- About SQL
+	- Documents about SQL
 - Web
-	- About HTML, CSS, JS, building, deploying
+	- Document about HTML, CSS, JS, building, deploying
 
 ## Layout
 

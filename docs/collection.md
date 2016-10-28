@@ -5,7 +5,7 @@
 Resume templates (notes)
 
 The Infographic Resume, How to Create a Visual Portfolio that Showcases Your Skills and Lands the Job (+ notes),  McGraw-Hill Education, 2014,
-~ workforce, technology, paper, morphing, job boards, databases, referrals, mismatch, gig, masses, linkedIn, power to the people, online portfolio, assets, explaining, pitching, social medias, work, visual flair, graphic designer, data visualization, shareability, success story, design, profile, checklist, interactive, slideshows, talent, checklists~
+<sub> workforce, technology, paper, morphing, job boards, databases, referrals, mismatch, gig, masses, linkedIn, power to the people, online portfolio, assets, explaining, pitching, social medias, work, visual flair, graphic designer, data visualization, shareability, success story, design, profile, checklist, interactive, slideshows, talent, checklists</sub>
 
 A Game Plan for Success in Data Analytics (pdf, epub), Fru Nde, 
 ~ hiring, demand, jobs, postings, industry, companies, roles, specialization, salaries, growth, data analysis, responsibilities, skill sets, tools, training, job description, excel, pivot tables, presentations, business intelligence, sql, warehouse, multidimensional, cube, programming,  programs, lifecycle, predictive analytics, changes~
