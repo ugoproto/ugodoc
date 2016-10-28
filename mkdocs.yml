@@ -1,7 +1,7 @@
 site_name: ugodoc
-site_url: https://ugoproto.github.io/ugodoc/
+site_url: 
 repo_url: https://github.com/ugoproto/ugodoc
-site_description: Data Science documentation
+site_description: A data Science documentation website.
 site_author: Ugo Spark
 site_favicon: faviconfire.ico
 copyright: null
