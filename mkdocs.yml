@@ -1,5 +1,5 @@
 site_name: ugodoc
-site_url: 
+#site_url: 
 repo_url: https://github.com/ugoproto/ugodoc
 site_description: A data Science documentation website.
 site_author: Ugo Spark
