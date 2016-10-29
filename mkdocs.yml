@@ -6,7 +6,7 @@ site_author: Ugo Spark
 site_favicon: faviconfire.ico
 copyright: null
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
-remote_branch: gh-pages
+remote_branch: master
 remote_name: ugodoc
 pages:
     - Home: 'index.md'
