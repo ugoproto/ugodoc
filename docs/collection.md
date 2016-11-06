@@ -1,5 +1,15 @@
 # Collection
 
+**Foreword**
+
+Corpus of documents: titles and keywords.
+
+-----
+
+[TOC]
+
+-----
+
 ## Employment, Education
 
 Resume templates (notes)
@@ -15,8 +25,6 @@ Cracking the Coding Interview, 150 Programming Interview Questions and Solutions
 
 Peter Days World Of Business, In Business Recruiting By Algorithm (podcast), 2016,
 <sub>algorithms, online assessment, recruiting, business, interview, computer, filter, ranking, tracking, bias, workforce, blind recruiting, pool, diversity, the voice, blind audition, personality, questionnaires, psychology, sift, sieve, filter, keywords, saber software, dating websites, successful relationship, assessing, interview, expand, candidates, recruitment, robot, dating, core behaviours, templates, looking, similar, traits, compare, drivers, in modeling applicants, successful employees, training, models</sub>
-
-**my CV**
 
 Getting a Big Data Job For Dummies, 1st Edition, 2015,
 <sub>career path, public sector, academia, commercial organizations, corporate information technology, marketing departments, business units, big data firms, consulting companies, Groves, predictions, skills, attitudes, self-assessment, gaps, education, experience, milestones, timeline, risk, compliance, financial services, healthcare, government, retail, business analyst, data scientist, software developer, foundation, books, online tutorials, on-the-job training, goals, inventory, knowledge, tools, sql, nosql, hadoop, pig, hive, spark, business analytics, business intelligence, visualization, sentiment analysis, machine learning, consultant, specialist, startup, job landing, resume, interview, story, behaviour, motivation</sub>

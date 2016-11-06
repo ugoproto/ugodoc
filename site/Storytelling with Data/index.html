@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>Storytelling with Data - ugodoc</title>
+  
+
+  <link rel="shortcut icon" href="../faviconfire.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Storytelling with Data";
+    var mkdocs_page_input_path = "Storytelling with Data.md";
+    var mkdocs_page_url = "/Storytelling with Data/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugodoc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../collection/">Collection</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>CLI</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20the%20Command%20Line%20Notes/">Codecademy Learn the Command Line Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Line%20Crash%20Course/">Command Line Crash Course</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Shell%20Snippets/">Command Shell Snippets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../The%20Linux%20Command%20Line/">The Linux Command Line</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Ubuntu/">Ubuntu 16.04</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Resources for Data Science</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Digital%20Humanities/">Digital Humanities</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Git/">Learn Git</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Resources%20for%20Data%20Science/">Resources for Data Science</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Storytelling with Data</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#1-the-importance-of-context">1. The importance of context</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#2-choosing-an-effective-visual">2. Choosing an effective visual</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#3-clutter-is-your-enemy">3. Clutter is your enemy !</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#4-focus-your-audiences-attention">4. Focus your audience’s attention</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#5-think-like-a-designer">5. Think like a designer</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#7-lessons-in-storytelling">7. Lessons in storytelling</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#10-final-thoughts">10. Final thoughts</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#wrap-up">Wrap up</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>SQL.md</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20SQL/">Codecademy Learn SQL</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20SQL%2C%20Analyzing%20Business%20Metrics/">Codecademy SQL, Analyzing Business Metrics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20SQL%2C%20Table%20Transformation/">Codecademy SQL, Table Transformation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20SQL%20JOINs/">Introduction to SQL JOINs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Build%20a%20Website/">Build a Website</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../HTML%20and%20CSS/">HTML and CSS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Markdown%20%26%20Pandoc/">Markdown & Pandoc</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../tests/">Tests</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugodoc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Resources for Data Science &raquo;</li>
+        
+      
+    
+    <li>Storytelling with Data</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ugoproto/ugodoc" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="storytelling-with-data">Storytelling with Data<a class="headerlink" href="#storytelling-with-data" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Notes.</p>
+<hr />
+<div class="toc"><span class="toctitle">Content</span><ul>
+<li><a href="#storytelling-with-data">Storytelling with Data</a><ul>
+<li><a href="#1-the-importance-of-context">1. The importance of context</a></li>
+<li><a href="#2-choosing-an-effective-visual">2. Choosing an effective visual</a></li>
+<li><a href="#3-clutter-is-your-enemy">3. Clutter is your enemy !</a></li>
+<li><a href="#4-focus-your-audiences-attention">4. Focus your audience’s attention</a></li>
+<li><a href="#5-think-like-a-designer">5. Think like a designer</a></li>
+<li><a href="#7-lessons-in-storytelling">7. Lessons in storytelling</a></li>
+<li><a href="#10-final-thoughts">10. Final thoughts</a></li>
+<li><a href="#wrap-up">Wrap up</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h5 id="1-the-importance-of-context">1. The importance of context<a class="headerlink" href="#1-the-importance-of-context" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Exploratory vs explanatory graphics.<ul>
+<li>Exploratory is for the analyst.</li>
+<li>Exploratory is for the audience.</li>
+</ul>
+</li>
+<li>Who is the audience, who is the stakeholder?</li>
+<li>What do you need your audience to know or do?</li>
+<li>How will you communicate to your audience? Live or written by email?</li>
+<li>What tone do you want your communication to set?</li>
+<li>What data is available that will help make your point?</li>
+<li>If you had 3 minutes to tell a story, what would be the big idea : the unique point of view in one sentence?</li>
+<li>Let&rsquo;s now move to storyboarding.</li>
+</ul>
+<h5 id="2-choosing-an-effective-visual">2. Choosing an effective visual<a class="headerlink" href="#2-choosing-an-effective-visual" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Go with a simple text or a figure.</li>
+<li>Available charts: scatterplot, table, lines, slopegraph, vertical bars, horizontal bars, stacked vertical bars, stacked horizontal bars, waterfall, square areas.</li>
+<li>Table? Never in a live presentation (too dense).</li>
+<li>Heatmap? Never! A better alternative is a slopegraph.</li>
+<li>Color saturation is for visual contrast: put everything  in B&amp;W except the one thing you want to draw attention on.</li>
+<li>Speak in relative, not in absolute: scatterplot, average, percentage, waterfall (change, increment), areas for comparing categories.</li>
+<li>Avoid clutter and 3D, avoid saturated series and secondary axes.</li>
+<li>Prefer a zero baseline and equal scales among several graphics.</li>
+<li>Prefer square forms over round forms.<ul>
+<li>Avoid pie charts or donut charts.</li>
+<li>Prefer a horizontal bar chart.</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-clutter-is-your-enemy">3. Clutter is your enemy !<a class="headerlink" href="#3-clutter-is-your-enemy" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Avoid cognitive load: a simple chart, a few line, one image.</li>
+<li>Avoid borders (limited to the L axes), avoid gridlines and background shading. </li>
+<li>The y-axis is often facultative.</li>
+<li>Clean up axis labels; summarize labels (Jan vs January)</li>
+<li>Bold and colors is for making the important stand out.</li>
+<li>Limit to 2 or 3 colors.</li>
+<li>Add white space.</li>
+<li>Add details to the important areas (annotate).</li>
+<li>Add the legend on the graph, not outside.</li>
+</ul>
+<h5 id="4-focus-your-audiences-attention">4. Focus your audience’s attention<a class="headerlink" href="#4-focus-your-audiences-attention" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Use preattentive attributes in text : bold, italics, separate spatially, underlined, more tone or color (B&amp;W), data stand out, numbered data, size.</li>
+<li>Avoid shades of red and green.</li>
+<li>Use preattentive attributes in visual : difference in orientation, shape, length, width, size, curvature, added marks, enclosure, hue, intensity, spatial position, motion</li>
+<li>Position on the page follows the 1-2-3-4 loop.</li>
+<li>Consult:<ul>
+<li>Cultural Color Connotations, David McCandless.</li>
+<li>The Visual Miscellaneum : A Colourful Guide to the World’s Most Consequential Trivia.</li>
+</ul>
+</li>
+</ul>
+<h5 id="5-think-like-a-designer">5. Think like a designer<a class="headerlink" href="#5-think-like-a-designer" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Eliminate distractions.</li>
+<li>Not all data are equally important.</li>
+<li>When detail is not needed, summarize.</li>
+<li>Would eliminating &lsquo;this&rsquo; change anything?</li>
+<li>Push necessary, but non-message-impacting items to the background.</li>
+<li>The power of subcategories, subdivisions.</li>
+<li>Legible, clean, straightforward language.</li>
+<li>Action titles.</li>
+</ul>
+<h5 id="7-lessons-in-storytelling">7. Lessons in storytelling<a class="headerlink" href="#7-lessons-in-storytelling" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Write a story with a schema (3 acts)</li>
+<li>Write a narrative structure (hero&rsquo;s journey)</li>
+<li>Use the power of repetition: 3, 7, 12, 30, 40, 100, 500, 1000.</li>
+</ul>
+<h5 id="10-final-thoughts">10. Final thoughts<a class="headerlink" href="#10-final-thoughts" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Learn your tools well.<ul>
+<li>Google Spreadsheet, Tableau, R, D3 (JavaScript), Processing, Python, etc.</li>
+</ul>
+</li>
+<li>Iterate.</li>
+<li>Devote time to storytelling with data.</li>
+<li>Seek inspiration throught good examples.</li>
+<li>Find your style.</li>
+<li>Consult websites.<ul>
+<li><a href="https://eagereyes.org/">Eagereyes, Robert Kosara</a></li>
+<li><a href="http://fivethirtyeight.com/datalab/">FiveThirdyEight’s Data Lab</a></li>
+<li><a href="http://flowingdata.com/">Flowing Data, Nathan Yau</a></li>
+<li><a href="http://www.thefunctionalart.com/">The Functional Art, Alberto Cairo</a></li>
+<li><a href="https://www.theguardian.com/data">The Gardian Data Blog</a></li>
+<li><a href="http://helpmeviz.com/">HelpMeViz, Jon Schwabish</a></li>
+<li><a href="http://www.kaiserfung.com/">Junk Carts, Kaiser Fung</a></li>
+<li><a href="http://makeapowerfulpoint.com/">Make a Powerful Point, Gavin McMahon</a></li>
+<li><a href="http://www.perceptualedge.com/">Perceptual Edge, Stephen Few</a></li>
+<li><a href="http://www.visualisingdata.com/">Visualising Data, Andy Kirk</a></li>
+<li><a href="http://www.vizwiz.com/">VizWiz, Andy Kriebel</a></li>
+<li><a href="http://www.storytellingwithdata.com/">Storytelling with data, Cole Nussbaumer Knaflic</a></li>
+<li>and many more.</li>
+</ul>
+</li>
+</ul>
+<h5 id="wrap-up">Wrap up<a class="headerlink" href="#wrap-up" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Understand the context.</li>
+<li>Choose an appropriate visual display.</li>
+<li>Eliminate clutter.</li>
+<li>Focus attention where you want it.</li>
+<li>Think like a designer.</li>
+<li>Tell a story.</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Codecademy%20Learn%20SQL/" class="btn btn-neutral float-right" title="Codecademy Learn SQL">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Resources%20for%20Data%20Science/" class="btn btn-neutral" title="Resources for Data Science"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ugoproto/ugodoc" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Resources%20for%20Data%20Science/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Codecademy%20Learn%20SQL/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

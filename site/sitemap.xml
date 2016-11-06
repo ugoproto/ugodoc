@@ -3,16 +3,16 @@
 
     
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//collection/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/collection/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,54 +20,32 @@
     
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Codecademy Learn the Command Line Notes/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Codecademy Learn the Command Line Notes/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Command Line Crash Course/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Command Line Crash Course/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Command Shell/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Command Shell Snippets/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/The Linux Command Line/</loc>
-     <lastmod>2016-10-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Digital Humanities/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/The Linux Command Line/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Learn Git/</loc>
-     <lastmod>2016-10-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Resources for Data Science/</loc>
-     <lastmod>2016-10-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Storytelling with Data/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Ubuntu/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -76,26 +54,54 @@
     
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Codecademy Learn SQL/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Digital Humanities/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Codecademy SQL, Analyzing Business Metrics/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Learn Git/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Codecademy SQL, Table Transformation/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Resources for Data Science/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Introduction to SQL JOINs/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Storytelling with Data/</loc>
+     <lastmod>2016-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/Codecademy Learn SQL/</loc>
+     <lastmod>2016-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/Codecademy SQL, Analyzing Business Metrics/</loc>
+     <lastmod>2016-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/Codecademy SQL, Table Transformation/</loc>
+     <lastmod>2016-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/Introduction to SQL JOINs/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -104,14 +110,20 @@
     
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/Build a Website/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/Build a Website/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//manuals/HTML and CSS/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/HTML and CSS/</loc>
+     <lastmod>2016-11-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/Markdown & Pandoc/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -119,8 +131,8 @@
 
     
     <url>
-     <loc>https://ugoproto.github.io/ugodoc//tests/</loc>
-     <lastmod>2016-10-28</lastmod>
+     <loc>None/tests/</loc>
+     <lastmod>2016-11-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

@@ -1,19 +1,19 @@
 # ugodoc
 
-A website dedicated to searching and retrieving documentation about Data Science.
+A Data Science documentation website.
 
 - Built with [Mkdocs](http://www.mkdocs.org/), a static site generator.
-- The website (the docs) is easily searchable.
-- Since the docs consists in a online corpus, it is automatically indexed.
+- The website (the 'docs') is easily searchable.
+- Since the 'docs' consists in an online corpus, it is automatically indexed.
 
-## Layout
+## Content
 
-- Collection
+- Collection (corpus of document titles)
 - CLI
-	- About Linux bash, Windows shell
+	- Documents about Linux bash, Windows shell
 - Resources for Data Science
-	- About digital humanities, Git, storytelling
+	- Documents about digital humanities, Git, storytelling
 - SQL
-	- About SQL
+	- Documents about SQL
 - Web
-	- About HTML, CSS, JS, building, deploying
+	- Document about HTML, CSS, JS, building, deploying

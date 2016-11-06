@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>The Linux Command Line - ugodoc</title>
+  
+
+  <link rel="shortcut icon" href="../faviconfire.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "The Linux Command Line";
+    var mkdocs_page_input_path = "The Linux Command Line.md";
+    var mkdocs_page_url = "/The Linux Command Line/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugodoc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../collection/">Collection</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>CLI</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20the%20Command%20Line%20Notes/">Codecademy Learn the Command Line Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Line%20Crash%20Course/">Command Line Crash Course</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Shell%20Snippets/">Command Shell Snippets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">The Linux Command Line</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#10-learning-the-shell">1.0 Learning the Shell</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#20-writing-shell-scripts">2.0 Writing Shell Scripts</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#30-resources-some">3.0 Resources (some)</a></li>
+                
+                    <li><a class="toctree-l4" href="#adventures">Adventures</a></li>
+                
+                    <li><a class="toctree-l4" href="#shell-scripts">Shell Scripts</a></li>
+                
+                    <li><a class="toctree-l4" href="#manuals">Manuals</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Ubuntu/">Ubuntu 16.04</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Resources for Data Science</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Digital%20Humanities/">Digital Humanities</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Git/">Learn Git</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Resources%20for%20Data%20Science/">Resources for Data Science</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Storytelling%20with%20Data/">Storytelling with Data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>SQL.md</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20SQL/">Codecademy Learn SQL</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20SQL%2C%20Analyzing%20Business%20Metrics/">Codecademy SQL, Analyzing Business Metrics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20SQL%2C%20Table%20Transformation/">Codecademy SQL, Table Transformation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20SQL%20JOINs/">Introduction to SQL JOINs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Build%20a%20Website/">Build a Website</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../HTML%20and%20CSS/">HTML and CSS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Markdown%20%26%20Pandoc/">Markdown & Pandoc</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../tests/">Tests</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugodoc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>CLI &raquo;</li>
+        
+      
+    
+    <li>The Linux Command Line</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ugoproto/ugodoc" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="the-linux-command-line">The Linux Command Line<a class="headerlink" href="#the-linux-command-line" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Notes. The 537-page volume covers the same material as <a href="http://linuxcommand.org/">LinuxCommand.org</a>, but in much greater detail. In addition to the basics of command line use and shell scripting, The Linux Command Line includes chapters on many common programs used on the command line, as well as more advanced topics.</p>
+<hr />
+<div class="toc"><span class="toctitle">Content</span><ul>
+<li><a href="#the-linux-command-line">The Linux Command Line</a><ul>
+<li><a href="#10-learning-the-shell">1.0 Learning the Shell</a></li>
+<li><a href="#20-writing-shell-scripts">2.0 Writing Shell Scripts</a></li>
+<li><a href="#30-resources-some">3.0 Resources (some)</a><ul>
+<li><a href="#adventures">Adventures</a></li>
+<li><a href="#shell-scripts">Shell Scripts</a></li>
+<li><a href="#manuals">Manuals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h4 id="10-learning-the-shell"><a href="http://linuxcommand.org/lc3_learning_the_shell.php">1.0 Learning the Shell</a><a class="headerlink" href="#10-learning-the-shell" title="Permanent link">&para;</a></h4>
+<p><a href="http://linuxcommand.org/lc3_lts0010.php">1.1 What Is &ldquo;The Shell&rdquo;?</a>,<br />
+<sub>terminal</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.2 Navigation</a>,<br />
+<sub>file, system, organization, working directory</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.3 Looking Around</a>,<br />
+<sub>list, file, size, group, owner, permission, create text file, long format, classify, examine</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.4 A Guided Tour</a>,<br />
+<sub>directory, root, boot, etc, bin, usr, local, var, lib, home, root, tmp, dev, proc, media</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.5 Manipulating Files</a>,<br />
+<sub>copy, move, remove, create directory</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.6 Working With Commands</a>,<br />
+<sub>type, display information, which, locate, help, command, manual</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.7 I/O Redirection</a>,<br />
+<sub>input, output, pipeline, pipe, filter, sort, uniq, pattern, read text, grep, fmt, split, page break, header, footer, pr, first line, last line, head, tail, translate, tr, editor, sed, awk</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.8 Expansion</a>,<br />
+<sub>echo, pathname, quote, double-quote, escape, backslash</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.9 Permissions</a>,<br />
+<sub>permission, chmod, su, sudo, chown, chgrp, directory</sub></p>
+<p><a href="http://linuxcommand.org/lc3_lts0020.php">1.10 Job Control</a>,<br />
+<sub>job, process, ps, kill, jobs, background, bg, foreground, fg</sub></p>
+<h4 id="20-writing-shell-scripts"><a href="http://linuxcommand.org/lc3_resources.php">2.0 Writing Shell Scripts</a><a class="headerlink" href="#20-writing-shell-scripts" title="Permanent link">&para;</a></h4>
+<p><a href="http://linuxcommand.org/lc3_wss0010.php">2.1 Writing Your First Script And Getting It To Work</a>,<br />
+<sub>editor, vi, vim, emacs, nano, gedit, kwrite, path</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0020.php">2.2 Editing The Scripts You Already Have</a>,<br />
+<sub>edit, shell, location, path, export path, alias, environmental variable, today</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0030.php">2.3 Here Scripts</a>,<br />
+<sub>script, here, shebang, output, append</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0040.php">2.4 Variables</a>,<br />
+<sub>script, variable, create, environment</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0050.php">2.5 Command Substitution And Constants</a>,<br />
+<sub>command substitution, constant, assigning, assign</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0060.php">2.6 Shell Functions</a>,<br />
+<sub>shell function, open page, head section, right title, close, body section, timestamp, right, time, macro, </sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0070.php">2.7 Some Real Work</a>,<br />
+<sub>uptime, time, show_uptime, drive, space, drive_space, home, space, home_space</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0080.php">2.8 Flow Control - Part 1</a>,<br />
+<sub>if, test, testing, exit, clear</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0090.php">2.9 Stay Out Of Trouble</a>,<br />
+<sub>empty variable, missing quote, isolating, isolate, run script, watch</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0100.php">2.10 Keyboard Input And Arithmetic</a>,<br />
+<sub>read, arithmetic</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0110.php">2.11 Flow Control - Part 2</a>,<br />
+<sub>branch, branching, case, loop, while, building an menu</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0120.php">2.12 Positional Parameters</a>,<br />
+<sub>positional parameters, command line, arguments, options, command line processor into script, interactive</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0130.php">2.13 Flow Control - Part 3</a>,<br />
+<sub>loop, for, if, else, find, wc, system_info</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0140.php">2.14 Errors And Signals And Traps (Oh My!) - Part 1</a>,<br />
+<sub>check, checking, exit status, error, and, or</sub></p>
+<p><a href="http://linuxcommand.org/lc3_wss0150.php">2.15 Errors And Signals And Traps (Oh My!) - Part 2</a>,<br />
+<sub>clean, cleaning, trap, kill, clean_up, temporary, file</sub></p>
+<h4 id="30-resources-some"><a href="http://linuxcommand.org/lc3_resources.php">3.0 Resources (some)</a><a class="headerlink" href="#30-resources-some" title="Permanent link">&para;</a></h4>
+<h5 id="adventures">Adventures<a class="headerlink" href="#adventures" title="Permanent link">&para;</a></h5>
+<p><a href="http://linuxcommand.org/lc3_adv_mc.php">3.1 Midnight Commander</a></p>
+<p>A directory browser and file manager for command line users.<br />
+<sub>gui, file, directory, manipulation, copy, move, rename, delete, permission, remote system, ftp, ssh, .tar, .zip, local, hotlist, name, content</sub></p>
+<p><a href="http://linuxcommand.org/lc3_adv_termmux.php">3.2 Terminal Multiplexers</a></p>
+<p>Give your terminal some serious muscle.<br />
+<sub>like gnome, konsole, gnu, desktop, multiple shell session single terminal, display, several computer</sub></p>
+<p><a href="http://linuxcommand.org/lc3_adv_lesstype.php">3.3 Less Typing</a></p>
+<p>Fingers getting tired? Let&rsquo;s look at ways to save our digits!<br />
+</sub>alias, shell functions, script, program, alias, cli, editor, control</sub></p>
+<p><a href="http://linuxcommand.org/lc3_adv_redirection.php">3.4 More Redirection</a></p>
+<p>We take a deeper look at this powerful feature.<br />
+<sub>i/o, input, output, pipeline, pipe, exec</sub></p>
+<p><a href="http://linuxcommand.org/lc3_adv_tput.php">3.5 tput</a></p>
+<p>Our scripts can have more visual appeal!<br />
+<sub>tput, ncurses, terminal, manipulate, change, color, effect, text</sub></p>
+<p><a href="http://linuxcommand.org/lc3_adv_dialog.php">3.6 dialog</a></p>
+<p>Let&rsquo;s give our scripts a better user interface.<br />
+<sub>incorporate, script, build list, calendar, checklist, directory, box, form, file select, gauge, pause, gui, simple, simplify</sub></p>
+<p><a href="http://linuxcommand.org/lc3_adv_awk.php">3.7 AWK</a></p>
+<p>Pattern scanning and text processing language. One of the truly classic Unix tools.<br />
+<sub>awk, programming language, coding, code, script</sub></p>
+<p><a href="http://linuxcommand.org/lc3_adv_othershells.php">3.8 Other Shells</a></p>
+<p>While most Linux users rely on the bash shell every day, it&rsquo;s not the only game in town. Let&rsquo;s look at some of the others.<br />
+<sub>dash, debian almquist shell, tcsh, texex c shell, ksh, korn shell, zsh, z shell</sub></p>
+<h5 id="shell-scripts">Shell Scripts<a class="headerlink" href="#shell-scripts" title="Permanent link">&para;</a></h5>
+<p><a href="http://linuxcommand.org/lc3_new_script.php">3.9 new_script</a></p>
+<p>A bash shell script template generator. Use this script to help write your own shell scripts. Generated templates include useful shell functions, error and signal handling, and command-line option and argument parsing.<br />
+<sub>script, example, case</sub></p>
+<p><a href="http://linuxcommand.org/lc3_my_cloud.php">3.10 my_cloud</a></p>
+<p>Implements a primitive cloud storage system using any available remote host running an SSH server.<br />
+<sub>script, example, case, dropbox</sub></p>
+<p><a href="http://linuxcommand.org/lc3_photo2mail.php">3.11 photo2mail</a></p>
+<p>Re-sizes large image files (photos) for use as attachments to email messages, blog postings, etc.<br />
+<sub>script, example, case, read image file, convert, size</sub></p>
+<p><a href="http://linuxcommand.org/lc3_program_list.php">3.12 program_list</a></p>
+<p>Creates an annotated list of programs in a directory. Useful for exploring your system.<br />
+<sub>script, example, case, program_list, list, whatis, what</sub></p>
+<h5 id="manuals">Manuals<a class="headerlink" href="#manuals" title="Permanent link">&para;</a></h5>
+<p>Granneman, Scott, Linux Phrasebook, 2015</p>
+<p>Parker, Steve, Shell Scripting: Expert Recipes for Linux, Bash and more, 2011</p>
+<p>Ward, Brian, How Linux Works: What Every Superuser Should Know, 2014</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Ubuntu/" class="btn btn-neutral float-right" title="Ubuntu 16.04">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Command%20Shell%20Snippets/" class="btn btn-neutral" title="Command Shell Snippets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ugoproto/ugodoc" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Command%20Shell%20Snippets/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Ubuntu/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

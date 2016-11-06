@@ -1,10 +1,14 @@
 # Tests
 
-This page is temporary. It tests possibilities with a markdown document.
+**Foreword**
 
-## Content
+This page is temporary. It tests markup possibilities.
+
+-----
 
 [TOC]
+
+-----
 
 ## List
 
@@ -28,13 +32,15 @@ def aaa():
 
 ## Font
 
-Enter superscript:
-2^10^ is 1024.
+Enter superscript: 2^10^ is 1024.
+
+<sup>superscript</sup>
 
 pip install MarkdownSuperscript
 
-Enter subscript:
-The molecular composition of water is H~2~O.
+Enter subscript: The molecular composition of water is H~2~O.
+
+<sub>subscript</sub>
 
 pip install MarkdownSubscript
 

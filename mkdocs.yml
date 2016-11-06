@@ -1,7 +1,7 @@
 site_name: ugodoc
-#site_url: 
+#site_url: http://ugodoc.readthedocs.io/en/latest/
 repo_url: https://github.com/ugoproto/ugodoc
-site_description: A data Science documentation website.
+site_description: A Data Science documentation website.
 site_author: Ugo Spark
 site_favicon: faviconfire.ico
 copyright: null
@@ -12,23 +12,25 @@ pages:
     - Home: 'index.md'
     - Collection: 'collection.md'
     - CLI:
-        - 'Codecademy Learn the Command Line Notes': 'manuals/Codecademy Learn the Command Line Notes.md'
-        - 'Command Line Crash Course': 'manuals/Command Line Crash Course.md'
-        - 'Command Shell' : 'manuals/Command Shell.md'
-        - 'The Linux Command Line': 'manuals/The Linux Command Line.md'
+        - 'Codecademy Learn the Command Line Notes': 'Codecademy Learn the Command Line Notes.md'
+        - 'Command Line Crash Course': 'Command Line Crash Course.md'
+        - 'Command Shell Snippets' : 'Command Shell Snippets.md'
+        - 'The Linux Command Line': 'The Linux Command Line.md'
+        - 'Ubuntu 16.04': 'Ubuntu.md'
     - Resources for Data Science:
-        - 'Digital Humanities': 'manuals/Digital Humanities.md'
-        - 'Learn Git': 'manuals/Learn Git.md'
-        - 'Resources for Data Science': 'manuals/Resources for Data Science.md'
-        - 'Storytelling with Data': 'manuals/Storytelling with Data.md'
+        - 'Digital Humanities': 'Digital Humanities.md'
+        - 'Learn Git': 'Learn Git.md'
+        - 'Resources for Data Science': 'Resources for Data Science.md'
+        - 'Storytelling with Data': 'Storytelling with Data.md'
     - SQL.md:
-        - 'Codecademy Learn SQL': 'manuals/Codecademy Learn SQL.md'
-        - 'Codecademy SQL, Analyzing Business Metrics': 'manuals/Codecademy SQL, Analyzing Business Metrics.md'
-        - 'Codecademy SQL, Table Transformation': 'manuals/Codecademy SQL, Table Transformation.md'
-        - 'Introduction to SQL JOINs': 'manuals/Introduction to SQL JOINs.md'
+        - 'Codecademy Learn SQL': 'Codecademy Learn SQL.md'
+        - 'Codecademy SQL, Analyzing Business Metrics': 'Codecademy SQL, Analyzing Business Metrics.md'
+        - 'Codecademy SQL, Table Transformation': 'Codecademy SQL, Table Transformation.md'
+        - 'Introduction to SQL JOINs': 'Introduction to SQL JOINs.md'
     - Web:
-       - 'Build a Website': 'manuals/Build a Website.md'
-       - 'HTML and CSS': 'manuals/HTML and CSS.md'
+       - 'Build a Website': 'Build a Website.md'
+       - 'HTML and CSS': 'HTML and CSS.md'
+       - 'Markdown & Pandoc': 'Markdown & Pandoc.md'
     - Tests: 'tests.md'
 
 theme: readthedocs
