@@ -1,8 +1,8 @@
-# Learn SQL
+# Codecademy Learn SQL
 
 **Foreword**
 
-From Codecademy. Code Snippets.
+Code Snippets. From Codecademy.
 
 -----
 

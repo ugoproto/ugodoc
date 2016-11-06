@@ -1,8 +1,8 @@
-# SQL, Table Transformation
+# Codecademy SQL, Table Transformation
 
 **Foreword**
 
-From Codecademy. Code snippets.
+Code snippets. From Codecademy.
 
 -----
 

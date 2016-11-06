@@ -1,8 +1,8 @@
-# Learn the Command Line
+# Codecademy Learn the Command Line
 
 **Foreword**
 
-From Codecademy. Commands and code snippets.
+Commands and code snippets. From Codecademy.
 
 -----
 

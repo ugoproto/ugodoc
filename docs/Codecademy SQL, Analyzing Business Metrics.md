@@ -1,8 +1,8 @@
-# SQL, Analyzing Business Metrics
+# Codecademy SQL, Analyzing Business Metrics
 
 **Foreword**
 
-From Codecademy. Code snippets. With SQLite. In collaboration with [Periscope Data](https://www.periscopedata.com).
+Code snippets. With SQLite. From Codecademy in collaboration with [Periscope Data](https://www.periscopedata.com).
 
 -----
 

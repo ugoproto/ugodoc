@@ -20,8 +20,8 @@ This page is temporary. It tests markup possibilities.
 - << >>
 - ...
 - short dash: -
-- mid dash: --
-- long dash: ---
+- mid dash: -- (for literature)
+- long dash: --- (for literature)
 
 ## Code
 
