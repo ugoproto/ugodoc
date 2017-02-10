@@ -1,12 +1,8 @@
 site_name: ugodoc
-site_url: http://ugodoc.readthedocs.io/en/latest/
-repo_url: https://github.com/ugoproto/ugodoc
 site_description: A Data Science documentation website.
 site_author: Ugo Spark
-site_favicon: faviconfire.ico
 copyright: null
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
-remote_branch: master
 remote_name: ugodoc
 pages:
     - Home: 'index.md'
@@ -22,7 +18,7 @@ pages:
         - 'Learn Git': 'Learn Git.md'
         - 'Resources for Data Science': 'Resources for Data Science.md'
         - 'Storytelling with Data': 'Storytelling with Data.md'
-    - SQL.md:
+    - SQL:
         - 'Codecademy Learn SQL': 'Codecademy Learn SQL.md'
         - 'Codecademy SQL, Analyzing Business Metrics': 'Codecademy SQL, Analyzing Business Metrics.md'
         - 'Codecademy SQL, Table Transformation': 'Codecademy SQL, Table Transformation.md'
@@ -38,17 +34,17 @@ theme: readthedocs
     # readthedocs
     # mkdocs
 
-# Build PDF & ePub
+# Build PDF & ePub (only on Readthedocs)
 #formats: 
 #    - pdf
 
 markdown_extensions:
     - wikilinks # internal links with [[bracketed]]
     - smarty # additional characters
-#    - subscript
-#    - superscript
-    - nl2br # new line to break
+    - subscript
+    - superscript
+    - nl2br # need a new line to break
     - toc:
-        title: Content
+        title: CONTENT
         permalink: True
         baselevel: 3
