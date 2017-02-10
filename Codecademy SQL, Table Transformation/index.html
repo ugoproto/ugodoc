@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>Codecademy SQL, Table Transformation - ugodoc</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Codecademy SQL, Table Transformation";
+    var mkdocs_page_input_path = "Codecademy SQL, Table Transformation.md";
+    var mkdocs_page_url = "/Codecademy SQL, Table Transformation/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugodoc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../collection/">Collection</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>CLI</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20the%20Command%20Line%20Notes/">Codecademy Learn the Command Line Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Line%20Crash%20Course/">Command Line Crash Course</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Shell%20Snippets/">Command Shell Snippets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../The%20Linux%20Command%20Line/">The Linux Command Line</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Ubuntu/">Ubuntu 16.04</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Resources for Data Science</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Digital%20Humanities/">Digital Humanities</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Git/">Learn Git</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Resources%20for%20Data%20Science/">Resources for Data Science</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Storytelling%20with%20Data/">Storytelling with Data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>SQL</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20SQL/">Codecademy Learn SQL</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20SQL%2C%20Analyzing%20Business%20Metrics/">Codecademy SQL, Analyzing Business Metrics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Codecademy SQL, Table Transformation</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#1-subqueries">1, Subqueries</a></li>
+                
+                    <li><a class="toctree-l4" href="#non-correlated-subqueries">Non-Correlated Subqueries</a></li>
+                
+                    <li><a class="toctree-l4" href="#correlated-subqueries">Correlated Subqueries</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-can-we-generalize-so-far">What can we generalize so far?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#merging-tables-together">Merging Tables Together</a></li>
+                
+                    <li><a class="toctree-l4" href="#union">UNION</a></li>
+                
+                    <li><a class="toctree-l4" href="#intersect">INTERSECT</a></li>
+                
+                    <li><a class="toctree-l4" href="#except">EXCEPT</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-can-we-generalize-so-far_1">What can we generalize so far?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#3-conditional-aggregates">3, Conditional Aggregates</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-can-we-generalize-so-far_2">What can we generalize so far?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#4-date-number-and-string-functions">4, Date, Number, and String Functions</a></li>
+                
+                    <li><a class="toctree-l4" href="#what-can-we-generalize-so-far_3">What can we generalize so far?</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20SQL%20JOINs/">Introduction to SQL JOINs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Build%20a%20Website/">Build a Website</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../HTML%20and%20CSS/">HTML and CSS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Markdown%20%26%20Pandoc/">Markdown & Pandoc</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../tests/">Tests</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugodoc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SQL &raquo;</li>
+        
+      
+    
+    <li>Codecademy SQL, Table Transformation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="codecademy-sql-table-transformation">Codecademy SQL, Table Transformation<a class="headerlink" href="#codecademy-sql-table-transformation" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Code snippets. From Codecademy.</p>
+<hr />
+<div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#codecademy-sql-table-transformation">Codecademy SQL, Table Transformation</a><ul>
+<li><a href="#1-subqueries">1, Subqueries</a><ul>
+<li><a href="#non-correlated-subqueries">Non-Correlated Subqueries</a></li>
+<li><a href="#correlated-subqueries">Correlated Subqueries</a></li>
+<li><a href="#what-can-we-generalize-so-far">What can we generalize so far?</a></li>
+</ul>
+</li>
+<li><a href="#merging-tables-together">Merging Tables Together</a><ul>
+<li><a href="#union">UNION</a></li>
+<li><a href="#intersect">INTERSECT</a></li>
+<li><a href="#except">EXCEPT</a></li>
+<li><a href="#what-can-we-generalize-so-far_1">What can we generalize so far?</a></li>
+</ul>
+</li>
+<li><a href="#3-conditional-aggregates">3, Conditional Aggregates</a><ul>
+<li><a href="#what-can-we-generalize-so-far_2">What can we generalize so far?</a></li>
+</ul>
+</li>
+<li><a href="#4-date-number-and-string-functions">4, Date, Number, and String Functions</a><ul>
+<li><a href="#what-can-we-generalize-so-far_3">What can we generalize so far?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<p>While working with databases, we often need to transform data from one format to achieve a desired result. In SQL, this is often called data transformation or table transformation.</p>
+<h4 id="1-subqueries">1, Subqueries<a class="headerlink" href="#1-subqueries" title="Permanent link">&para;</a></h4>
+<p>Subqueries, sometimes referred to as inner queries or nested queries, are used to transform table data by nesting one query within another query. </p>
+<p>Two tables: &lsquo;airports&rsquo; and &lsquo;flights&rsquo;.</p>
+<p>Select ten rows from the flights table.</p>
+<pre><code class="sql">SELECT * FROM flights LIMIT 10;
+```sql
+
+We first create an inner query, or subquery, that finds the 'airports' with elevation greater than 2000 from the airports table. 
+
+```sql
+SELECT code FROM airports WHERE elevation &gt; 2000;
+</code></pre>
+
+<p>Next, we take the result set of the inner query and use it to filter on the &lsquo;flights&rsquo; table, to find the flight detail that meets the elevation criteria.</p>
+<pre><code class="sql">SELECT * FROM flights WHERE origin in (
+    SELECT code FROM airports WHERE elevation &gt; 2000);
+</code></pre>
+
+<p>Find flight information about flights where the origin elevation is less than 2000 feet.</p>
+<pre><code class="sql">SELECT * FROM flights WHERE origin in (
+    SELECT code FROM airports WHERE elevation &lt; 2000);
+</code></pre>
+
+<h5 id="non-correlated-subqueries">Non-Correlated Subqueries<a class="headerlink" href="#non-correlated-subqueries" title="Permanent link">&para;</a></h5>
+<p>A non-correlated subquery is a subquery that can be run independently of the outer query and as we saw, can be used to complete a multi-step transformation.</p>
+<p>Perhaps we&rsquo;d like to look at a selection of flights whose origin airport is a seaplane base, designated by SEAPLANE_BASE. The facility type of an airport is located in the fac_type field of the airports table.</p>
+<pre><code class="sql">SELECT * FROM flights WHERE origin in (
+    SELECT code FROM airports WHERE fac_type = 'SEAPLANE_BASE');
+</code></pre>
+
+<p>Using the same pattern, find flight information about flights where the Federal Aviation Administration region (faa_region) is the Southern region (ASO).</p>
+<pre><code class="sql">SELECT * FROM flights WHERE origin in (
+    SELECT code FROM airports WHERE faa_region = 'ASO');
+</code></pre>
+
+<p>Perform transformations on a single table. For instance, sometimes we need to aggregate in multiple steps - like taking an average of a count.</p>
+<p>Imagine you’d like to know how many flights there are on average, for all Fridays in a given month from the flights table. First, we’d need to calculate the number of flights per day, and then we’d need to calculate the average based on the daily flight count for each day of the week. We can do this all in one step using a subquery:</p>
+<pre><code class="sql">SELECT a.dep_month,
+       a.dep_day_of_week,
+       AVG(a.flight_count) AS average_flights
+    FROM (
+        SELECT dep_month,
+               dep_day_of_week,
+               dep_date,
+               COUNT(*) AS flight_count
+        FROM flights
+        GROUP BY 1,2,3
+        ) a
+GROUP BY 1,2
+ORDER BY 1,2;
+</code></pre>
+
+<p>The inner query provides the count of flights by day, and the outer query uses the inner query’s result set to compute the average by day of week of a given month.</p>
+<p>Using a subquery, find the average total distance flown by day of week and month. Be sure to alias the outer query as average_distance and the inner query as flight_distance.</p>
+<pre><code class="sql">SELECT a.dep_month,
+       a.dep_day_of_week,
+       AVG(a.flight_distance) AS average_distance
+    FROM (
+        SELECT dep_month,
+              dep_day_of_week,
+               dep_date,
+               sum(distance) AS flight_distance
+        FROM flights
+        GROUP BY 1,2,3
+    ) a
+GROUP BY 1,2
+ORDER BY 1,2;
+</code></pre>
+
+<h5 id="correlated-subqueries">Correlated Subqueries<a class="headerlink" href="#correlated-subqueries" title="Permanent link">&para;</a></h5>
+<p>In a correlated subquery, the subquery can not be run independently of the outer query. The order of operations is important in a correlated subquery:</p>
+<pre><code>A row is processed in the outer query.
+Then, for that particular row in the outer query, the subquery is executed.
+</code></pre>
+<p>This means that for each row processed by the outer query, the subquery will also be processed for that row. In this example, we will find the list of all flights whose distance is above average for their carrier (query on a query, same table).</p>
+<pre><code class="sql">SELECT id
+FROM flights AS f
+WHERE distance &gt; (
+    SELECT AVG(distance)
+    FROM flights
+    WHERE carrier = f.carrier);
+</code></pre>
+
+<p>In the above query the inner query has to be re-executed for each flight. Correlated subqueries may appear elsewhere besides the WHERE clause, they can also appear in the SELECT.</p>
+<p>Find the id of the flights whose distance is below average for their carrier.</p>
+<pre><code class="sql">SELECT id
+FROM flights AS f
+WHERE distance &lt; (
+    SELECT AVG(distance)
+    FROM flights
+    WHERE carrier = f.carrier);
+</code></pre>
+
+<p>It would also be interesting to order flights by giving them a sequence number based on time, by carrier. For instance, assuming flight_id increments with each additional flight, we could use the following query to view flights by carrier, flight id, and sequence number:</p>
+<pre><code class="sql">SELECT carrier, id,
+    (SELECT COUNT(*)
+        FROM flights f
+        WHERE f.id &lt; flights.id
+        AND f.carrier=flights.carrier) + 1 
+        AS flight_sequence_number
+        FROM flights;
+</code></pre>
+
+<p>Using the same pattern, write a query to view flights by origin, flight id, and sequence number. Alias the sequence number column as flight_sequence_number.</p>
+<pre><code class="sql">SELECT origin, id,
+    (SELECT COUNT(*)
+    FROM flights f
+    WHERE f.id &lt; flights.id
+    AND f.origin=flights.origin) + 1 
+    AS flight_sequence_number
+    FROM flights;
+</code></pre>
+
+<h5 id="what-can-we-generalize-so-far">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Subqueries are used to complete an SQL transformation by nesting one query within another query.</li>
+<li>A non-correlated subquery is a subquery that can be run independently of the outer query and can be used to complete a multi-step transformation.</li>
+<li>A correlated subquery is a subquery that cannot be run independently of the outer query. The order of operations in a correlated subquery is as follows:<ol>
+<li>A row is processed in the outer query.</li>
+<li>Then, for that particular row in the outer query, the subquery is executed.</li>
+<li>Set Operations.</li>
+</ol>
+</li>
+</ul>
+<p>Unions allow us to utilize information from multiple tables in our queries. In this lesson, we’ll utilize data from an e-commerce store. Let’s explore the available data we’ll be using. </p>
+<p>Four tables: &lsquo;new_products&rsquo;, legacy_products&rsquo;, &lsquo;order_items&rsquo; and &lsquo;order_items_historic&rsquo;.</p>
+<p>In our database, we have products tables that contain metadata about each product in the store. Select ten rows from the new_products table.</p>
+<pre><code class="sql">SELECT * FROM new_products LIMIT 10;
+</code></pre>
+
+<h4 id="merging-tables-together">Merging Tables Together<a class="headerlink" href="#merging-tables-together" title="Permanent link">&para;</a></h4>
+<p>Sometimes, in order to answer certain questions based on data, we need to merge two tables together and then query the merged result. Perhaps we have two tables that contain information about products in an ecommerce store that we would like to combine. There are two ways of doing this:</p>
+<ul>
+<li>Merge the rows, called a JOIN.</li>
+<li>Merge the columns, called a UNION.</li>
+</ul>
+<h5 id="union">UNION<a class="headerlink" href="#union" title="Permanent link">&para;</a></h5>
+<p>We&rsquo;ll focus on unions here. Union combines the result of two or more SELECT statements, using the following syntax:</p>
+<pre><code class="sql">SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+</code></pre>
+
+<p>Each SELECT statement within the UNION must have the same number of columns with similar data types. The columns in each SELECT statement must be in the same order. By default, the UNION operator selects only distinct values.</p>
+<p>Suppose we are a growing ecommerce store and recently acquired another store to diversify our offering. The product data still exists in two separate tables: a legacy_products table and a new_products table. To get the complete list of product names from both tables, we can perform the following union.</p>
+<pre><code class="sql">SELECT item_name FROM legacy_products
+UNION 
+SELECT item_name FROM new_products;
+</code></pre>
+
+<p>Select a complete list of brand names from the legacy_products and new_products tables.</p>
+<pre><code class="sql">SELECT brand FROM legacy_products
+UNION
+SELECT brand FROM new_products;
+</code></pre>
+
+<p>What if we wanted to allow duplicate values? We can do this by using the ALL keyword with UNION, with the following syntax:</p>
+<pre><code class="sql">SELECT column_name(s) FROM table1
+UNION ALL
+SELECT column_name(s) FROM table2;
+</code></pre>
+
+<p>In our ecommerce store, if we learned that we had records from historic order items in an additional table, we could use the following query to combine the tables for a complete analysis of sale price:</p>
+<pre><code class="sql">SELECT id, sale_price FROM order_items
+UNION ALL
+SELECT id, sale_price FROM order_items_historic;
+</code></pre>
+
+<p>Then we can perform an analysis on top of the combined result set, like finding the total count of order items.</p>
+<pre><code class="sql">SELECT count(*) FROM (
+    SELECT id, sale_price FROM order_items
+    UNION ALL
+    SELECT id, sale_price FROM order_items_historic) as a;
+</code></pre>
+
+<p>Using the same pattern, utilize a subquery to find the average sale price over both order_items and order_items_historic tables.</p>
+<pre><code class="sql">SELECT id, avg(a.sale_price) FROM (
+    SELECT id, sale_price FROM order_items
+    UNION ALL
+    SELECT id, sale_price FROM order_items_historic) AS a 
+    GROUP BY 1;
+</code></pre>
+
+<p>(before running the top analysis, create an alias a with the preliminary results, run the avg(a.sale_price), and group by 1 to view separate records and not a unique aggregate record!!!)</p>
+<h5 id="intersect">INTERSECT<a class="headerlink" href="#intersect" title="Permanent link">&para;</a></h5>
+<p>&hellip;is used to combine two SELECT statements, but returns rows only from the first SELECT statement that are identical to a row in the second SELECT statement. This means that it returns only common rows returned by the two SELECT statements.</p>
+<pre><code class="sql">SELECT column_name(s) FROM table1
+INTERSECT
+SELECT column_name(s) FROM table2;
+</code></pre>
+
+<p>For instance, we might want to know what brands in our newly acquired store are also in our legacy store. We can do so using the following query:</p>
+<pre><code class="sql">SELECT brand FROM new_products
+INTERSECT
+SELECT brand FROM legacy_products;
+</code></pre>
+
+<p>Select the items in the category column that are both in the newly acquired new_products table and the legacy_products table.</p>
+<pre><code class="sql">SELECT category FROM new_products
+INTERSECT
+SELECT category FROM legacy_products;
+</code></pre>
+
+<h5 id="except">EXCEPT<a class="headerlink" href="#except" title="Permanent link">&para;</a></h5>
+<p>&hellip;is constructed in the same way, but returns distinct rows from the first SELECT statement that aren’t output by the second SELECT statement.</p>
+<pre><code class="sql">SELECT column_name(s) FROM table1
+EXCEPT
+SELECT column_name(s) FROM table2;
+</code></pre>
+
+<p>Suppose we want to see if there are any categories that are in the new_products table that aren&rsquo;t in the legacy_products table. We can use an EXCEPT query to perform this analysis:</p>
+<pre><code class="sql">SELECT category FROM new_products
+EXCEPT
+SELECT category FROM legacy_products;
+</code></pre>
+
+<p>Conversely, select the items in the category column that are in the legacy_products table and not in the new_products table.</p>
+<pre><code class="sql">SELECT category FROM legacy_products
+EXCEPT
+SELECT category FROM new_products;
+</code></pre>
+
+<h5 id="what-can-we-generalize-so-far_1">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_1" title="Permanent link">&para;</a></h5>
+<ul>
+<li>The UNION clause allows us to utilize information from multiple tables in our queries.</li>
+<li>The UNION ALL clause allows us to utilize information from multiple tables in our queries, including duplicate values.</li>
+<li>INTERSECT is used to combine two SELECT statements, but returns rows only from the first SELECT statement that are identical to a row in the second SELECT statement.</li>
+<li>EXCEPT returns distinct rows from the first SELECT statement that aren’t output by the second SELECT statement</li>
+</ul>
+<h4 id="3-conditional-aggregates">3, Conditional Aggregates<a class="headerlink" href="#3-conditional-aggregates" title="Permanent link">&para;</a></h4>
+<p>Aggregate functions compute a single result from a set of multiple input values. You can think of aggregate data as data collected from multiple rows at a time. In this lesson, we&rsquo;ll continue learning about aggregate functions by focusing on conditionals, sums, and combining aggregate functions.</p>
+<p>Conditional Aggregates are aggregate functions that compute a result set based on a given set of conditions.</p>
+<p>The count function is an aggregate function, since it aggregates data from multiple rows.</p>
+<p>Count the number of rows in the flights table, representing the total number of flights contained in the table.</p>
+<pre><code class="sql">SELECT COUNT(*) FROM flights;
+</code></pre>
+
+<p>While working with databases, it&rsquo;s common to have empty or unknown &ldquo;cells&rdquo; in data tables.</p>
+<p>What do we do when we need to test whether a value is or is not null? We use the special keywords IS NULL or IS NOT NULL in the WHERE clause (= NULL does not work).</p>
+<p>Count the number of rows from the flights table, where arr_time is not null and the destination is ATL.</p>
+<pre><code class="sql">SELECT COUNT(*) FROM flights WHERE arr_time IS NOT NULL AND destination = &quot;ATL&quot;;
+</code></pre>
+
+<p>Almost every programming language has a way to represent &ldquo;if, then, else&rdquo;, or conditional logic. In SQL, we represent this logic with the CASE statement, as follows:</p>
+<pre><code class="sql">SELECT
+    CASE
+        WHEN elevation &lt; 500 THEN 'Low'
+        WHEN elevation BETWEEN 500 AND 1999 THEN 'Medium'
+        WHEN elevation &gt;= 2000 THEN 'High'
+        ELSE 'Unknown'
+    END AS elevation_tier, 
+    COUNT(*)
+FROM airports
+GROUP BY 1;
+</code></pre>
+
+<p>In the above statement, END is required to terminate the statement, but ELSE is optional. If ELSE is not included, the result will be NULL. Also notice the shorthand method of referencing columns to use in GROUP BY, so we don&rsquo;t have to rewrite the entire Case Statement.</p>
+<p>Modify the case statement&rsquo;s such that when the elevation is less than 250, the elevation_tier column returns &lsquo;Low&rsquo;, when between 250 and 1749 it returns &lsquo;Medium&rsquo;, and when greater than or equal to 1750 it returns &lsquo;High&rsquo;.</p>
+<p>Be sure to alias the conditional statement as elevation_tier, in your query.</p>
+<pre><code class="sql">SELECT
+    CASE
+        WHEN elevation &lt; 250 THEN 'Low'
+        WHEN elevation BETWEEN 250 AND 1749 THEN 'Medium'
+        WHEN elevation &gt;= 1750 THEN 'High'
+        ELSE 'Unknown'
+    END AS elevation_tier, 
+    COUNT(*)
+FROM airports
+GROUP BY 1;
+</code></pre>
+
+<p>Sometimes you want to look at an entire result set, but want to implement conditions on certain aggregates.</p>
+<p>For instance, maybe you want to identify the total amount of airports as well as the total amount of airports with high elevation in the same result set. We can accomplish this by putting a CASE WHEN statement in the aggregate.</p>
+<pre><code class="sql">SELECT state, 
+    COUNT(CASE WHEN elevation &gt;= 2000 THEN 1 ELSE NULL END) as count_high_elevation_aiports 
+FROM airports 
+GROUP BY state;
+</code></pre>
+
+<p>Using the same pattern, write a query to count the number of low elevation airports by state where low elevation is defined as less than 1000 ft. Be sure to alias the counted airports as count_low_elevation_airports.</p>
+<pre><code class="sql">SELECT state, 
+    COUNT(CASE WHEN elevation &lt; 1000 THEN 1 ELSE NULL END) as count_low_elevation_aiports 
+FROM airports 
+GROUP BY state;
+</code></pre>
+
+<p>We can do that same thing for other aggregates like SUM(). For instance, if we wanted to sum the total flight distance and compare that to the sum of flight distance from a particular airline (in this case, United Airlines) by origin airport, we could run the following query:<br />
+sum(distance) for all carriers (total_flight_distance)<br />
+sum(distance) for UA only (others are turned to 0) (total_united_flight_distance).</p>
+<pre><code class="sql">SELECT origin, sum(distance) as total_flight_distance, sum(CASE WHEN carrier = 'UA' THEN distance ELSE 0 END) as total_united_flight_distance 
+FROM flights 
+GROUP BY origin;
+</code></pre>
+
+<p>Using the same pattern, find both the total flight distance as and flight distance by origin for Delta (carrier = &lsquo;DL&rsquo;).</p>
+<p>Alias the flight distance as total_flight_distance and the and flight distance by origin as total_delta_flight_distance.</p>
+<pre><code class="sql">SELECT origin, sum(distance) as total_flight_distance, sum(CASE WHEN carrier = 'DL' THEN distance ELSE 0 END) as total_delta_flight_distance 
+FROM flights 
+GROUP BY origin;
+</code></pre>
+
+<p>Using the same pattern, find the percentage of flights from Delta by origin (carrier = &lsquo;DL&rsquo;):</p>
+<pre><code class="sql">SELECT origin, 100.0*(sum(CASE WHEN carrier = 'DL' THEN distance ELSE 0 END)/sum(distance)) as percentage_flight_distance_from_delta FROM flights 
+GROUP BY origin;
+</code></pre>
+
+<p>Find the percentage of high elevation airports (elevation &gt;= 2000) by state from the airports table. In the query, alias the percentage column as percentage_high_elevation_airports.<br />
+(sum of &lsquo;1&rsquo;) / count(<em>) and not (count of &lsquo;1&rsquo;) / count(</em>):</p>
+<pre><code class="sql">SELECT state, 100.0 * sum(CASE WHEN elevation &gt;= 2000 THEN 1 ELSE 0 END) / count(*)  as percentage_high_elevation_airports FROM airports GROUP BY state;
+</code></pre>
+
+<h5 id="what-can-we-generalize-so-far_2">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_2" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Conditional Aggregates are aggregate functions the compute a result set based on a given set of conditions.</li>
+<li>NULL can be used to denote an empty field value</li>
+<li>CASE statements allow for custom classification of data</li>
+<li>CASE statements can be used inside aggregates (like SUM() and COUNT()) to provide filtered measures</li>
+</ul>
+<h4 id="4-date-number-and-string-functions">4, Date, Number, and String Functions<a class="headerlink" href="#4-date-number-and-string-functions" title="Permanent link">&para;</a></h4>
+<p>Oftentimes, data in columns of tables is not in the exact format we need to complete our desired analysis. We may need to extract a date from a full timestamp, manipulate a number, or combine first and last name columns to create a full name.</p>
+<p>In this lesson, we&rsquo;ll be learning about some of SQL&rsquo;s built-in functions for transforming dates, numbers and strings. We&rsquo;ll be using database of bakeries in this lesson.</p>
+<p>It is important to note that date, number, and string functions are highly database dependent. Here, we focus on built-in functions in the SQLite database management system.</p>
+<p>Select ten rows from the bakeries table:</p>
+<pre><code class="sql">SELECT * FROM bakeries LIMIT 10;
+</code></pre>
+
+<p>We&rsquo;ll begin with dates. Dates are often written in the following format</p>
+<ol>
+<li>Date: YYYY-MM-DD</li>
+<li>Datetime or Timestamp: YYYY-MM-DD hh:mm:ss</li>
+</ol>
+<p>We can use SQL&rsquo;s date functions to transform data into a desired format. Since date functions can be database specific, verify the functions that exist on your relational database management system. For example, this statement:</p>
+<pre><code class="sql">SELECT DATETIME(manufacture_time) FROM baked_goods;
+</code></pre>
+
+<p>Using the datetime function, select the date and time of all deliveries in the baked_goods table using the column delivery_time.</p>
+<pre><code class="sql">SELECT DATETIME(delivery_time) FROM baked_goods;
+</code></pre>
+
+<p>Now let&rsquo;s assume that we have a column in our baked_goods table named manufacture_time in the format YYYY-MM-DD hh:mm:ss. We&rsquo;d like to know the number of baked_goods manufactured by day, and not by second. We can use the DATE() function to easily convert timestamps to dates and complete the following query:</p>
+<pre><code class="sql">SELECT DATE(manufacture_time), count(*) as count_baked_goods
+FROM baked_goods
+GROUP BY DATE(manufacture_time);
+</code></pre>
+
+<p>Similarly, we can query the time with:</p>
+<pre><code class="sql">SELECT TIME(manufacture_time), count(*) as count_baked_goods
+FROM baked_goods
+GROUP BY TIME(manufacture_time);
+</code></pre>
+
+<p>Find the number of baked goods by date of delivery. Be sure to alias the total count of baked goods as count_baked_goods.</p>
+<pre><code class="sql">SELECT DATE(delivery_time), count(*) as count_baked_goods FROM baked_goods GROUP BY DATE(delivery_time);
+</code></pre>
+
+<p>Given a datepart and a column of date or timestamp data type, we can increment date or timestamp values by a specified interval. For example, in SQLite, the statement:</p>
+<pre><code class="sql">DATETIME(time1, '+3 hours', '40 minutes', '2 days');
+</code></pre>
+
+<p>Would return a time 3 hours, 20 minutes, and 2 days after time1.</p>
+<p>Imagine that each dessert in our baked_goods table is inspected 2 hours, 30 minutes, and 1 day after the manufacture time. To derive the inspection date for each baked good, we can use the following query:</p>
+<pre><code class="sql">SELECT DATETIME(manufacture_time, '+2 hours', '30 minutes', '1 day') as inspection_time
+FROM baked_goods;
+</code></pre>
+
+<p>Each of the baked goods is packaged by Baker&rsquo;s Market exactly five hours, twenty minutes, and two days after the delivery (designated by delivery_time). Create a query returning all the packaging times for the goods in the baked_goods table. Be sure to alias the package time column as package_time.</p>
+<pre><code class="sql">SELECT DATETIME(delivery_time, '+5 hours', '20 minutes', '2 days') as package_time
+FROM baked_goods;
+</code></pre>
+
+<p>Numeric functions can be used to transform numbers. Some common SQLite mathematical functions are included below that take numeric data types as inputs:</p>
+<ul>
+<li>SELECT (number1 + number2);: Returns the sum of two numbers. Similar, SQL can be used for subtraction, multiplication, and division.</li>
+<li>SELECT CAST(number1 AS REAL) / number3;: Returns the result as a real number by casting one of the values as a real number, rather than an integer.</li>
+<li>SELECT ROUND(number, precision);: Returns the numeric value rounded off to the next value specified.</li>
+</ul>
+<p>In our baked_goods table, we have information about cost designated by ingredients_cost. For accounting purposes, we&rsquo;d like to make sure that each ingredient cost is rounded to four decimal places rather than two, to account for currency fluctuations.</p>
+<pre><code class="sql">SELECT ROUND(ingredients_cost, 4) as rounded_cost
+FROM baked_goods;
+</code></pre>
+
+<p>Find the bakery&rsquo;s distance from the market rounded to two decimal places. Be sure to alias the column as distance_from_market.</p>
+<pre><code class="sql">SELECT ROUND(distance, 2) as distance_from_market
+FROM bakeries;
+</code></pre>
+
+<p>A couple more useful numeric SQL functions are included below: MAX and MIN. MAX(n1,n2,n3,&hellip;): returns the greatest value in the set of the input numeric expressions MIN(n1,n2,n3,&hellip;): returns the least value in the set of the input numeric expressions</p>
+<p>In our baked_goods table, in addition to the numeric ingredients_cost we have information about the packaging cost located in the packaging_cost column. We can use the MAX function to determine the overall greatest value of cost for each item using the following query:</p>
+<pre><code class="sql">SELECT id, MAX(ingredients_cost, packaging_cost)
+FROM baked_goods;
+</code></pre>
+
+<p>We also have information about cook time designated as cook_time and cool down time designated as cool_down_time in the baked_goods table. Find the greatest time value for each item in the table.</p>
+<pre><code class="sql">SELECT id, MAX(cook_time, cool_down_time)
+FROM baked_goods;
+</code></pre>
+
+<p>Find the least time value for each item in the table.</p>
+<pre><code class="sql">SELECT id, MIN(cook_time, cool_down_time)
+FROM baked_goods;
+</code></pre>
+
+<p>String manipulation can be useful to derive information from columns. We&rsquo;ll cover a couple of the common string functions here.</p>
+<p>A common use case for string manipulation in SQL is concatenation of strings. In SQLite, this is written as:</p>
+<pre><code class="sql">SELECT string1 || ' ' || string2;
+</code></pre>
+
+<p>For example, the bakeries table contains both city and state columns. In order to create a route for these columns, we use the || function to concatenate them as in the following query:</p>
+<pre><code class="sql">SELECT city || ' ' || state as location
+FROM bakeries;
+</code></pre>
+
+<p>String functions are again, very database specific, and it is best practice to consult documentation before proceeding. </p>
+<p>Combine the first_name and last_name columns from the bakeries table as the full_name to identify the owners of the bakeries. Be sure to add a space between the names in the full_name as shown in the example.</p>
+<pre><code class="sql">SELECT first_name || ' ' || last_name as full_name FROM bakeries;
+</code></pre>
+
+<p>Another useful string function in SQL is REPLACE():</p>
+<pre><code class="sql">REPLACE(string,from_string,to_string)
+</code></pre>
+
+<p>The function returns the string string with all occurrences of the string from_string replaced by the string to_string. For example in baked_goods, there is a column named ingredients. The ingredients strings are formatted with underscores, such as baking_soda and vanilla_extract. To make these values more readable, we might like to replace the underscores with spaces. We can do so by using the following query:</p>
+<pre><code class="sql">SELECT id, REPLACE(ingredients,'_',' ') as item_ingredients
+from baked_goods;
+</code></pre>
+
+<p>Any time enriched_flour appears in the ingredients list, we’d like to replace it with just flour. Apply this transformation and also be sure to remove the underscore in enriched_flour.</p>
+<pre><code class="sql">SELECT REPLACE(ingredients,'enriched_',' ') as item_ingredients
+FROM baked_goods;
+</code></pre>
+
+<h5 id="what-can-we-generalize-so-far_3">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_3" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Date Functions:<ul>
+<li>DATETIME; Returns the date and time of the column specified. This can be modified to return only the date or only the time.</li>
+<li>DATETIME(time1, +X hours, Y minutes, Z days): Increments the specificed column by a given number of hours, minutes, or days.</li>
+</ul>
+</li>
+<li>Numeric Functions:<ul>
+<li>(number1 + number2);: Returns the sum of two numbers, or other mathematical operations, accordingly.</li>
+<li>CAST(number1 AS REAL) / number2;: Returns the result as a real number by casting one of numeric inputs as a real number</li>
+<li>ROUND(number, precision);: Returns the numeric value rounded off to the next value specified.</li>
+</ul>
+</li>
+<li>String Functions:<ul>
+<li>&lsquo;string1&rsquo; || &lsquo; &lsquo; || &lsquo;string2&rsquo;;: Concatenates string1 and string 2, with a space between.</li>
+<li>REPLACE(string,from_string,to_string): Returns the string with all occurrences of the string from_string replaced by the string to_string.</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Introduction%20to%20SQL%20JOINs/" class="btn btn-neutral float-right" title="Introduction to SQL JOINs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Codecademy%20SQL%2C%20Analyzing%20Business%20Metrics/" class="btn btn-neutral" title="Codecademy SQL, Analyzing Business Metrics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Codecademy%20SQL%2C%20Analyzing%20Business%20Metrics/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Introduction%20to%20SQL%20JOINs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

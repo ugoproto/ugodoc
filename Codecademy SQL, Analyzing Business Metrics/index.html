@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>Codecademy SQL, Analyzing Business Metrics - ugodoc</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Codecademy SQL, Analyzing Business Metrics";
+    var mkdocs_page_input_path = "Codecademy SQL, Analyzing Business Metrics.md";
+    var mkdocs_page_url = "/Codecademy SQL, Analyzing Business Metrics/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugodoc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../collection/">Collection</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>CLI</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20the%20Command%20Line%20Notes/">Codecademy Learn the Command Line Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Line%20Crash%20Course/">Command Line Crash Course</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Command%20Shell%20Snippets/">Command Shell Snippets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../The%20Linux%20Command%20Line/">The Linux Command Line</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Ubuntu/">Ubuntu 16.04</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Resources for Data Science</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Digital%20Humanities/">Digital Humanities</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Git/">Learn Git</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Resources%20for%20Data%20Science/">Resources for Data Science</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Storytelling%20with%20Data/">Storytelling with Data</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>SQL</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Learn%20SQL/">Codecademy Learn SQL</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Codecademy SQL, Analyzing Business Metrics</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#specifying-comments">Specifying Comments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#avanced-aggregates">Avanced Aggregates</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20SQL%2C%20Table%20Transformation/">Codecademy SQL, Table Transformation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20SQL%20JOINs/">Introduction to SQL JOINs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Build%20a%20Website/">Build a Website</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../HTML%20and%20CSS/">HTML and CSS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Markdown%20%26%20Pandoc/">Markdown & Pandoc</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../tests/">Tests</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugodoc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SQL &raquo;</li>
+        
+      
+    
+    <li>Codecademy SQL, Analyzing Business Metrics</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="codecademy-sql-analyzing-business-metrics">Codecademy SQL, Analyzing Business Metrics<a class="headerlink" href="#codecademy-sql-analyzing-business-metrics" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Code snippets. With SQLite. From Codecademy in collaboration with <a href="https://www.periscopedata.com">Periscope Data</a>.</p>
+<hr />
+<div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#codecademy-sql-analyzing-business-metrics">Codecademy SQL, Analyzing Business Metrics</a><ul>
+<li><a href="#specifying-comments">Specifying Comments</a></li>
+<li><a href="#avanced-aggregates">Avanced Aggregates</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h4 id="specifying-comments">Specifying Comments<a class="headerlink" href="#specifying-comments" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Line comment. This is indicated by two negative signs (eg. ). The remainder of the text on the line is the comment.</li>
+<li>Block comment. The start of the block comment is indicated by /*, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.</li>
+<li>Rem or @. For Oracle, a line starting with either REM or @ is a comment line.</li>
+</ul>
+<h4 id="avanced-aggregates">Avanced Aggregates<a class="headerlink" href="#avanced-aggregates" title="Permanent link">&para;</a></h4>
+<p>At the heart of every great business decision is data. Since most businesses store critical data in SQL databases, a deep understanding of SQL is a necessary skill for every data analyst.</p>
+<p>Chief among data analysis tasks is data aggregation, the grouping of data to express in summary form. We&rsquo;ll be working with SpeedySpoon, a meal delivery app. The folks at SpeedySpoon have asked us to look into their deliveries and help them optimize their process.</p>
+<p>This course was developed in partnership with our good friends at Periscope Data. If you&rsquo;re new to SQL, we recommend you do this course first.</p>
+<p>Complete each query by replacing the comments /**/ with SQL code.</p>
+<p>We&rsquo;ll start by looking at SpeedySpoon&rsquo;s data. The orders table has a row for each order of a SpeedySpoon delivery. It says when the order took place, and who ordered it.</p>
+<p>Add code to the select statement to select all columns in the orders table.</p>
+<pre><code class="sql">select *
+from /**/
+order by id
+limit 100;
+</code></pre>
+
+<p>Note that the order and limit clauses keep the data organized.</p>
+<pre><code class="sql">SELECT * FROM orders ORDER BY id LIMIT 100;
+</code></pre>
+
+<p>The order_items table lists the individual foods and their prices in each order. Complete the query to select all columns in the order_items table.</p>
+<pre><code class="sql">SELECT * FROM order_items ORDER BY id LIMIT 100;
+</code></pre>
+
+<p>Now that we have a good handle on our data, let&rsquo;s dive into some common business queries. We&rsquo;ll begin with the Daily Count of orders placed. To make our Daily Count metric, we&rsquo;ll focus on the date function and the ordered_at field.</p>
+<p>To get the Daily Metrics we need the date. Most dates in databases are timestamps, which have hours and minutes, as well as the year, month, and day. Timestamps look like 2015-01-05 14:43:31, while dates are the first part: 2015-01-05.</p>
+<p>We can easily select the date an item was ordered at with the date function and the ordered_at field:</p>
+<pre><code class="sql">SELECT date(ordered_at)
+FROM orders;
+</code></pre>
+
+<p>Let&rsquo;s get a Daily Count of orders from the orders table. Complete the query using the date function to cast the timestamps in ordered_at to dates.</p>
+<pre><code class="sql">​SELECT date(ordered_at)
+FROM orders
+ORDER BY 1
+LIMIT 100;
+</code></pre>
+
+<p>The order by 1 statement is a shortcut for order by date(ordered_at). The 1 refers to the first column.</p>
+<p>Now that we can convert timestamps to dates, we can count the Orders Per Date. Generally, when we count all records in a table we run a query with the count function, as follows:</p>
+<pre><code class="sql">SELECT count(1)
+FROM users;
+</code></pre>
+
+<p>This will treat all rows as a single group, and return one row in the result set - the total count.</p>
+<p>To count orders by their dates, we&rsquo;ll use the date and count functions and pair them with the group by clause. Together this will count the records in the table, grouped by date.</p>
+<p>For example, to see the user records counted by the date created, we use the date and count functions and group by clause as follows:</p>
+<pre><code class="sql">SELECT date(created_at), count(1)
+FROM users
+GROUP BY date(created_at)
+</code></pre>
+
+<p>Use the date and count functions and group by clause to count and group the orders by the dates they were ordered_at.</p>
+<pre><code class="sql">SELECT date(ordered_at), count(1)
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+</code></pre>
+
+<p>Group before ordering</p>
+<p>We have the Daily Count of orders, but what we really want to know is revenue. How much money has SpeedySpoon made from orders each day?</p>
+<p>We can make a few changes to our Daily Count query to get the revenue.</p>
+<p>First, instead of using count(1) to count the rows per date, we&rsquo;ll use round(sum(amount_paid), 2) to add up the revenue per date. Complete the query by adding revenue per date.</p>
+<p>Second, we need to join in the order_items table because that table has an amount_paid column representing revenue. Complete the query by adding a join clause where orders.id = order_items.order_id.</p>
+<p>Note that the round function rounds decimals to digits, based on the number passed in. Here round(&hellip;, 2) rounds the sum paid to two digits.</p>
+<pre><code class="sql">SELECT date(ordered_at), round(sum(amount_paid), 2)
+FROM orders JOIN order_items ON 
+    orders.id = order_items.order_id
+GROUP BY 1
+ORDER BY 1;
+</code></pre>
+
+<p>Now with a small change, we can find out how much we&rsquo;re making per day for any single dish. What&rsquo;s the daily revenue from customers ordering kale smoothies? Complete the query by using a where clause to filter the daily sums down to orders where the name = &lsquo;kale-smoothie&rsquo;.</p>
+<pre><code class="sql">SELECT date(ordered_at), round(sum(amount_paid), 2)
+FROM orders JOIN order_items ON 
+    orders.id = order_items.order_id
+WHERE name = 'kale-smoothie'
+GROUP BY 1
+ORDER BY 1;
+</code></pre>
+
+<p>It looks like the smoothies might not be performing well, but to be sure we need to see how they&rsquo;re doing in the context of the other order items. We&rsquo;ll look at the data several different ways, the first of which is determining what percent of revenue these smoothies represent.</p>
+<p>To get the percent of revenue that each item represents, we need to know the total revenue of each item. We will later divide the per-item total with the overall total revenue.</p>
+<p>The following query groups and sum the products by price to get the total revenue for each item. Complete the query by passing in sum(amount_paid) into the round function and rounding to two decimal places.</p>
+<pre><code class="sql">SELECT name, round(sum(amount_paid), 2)
+FROM order_items
+GROUP BY name
+ORDER BY 2 DESC;
+</code></pre>
+
+<p>We have the sum of the the products by revenue, but we still need the percent. For that, we&rsquo;ll need to get the total using a subquery. A subquery can perform complicated calculations and create filtered or aggregate tables on the fly.</p>
+<p>Subqueries are useful when you want to perform an aggregation outside the context of the current query. This will let us calculate the overall total and per-item total at the same time.</p>
+<p>Complete the denominator in the subquery, which is the total revenue from order_items. Use the sum function to query the amount_paid from the order_items table.</p>
+<p>We now have the percent or revenue each product represents!</p>
+<pre><code class="sql">SELECT name, round(sum(amount_paid) / 
+    (SELECT sum(amount_paid) FROM order_items) * 100.0, 2)
+FROM order_items
+GROUP BY 1
+ORDER BY 2 DESC;
+</code></pre>
+
+<p>Here order by 2 desc sorts by the second column (the percent) to show the products in order of their contribution to revenue.</p>
+<p>As we suspected, kale smoothies are not bringing in the money. And thanks to this analysis, we found what might be a trend - several of the other low performing products are also smoothies. Let&rsquo;s keep digging to find out what&rsquo;s going on with these smoothies.</p>
+<p>To see if our smoothie suspicion has merit, let&rsquo;s look at purchases by category. We can group the order items by what type of food they are, and go from there. Since our order_items table does not include categories already, we&rsquo;ll need to make some!</p>
+<p>Previously we&rsquo;ve been using group by with a column (like order_items.name) or a function (like date(orders.ordered_at)).</p>
+<p>We can also use group by with expressions. In this case a case statement is just what we need to build our own categories. case statements are similar to if/else in other languages. Here&rsquo;s the basic structure of a case statement:</p>
+<pre><code class="sql">CASE {condition}
+    WHEN {value1} THEN {result1}
+    WHEN {value2} THEN {result2}
+    ELSE {result3}
+END
+</code></pre>
+
+<p>We&rsquo;ll build our own categories using a case statement. Complete the query below with a case condition of name that lists out each product, and decides its group.</p>
+<pre><code class="sql">SELECT *,
+    CASE name
+        WHEN 'kale-smoothie'    THEN 'smoothie'
+        WHEN 'banana-smoothie'  THEN 'smoothie'
+        WHEN 'orange-juice'     THEN 'drink'
+        WHEN 'soda'             THEN 'drink'
+        WHEN 'blt'              THEN 'sandwich'
+        WHEN 'grilled-cheese'   THEN 'sandwich'
+        WHEN 'tikka-masala'     THEN 'dinner'
+        WHEN 'chicken-parm'     THEN 'dinner'
+        ELSE 'other'
+    END AS category
+FROM order_items
+ORDER BY id
+LIMIT 100;
+</code></pre>
+
+<p>Complete the query by using the category column created by the case statement in our previous revenue percent calculation. Add the denominator that will sum the amount_paid.</p>
+<pre><code class="sql">SELECT
+    CASE name
+        WHEN 'kale-smoothie'    THEN 'smoothie'
+        WHEN 'banana-smoothie'  THEN 'smoothie'
+        WHEN 'orange-juice'     THEN 'drink'
+        WHEN 'soda'             THEN 'drink'
+        WHEN 'blt'              THEN 'sandwich'
+        WHEN 'grilled-cheese'   THEN 'sandwich'
+        WHEN 'tikka-masala'     THEN 'dinner'
+        WHEN 'chicken-parm'     THEN 'dinner'
+        ELSE 'other'
+    END AS category, round(1.0 * sum(amount_paid) / (SELECT sum(amount_paid) FROM order_items) * 100, 2) AS pct
+FROM order_items
+GROUP BY 1
+ORDER BY 2 DESC;
+</code></pre>
+
+<p>Here 1.0 * is a shortcut to ensure the database represents the percent as a decimal.</p>
+<p>It&rsquo;s true that the whole smoothie category is performing poorly compared to the others. We&rsquo;ll certainly take this discovery to SpeedySpoon. Before we do, let&rsquo;s go one level deeper and figure out why.</p>
+<p>While we do know that kale smoothies (and drinks overall) are not driving a lot of revenue, we don&rsquo;t know why. A big part of data analysis is implementing your own metrics to get information out of the piles of data in your database.</p>
+<p>In our case, the reason could be that no one likes kale, but it could be something else entirely. To find out, we&rsquo;ll create a metric called reorder rate and see how that compares to the other products at SpeedySpoon.</p>
+<p>We&rsquo;ll define reorder rate as the ratio of the total number of orders to the number of people making those orders. A lower ratio means most of the orders are reorders. A higher ratio means more of the orders are first purchases.</p>
+<p>Let&rsquo;s calculate the reorder ratio for all of SpeedySpoon&rsquo;s products and take a look at the results. Counting the total orders per product is straightforward. We count the distinct order_ids (different) in the order_items table.</p>
+<p>Complete the query by passing in the distinct keyword and the order_id column name into the count function</p>
+<p>Here&rsquo;s a hint on how to use the count function to count distinct columns in a table.</p>
+<pre><code class="sql">SELECT DISTINCT column_name FROM table_name;
+SELECT column_name FROM table_name GROUP BY column_name;
+
+SELECT name, count(DISTINCT order_id)
+FROM order_items
+GROUP BY 1
+ORDER BY 1;
+</code></pre>
+
+<p>Now we need the number of people making these orders.</p>
+<p>To get that information, we need to join in the orders table and count unique values in the delivered_to field, and sort by the reorder_rate.</p>
+<p>Complete the query below. The numerator should count the distinct order_ids. The denominator should count the distinct values of the orders table&rsquo;s delivered_to field (orders.delivered_to).</p>
+<pre><code class="sql">SELECT name, round(1.0 * 
+count(DISTINCT order_id) /
+    count(DISTINCT delivered_to), 2) AS reorder_rate
+FROM order_items
+    JOIN orders ON
+        orders.id = order_items.order_id
+GROUP BY 1
+ORDER BY 2 DESC;
+</code></pre>
+
+<p>That&rsquo;s unexpected. While smoothies aren&rsquo;t making a lot of money for SpeedySpoon, they have a very high reorder rate. That means these smoothie customers are strong repeat customers.</p>
+<p>Instead of recommending smoothies be taken off the menu, we should talk to the smoothie customers and see what they like so much about these smoothies. There could be an opportunity here to expand the product line, or get other customers as excited as these kale fanatics. Nice work!</p>
+<p>Let&rsquo;s generalize what we&rsquo;ve learned so far:</p>
+<ul>
+<li>
+<p>Data aggregation is the grouping of data in summary form.</p>
+</li>
+<li>
+<p>Daily Count is the count of orders in a day.</p>
+</li>
+<li>
+<p>Daily Revenue Count is the revenue on orders per day.</p>
+</li>
+<li>
+<p>Product Sum is the total revenue of a product.</p>
+</li>
+<li>
+<p>Subqueries can be used to perform complicated calculations and create filtered or aggregate tables on the fly.</p>
+</li>
+<li>
+<p>Reorder Rate is the ratio of the total number of orders to the number of people making orders.</p>
+</li>
+</ul>
+<p>2.Common Metrics</p>
+<p>As a data scientist, when you&rsquo;re not investigating spikes or dips in your data, you might be building dashboards of KPIs, or key performance indicators for a company.</p>
+<p>KPIs are often displayed on TVs on the walls of the office, and serve as high level health metrics for the business. While every company&rsquo;s metrics are defined slightly differently, the basics are usually very similar.</p>
+<p>In this lesson we&rsquo;ll take a look at basic KPIs like Daily Revenue, Daily Active Users, ARPU, and Retention for a video game, Mineblocks.</p>
+<p>This company has two tables, gameplays and purchases. The purchases table lists all purchases made by players while they&rsquo;re playing Mineblocks. Complete the query to select from purchases.</p>
+<pre><code class="sql">SELECT * FROM purchases ORDER BY id LIMIT 10;
+</code></pre>
+
+<p>The gameplays table lists the date and platform for each session a user plays. Select from gameplays.</p>
+<pre><code class="sql">SELECT * FROM gameplays ORDER BY id LIMIT 10;
+</code></pre>
+
+<p>At the heart of every company is revenue, and Mineblocks is no exception. For our first KPI we&rsquo;ll calculate daily revenue.</p>
+<p>Daily Revenue is simply the sum of money made per day.</p>
+<p>To get close to Daily Revenue, we calculate the daily sum of the prices in the purchases table. Complete the query by using the sum function and passing the price column from the purchases table. </p>
+<pre><code class="sql">SELECT 
+    date(created_at),
+    round(sum(price),2)
+FROM purchases
+GROUP BY 1
+ORDER BY 1;
+</code></pre>
+
+<p>Update our daily revenue query to exclude refunds. Complete the query by filtering for refunded_at is not null. Update our daily revenue query to exclude refunds. Complete the query by filtering for refunded_at is not null.</p>
+<p>Mineblocks is a game, and one of the core metrics to any game is the number people who play each day. That KPI is called Daily Active Users, or DAU.</p>
+<p>DAU is defined as the number of unique players seen in-game each day. It&rsquo;s important not to double count users who played multiple times, so we&rsquo;ll use distinct in our count function.</p>
+<p>Likewise, Weekly Active Users (WAU) and Monthly Active Users (MAU) are in the same family.</p>
+<p>For Mineblocks, we&rsquo;ll use the gameplays table to calculate DAU. Each time a user plays the game, their session is recorded in gameplays. Thus, a distinct count of users per day from gameplays will give us DAU.</p>
+<p>Calculate Daily Active Users for Mineblocks. Complete the query&rsquo;s count function by passing in the distinct keyword and the user_id column name.</p>
+<pre><code class="sql">SELECT
+    date(created_at), 
+    COUNT(DISTINCT user_id) AS dau
+FROM gameplays
+GROUP BY 1
+ORDER BY 1;
+</code></pre>
+
+<p>Since Mineblocks is on multiple platforms, we can calculate DAU per-platform.</p>
+<p>Previously we calculated DAU only per day, so the output we wanted was [date, dau_count]. Now we want DAU per platform, making the desired output [date, platform, dau_count].</p>
+<p>Calculate DAU for Mineblocks per-platform. Complete the query below. You will need to select the platform column and add a count function by passing in the distinct keyword and the user_id column name.</p>
+<pre><code class="sql">SELECT
+    date(created_at), 
+    platform,
+    COUNT(DISTINCT user_id) AS dau
+FROM gameplays
+GROUP BY 1, 2
+ORDER BY 1, 2;
+</code></pre>
+
+<p>group by 1 (date), 2 (platform)<br />
+ order by 1 (date), 2 (platform)</p>
+<p>We&rsquo;ve looked at DAU and Daily Revenue in Mineblocks. Now we must understand the purchasing habits of our users.</p>
+<p>Mineblocks, like every freemium game, has two types of users:</p>
+<pre><code>purchasers: users who have bought things in the game
+players: users who play the game but have not yet purchased
+</code></pre>
+<p>The next KPI we&rsquo;ll look at Daily ARPPU - Average Revenue Per Purchasing User. This metric shows if the average amount of money spent by purchasers is going up over time.</p>
+<p>Daily ARPPU is defined as the sum of revenue divided by the number of purchasers per day.</p>
+<p>To get Daily ARPPU, modify the daily revenue query from earlier to divide by the number of purchasers.</p>
+<p>Complete the query by adding a numerator and a denominator. The numerator will display daily revenue, or sum the price columns. The denominator will display the number of purchasers by passing the distinct keyword and the user_id column name into the count function.</p>
+<pre><code class="sql">SELECT
+    date(created_at), 
+    round(sum(price) / COUNT(DISTINCT user_id), 2) AS arppu
+FROM purchases
+WHERE refunded_at IS NULL
+GROUP BY 1
+ORDER BY 1;
+</code></pre>
+
+<p>The more popular (and difficult) cousin to Daily ARPPU is Daily ARPU, Average Revenue Per User. ARPU measures the average amount of money we&rsquo;re getting across all players, whether or not they&rsquo;ve purchased.</p>
+<p>ARPPU increases if purchasers are spending more money. ARPU increases if more players are choosing to purchase, even if the purchase size stays consistent.</p>
+<p>No one metric can tell the whole story. That&rsquo;s why it&rsquo;s so helpful to have many KPIs on the same dashboard.</p>
+<p>Daily ARPU is defined as revenue divided by the number of players, per-day. To get that, we&rsquo;ll need to calculate the daily revenue and daily active users separately, and then join them on their dates.</p>
+<p>One way to easily create and organize temporary results in a query is with CTEs, Common Table Expressions, also known as with clauses. The with clauses make it easy to define and use results in a more organized way than subqueries. These clauses usually look like this:</p>
+<pre><code class="sql">WITH {subquery_name} AS (
+    {subquery_body}
+)
+SELECT ...
+FROM {subquery_name}
+WHERE ...
+</code></pre>
+
+<p>Use a with clause to define daily_revenue and then select from it.</p>
+<pre><code class="sql">daily_revenue AS (
+    SELECT
+        date(created_at) AS dt,
+        round(sum(price), 2) AS rev
+    FROM purchases
+    WHERE refunded_at IS NULL
+    GROUP BY 1
+)
+SELECT * FROM daily_revenue ORDER BY dt;
+</code></pre>
+
+<p>Use a with clause to define daily_revenue and then select from it.</p>
+<pre><code class="sql">WITH daily_revenue AS (
+    SELECT
+        date(created_at) AS dt,
+        round(sum(price), 2) AS rev
+    FROM purchases
+    WHERE refunded_at IS NULL
+    GROUP BY 1
+)
+SELECT * FROM daily_revenue ORDER BY dt;
+</code></pre>
+
+<p>Now you&rsquo;re familiar with using the with clause to create temporary result sets.</p>
+<p>You just built the first part of ARPU, daily_revenue. From here we can build the second half of ARPU in our with clause, daily_players, and use both together to create ARPU.</p>
+<p>Building on this CTE, we can add in DAU from earlier. Complete the query by calling the DAU query we created earlier, now aliased as daily_players:</p>
+<pre><code class="sql">WITH daily_revenue AS (
+    SELECT
+        date(created_at) AS dt,
+        round(sum(price), 2) AS rev
+    FROM purchases
+    WHERE refunded_at IS NULL
+    GROUP BY 1
+),
+daily_players AS (
+    SELECT
+        date(created_at) AS dt,
+        COUNT(DISTINCT user_id) AS players
+    FROM gameplays
+    GROUP BY 1
+)
+SELECT * FROM daily_players
+ORDER BY dt;
+</code></pre>
+
+<p>Now that we have the revenue and DAU, join them on their dates and calculate daily ARPU. Complete the query by adding the keyword using in the join clause.</p>
+<pre><code class="sql">WITH daily_revenue AS (
+    SELECT
+        date(created_at) AS dt,
+        round(sum(price), 2) AS rev
+    FROM purchases
+    WHERE refunded_at IS NULL
+    GROUP BY 1
+),
+daily_players AS (
+    SELECT
+        date(created_at) AS dt,
+        COUNT(DISTINCT user_id) AS players
+    FROM gameplays
+    GROUP BY 1
+)
+SELECT 
+    daily_revenue.dt,
+    daily_revenue.rev /
+    daily_players.players
+FROM daily_players
+JOIN daily_players USING (dt);
+</code></pre>
+
+<p>In the final select statement, daily_revenue.dt represents the date, while daily_revenue.rev / daily_players.players is the daily revenue divided by the number of players that day. In full, it represents how much the company is making per player, per day.</p>
+<p>In our ARPU query, we used using instead of on in the join clause. This is a special case join.</p>
+<pre><code class="sql">FROM daily_revenue JOIN daily_players USING (dt);
+</code></pre>
+
+<p>When the columns to join have the same name in both tables you can use USING instead of on. Our use of the using keyword is in this case equivalent to this clause:</p>
+<pre><code class="sql">FROM daily_revenue JOIN daily_players ON daily_revenue.dt = daily_players.dt;
+
+JOIN daily_players USING (dt);
+JOIN daily_players ON daily_revenue.dt = daily_players.dt;
+</code></pre>
+
+<p>Now let&rsquo;s find out what percent of Mineblock players are returning to play the next day. This KPI is called 1 Day Retention.</p>
+<p>Retention can be defined many different ways, but we&rsquo;ll stick to the most basic definition. For all players on Day N, we&rsquo;ll consider them retained if they came back to play again on Day N+1.</p>
+<p>This will let us track whether or not Mineblocks is getting &ldquo;stickier&rdquo; over time. The stickier our game, the more days players will spend in-game.</p>
+<p>And more time in-game means more opportunities to monetize and grow our business.</p>
+<p>Before we can calculate retention we need to get our data formatted in a way where we can determine if a user returned.</p>
+<p>Currently the gameplays table is a list of when the user played, and it&rsquo;s not easy to see if any user came back.</p>
+<p>By using a self-join, we can make multiple gameplays available on the same row of results. This will enable us to calculate retention.</p>
+<p>The power of self-join comes from joining every row to every other row. This makes it possible to compare values from two different rows in the new result set. In our case, we&rsquo;ll compare rows that are one date apart from each user.</p>
+<p>To calculate retention, start from a query that selects the date(created_at) as dt and user_id columns from the gameplays table.</p>
+<pre><code class="sql">SELECT
+    date(created_at) AS dt,
+    user_id
+FROM gameplays AS g1
+ORDER BY dt
+LIMIT 100;
+</code></pre>
+
+<p>Now we&rsquo;ll join gameplays on itself so that we can have access to all gameplays for each player, for each of their gameplays.</p>
+<p>This is known as a self-join and will let us connect the players on Day N to the players on Day N+1. In order to join a table to itself, it must be aliased so we can access each copy separately.</p>
+<p>We aliased gameplays in the query above because in the next step, we need to join gameplays to itself so we can get a result selecting [date, user_id, user_id_if_retained].</p>
+<p>Complete the query by using a join statement to join gameplays to itself on user_id using the aliases g1 and g2.</p>
+<pre><code class="sql">SELECT
+    date(g1.created_at) as dt,
+    g1.user_id
+FROM gameplays AS g1
+JOIN gameplays AS g2 ON
+    g1.user_id = g2.user_id
+ORDER BY 1
+LIMIT 100;
+</code></pre>
+
+<p>We don&rsquo;t use the using clause here because the join is about to get more complicated.</p>
+<p>Now that we have our gameplays table joined to itself, we can start to calculate retention.</p>
+<p>1 Day Retention is defined as the number of players who returned the next day divided by the number of original players, per day. Suppose 10 players played Mineblocks on Dec 10th. If 4 of them play on Dec 11th, the 1 day retention for Dec 10th is 40%.</p>
+<p>The previous query joined all rows in gameplays against all other rows for each user, making a massive result set that we don&rsquo;t need.</p>
+<p>We&rsquo;ll need to modify this query.</p>
+<pre><code class="sql">SELECT
+  date(g1.created_at) AS dt,
+  g1.user_id,
+  g2.user_id
+FROM gameplays AS g1
+  JOIN gameplays AS g2 ON
+    g1.user_id = g2.user_id
+    AND /**/
+ORDER BY 1
+LIMIT 100;
+</code></pre>
+
+<p>Complete the query above such that the join clause includes a date join:</p>
+<pre><code class="sql">date(g1.created_at) = date(datetime(g2.created_at, '-1 day'))
+</code></pre>
+
+<p>This means &ldquo;only join rows where the date in g1 is one less than the date in g2&rdquo;, which makes it possible to see if users have returned!</p>
+<pre><code class="sql">SELECT
+    date(g1.created_at) as dt,
+    g1.user_id,
+    g2.user_id
+FROM gameplays AS g1
+JOIN gameplays AS g2 ON
+    g1.user_id = g2.user_id
+    AND date(g1.created_at) = date(datetime(g2.created_at, '-1 day'))
+ORDER BY 1
+LIMIT 100;
+</code></pre>
+
+<p>The query above won&rsquo;t return meaningful results because we&rsquo;re using an inner join. This type of join requires that the condition be met for all rows, effectively limiting our selection to only the users that have returned.</p>
+<p>Instead, we want to use a left join, this way all rows in g1 are preserved, leaving nulls in the rows from g2 where users did not return to play the next day.</p>
+<p>Change the join clause to use left join and count the distinct number of users from g1 and g2 per date.</p>
+<pre><code class="sql">SELECT
+    date(g1.created_at) as dt,
+    count(DISTINCT g1.user_id) as total_users,
+    count(DISTINCT g2.user_id) as retained_users
+FROM gameplays AS g1
+LEFT JOIN gameplays AS g2 ON
+    g1.user_id = g2.user_id
+    AND date(g1.created_at) = date(datetime(g2.created_at, '-1 day'))
+GROUP BY 1
+ORDER BY 1
+LIMIT 100;
+</code></pre>
+
+<p>Now that we have retained users as count(distinct g2.user_id) and total users as count(distinct g1.user_id), divide retained users by total users to calculate 1 day retention!</p>
+<pre><code class="sql">SELECT
+    date(g1.created_at) as dt,
+    round(100 * count(DISTINCT g2.user_id) / count(DISTINCT g1.user_id)) AS retention
+FROM gameplays AS g1
+LEFT JOIN gameplays AS g2 ON
+    g1.user_id = g2.user_id
+    AND date(g1.created_at) = date(datetime(g2.created_at, '-1 day'))
+GROUP BY 1
+ORDER BY 1
+LIMIT 100;
+</code></pre>
+
+<p>While every business has different metrics to track their success, most are based on revenue and usage.</p>
+<p>The metrics in this lesson are merely a starting point, and from here you&rsquo;ll be able to create and customize metrics to track whatever is most important to your company.</p>
+<p>And remember, data science is exploratory! The current set of metrics can always be improved and there&rsquo;s usually more to any spike or dip than what immediately meets the eye.</p>
+<p>Let&rsquo;s generalize what we&rsquo;ve learned so far:</p>
+<ul>
+<li>Key Performance Indicators are high level health metrics for a business.</li>
+<li>Daily Revenue is the sum of money made per day.</li>
+<li>Daily Active Users are the number of unique users seen each day.</li>
+<li>Daily Average Revenue Per Purchasing User (ARPPU) is the average amount of money spent by purchasers each day.</li>
+<li>Daily Average Revenue Per User (ARPU) is the average amount of money across all users.</li>
+<li>1 Day Retention is defined as the number of players from Day N who came back to play again on Day N+1.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Codecademy%20SQL%2C%20Table%20Transformation/" class="btn btn-neutral float-right" title="Codecademy SQL, Table Transformation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Codecademy%20Learn%20SQL/" class="btn btn-neutral" title="Codecademy Learn SQL"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Codecademy%20Learn%20SQL/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Codecademy%20SQL%2C%20Table%20Transformation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
