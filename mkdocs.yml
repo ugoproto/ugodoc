@@ -1,0 +1,50 @@
+site_name: ugodoc
+site_description: A Data Science documentation website.
+site_author: Ugo Spark
+copyright: null
+#google_analytics: ['UA-36723568-3', 'mkdocs.org']
+remote_name: ugodoc
+pages:
+    - Home: 'index.md'
+    - Collection: 'collection.md'
+    - CLI:
+        - 'Codecademy Learn the Command Line Notes': 'Codecademy Learn the Command Line Notes.md'
+        - 'Command Line Crash Course': 'Command Line Crash Course.md'
+        - 'Command Shell Snippets' : 'Command Shell Snippets.md'
+        - 'The Linux Command Line': 'The Linux Command Line.md'
+        - 'Ubuntu 16.04': 'Ubuntu.md'
+    - Resources for Data Science:
+        - 'Digital Humanities': 'Digital Humanities.md'
+        - 'Learn Git': 'Learn Git.md'
+        - 'Resources for Data Science': 'Resources for Data Science.md'
+        - 'Storytelling with Data': 'Storytelling with Data.md'
+    - SQL:
+        - 'Codecademy Learn SQL': 'Codecademy Learn SQL.md'
+        - 'Codecademy SQL, Analyzing Business Metrics': 'Codecademy SQL, Analyzing Business Metrics.md'
+        - 'Codecademy SQL, Table Transformation': 'Codecademy SQL, Table Transformation.md'
+        - 'Introduction to SQL JOINs': 'Introduction to SQL JOINs.md'
+    - Web:
+       - 'Build a Website': 'Build a Website.md'
+       - 'HTML and CSS': 'HTML and CSS.md'
+       - 'Markdown & Pandoc': 'Markdown & Pandoc.md'
+    - Tests: 'tests.md'
+
+theme: readthedocs
+# Other themes:
+    # readthedocs
+    # mkdocs
+
+# Build PDF & ePub (only on Readthedocs)
+#formats: 
+#    - pdf
+
+markdown_extensions:
+    - wikilinks # internal links with [[bracketed]]
+    - smarty # additional characters
+    - subscript
+    - superscript
+    - nl2br # need a new line to break
+    - toc:
+        title: CONTENT
+        permalink: True
+        baselevel: 3
