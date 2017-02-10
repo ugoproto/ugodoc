@@ -38,6 +38,10 @@ theme: readthedocs
 #formats: 
 #    - pdf
 
+# Interlinks
+# [link](to_other_page.md)
+# [link](../relative/page.md)
+
 markdown_extensions:
     - wikilinks # internal links with [[bracketed]]
     - smarty # additional characters
