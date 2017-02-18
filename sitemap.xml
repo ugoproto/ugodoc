@@ -20,6 +20,30 @@
     
         
     <url>
+     <loc>None/Digital Humanities/</loc>
+     <lastmod>2017-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/Learn Git/</loc>
+     <lastmod>2017-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/Resources for Data Science/</loc>
+     <lastmod>2017-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/Storytelling with Data/</loc>
+     <lastmod>2017-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>None/Data_Storytelling/</loc>
      <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
@@ -55,34 +79,6 @@
         
     <url>
      <loc>None/Ubuntu/</loc>
-     <lastmod>2017-02-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/Digital Humanities/</loc>
-     <lastmod>2017-02-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/Learn Git/</loc>
-     <lastmod>2017-02-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/Resources for Data Science/</loc>
-     <lastmod>2017-02-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/Storytelling with Data/</loc>
      <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
