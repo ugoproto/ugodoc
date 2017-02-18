@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>None/collection/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,32 +20,42 @@
     
         
     <url>
+     <loc>None/Data_Storytelling/</loc>
+     <lastmod>2017-02-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>None/Codecademy Learn the Command Line Notes/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Command Line Crash Course/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Command Shell Snippets/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/The Linux Command Line/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Ubuntu/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,25 +65,25 @@
         
     <url>
      <loc>None/Digital Humanities/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Learn Git/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Resources for Data Science/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Storytelling with Data/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -83,25 +93,25 @@
         
     <url>
      <loc>None/Codecademy Learn SQL/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Codecademy SQL, Analyzing Business Metrics/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Codecademy SQL, Table Transformation/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Introduction to SQL JOINs/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -111,19 +121,19 @@
         
     <url>
      <loc>None/Build a Website/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/HTML and CSS/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/Markdown & Pandoc/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -132,7 +142,7 @@
     
     <url>
      <loc>None/tests/</loc>
-     <lastmod>2017-02-10</lastmod>
+     <lastmod>2017-02-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

@@ -7,6 +7,8 @@ remote_name: ugodoc
 pages:
     - Home: 'index.md'
     - Collection: 'collection.md'
+    - Vade Mecum:
+        - 'Data Storytelling': 'Data_Storytelling.md'
     - CLI:
         - 'Codecademy Learn the Command Line Notes': 'Codecademy Learn the Command Line Notes.md'
         - 'Command Line Crash Course': 'Command Line Crash Course.md'
