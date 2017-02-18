@@ -16,7 +16,7 @@ Notes.
 
 2. **Explanatory survey**: analyze what people or objects are up to. Ask people what they think about something. Conceive a statistical model; what factors drive others.
 
-3. **Prediction**: perform predictive analytics. Use historical data, add a statistical model, probabilities and assumptions,  predict the future. Find out what customers are likely to buy. Assess how likely it is for an event to happen. Forecast economic conditions. 
+3. **Prediction**: perform predictive analytics. Use historical data, add a statistical model, probabilities, and assumptions,  predict the future. Find out what customers are likely to buy. Assess how likely it is for an event to happen. Forecast economic conditions. 
 
 ## Focus
 
@@ -30,7 +30,7 @@ Notes.
 
 7. **CSI**: run a small, ad hoc investigation. Find out why something is happening. Find out why some customer are dropping online transactions when they get to the postal code input form; what if some rural locations don't have postal codes?
 
-8. **Eureka**: invest in long, analytically-driven searches for a solution to a complex problem. Discover the right way to refer and price potential buyers to real estate agents on a website. Since these project are core to the company's business model, the projects need a corporate buy-in because they involve several different analytical methods, false starts, dead-ends, discoveries.
+8. **Eureka**: invest in long, analytically-driven searches for a solution to a complex problem. Discover the right way to refer and price potential buyers to real estate agents on a website. Since the project is core to the company's business model, it needs a corporate buy-in. The project involve several different analytical methods, false starts, dead-ends, discoveries.
 
 ## Methods
 

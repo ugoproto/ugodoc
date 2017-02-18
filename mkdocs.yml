@@ -8,18 +8,17 @@ pages:
     - Home: 'index.md'
     - Collection: 'collection.md'
     - Vade Mecum:
-        - 'Data Storytelling': 'Data_Storytelling.md'
+        - 'Digital Humanities': 'Digital Humanities.md'
+        - 'Learn Git': 'Learn Git.md'
+        - 'Resources for Data Science': 'Resources for Data Science.md'
+        - 'Storytelling with Data': 'Storytelling with Data.md'
+        - '10 Kinds of Stories to Tell with Data': 'Data_Storytelling.md'        
     - CLI:
         - 'Codecademy Learn the Command Line Notes': 'Codecademy Learn the Command Line Notes.md'
         - 'Command Line Crash Course': 'Command Line Crash Course.md'
         - 'Command Shell Snippets' : 'Command Shell Snippets.md'
         - 'The Linux Command Line': 'The Linux Command Line.md'
         - 'Ubuntu 16.04': 'Ubuntu.md'
-    - Resources for Data Science:
-        - 'Digital Humanities': 'Digital Humanities.md'
-        - 'Learn Git': 'Learn Git.md'
-        - 'Resources for Data Science': 'Resources for Data Science.md'
-        - 'Storytelling with Data': 'Storytelling with Data.md'
     - SQL:
         - 'Codecademy Learn SQL': 'Codecademy Learn SQL.md'
         - 'Codecademy SQL, Analyzing Business Metrics': 'Codecademy SQL, Analyzing Business Metrics.md'
