@@ -27,6 +27,3 @@ A Data Science documentation website.
 - Information may be repeted among many documents, with different explanations, or some more comprehensive.
 - Newer entries might also supplement or contradict older entries.
 
-## Data Science
-
-![Data Scientist](img/Data_Scientist.jpg)

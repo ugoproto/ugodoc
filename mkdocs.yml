@@ -1,9 +1,14 @@
 site_name: ugodoc
+site_url: https://ugoproto.github.io/ugodoc/
+#repo_url: https://github.com/ugoproto/ugodoc
 site_description: A Data Science documentation website.
 site_author: Ugo Spark
-copyright: null
+#site_favicon: favicon.ico
+copyright: © Ugo Spark
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
-remote_name: ugodoc
+#remote_branch: master
+#remote_name: ugodoc
+
 pages:
     - Home: 'index.md'
     - Collection: 'collection.md'
@@ -12,7 +17,8 @@ pages:
         - 'Learn Git': 'Learn Git.md'
         - 'Resources for Data Science': 'Resources for Data Science.md'
         - 'Storytelling with Data': 'Storytelling with Data.md'
-        - '10 Kinds of Stories to Tell with Data': 'Data_Storytelling.md'        
+        - '10 Kinds of Stories to Tell with Data': 'Data_Storytelling.md'
+        - 'Infographies': 'Infographies.md'
     - CLI:
         - 'Codecademy Learn the Command Line Notes': 'Codecademy Learn the Command Line Notes.md'
         - 'Command Line Crash Course': 'Command Line Crash Course.md'
@@ -53,3 +59,4 @@ markdown_extensions:
         title: CONTENT
         permalink: True
         baselevel: 3
+    - footnotes

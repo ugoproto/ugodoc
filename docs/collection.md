@@ -408,9 +408,9 @@ SEE: Econometrics, Spatial, GIS; R, Statistics; PYTHON
 
 Analytics for Insurance, The Real Business of Big Data, Wiley, 2016, <sub>risk, management, underwriting, claim, marketing, property, liability, life, pensions, people, </sub>
 
-Data Smart_Excel: Using Data Science to Transform Information into Insight, Wiley, 2013, <sub>excel</sub>
+Data Smart Excel: Using Data Science to Transform Information into Insight, Wiley, 2013, <sub>excel</sub>
 
-Marketing Analytics, A Practical Guide to Real Marketing Science (excerpts, BANQ, Wiley, 2015, <sub>statistics, consumer, behaviour, strategy, regression, business case, segmentation, elasticity, test, control, lift, collinearity, logistic, market basket analysis, survival, lifetime, value, ltv, descriptive, predictive, simultaneous equations, segment, k0means, lca, rfm, behavioural, missing value, research, conjoint analysis, structural equation, sem, sample, a/b, testing, factorial, engagement</sub>
+Marketing Analytics, A Practical Guide to Real Marketing Science (excerpts, BANQ), Wiley, 2015, <sub>statistics, consumer, behaviour, strategy, regression, business case, segmentation, elasticity, test, control, lift, collinearity, logistic, market basket analysis, survival, lifetime, value, ltv, descriptive, predictive, simultaneous equations, segment, k0means, lca, rfm, behavioural, missing value, research, conjoint analysis, structural equation, sem, sample, a/b, testing, factorial, engagement</sub>
 
 Statistical Methods in Customer Relationship Management (excerpts, BANQ), Wiley, 2012, <sub>with sas, crm, acquisition, retention, churn, win-back, models, vector autoregressive, lifetime, tobit, multinomial, logit, hazard, survival, event, poisson, regression, binomial</sub> 
 
@@ -459,6 +459,8 @@ Learning Path, DevOps with Docker (course, video)
 DevOps for Digital Leaders, Reignite Business with a Modern DevOps-Enabled Software Factory, 1st Ed, CA Press, 2016
 
 Effective DevOps, O'Reilly, 2015
+
+Mastering IT Project Management (PCO et ITIL) (notes), <sub>pco, pmi, pmp, itil, skills, process</sub>
 
 Scrum (cheat sheet)
 
@@ -625,7 +627,13 @@ An Introduction to R for Spatial Analysis and Mapping, SAGE, 2015
 
 Basic Data Analysis for Time Series with R, Wiley, 2014
 
+Biostatistique : une approche intuitive (BANQ), De Boeck, 2013, <sub>tests, hypothesis, p-value, proportion confidence interval, survival analysis, censored, poisson, error, bias, continuous, categorical, spread, gauss, log-normal, geometric, significance, tests, type i, type ii, equivalence, comparison, group, outlier, khi-squared, propective, experimental, relative risk, survey, two mean, groups, correlation, regression, model, nonlinear, logistic, anova, nonparametric, sensitivity, roc, bayes, sample, sampling, cases</sub>
+
+Comprendre et réaliser les tests statistiques à l'aide de R : manuel de biostatistique (BANQ), De Boeck, 2014, <sub>r, descriptive statistics, random variable, data table, scientific methodology, survey, outliers, tests, probability distribution, binomial, multinomial, pascal, negative binomial, geometric, hypergeometric, poisson, laplace-gauss, normal, exponential, gamma, chi-squared, fisher-snedecor, student, mann-whitney, wilcoxon, hypothesis, type i, type ii, bias, error, proportion comparison, conformity, homogeneity, g, mantel-haenszel, mac nemar, mean comparison, welch, anova, median comparison, mann-whitney-wilcoxon, kruskal-wallis, variance comparison, ansari-bradley, bartlett, fligner-killeen, correlation comparison, pearson, spearman, kendall, distribution comparison, kolmogorov-smirnov, shapiro-wilk, regression, survival, covariance, central limit</sub>
+
 Learning Bayesian Models with R, Become an expert in Bayesian machine learning methods using R and apply them to solve real-world Big Data problems, Packt, 2015 
+
+Making your Case, Using R for Program Evaluation (BANQ, c7, c8, c8, ssdanalysis.com), Oxford University Press, 2015, <sub>test, variance, var.test, t, t.test, cohen.d, dchange, aov, wilcox, wilcox.test, kruskal, kruskal.test, mcnemar, mcnemar.test, wald, wald.test, nonconstant variance, ncvtest, log-lin, logistic regression</sub>
 
 ### Entry-level
 
