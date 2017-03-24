@@ -406,9 +406,11 @@ NoSQL For Dummies, 2015
 
 SEE: Econometrics, Spatial, GIS; R, Statistics; PYTHON
 
-Analytics for Insurance, The Real Business of Big Data, Wiley, 2016, <sub>risk, management, underwriting, claim, marketing, property, liability, life, pensions, people, </sub>
+Analytics for Insurance, The Real Business of Big Data, Wiley, 2016, <sub>risk, management, underwriting, claim, marketing, property, liability, life, pensions, people</sub>
 
 Data Smart Excel: Using Data Science to Transform Information into Insight, Wiley, 2013, <sub>excel</sub>
+
+Getting Started with Data Science, Making Sense of Data with Analytics, Pearson, 2015, <sub>tables, htmlTable, graphic, hypothesis testing, tests, regression, categorical data, spatial data analytics, time series, data mining</sub>
 
 Marketing Analytics, A Practical Guide to Real Marketing Science (excerpts, BANQ), Wiley, 2015, <sub>statistics, consumer, behaviour, strategy, regression, business case, segmentation, elasticity, test, control, lift, collinearity, logistic, market basket analysis, survival, lifetime, value, ltv, descriptive, predictive, simultaneous equations, segment, k0means, lca, rfm, behavioural, missing value, research, conjoint analysis, structural equation, sem, sample, a/b, testing, factorial, engagement</sub>
 
@@ -654,6 +656,8 @@ Introduction to Stochastic Process with R, Wiley, 2016, <sub>markov chain, branc
 
 Learning RStudio (notes)
 
+Making your Case, Using R for Program Evaluation, Oxford University Press, 2015, <sub>data, graphics, describing, factors, interaction, mediatin, regression, logistic regression</sub>
+
 Modeling Techniques in Predictive Analytics, Business Problems and Solutions with R, Pearson, 2014
 
 Modélisation prédictive et apprentissage statistique avec R (Tufféry, aperçu), Technip, 2015
@@ -757,6 +761,8 @@ R for Marketing Research and Analytics, Springer, 2015
 R Graphics Cookbook, O'Reilly, 2013, <sub>exploring, bar graph, line, scatter, summarize, distribution, histogram, density, curve, frequency, polygon, boxplot, violin, dot, annotation, text, mathematical expression, segment, arrow, shaded, rectangle, highlighting, error bar, axes, x, y, range, continuous, categorical scaling, position, tick mark, appearance, logarithm, circular graph, date, time, themes, grid, facet, legend, position, order, title, appearance, label, facet, splitting, color, mapping, variable, discrete variable, palette, colorbling, region, correlation, function, subregion, network, heat, map, 3d, dendrogram, q-q, cumulative, mosaic, pie, map, choropleth, background, pdf, svg, output, file, presentation, shape, data frame, adding, deleting, renaming, reordering, subsetting, removing, changing, recoding, transforming, summarizing, converting, ggplot2</sub>
 
 R in Action, Data Analysis and Graphics with R, 2nd Edition, Manning, 2015
+
+Regression Modeling Strategies With Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis, 2nd edition, 2015, <sub>linear, cubic spline, knot, nonparametric, tree-based, interaction, ordinal, missing data, reduction, clustering, scaling, simultaneous, transformation, scoring, predictive modeling, influential, observations, bootstrap, resampling, sampling, validating, simplifying, generalized, principal components, smoothers, hypothesis test, maximum likelihood, ninary, logistic, ordinal, transform, survival analysis, nonparametric, parametric, cox, proportinal hazards, accelerated failure time, aft</sub>
 
 R Packages Organize, Test, Document and Share Your Code, O'Reilly, 2015, <sub>metadata, object documentation, vignette, testing, namespace, external data, compile, file, component, git, github, checking, releasing</sub>
 
