@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://ugoproto.github.io/ugodoc//</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>https://ugoproto.github.io/ugodoc//collection/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,37 +21,37 @@
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Digital Humanities/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Learn Git/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Resources for Data Science/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Storytelling with Data/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Data_Storytelling/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Infographies/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -61,31 +61,37 @@
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Codecademy Learn the Command Line Notes/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Command Line Crash Course/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Command Shell Snippets/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//The Linux Command Line/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Ubuntu/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://ugoproto.github.io/ugodoc//Install_tarball/</loc>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -95,25 +101,25 @@
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Codecademy Learn SQL/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Codecademy SQL, Analyzing Business Metrics/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Codecademy SQL, Table Transformation/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Introduction to SQL JOINs/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -123,19 +129,19 @@
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Build a Website/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//HTML and CSS/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://ugoproto.github.io/ugodoc//Markdown & Pandoc/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -144,7 +150,7 @@
     
     <url>
      <loc>https://ugoproto.github.io/ugodoc//tests/</loc>
-     <lastmod>2017-03-24</lastmod>
+     <lastmod>2017-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
