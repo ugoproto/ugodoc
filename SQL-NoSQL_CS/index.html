@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>SQL-NoSQL Cheat Sheets - ugodoc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SQL-NoSQL Cheat Sheets";
+    var mkdocs_page_input_path = "SQL-NoSQL_CS.md";
+    var mkdocs_page_url = "/SQL-NoSQL_CS/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugodoc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../collection/">Collection</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Vade Mecum</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Edition_CS/">Edition Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Digital%20Humanities/">Digital Humanities</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn%20Git/">Learn Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Resources%20for%20Data%20Science/">Resources for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Storytelling%20with%20Data/">Storytelling with Data</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Data_Storytelling/">10 Kinds of Stories to Tell with Data</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Infographies/">Infographies</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">OS & CLI</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../OS_CS/">OS Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Learn%20the%20Command%20Line%20Notes/">Codecademy Learn the Command Line Notes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Command%20Line%20Crash%20Course/">Command Line Crash Course</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Command%20Shell%20Snippets/">Command Shell Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../The%20Linux%20Command%20Line/">The Linux Command Line</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Ubuntu/">Ubuntu 16.04</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Install_tarball/">Install & Run on Linux</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SQL & NoSQL</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">SQL-NoSQL Cheat Sheets</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#img">IMG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#sqlite">SQLite</a></li>
+    
+
+    <li class="toctree-l3"><a href="#img_1">IMG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#mysql">MySQL</a></li>
+    
+
+    <li class="toctree-l3"><a href="#img_2">IMG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#postgresql">PostgreSQL</a></li>
+    
+
+    <li class="toctree-l3"><a href="#img_3">IMG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#nosql">NoSQL</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#img_4">IMG</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Learn%20SQL/">Codecademy Learn SQL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20SQL%2C%20Analyzing%20Business%20Metrics/">Codecademy SQL, Analyzing Business Metrics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20SQL%2C%20Table%20Transformation/">Codecademy SQL, Table Transformation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction%20to%20SQL%20JOINs/">Introduction to SQL JOINs</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Web</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Web_CS/">Web Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Build%20a%20Website/">Build a Website</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../HTML%20and%20CSS/">HTML and CSS</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Markdown%20%26%20Pandoc/">Markdown & Pandoc</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tests/">Tests</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugodoc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SQL & NoSQL &raquo;</li>
+        
+      
+    
+    <li>SQL-NoSQL Cheat Sheets</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#sql">SQL</a><ul>
+<li><a href="#img">IMG</a></li>
+<li><a href="#sqlite">SQLite</a></li>
+<li><a href="#img_1">IMG</a></li>
+<li><a href="#mysql">MySQL</a></li>
+<li><a href="#img_2">IMG</a></li>
+<li><a href="#postgresql">PostgreSQL</a></li>
+<li><a href="#img_3">IMG</a></li>
+</ul>
+</li>
+<li><a href="#nosql">NoSQL</a><ul>
+<li><a href="#img_4">IMG</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Cheat sheets.</p>
+<hr />
+<h4 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="../SQL-Cheatsheet.pdf">SQL 1</a>.</li>
+<li><a href="../SQL-Cheatsheet-2.pdf">SQL 2</a>.</li>
+</ul>
+<h5 id="img">IMG<a class="headerlink" href="#img" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+<h5 id="sqlite">SQLite<a class="headerlink" href="#sqlite" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="../richardjh_sqlite3.pdf">SQLite</a>.</li>
+</ul>
+<h5 id="img_1">IMG<a class="headerlink" href="#img_1" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+<h5 id="mysql">MySQL<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="../davechild_mysql.pdf">MySQL</a></li>
+<li><a href="../guslong_essential-mysql.pdf">Essential SQL</a></li>
+<li><a href="../4107-rc029-010d-essential-admin-mysql5.5_2.pdf">Essential Admin for MySQL</a></li>
+</ul>
+<h5 id="img_2">IMG<a class="headerlink" href="#img_2" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+<h5 id="postgresql">PostgreSQL<a class="headerlink" href="#postgresql" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="../tme520_postgresql.pdf">PostgreSQL</a></li>
+<li><a href="../squixy_postgresql-interactive-terminal-commands.pdf">PostgreSQL Interactive Terminal Commands</a></li>
+<li><a href="../52492-rc071_postgresql_2.pdf">Essential PostgreSQL</a></li>
+</ul>
+<h5 id="img_3">IMG<a class="headerlink" href="#img_3" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+<h4 id="nosql">NoSQL<a class="headerlink" href="#nosql" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="../4154-rc105-010d-nosql.pdf">NoSQL and Data Scalability</a></li>
+<li><a href="../4176-rc171-010d-mongodb-2.pdf">MongoDB</a></li>
+</ul>
+<h5 id="img_4">IMG<a class="headerlink" href="#img_4" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Codecademy%20Learn%20SQL/" class="btn btn-neutral float-right" title="Codecademy Learn SQL">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Install_tarball/" class="btn btn-neutral" title="Install & Run on Linux"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Spark</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Install_tarball/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Codecademy%20Learn%20SQL/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
