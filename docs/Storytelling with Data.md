@@ -1,14 +1,14 @@
-# Storytelling with Data
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ### 1. The importance of context
 

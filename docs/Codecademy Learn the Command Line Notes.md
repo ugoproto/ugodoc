@@ -1,14 +1,14 @@
-# Codecademy Learn the Command Line
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Commands and code snippets. From Codecademy.
 
------
-
-[TOC]
-
------
+---
 
 ## Section 1, Navigation
 

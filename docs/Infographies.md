@@ -1,14 +1,14 @@
-# Infographies
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. An image is worth...
 
------
-
-[TOC]
-
------
+---
 
 ## Big -- Data -- Science
 

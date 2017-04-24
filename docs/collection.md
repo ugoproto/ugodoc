@@ -1,14 +1,14 @@
-# Collection
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Corpus of documents: titles and keywords.
 
------
-
-[TOC]
-
------
+---
 
 ## Employment, Education
 
@@ -641,6 +641,10 @@ Making your Case, Using R for Program Evaluation (BANQ, c7, c8, c8, ssdanalysis.
 
 Cheat sheets
 
+Analyse de données avec R (extraits), PUR, 2016, <sub>pca, principal components, fa, factorial, factor, analysis, multiple, correspondence, classifier, classification, visualization</sub>
+
+Calcul parallèle avec R, UDP Sciences, 2016, <sub>parallel, computation, optimize, improve, speed up, test, measure, processor, memory, amdahl law, gustagson law, snow, multicore, foreach, doparallel, c++, openmp, distributed computation, hpc, mpi, cluster, big data, cp-gpu, cores, nodes, rcpp</sub>
+
 Data Mining Applications with R, Elsevier, 2013, <sub>power grid, hadoop, property value, web, random forest, data mining, classification, images, crime analyses, football mining, internet dns, traffic, optimization, bayesian classifiers, text mining, topic modeling, social network,  recommender systems, response modeling, direct marketing, insurance customer profile, predicting bank loan default, customer preference analysis</sub>
 
 Discovering Knowledge in Data, An Introduction to Data Mining, 2nd edition, Wiley, 2014, <sub>larose</sub>
@@ -677,6 +681,8 @@ Spatial and Spatio-temporal Bayesian Models with R-INLA, Wiley, 2015, <sub>bayes
 Spatial Regression Model, SAGE, 2011, <sub>interaction, social science, spatial dependence, map, spatial association, correlation, proximity, spatial model, spatially lagged dependent variable, maximum likelihood, equilibrium effect, spatial dependence, italy, different weights matrices, ols, dummy variable, spatial error, maximum likelihood, democracy, development, dyadic trade flow, connectivities, inference</sub>
 
 Statistical Hypothesis Testing with SAS and R, Wiley, 2014, <sub>normal distribution, tests, mean, t-test, z-test, variance, sample, f-test, binomial distribution, proportion, sample, k-sample, poisson distribution, exponential distribution, correlation, nonparametric, location, wilcoxon, krustal-wallis, scale difference, siegel-tukey, ansari-bradley, goodness-of-fit, edf, kolmogorov-smirnov, anderson-darling, cramer-von mises, shapiro-wilk, jarque-bera, distribution, randomness, wald-wolfowitz, run, von neumann, von newmann rank, contingency, fisher, pearson, likelihood, cohen, kappa, large sample, outliers, grubb, david-hartley-pearson, regression, slope, intercept, anova, bartlett, levene</sub>
+
+Statistiques avec R (extraits), PUR, 2012, <sub>cheat sheets, summary tables, small cases, snippets, reminders</sub>
 
 Statistiques et probabilités appliquées, puf, 2008, <sub>descriptive, frequency, centre, average, median, pourcentile, variance, distribution, range, absolute, parameters, probability, events, conditional, independence, random variable, discrete, binomial, continuous, normal, gaussian, test, poisson distribution, exponential distribution, function, sampling, confidence interval, hypothesis, difference, regression</sub>
 

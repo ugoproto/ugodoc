@@ -1,14 +1,14 @@
-# Introduction to SQL JOINs
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## Using the code
 

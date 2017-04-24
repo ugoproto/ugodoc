@@ -1,4 +1,8 @@
-# Digital Humanities
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
@@ -9,11 +13,7 @@ Notes. From:
 - [Digital Humanities](http://shc.stanford.edu/digital-humanities/)
 	- Standford Humanities Center.
 
------
-
-[TOC]
-
------
+---
 
 ## Blogs
 

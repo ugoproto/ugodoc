@@ -1,14 +1,14 @@
-# Build a Website
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## Themes and Goals
 

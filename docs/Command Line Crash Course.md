@@ -1,14 +1,14 @@
-# Command Line Crash Course #
-
-**Foreword**
-
-Commands and code snippets.
-
------
+---
 
 [TOC]
 
------
+---
+
+**Foreword**
+
+Commands and snippets.
+
+---
 
 ## The Setup
 

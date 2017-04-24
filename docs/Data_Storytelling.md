@@ -1,14 +1,14 @@
-# 10 Kinds of Stories to Tell with Data
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## Time
 

@@ -1,14 +1,14 @@
-# Codecademy SQL, Table Transformation
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code snippets. From Codecademy.
 
------
-
-[TOC]
-
------
+---
 
 While working with databases, we often need to transform data from one format to achieve a desired result. In SQL, this is often called data transformation or table transformation.
 

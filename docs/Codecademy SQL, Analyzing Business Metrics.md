@@ -1,14 +1,14 @@
-# Codecademy SQL, Analyzing Business Metrics
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code snippets. With SQLite. From Codecademy in collaboration with [Periscope Data](https://www.periscopedata.com).
 
------
-
-[TOC]
-
------
+--
 
 ## Specifying Comments
 

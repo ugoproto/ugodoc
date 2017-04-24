@@ -1,14 +1,14 @@
-# Markdown & Pandoc
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## Markdown Editors
 

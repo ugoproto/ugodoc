@@ -1,10 +1,14 @@
-# Command Shell Snippets
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code snippets.
 
------
+---
 
 Sort in alphabetical order:
 

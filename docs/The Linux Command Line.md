@@ -1,14 +1,14 @@
-# The Linux Command Line #
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. The 537-page volume covers the same material as [LinuxCommand.org](http://linuxcommand.org/), but in much greater detail. In addition to the basics of command line use and shell scripting, The Linux Command Line includes chapters on many common programs used on the command line, as well as more advanced topics.
 
------
-
-[TOC]
-
------
+---
 
 ## [1.0 Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php) ##
 

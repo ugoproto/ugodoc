@@ -1,14 +1,14 @@
-# Resources for Data Science
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## Data (Open)
 

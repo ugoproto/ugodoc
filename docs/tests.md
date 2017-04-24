@@ -1,14 +1,14 @@
-# Tests
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 This page is temporary. It tests markup possibilities.
 
------
-
-[TOC]
-
------
+---
 
 ## List
 

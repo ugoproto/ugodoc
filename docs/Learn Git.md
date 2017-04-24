@@ -1,14 +1,14 @@
-# Learn and Master Git
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## Crash Course
 

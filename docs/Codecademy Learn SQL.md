@@ -1,14 +1,14 @@
-# Codecademy Learn SQL
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code Snippets. From Codecademy.
 
------
-
-[TOC]
-
------
+---
 
 ## Specifying Comments
 

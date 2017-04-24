@@ -1,14 +1,14 @@
-# Install & Run on Linux
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## Install a Tarball on Linux
 
