@@ -12,8 +12,8 @@ Cheat sheets.
 
 ## Linux
 
-- [Ubuntu Reference](Ubuntu Ref.pdf).
-- [Linux Command Reference](Unix Linux Command Reference.pdf).
+- [Ubuntu Reference](Ubuntu_Ref.pdf).
+- [Linux Command Reference](Unix-Linux-Command-Reference.pdf).
 - [Linux Command Line](davechild_linux-command-line.pdf).
 - [Linux Bash Shell](bash_cheat_sheet.pdf).
     - [Learning the Shell](http://www.linuxcommand.org/lc3_learning_the_shell.php).
