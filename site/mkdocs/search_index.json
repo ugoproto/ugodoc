@@ -466,6 +466,131 @@
             "title": "Data Science"
         }, 
         {
+            "location": "/latex_snippets/", 
+            "text": "CONTENT\n\n\nResources\n\n\nClasses\n\n\nArticle\n\n\nReport\n\n\nBook\n\n\n\n\n\n\nFigure\n\n\nStandard figure\n\n\nSide-by-side figure (1x2)\n\n\nSide-by-side figure (2x2)\n\n\n\n\n\n\nTables\n\n\nStandard table\n\n\nSide-by-side table\n\n\nSideways-table\n\n\nMulti-page table (longtable)\n\n\n\n\n\n\nList\n\n\nBulleted list: itemize\n\n\nNumbered list: enumerate\n\n\nDescription\n\n\nInline enumeration\n\n\n\n\n\n\nBeamer Presentation\n\n\nTable of Content\n\n\nList\n\n\nSide-by-side figure/table/list with columns\n\n\n\n\n\n\nCheat Sheet\n\n\nInstallation\n\n\n\n\n\n\n\n\nForeword\n\n\nSnippets and notes.\n\n\n\n\nResources\n\n\n\n\nThe LATEX Project\n\n\nTEX\n stack exchange\n\n\nWrite memos\n\n\nTeXcount web service\n\n\nPense-bete pour natbib\n\n\nTEXample\n\n\nCTAN\n\n\nLaTeX Wikibook\n\n\nTeX\n\n\n\n\nClasses\n\n\nArticle\n\n\n\\documentclass[12pt]{article}\n\\title{}\n\\author{}\n\\date{}\n\\begin{document}\n\\maketitle\n\\begin{abstract}\n...\n\\end{abstract}\n\\section{}\n\\subsection{}\n\\subsubsection{}\n\\paragraph{}\n\\subparagraph{}\n\\end{document}\n\n\n\n\nReport\n\n\n\\documentclass[12pt]{report}\n\\title{}\n\\author{}\n\\date{}\n\\begin{document}\n\\maketitle\n\\begin{abstract}\n...\n\\end{abstract}\n\\tableofcontents\n\\listoffigures\n\\listoftables\n\\chapter{}\n\\section{}\n\\subsection{}\n\\subsubsection{}\n\\paragraph{}\n\\subparagraph{}\n\\end{document}\n\n\n\n\nBook\n\n\n\\documentclass[12pt]{book}\n\\title{}\n\\author{}\n\\date{}\n\\begin{document}\n\\maketitle\n\\tableofcontents\n\\listoffigures\n\\listoftables\n\\part{}\n\\chapter{}\n\\section{}\n\\subsection{}\n\\subsubsection{}\n\\paragraph{}\n\\subparagraph{}\n\\end{document}\n\n\n\n\nFigure\n\n\nStandard figure\n\n\n%Preamble\n\\usepackage{graphicx}\n\n%Document\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=\\linewidth]{figure.png}\n\\caption[short for lof]{long figure caption}\n\\label{fig:default}\n\\end{figure}\n\\ref{fig:default}\n\n\n\n\nSide-by-side figure (1x2)\n\n\n%Preamble\n\\usepackage[lofdepth]{subfig}\n\\usepackage{graphicx}\n\n%Document\n\\begin{figure}[htbp] % h:here; t:top; b:bottom; p:page; default:ht\n\\centering\n \\subfloat[short for lof][long subfigure1 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure1.png}\n   \\label{subfig:fig1}\n }\n \\subfloat[short for lof][long subfigure2 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure2.png}\n   \\label{subfig:fig2}\n}\n\\caption[short for lof]{long figure caption}\n\\label{fig:fig1}\n\\end{figure}\n\\ref{fig:fig1} and \\subref{subfig:fig1}\n\n\n\n\nSide-by-side figure (2x2)\n\n\n%Preamble\n\\usepackage[lofdepth,lotdepth]{subfig}\n\\usepackage{graphicx}\n\n%Document\n\\begin{figure}[ht]\n\\centering\n \\subfloat[short for lof][long subfig1 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure1.png}\n   \\label{subfig:fig1}\n }\n \\subfloat[short for lof][long subfig2 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure2.png}\n   \\label{subfig:fig2}\n}\n\n \\subfloat[short for lof][long subfig3 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure3.png}\n   \\label{subfig:fig3}\n }\n \\subfloat[short for lof][long subfig4 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure4.png}\n   \\label{subfig:fig4}\n}\n\\caption[short for lof]{long figure caption}\n\\label{fig:fig1}\n\\end{figure}\n\\ref{fig:fig1} and \\subref{subfig:fig1}\n\n\n\n\nSideways-figure\n\n\n% Preamble\n\\usepackage{rotating}\n\n% Document\n\\begin{sidewaysfigure}\n\\centering\n\\includegraphics{figure.png}\n\\caption{Sideways figure.}\n\\label{fig:swfig}\n\\end{sidewaysfigure}\n\n\n\n\nWrap text around figure\n\n\n%Preamble\n\\usepackage{wrapfig, graphicx}\n\n% Document\n\\begin{wrapfigure}{l}{0.5\\textwidth} % l for left, r for right\n\\centering\n\\includegraphics[width=0.45\\textwidth]{test}\n\\caption{Text wrapped around figure}\n\\label{fig:wrapfig}\n\\end{wrapfigure}\n\n\n\n\nTables\n\n\nStandard table\n\n\n\\begin{table}[htbp] % h:here; t:top; b:bottom; p:page; default:ht\n    \\caption{default}\n    \\centering\n    \\begin{tabular}{lccr}\n        \\hline\n        - \n - \n - \n - \\\\\n        \\hline\n        - \n - \n - \n - \\\\\n        - \n - \n - \n - \\\\\n        \\hline\n    \\end{tabular}\n    \\label{tab:def}\n\\end{table}%\n\n\n\n\nSide-by-side table\n\n\n%Preamble\n\\usepackage[lotdepth]{subfig}\n\n%Document\n\\begin{table}[htbp] % h:here; t:top; b:bottom; p:page; default:ht\n    \\centering\n    \\subfloat[short for lot subtable1][long subtable1 caption]{\n        \\begin{tabular}{lccr}\n            \\hline\n            - \n - \n - \n - \\\\\n            \\hline\n            - \n - \n - \n - \\\\\n            - \n - \n - \n - \\\\\n            \\hline\n        \\end{tabular}\n        \\label{subtab:tab1}\n    }\n    \\subfloat[short for lot subtable2][long subtable2 caption]{\n        \\begin{tabular}{lccr}\n            \\hline\n            - \n - \n - \n - \\\\\n            \\hline\n            - \n - \n - \n - \\\\\n            - \n - \n - \n - \\\\\n            \\hline\n        \\end{tabular}\n        \\label{subtab:tab2}\n    }\n    \\caption[short for lot]{long table caption}\n    \\label{tab:tab1}\n\\end{table}\n\\ref{tab:tab1} and \\subref{subtab:tab1}\n\n\n\n\nSideways-table\n\n\n% Preamble\n\\usepackage{rotating}\n\n% Document\n\\begin{sidewaystable}\n    \\caption{Sideways table.}\n    \\centering\n    \\begin{tabular}{lccr}\n        \\hline\n        - \n - \n - \n - \\\\\n        \\hline\n        - \n - \n - \n - \\\\\n        - \n - \n - \n - \\\\\n        \\hline\n    \\end{tabular}\n    \\label{tab:swtab}\n\\end{sidewaystable}\n\n\n\n\nMulti-page table (longtable)\n\n\n%Preamble\n\\usepackage{longtable}\n\n% Document\n\\begin{center}\n\\begin{longtable}{|c|c|c|c|}\n\\caption{A simple longtable example}\\\\\n\\hline\n\\textbf{First entry} \n \\textbf{Second entry} \n \\textbf{Third entry} \n \\textbf{Fourth entry} \\\\\n\\hline\n\\endfirsthead\n\\multicolumn{4}{c}%\n{\\tablename\\ \\thetable\\ -- \\textit{Continued from previous page}} \\\\\n\\hline\n\\textbf{First entry} \n \\textbf{Second entry} \n \\textbf{Third entry} \n \\textbf{Fourth entry} \\\\\n\\hline\n\\endhead\n\\hline \\multicolumn{4}{r}{\\textit{Continued on next page}} \\\\\n\\endfoot\n\\hline \\multicolumn{4}{r}{\\textit{End of table}} \\\\\n\\endlastfoot\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\ 1 \n 2 \n 3 \n 4 \\\\\n\\end{longtable}\n\\end{center}\n\n\n\n\nList\n\n\nBulleted list: itemize\n\n\n\\begin{itemize}\n\\item\n\\item\n\\item\n\\end{itemize}\n\n\n\n\nNumbered list: enumerate\n\n\n\\begin{enumerate}\n\\item\n\\item\n\\item\n\\end{enumerate}\n\n\n\n\nDescription\n\n\n\\begin{description}\n\\item[]\n\\item[]\n\\item[]\n\\end{description}\n\n\n\n\nInline enumeration\n\n\n%Preamble\n\\usepackage{paralist}\n\n%Document\n\\begin{inparaenum}\n\\item\n\\item\n\\item\n\\end{inparaenum}\n\n\n\n\nBeamer Presentation\n\n\nTable of Content\n\n\n\\documentclass{beamer}\n\\usetheme{Berkeley}\n\\begin{document}\n\n\\begin{frame}\n    \\tableofcontents\n\\end{frame}\n\n\\section{First}\n\\begin{frame}{First section slide}\n    ...\n\\end{frame}\n\n\\section{Second}\n%Contents with current section highlighted\n\\frame{\\tableofcontents[currentsection]}\n\\begin{frame}{Second section slide}\n    ...\n\\end{frame}\n\n\\end{document}\n\n\n\n\nList\n\n\n\\begin{frame}{Enumerate}\n    \\begin{enumerate}\n        \\item\n        \\item\n        \\item\n    \\end{enumerate}\n\\end{frame}\n\n\n\n\n\\begin{frame}{Itemize}\n    \\begin{itemize}\n        \\item\n        \\item\n        \\item\n    \\end{itemize}\n\\end{frame}\n\n\n\n\nSide-by-side figure/table/list with columns\n\n\n\\begin{frame}{Side-by-side figure/table/text with columns}\n    \\begin{columns}\n        \\begin{column}[C]{.45\\textwidth}\n% the T argument instead of C will align the top of the two columns, instead of the centers\n            \\rule{\\textwidth}{0.75\\textwidth}\n        \\end{column}\n        \\begin{column}[C]{.45\\textwidth}\n            \\begin{enumerate} % numbered list\n                \\item\n                \\item\n                \\item\n            \\end{enumerate}\n        \\end{column}\n    \\end{columns}\n\\end{frame}\n\n\n\n\nSide-by-side figure/table/list with minipage\n\n\n\\begin{frame}{Side-by-side figure/table/text with minipage}\n    \\begin{minipage}{0.45\\textwidth} % figure\n        \\rule{\\textwidth}{0.75\\textwidth}\n    \\end{minipage}\n    \\qquad\n    \\begin{minipage}{0.45\\textwidth}\n        \\begin{enumerate} % numbered list\n            \\item\n            \\item\n            \\item\n        \\end{enumerate}\n    \\end{minipage}\n\\end{frame}\n\n\n\n\nCheat Sheet\n\n\n\n\n\n\n\n\n\n\n\n\nInstallation\n\n\n\n\nWindows distribution\n\n\nproTeXt\n (MiKTeX-based + the editor TeXnicCenter)\n\n\nMiKTeX\n\n\n\n\n\n\nWindows editors \n software\n\n\nTeXnicCenter (from proTeXt)\n\n\nLEd\n\n\nTeXstudio\n\n\nTexmaker\n\n\nLyX\n\n\nJabRef\n\n\n\n\n\n\nLinux distribution\n\n\nTeX Live\n\n\nTerminal\n\n\nsudo apt-get update\n\n\nsudo apt-get install texlive\n\n\n\n\n\n\n\n\n\n\nLinux editors \n software\n\n\nTexmaker\n\n\nwinefish\n\n\nKile (KDE)\n\n\nLatexila\n\n\nLyX", 
+            "title": "LaTeX Snippets"
+        }, 
+        {
+            "location": "/latex_snippets/#classes", 
+            "text": "", 
+            "title": "Classes"
+        }, 
+        {
+            "location": "/latex_snippets/#article", 
+            "text": "\\documentclass[12pt]{article}\n\\title{}\n\\author{}\n\\date{}\n\\begin{document}\n\\maketitle\n\\begin{abstract}\n...\n\\end{abstract}\n\\section{}\n\\subsection{}\n\\subsubsection{}\n\\paragraph{}\n\\subparagraph{}\n\\end{document}", 
+            "title": "Article"
+        }, 
+        {
+            "location": "/latex_snippets/#report", 
+            "text": "\\documentclass[12pt]{report}\n\\title{}\n\\author{}\n\\date{}\n\\begin{document}\n\\maketitle\n\\begin{abstract}\n...\n\\end{abstract}\n\\tableofcontents\n\\listoffigures\n\\listoftables\n\\chapter{}\n\\section{}\n\\subsection{}\n\\subsubsection{}\n\\paragraph{}\n\\subparagraph{}\n\\end{document}", 
+            "title": "Report"
+        }, 
+        {
+            "location": "/latex_snippets/#book", 
+            "text": "\\documentclass[12pt]{book}\n\\title{}\n\\author{}\n\\date{}\n\\begin{document}\n\\maketitle\n\\tableofcontents\n\\listoffigures\n\\listoftables\n\\part{}\n\\chapter{}\n\\section{}\n\\subsection{}\n\\subsubsection{}\n\\paragraph{}\n\\subparagraph{}\n\\end{document}", 
+            "title": "Book"
+        }, 
+        {
+            "location": "/latex_snippets/#figure", 
+            "text": "", 
+            "title": "Figure"
+        }, 
+        {
+            "location": "/latex_snippets/#standard-figure", 
+            "text": "%Preamble\n\\usepackage{graphicx}\n\n%Document\n\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=\\linewidth]{figure.png}\n\\caption[short for lof]{long figure caption}\n\\label{fig:default}\n\\end{figure}\n\\ref{fig:default}", 
+            "title": "Standard figure"
+        }, 
+        {
+            "location": "/latex_snippets/#side-by-side-figure-1x2", 
+            "text": "%Preamble\n\\usepackage[lofdepth]{subfig}\n\\usepackage{graphicx}\n\n%Document\n\\begin{figure}[htbp] % h:here; t:top; b:bottom; p:page; default:ht\n\\centering\n \\subfloat[short for lof][long subfigure1 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure1.png}\n   \\label{subfig:fig1}\n }\n \\subfloat[short for lof][long subfigure2 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure2.png}\n   \\label{subfig:fig2}\n}\n\\caption[short for lof]{long figure caption}\n\\label{fig:fig1}\n\\end{figure}\n\\ref{fig:fig1} and \\subref{subfig:fig1}", 
+            "title": "Side-by-side figure (1x2)"
+        }, 
+        {
+            "location": "/latex_snippets/#side-by-side-figure-2x2", 
+            "text": "%Preamble\n\\usepackage[lofdepth,lotdepth]{subfig}\n\\usepackage{graphicx}\n\n%Document\n\\begin{figure}[ht]\n\\centering\n \\subfloat[short for lof][long subfig1 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure1.png}\n   \\label{subfig:fig1}\n }\n \\subfloat[short for lof][long subfig2 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure2.png}\n   \\label{subfig:fig2}\n}\n\n \\subfloat[short for lof][long subfig3 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure3.png}\n   \\label{subfig:fig3}\n }\n \\subfloat[short for lof][long subfig4 caption]{\n   \\includegraphics[width=0.45\\linewidth]{figure4.png}\n   \\label{subfig:fig4}\n}\n\\caption[short for lof]{long figure caption}\n\\label{fig:fig1}\n\\end{figure}\n\\ref{fig:fig1} and \\subref{subfig:fig1}  Sideways-figure  % Preamble\n\\usepackage{rotating}\n\n% Document\n\\begin{sidewaysfigure}\n\\centering\n\\includegraphics{figure.png}\n\\caption{Sideways figure.}\n\\label{fig:swfig}\n\\end{sidewaysfigure}  Wrap text around figure  %Preamble\n\\usepackage{wrapfig, graphicx}\n\n% Document\n\\begin{wrapfigure}{l}{0.5\\textwidth} % l for left, r for right\n\\centering\n\\includegraphics[width=0.45\\textwidth]{test}\n\\caption{Text wrapped around figure}\n\\label{fig:wrapfig}\n\\end{wrapfigure}", 
+            "title": "Side-by-side figure (2x2)"
+        }, 
+        {
+            "location": "/latex_snippets/#tables", 
+            "text": "", 
+            "title": "Tables"
+        }, 
+        {
+            "location": "/latex_snippets/#standard-table", 
+            "text": "\\begin{table}[htbp] % h:here; t:top; b:bottom; p:page; default:ht\n    \\caption{default}\n    \\centering\n    \\begin{tabular}{lccr}\n        \\hline\n        -   -   -   - \\\\\n        \\hline\n        -   -   -   - \\\\\n        -   -   -   - \\\\\n        \\hline\n    \\end{tabular}\n    \\label{tab:def}\n\\end{table}%", 
+            "title": "Standard table"
+        }, 
+        {
+            "location": "/latex_snippets/#side-by-side-table", 
+            "text": "%Preamble\n\\usepackage[lotdepth]{subfig}\n\n%Document\n\\begin{table}[htbp] % h:here; t:top; b:bottom; p:page; default:ht\n    \\centering\n    \\subfloat[short for lot subtable1][long subtable1 caption]{\n        \\begin{tabular}{lccr}\n            \\hline\n            -   -   -   - \\\\\n            \\hline\n            -   -   -   - \\\\\n            -   -   -   - \\\\\n            \\hline\n        \\end{tabular}\n        \\label{subtab:tab1}\n    }\n    \\subfloat[short for lot subtable2][long subtable2 caption]{\n        \\begin{tabular}{lccr}\n            \\hline\n            -   -   -   - \\\\\n            \\hline\n            -   -   -   - \\\\\n            -   -   -   - \\\\\n            \\hline\n        \\end{tabular}\n        \\label{subtab:tab2}\n    }\n    \\caption[short for lot]{long table caption}\n    \\label{tab:tab1}\n\\end{table}\n\\ref{tab:tab1} and \\subref{subtab:tab1}", 
+            "title": "Side-by-side table"
+        }, 
+        {
+            "location": "/latex_snippets/#sideways-table", 
+            "text": "% Preamble\n\\usepackage{rotating}\n\n% Document\n\\begin{sidewaystable}\n    \\caption{Sideways table.}\n    \\centering\n    \\begin{tabular}{lccr}\n        \\hline\n        -   -   -   - \\\\\n        \\hline\n        -   -   -   - \\\\\n        -   -   -   - \\\\\n        \\hline\n    \\end{tabular}\n    \\label{tab:swtab}\n\\end{sidewaystable}", 
+            "title": "Sideways-table"
+        }, 
+        {
+            "location": "/latex_snippets/#multi-page-table-longtable", 
+            "text": "%Preamble\n\\usepackage{longtable}\n\n% Document\n\\begin{center}\n\\begin{longtable}{|c|c|c|c|}\n\\caption{A simple longtable example}\\\\\n\\hline\n\\textbf{First entry}   \\textbf{Second entry}   \\textbf{Third entry}   \\textbf{Fourth entry} \\\\\n\\hline\n\\endfirsthead\n\\multicolumn{4}{c}%\n{\\tablename\\ \\thetable\\ -- \\textit{Continued from previous page}} \\\\\n\\hline\n\\textbf{First entry}   \\textbf{Second entry}   \\textbf{Third entry}   \\textbf{Fourth entry} \\\\\n\\hline\n\\endhead\n\\hline \\multicolumn{4}{r}{\\textit{Continued on next page}} \\\\\n\\endfoot\n\\hline \\multicolumn{4}{r}{\\textit{End of table}} \\\\\n\\endlastfoot\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\ 1   2   3   4 \\\\\n\\end{longtable}\n\\end{center}", 
+            "title": "Multi-page table (longtable)"
+        }, 
+        {
+            "location": "/latex_snippets/#list", 
+            "text": "", 
+            "title": "List"
+        }, 
+        {
+            "location": "/latex_snippets/#bulleted-list-itemize", 
+            "text": "\\begin{itemize}\n\\item\n\\item\n\\item\n\\end{itemize}", 
+            "title": "Bulleted list: itemize"
+        }, 
+        {
+            "location": "/latex_snippets/#numbered-list-enumerate", 
+            "text": "\\begin{enumerate}\n\\item\n\\item\n\\item\n\\end{enumerate}", 
+            "title": "Numbered list: enumerate"
+        }, 
+        {
+            "location": "/latex_snippets/#description", 
+            "text": "\\begin{description}\n\\item[]\n\\item[]\n\\item[]\n\\end{description}", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/latex_snippets/#inline-enumeration", 
+            "text": "%Preamble\n\\usepackage{paralist}\n\n%Document\n\\begin{inparaenum}\n\\item\n\\item\n\\item\n\\end{inparaenum}", 
+            "title": "Inline enumeration"
+        }, 
+        {
+            "location": "/latex_snippets/#beamer-presentation", 
+            "text": "", 
+            "title": "Beamer Presentation"
+        }, 
+        {
+            "location": "/latex_snippets/#table-of-content", 
+            "text": "\\documentclass{beamer}\n\\usetheme{Berkeley}\n\\begin{document}\n\n\\begin{frame}\n    \\tableofcontents\n\\end{frame}\n\n\\section{First}\n\\begin{frame}{First section slide}\n    ...\n\\end{frame}\n\n\\section{Second}\n%Contents with current section highlighted\n\\frame{\\tableofcontents[currentsection]}\n\\begin{frame}{Second section slide}\n    ...\n\\end{frame}\n\n\\end{document}", 
+            "title": "Table of Content"
+        }, 
+        {
+            "location": "/latex_snippets/#list_1", 
+            "text": "\\begin{frame}{Enumerate}\n    \\begin{enumerate}\n        \\item\n        \\item\n        \\item\n    \\end{enumerate}\n\\end{frame}  \\begin{frame}{Itemize}\n    \\begin{itemize}\n        \\item\n        \\item\n        \\item\n    \\end{itemize}\n\\end{frame}", 
+            "title": "List"
+        }, 
+        {
+            "location": "/latex_snippets/#side-by-side-figuretablelist-with-columns", 
+            "text": "\\begin{frame}{Side-by-side figure/table/text with columns}\n    \\begin{columns}\n        \\begin{column}[C]{.45\\textwidth}\n% the T argument instead of C will align the top of the two columns, instead of the centers\n            \\rule{\\textwidth}{0.75\\textwidth}\n        \\end{column}\n        \\begin{column}[C]{.45\\textwidth}\n            \\begin{enumerate} % numbered list\n                \\item\n                \\item\n                \\item\n            \\end{enumerate}\n        \\end{column}\n    \\end{columns}\n\\end{frame}  Side-by-side figure/table/list with minipage  \\begin{frame}{Side-by-side figure/table/text with minipage}\n    \\begin{minipage}{0.45\\textwidth} % figure\n        \\rule{\\textwidth}{0.75\\textwidth}\n    \\end{minipage}\n    \\qquad\n    \\begin{minipage}{0.45\\textwidth}\n        \\begin{enumerate} % numbered list\n            \\item\n            \\item\n            \\item\n        \\end{enumerate}\n    \\end{minipage}\n\\end{frame}", 
+            "title": "Side-by-side figure/table/list with columns"
+        }, 
+        {
+            "location": "/latex_snippets/#cheat-sheet", 
+            "text": "", 
+            "title": "Cheat Sheet"
+        }, 
+        {
+            "location": "/latex_snippets/#installation", 
+            "text": "Windows distribution  proTeXt  (MiKTeX-based + the editor TeXnicCenter)  MiKTeX    Windows editors   software  TeXnicCenter (from proTeXt)  LEd  TeXstudio  Texmaker  LyX  JabRef    Linux distribution  TeX Live  Terminal  sudo apt-get update  sudo apt-get install texlive      Linux editors   software  Texmaker  winefish  Kile (KDE)  Latexila  LyX", 
+            "title": "Installation"
+        }, 
+        {
             "location": "/OS_CS/", 
             "text": "CONTENT\n\n\nLinux\n\n\nIMG\n\n\n\n\n\n\nWindows\n\n\nIMG\n\n\n\n\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nLinux\n\n\n\n\nUbuntu Reference\n.\n\n\nLinux Command Reference\n.\n\n\nLinux Command Line\n.\n\n\nLinux Bash Shell\n.\n\n\nLearning the Shell\n.\n\n\nbc - An arbitrary precision calculator language\n.\n\n\n\n\n\n\n\n\nIMG\n\n\n\n\n\n\nWindows\n\n\n\n\nPowerShell Basics\n.\n\n\nWindows PowerShell\n.\n\n\n\n\nIMG", 
             "title": "OS Cheat Sheets"

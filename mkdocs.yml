@@ -20,6 +20,7 @@ pages:
         - Storytelling with Data: 'Storytelling with Data.md'
         - 10 Kinds of Stories to Tell with Data: 'Data_Storytelling.md'
         - Infographies: 'Infographies.md'
+        - LaTeX Snippets: 'latex_snippets.md'
     - OS & CLI:
         - OS Cheat Sheets: 'OS_CS.md'
         - Codecademy Learn the Command Line Notes: 'Codecademy Learn the Command Line Notes.md'

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>LaTeX Snippets - ugodoc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "LaTeX Snippets";
+    var mkdocs_page_input_path = "latex_snippets.md";
+    var mkdocs_page_url = "/latex_snippets/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugodoc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../collection/">Collection</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Vade Mecum</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Edition_CS/">Edition Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Digital%20Humanities/">Digital Humanities</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn%20Git/">Learn Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Resources%20for%20Data%20Science/">Resources for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Storytelling%20with%20Data/">Storytelling with Data</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Data_Storytelling/">10 Kinds of Stories to Tell with Data</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Infographies/">Infographies</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">LaTeX Snippets</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#classes">Classes</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#article">Article</a></li>
+        
+            <li><a class="toctree-l4" href="#report">Report</a></li>
+        
+            <li><a class="toctree-l4" href="#book">Book</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#figure">Figure</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#standard-figure">Standard figure</a></li>
+        
+            <li><a class="toctree-l4" href="#side-by-side-figure-1x2">Side-by-side figure (1x2)</a></li>
+        
+            <li><a class="toctree-l4" href="#side-by-side-figure-2x2">Side-by-side figure (2x2)</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#tables">Tables</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#standard-table">Standard table</a></li>
+        
+            <li><a class="toctree-l4" href="#side-by-side-table">Side-by-side table</a></li>
+        
+            <li><a class="toctree-l4" href="#sideways-table">Sideways-table</a></li>
+        
+            <li><a class="toctree-l4" href="#multi-page-table-longtable">Multi-page table (longtable)</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#list">List</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#bulleted-list-itemize">Bulleted list: itemize</a></li>
+        
+            <li><a class="toctree-l4" href="#numbered-list-enumerate">Numbered list: enumerate</a></li>
+        
+            <li><a class="toctree-l4" href="#description">Description</a></li>
+        
+            <li><a class="toctree-l4" href="#inline-enumeration">Inline enumeration</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#beamer-presentation">Beamer Presentation</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#table-of-content">Table of Content</a></li>
+        
+            <li><a class="toctree-l4" href="#list_1">List</a></li>
+        
+            <li><a class="toctree-l4" href="#side-by-side-figuretablelist-with-columns">Side-by-side figure/table/list with columns</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#cheat-sheet">Cheat Sheet</a></li>
+    
+
+    <li class="toctree-l3"><a href="#installation">Installation</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">OS & CLI</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../OS_CS/">OS Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Learn%20the%20Command%20Line%20Notes/">Codecademy Learn the Command Line Notes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Command%20Line%20Crash%20Course/">Command Line Crash Course</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Command%20Shell%20Snippets/">Command Shell Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../The%20Linux%20Command%20Line/">The Linux Command Line</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Ubuntu/">Ubuntu 16.04</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Install_tarball/">Install & Run on Linux</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SQL & NoSQL</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../SQL-NoSQL_CS/">SQL-NoSQL Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Learn%20SQL/">Codecademy Learn SQL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20SQL%2C%20Analyzing%20Business%20Metrics/">Codecademy SQL, Analyzing Business Metrics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20SQL%2C%20Table%20Transformation/">Codecademy SQL, Table Transformation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction%20to%20SQL%20JOINs/">Introduction to SQL JOINs</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Web</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Web_CS/">Web Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Build%20a%20Website/">Build a Website</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../HTML%20and%20CSS/">HTML and CSS</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Markdown%20%26%20Pandoc/">Markdown & Pandoc</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tests/">Tests</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugodoc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Vade Mecum &raquo;</li>
+        
+      
+    
+    <li>LaTeX Snippets</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#classes">Classes</a><ul>
+<li><a href="#article">Article</a></li>
+<li><a href="#report">Report</a></li>
+<li><a href="#book">Book</a></li>
+</ul>
+</li>
+<li><a href="#figure">Figure</a><ul>
+<li><a href="#standard-figure">Standard figure</a></li>
+<li><a href="#side-by-side-figure-1x2">Side-by-side figure (1x2)</a></li>
+<li><a href="#side-by-side-figure-2x2">Side-by-side figure (2x2)</a></li>
+</ul>
+</li>
+<li><a href="#tables">Tables</a><ul>
+<li><a href="#standard-table">Standard table</a></li>
+<li><a href="#side-by-side-table">Side-by-side table</a></li>
+<li><a href="#sideways-table">Sideways-table</a></li>
+<li><a href="#multi-page-table-longtable">Multi-page table (longtable)</a></li>
+</ul>
+</li>
+<li><a href="#list">List</a><ul>
+<li><a href="#bulleted-list-itemize">Bulleted list: itemize</a></li>
+<li><a href="#numbered-list-enumerate">Numbered list: enumerate</a></li>
+<li><a href="#description">Description</a></li>
+<li><a href="#inline-enumeration">Inline enumeration</a></li>
+</ul>
+</li>
+<li><a href="#beamer-presentation">Beamer Presentation</a><ul>
+<li><a href="#table-of-content">Table of Content</a></li>
+<li><a href="#list_1">List</a></li>
+<li><a href="#side-by-side-figuretablelist-with-columns">Side-by-side figure/table/list with columns</a></li>
+</ul>
+</li>
+<li><a href="#cheat-sheet">Cheat Sheet</a></li>
+<li><a href="#installation">Installation</a></li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Snippets and notes.</p>
+<hr />
+<h4 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="http://www.latex-project.org/">The LATEX Project</a></li>
+<li><a href="https://tex.stackexchange.com/">TEX</a> stack exchange</li>
+<li><a href="http://blog.oak-tree.us/index.php/2010/08/02/texmemo#more-1740">Write memos</a></li>
+<li><a href="http://app.uio.no/ifi/texcount/online.php">TeXcount web service</a></li>
+<li><a href="http://merkel.texture.rocks/Latex/natbib.php?lang=fr">Pense-bete pour natbib</a></li>
+<li><a href="http://texample.net/">TEXample</a></li>
+<li><a href="http://www.ctan.org/">CTAN</a></li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX Wikibook</a></li>
+<li><a href="http://www.xm1math.net/doculatex/index.html">TeX</a></li>
+</ul>
+<h4 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h4>
+<h5 id="article">Article<a class="headerlink" href="#article" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\documentclass[12pt]{article}
+\title{}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+...
+\end{abstract}
+\section{}
+\subsection{}
+\subsubsection{}
+\paragraph{}
+\subparagraph{}
+\end{document}
+</code></pre>
+
+<h5 id="report">Report<a class="headerlink" href="#report" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\documentclass[12pt]{report}
+\title{}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+...
+\end{abstract}
+\tableofcontents
+\listoffigures
+\listoftables
+\chapter{}
+\section{}
+\subsection{}
+\subsubsection{}
+\paragraph{}
+\subparagraph{}
+\end{document}
+</code></pre>
+
+<h5 id="book">Book<a class="headerlink" href="#book" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\documentclass[12pt]{book}
+\title{}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+\part{}
+\chapter{}
+\section{}
+\subsection{}
+\subsubsection{}
+\paragraph{}
+\subparagraph{}
+\end{document}
+</code></pre>
+
+<h4 id="figure">Figure<a class="headerlink" href="#figure" title="Permanent link">&para;</a></h4>
+<h5 id="standard-figure">Standard figure<a class="headerlink" href="#standard-figure" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">%Preamble
+\usepackage{graphicx}
+
+%Document
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figure.png}
+\caption[short for lof]{long figure caption}
+\label{fig:default}
+\end{figure}
+\ref{fig:default}
+</code></pre>
+
+<h5 id="side-by-side-figure-1x2">Side-by-side figure (1x2)<a class="headerlink" href="#side-by-side-figure-1x2" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">%Preamble
+\usepackage[lofdepth]{subfig}
+\usepackage{graphicx}
+
+%Document
+\begin{figure}[htbp] % h:here; t:top; b:bottom; p:page; default:ht
+\centering
+ \subfloat[short for lof][long subfigure1 caption]{
+   \includegraphics[width=0.45\linewidth]{figure1.png}
+   \label{subfig:fig1}
+ }
+ \subfloat[short for lof][long subfigure2 caption]{
+   \includegraphics[width=0.45\linewidth]{figure2.png}
+   \label{subfig:fig2}
+}
+\caption[short for lof]{long figure caption}
+\label{fig:fig1}
+\end{figure}
+\ref{fig:fig1} and \subref{subfig:fig1}
+</code></pre>
+
+<h5 id="side-by-side-figure-2x2">Side-by-side figure (2x2)<a class="headerlink" href="#side-by-side-figure-2x2" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">%Preamble
+\usepackage[lofdepth,lotdepth]{subfig}
+\usepackage{graphicx}
+
+%Document
+\begin{figure}[ht]
+\centering
+ \subfloat[short for lof][long subfig1 caption]{
+   \includegraphics[width=0.45\linewidth]{figure1.png}
+   \label{subfig:fig1}
+ }
+ \subfloat[short for lof][long subfig2 caption]{
+   \includegraphics[width=0.45\linewidth]{figure2.png}
+   \label{subfig:fig2}
+}
+
+ \subfloat[short for lof][long subfig3 caption]{
+   \includegraphics[width=0.45\linewidth]{figure3.png}
+   \label{subfig:fig3}
+ }
+ \subfloat[short for lof][long subfig4 caption]{
+   \includegraphics[width=0.45\linewidth]{figure4.png}
+   \label{subfig:fig4}
+}
+\caption[short for lof]{long figure caption}
+\label{fig:fig1}
+\end{figure}
+\ref{fig:fig1} and \subref{subfig:fig1}
+</code></pre>
+
+<p>Sideways-figure</p>
+<pre><code class="tex">% Preamble
+\usepackage{rotating}
+
+% Document
+\begin{sidewaysfigure}
+\centering
+\includegraphics{figure.png}
+\caption{Sideways figure.}
+\label{fig:swfig}
+\end{sidewaysfigure}
+</code></pre>
+
+<p>Wrap text around figure</p>
+<pre><code class="tex">%Preamble
+\usepackage{wrapfig, graphicx}
+
+% Document
+\begin{wrapfigure}{l}{0.5\textwidth} % l for left, r for right
+\centering
+\includegraphics[width=0.45\textwidth]{test}
+\caption{Text wrapped around figure}
+\label{fig:wrapfig}
+\end{wrapfigure}
+</code></pre>
+
+<h4 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h4>
+<h5 id="standard-table">Standard table<a class="headerlink" href="#standard-table" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\begin{table}[htbp] % h:here; t:top; b:bottom; p:page; default:ht
+    \caption{default}
+    \centering
+    \begin{tabular}{lccr}
+        \hline
+        - &amp; - &amp; - &amp; - \\
+        \hline
+        - &amp; - &amp; - &amp; - \\
+        - &amp; - &amp; - &amp; - \\
+        \hline
+    \end{tabular}
+    \label{tab:def}
+\end{table}%
+</code></pre>
+
+<h5 id="side-by-side-table">Side-by-side table<a class="headerlink" href="#side-by-side-table" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">%Preamble
+\usepackage[lotdepth]{subfig}
+
+%Document
+\begin{table}[htbp] % h:here; t:top; b:bottom; p:page; default:ht
+    \centering
+    \subfloat[short for lot subtable1][long subtable1 caption]{
+        \begin{tabular}{lccr}
+            \hline
+            - &amp; - &amp; - &amp; - \\
+            \hline
+            - &amp; - &amp; - &amp; - \\
+            - &amp; - &amp; - &amp; - \\
+            \hline
+        \end{tabular}
+        \label{subtab:tab1}
+    }
+    \subfloat[short for lot subtable2][long subtable2 caption]{
+        \begin{tabular}{lccr}
+            \hline
+            - &amp; - &amp; - &amp; - \\
+            \hline
+            - &amp; - &amp; - &amp; - \\
+            - &amp; - &amp; - &amp; - \\
+            \hline
+        \end{tabular}
+        \label{subtab:tab2}
+    }
+    \caption[short for lot]{long table caption}
+    \label{tab:tab1}
+\end{table}
+\ref{tab:tab1} and \subref{subtab:tab1}
+</code></pre>
+
+<h5 id="sideways-table">Sideways-table<a class="headerlink" href="#sideways-table" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">% Preamble
+\usepackage{rotating}
+
+% Document
+\begin{sidewaystable}
+    \caption{Sideways table.}
+    \centering
+    \begin{tabular}{lccr}
+        \hline
+        - &amp; - &amp; - &amp; - \\
+        \hline
+        - &amp; - &amp; - &amp; - \\
+        - &amp; - &amp; - &amp; - \\
+        \hline
+    \end{tabular}
+    \label{tab:swtab}
+\end{sidewaystable}
+</code></pre>
+
+<h5 id="multi-page-table-longtable">Multi-page table (longtable)<a class="headerlink" href="#multi-page-table-longtable" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">%Preamble
+\usepackage{longtable}
+
+% Document
+\begin{center}
+\begin{longtable}{|c|c|c|c|}
+\caption{A simple longtable example}\\
+\hline
+\textbf{First entry} &amp; \textbf{Second entry} &amp; \textbf{Third entry} &amp; \textbf{Fourth entry} \\
+\hline
+\endfirsthead
+\multicolumn{4}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{First entry} &amp; \textbf{Second entry} &amp; \textbf{Third entry} &amp; \textbf{Fourth entry} \\
+\hline
+\endhead
+\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline \multicolumn{4}{r}{\textit{End of table}} \\
+\endlastfoot
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\ 1 &amp; 2 &amp; 3 &amp; 4 \\
+\end{longtable}
+\end{center}
+</code></pre>
+
+<h4 id="list">List<a class="headerlink" href="#list" title="Permanent link">&para;</a></h4>
+<h5 id="bulleted-list-itemize">Bulleted list: itemize<a class="headerlink" href="#bulleted-list-itemize" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\begin{itemize}
+\item
+\item
+\item
+\end{itemize}
+</code></pre>
+
+<h5 id="numbered-list-enumerate">Numbered list: enumerate<a class="headerlink" href="#numbered-list-enumerate" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\begin{enumerate}
+\item
+\item
+\item
+\end{enumerate}
+</code></pre>
+
+<h5 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\begin{description}
+\item[]
+\item[]
+\item[]
+\end{description}
+</code></pre>
+
+<h5 id="inline-enumeration">Inline enumeration<a class="headerlink" href="#inline-enumeration" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">%Preamble
+\usepackage{paralist}
+
+%Document
+\begin{inparaenum}
+\item
+\item
+\item
+\end{inparaenum}
+</code></pre>
+
+<h4 id="beamer-presentation">Beamer Presentation<a class="headerlink" href="#beamer-presentation" title="Permanent link">&para;</a></h4>
+<h5 id="table-of-content">Table of Content<a class="headerlink" href="#table-of-content" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\documentclass{beamer}
+\usetheme{Berkeley}
+\begin{document}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{First}
+\begin{frame}{First section slide}
+    ...
+\end{frame}
+
+\section{Second}
+%Contents with current section highlighted
+\frame{\tableofcontents[currentsection]}
+\begin{frame}{Second section slide}
+    ...
+\end{frame}
+
+\end{document}
+</code></pre>
+
+<h5 id="list_1">List<a class="headerlink" href="#list_1" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\begin{frame}{Enumerate}
+    \begin{enumerate}
+        \item
+        \item
+        \item
+    \end{enumerate}
+\end{frame}
+</code></pre>
+
+<pre><code class="tex">\begin{frame}{Itemize}
+    \begin{itemize}
+        \item
+        \item
+        \item
+    \end{itemize}
+\end{frame}
+</code></pre>
+
+<h5 id="side-by-side-figuretablelist-with-columns">Side-by-side figure/table/list with columns<a class="headerlink" href="#side-by-side-figuretablelist-with-columns" title="Permanent link">&para;</a></h5>
+<pre><code class="tex">\begin{frame}{Side-by-side figure/table/text with columns}
+    \begin{columns}
+        \begin{column}[C]{.45\textwidth}
+% the T argument instead of C will align the top of the two columns, instead of the centers
+            \rule{\textwidth}{0.75\textwidth}
+        \end{column}
+        \begin{column}[C]{.45\textwidth}
+            \begin{enumerate} % numbered list
+                \item
+                \item
+                \item
+            \end{enumerate}
+        \end{column}
+    \end{columns}
+\end{frame}
+</code></pre>
+
+<p>Side-by-side figure/table/list with minipage</p>
+<pre><code class="tex">\begin{frame}{Side-by-side figure/table/text with minipage}
+    \begin{minipage}{0.45\textwidth} % figure
+        \rule{\textwidth}{0.75\textwidth}
+    \end{minipage}
+    \qquad
+    \begin{minipage}{0.45\textwidth}
+        \begin{enumerate} % numbered list
+            \item
+            \item
+            \item
+        \end{enumerate}
+    \end{minipage}
+\end{frame}
+</code></pre>
+
+<h4 id="cheat-sheet">Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link">&para;</a></h4>
+<hr />
+<p><img alt="Cheatsheet" src="../img/latex/g4144.png" /></p>
+<hr />
+<p><img alt="Cheatsheet" src="../img/latex/g4144b.png" /></p>
+<hr />
+<h4 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Windows distribution<ul>
+<li><a href="http://www.tug.org/protext/">proTeXt</a> (MiKTeX-based + the editor TeXnicCenter)</li>
+<li><a href="https://miktex.org/">MiKTeX</a></li>
+</ul>
+</li>
+<li>Windows editors &amp; software<ul>
+<li>TeXnicCenter (from proTeXt)</li>
+<li><a href="http://www.latexeditor.org/">LEd</a></li>
+<li>TeXstudio</li>
+<li>Texmaker</li>
+<li>LyX</li>
+<li>JabRef</li>
+</ul>
+</li>
+<li>Linux distribution<ul>
+<li><a href="http://www.tug.org/texlive/">TeX Live</a></li>
+<li>Terminal<ul>
+<li>sudo apt-get update</li>
+<li>sudo apt-get install texlive</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Linux editors &amp; software<ul>
+<li>Texmaker</li>
+<li>winefish</li>
+<li>Kile (KDE)</li>
+<li>Latexila</li>
+<li>LyX</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../OS_CS/" class="btn btn-neutral float-right" title="OS Cheat Sheets">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Infographies/" class="btn btn-neutral" title="Infographies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Spark</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Infographies/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../OS_CS/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
