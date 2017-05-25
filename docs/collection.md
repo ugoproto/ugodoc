@@ -344,6 +344,8 @@ Rédigez des documents de qualité avec LaTeX, Simple IT, Livre du Zéro, 2010
 
 The Not So Short Introduction to LaTeX, CC, 2015
 
+TikZ pour l'impatient, CC, 2017
+
 Tout ce que vous avez toujours voulu savoir sur LaTeX sans jamais oser le demander, CC, 2018
 
 ## Linux

@@ -66,36 +66,25 @@
     <a class="current" href="./">Edition Cheat Sheets</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#img">IMG</a></li>
+    <li class="toctree-l3"><a href="#git">Git</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#principal-commands">Principal commands</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#wikipedia">Wikipedia</a></li>
     
 
     <li class="toctree-l3"><a href="#latex">LaTeX</a></li>
     
-        <ul>
-        
-            <li><a class="toctree-l4" href="#img_1">IMG</a></li>
-        
-        </ul>
-    
 
     <li class="toctree-l3"><a href="#vim">Vim</a></li>
     
-        <ul>
-        
-            <li><a class="toctree-l4" href="#img_2">IMG</a></li>
-        
-            <li><a class="toctree-l4" href="#img_3">IMG</a></li>
-        
-        </ul>
-    
 
     <li class="toctree-l3"><a href="#regex">Regex</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#img_4">IMG</a></li>
-        
-        </ul>
     
 
     </ul>
@@ -258,23 +247,15 @@
             <div class="section">
               
                 <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#markdown">Markdown</a><ul>
-<li><a href="#img">IMG</a></li>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#git">Git</a><ul>
+<li><a href="#principal-commands">Principal commands</a></li>
 </ul>
 </li>
-<li><a href="#latex">LaTeX</a><ul>
-<li><a href="#img_1">IMG</a></li>
-</ul>
-</li>
-<li><a href="#vim">Vim</a><ul>
-<li><a href="#img_2">IMG</a></li>
-<li><a href="#img_3">IMG</a></li>
-</ul>
-</li>
-<li><a href="#regex">Regex</a><ul>
-<li><a href="#img_4">IMG</a></li>
-</ul>
-</li>
+<li><a href="#wikipedia">Wikipedia</a></li>
+<li><a href="#latex">LaTeX</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#regex">Regex</a></li>
 </ul>
 </div>
 <hr />
@@ -284,50 +265,140 @@
 <h4 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="../markdown-cheatsheet-online.pdf">GitHub Markdown Syntax</a>.</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/markdown-cheatsheet-onlinea.png" /></p>
+<p><img alt="" src="../img/vade_mecum/markdown-cheatsheet-onlinea.png" /><br />
+</center></p>
+<hr />
+<h4 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h4>
+<h5 id="principal-commands">Principal commands<a class="headerlink" href="#principal-commands" title="Permanent link">&para;</a></h5>
+<ul>
+<li><code>git init</code>: creates a new Git repository.</li>
+<li><code>git status</code>: inspects the contents of the working directory and staging area.</li>
+<li><code>git add &lt;filename_1&gt; &lt;filename_2&gt;</code>: adds files from the working directory to the staging area.</li>
+<li><code>git add .</code>, <code>git add --all</code>.</li>
+<li><code>git diff &lt;filename_1&gt; &lt;filename_2&gt;</code>: shows the difference between the working directory and the staging area.</li>
+<li><code>git commit -m "&lt;comments&gt;"</code>: permanently stores file changes from the staging area in the repository.</li>
+<li><code>git log</code>: shows a lis t of all previous commits.</li>
+<li><code>git show HEAD</code>: show the most recent commit.</li>
+<li><code>git checkout HEAD &lt;filename_1&gt; &lt;filename_2&gt;</code>: discards changes in the working directory.</li>
+<li><code>git checkout &lt;filename_1&gt; &lt;filename_2&gt;</code>: idem.</li>
+<li><code>git reset HEAD &lt;filename_1&gt; &lt;filename_2&gt;</code>: unstages file changes in the staging area, restore the file in your working directory.</li>
+<li><code>git reset &lt;SHA&gt; (7 characters)</code>: can be used to reset to a previous commit in your commit history.</li>
+<li><code>git branch</code>: lists all a Git project&rsquo;s branches.</li>
+<li><code>git branch &lt;branch_name&gt;</code>: creates a new branch.</li>
+<li><code>git checkout &lt;branch_name&gt;</code>: used to switch from one branch to another (the branch_name).</li>
+<li><code>git merge &lt;branch_name&gt;</code>: used to join file changes from one branch to another (your in branch A, you merge branch_name with A).</li>
+<li><code>git branch -d &lt;branch_name&gt;</code>: deletes the branch specified.</li>
+<li><code>git clone &lt;remote_location&gt; &lt;clone_name&gt;</code>: creates a local copy of a remote.</li>
+<li><code>git remote -v</code>: lists a Git project&rsquo;s remotes.</li>
+<li><code>git fetch</code>: fetches work from the remote into the local copy (no merging).</li>
+<li><code>git merge origin/master</code>: Merges origin/master into your local branch.</li>
+<li><code>git push origin &lt;branch_name&gt;</code>: pushes a local branch to the origin remote.</li>
+</ul>
+<hr />
+<ul>
+<li>Git Cheat Sheet by RebelLabs</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/Git-Cheat-Sheet-by-RebelLabs.png" /><br />
+</center></p>
+<hr />
+<ul>
+<li><a href="../git-cheat-sheet.pdf">Git Cheat Sheet</a>.</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/git-cheat-sheet.png" /><br />
+</center></p>
+<hr />
+<ul>
+<li><a href="../git-cheatsheet-EN-white.pdf">Git Cheat Sheet</a>.</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/git-cheatsheet-EN-whitea.png" /><br />
+</center></p>
+<hr />
+<ul>
+<li><a href="../github-git-cheat-sheet.pdf">Git Cheat Sheet</a>.</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/github-git-cheat-sheeta.png" /></p>
+<p><img alt="" src="../img/vade_mecum/github-git-cheat-sheetb.png" /><br />
+</center></p>
+<hr />
+<h4 id="wikipedia">Wikipedia<a class="headerlink" href="#wikipedia" title="Permanent link">&para;</a></h4>
+<ul>
 <li><a href="../davechild_wikipedia.pdf">Wikipedia Syntax</a>.</li>
 </ul>
-<h5 id="img">IMG<a class="headerlink" href="#img" title="Permanent link">&para;</a></h5>
-<hr />
+<p><center><br />
+<img alt="" src="../img/vade_mecum/davechild_wikipediaa.png" /></p>
+<p><img alt="" src="../img/vade_mecum/davechild_wikipediab.png" /><br />
+</center></p>
 <hr />
 <h4 id="latex">LaTeX<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h4>
 <ul>
-<li><a href="../latex-quick-reference.pdf">LaTeX Quick Reference</a>.</li>
-<li><a href="../latex-font-packages.pdf">LaTeX Font Packages</a>.</li>
+<li>LaTeX Quick Reference. PDF only. <strong>TODO</strong></li>
+<li><a href="../latex-font-packages.pdf">LaTeX Font Packages</a>. PDF only.</li>
+<li><a href="../latexsheet.pdf">LaTeX Cheat Sheet</a>.</li>
 </ul>
-<h5 id="img_1">IMG<a class="headerlink" href="#img_1" title="Permanent link">&para;</a></h5>
+<p></center><br />
+<img alt="" src="../img/vade_mecum/latexsheeta.png" /></p>
 <hr />
+<p><img alt="" src="../img/vade_mecum/latexsheetb.png" /><br />
+</center></p>
 <hr />
 <h4 id="vim">Vim<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="../setevoy2_vim.pdf">VIM</a>.</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/setevoy2_vim.png" /><br />
+</center></p>
+<hr />
+<ul>
 <li><a href="../typo209_comprehensive-vim-cheat-sheet.pdf">Comprehensive VIM</a>.</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/typo209_comprehensive-vim-cheat-sheeta.png" /></p>
+<p><img alt="" src="../img/vade_mecum/typo209_comprehensive-vim-cheat-sheetb.png" /><br />
+</center></p>
+<hr />
+<ul>
 <li><a href="../viEditorCheatSheet.pdf">Vi Editor</a>.</li>
 </ul>
-<h5 id="img_2">IMG<a class="headerlink" href="#img_2" title="Permanent link">&para;</a></h5>
-<hr />
+<p><center><br />
+<img alt="" src="../img/vade_mecum/viEditorCheatSheeta.png" /></p>
+<p><img alt="" src="../img/vade_mecum/viEditorCheatSheetb.png" /><br />
+</center></p>
 <ul>
 <li><a href="../vim-cheat-sheet-en.pdf">Vim Visual</a>.</li>
 </ul>
-<h5 id="img_3">IMG<a class="headerlink" href="#img_3" title="Permanent link">&para;</a></h5>
-<p><center></p>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/vim-cheat-sheet-en.png" /><br />
+</center></p>
 <hr />
-<p><img alt="" src="../img/Vim/vi-vim-cheat-sheet.png" /></p>
-<p><img alt="" src="../img/Vim/vi-vim-tutorial-1.png" /></p>
-<p><img alt="" src="../img/Vim/vi-vim-tutorial-2.png" /></p>
-<p><img alt="" src="../img/Vim/vi-vim-tutorial-3.png" /></p>
-<p><img alt="" src="../img/Vim/vi-vim-tutorial-4.png" /></p>
-<p><img alt="" src="../img/Vim/vi-vim-tutorial-5.png" /></p>
-<p><img alt="" src="../img/Vim/vi-vim-tutorial-6.png" /></p>
-<p><img alt="" src="../img/Vim/vi-vim-tutorial-7.png" /></p>
-<p></center></p>
+<ul>
+<li>Vim</li>
+</ul>
+<p><center><br />
+<img alt="" src="../img/vade_mecum/vi-vim-cheat-sheet.png" /></p>
+<p><img alt="" src="../img/vade_mecum/vi-vim-tutorial-1.png" /></p>
+<p><img alt="" src="../img/vade_mecum/vi-vim-tutorial-2.png" /></p>
+<p><img alt="" src="../img/vade_mecum/vi-vim-tutorial-3.png" /></p>
+<p><img alt="" src="../img/vade_mecum/vi-vim-tutorial-4.png" /></p>
+<p><img alt="" src="../img/vade_mecum/vi-vim-tutorial-5.png" /></p>
+<p><img alt="" src="../img/vade_mecum/vi-vim-tutorial-6.png" /></p>
+<p><img alt="" src="../img/vade_mecum/vi-vim-tutorial-7.png" /><br />
+</center></p>
 <hr />
 <h4 id="regex">Regex<a class="headerlink" href="#regex" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="../davechild_regular-expressions.pdf">Regex</a>.</li>
 </ul>
-<h5 id="img_4">IMG<a class="headerlink" href="#img_4" title="Permanent link">&para;</a></h5>
-<hr />
-<hr />
+<p><center><br />
+<img alt="" src="../img/vade_mecum/davechild_regular-expressions.png" /><br />
+</center></p>
               
             </div>
           </div>
