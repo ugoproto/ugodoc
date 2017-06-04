@@ -20,8 +20,6 @@ Cheat sheets.
 ![](img/vade_mecum/markdown-cheatsheet-onlinea.png)
 </center>
 
----
-
 ## Git
 
 ### Principal commands
@@ -48,10 +46,6 @@ Cheat sheets.
 - `git fetch`: fetches work from the remote into the local copy (no merging).
 - `git merge origin/master`: Merges origin/master into your local branch.
 - `git push origin <branch_name>`: pushes a local branch to the origin remote.
-
----
-
-- Git Cheat Sheet by RebelLabs
 
 <center>
 ![](img/vade_mecum/Git-Cheat-Sheet-by-RebelLabs.png)
@@ -83,8 +77,6 @@ Cheat sheets.
 ![](img/vade_mecum/github-git-cheat-sheetb.png)
 </center>
 
----
-
 ## Wikipedia
 
 - [Wikipedia Syntax](davechild_wikipedia.pdf).
@@ -94,8 +86,6 @@ Cheat sheets.
 
 ![](img/vade_mecum/davechild_wikipediab.png)
 </center>
-
----
 
 ## LaTeX
 
@@ -111,45 +101,7 @@ Cheat sheets.
 ![](img/vade_mecum/latexsheetb.png)
 </center>
 
----
-
-## Vim
-
-- [VIM](setevoy2_vim.pdf).
-
-<center>
-![](img/vade_mecum/setevoy2_vim.png)
-</center>
-
----
-
-- [Comprehensive VIM](typo209_comprehensive-vim-cheat-sheet.pdf).
-
-<center>
-![](img/vade_mecum/typo209_comprehensive-vim-cheat-sheeta.png)
-
-![](img/vade_mecum/typo209_comprehensive-vim-cheat-sheetb.png)
-</center>
-
----
-
-- [Vi Editor](viEditorCheatSheet.pdf).
-
-<center>
-![](img/vade_mecum/viEditorCheatSheeta.png)
-
-![](img/vade_mecum/viEditorCheatSheetb.png)
-</center>
-
-- [Vim Visual](vim-cheat-sheet-en.pdf).
-
-<center>
-![](img/vade_mecum/vim-cheat-sheet-en.png)
-</center>
-
----
-
-- Vim
+## Vi/Vim
 
 <center>
 ![](img/vade_mecum/vi-vim-cheat-sheet.png)
@@ -170,6 +122,40 @@ Cheat sheets.
 </center>
 
 ---
+
+- [Vi Editor](viEditorCheatSheet.pdf).
+
+<center>
+![](img/vade_mecum/viEditorCheatSheeta.png)
+
+![](img/vade_mecum/viEditorCheatSheetb.png)
+</center>
+
+---
+
+- [Vim Visual](vim-cheat-sheet-en.pdf).
+
+<center>
+![](img/vade_mecum/vim-cheat-sheet-en.png)
+</center>
+
+## VIM
+
+- [VIM](setevoy2_vim.pdf).
+
+<center>
+![](img/vade_mecum/setevoy2_vim.png)
+</center>
+
+---
+
+- [Comprehensive VIM](typo209_comprehensive-vim-cheat-sheet.pdf).
+
+<center>
+![](img/vade_mecum/typo209_comprehensive-vim-cheat-sheeta.png)
+
+![](img/vade_mecum/typo209_comprehensive-vim-cheat-sheetb.png)
+</center>
 
 ## Regex
 

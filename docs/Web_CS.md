@@ -69,8 +69,6 @@ Cheat sheets.
 ![](img/web/blueprintcss-1-0-1-cheatsheet-4-4-gjmsb.png)
 </center>
 
----
-
 ## Web Programming
 
 - [Web Programming](sanoj_web-programming.pdf).
@@ -95,8 +93,6 @@ Cheat sheets.
 <center>
 ![](img/web/kstep_http-status-codes.png)
 </center>
-
----
 
 ## Project Management
 

@@ -26,8 +26,6 @@ Cheat sheets.
 ![](img/sql_nosql/SQL-Cheatsheet-2.png)
 </center>
 
----
-
 ### SQLite
 
 - [SQLite](richardjh_sqlite3.pdf).
@@ -37,8 +35,6 @@ Cheat sheets.
 
 ![](img/sql_nosql/richardjh_sqlite3b.png)
 </center>
-
----
 
 ### MySQL
 
@@ -52,7 +48,7 @@ Cheat sheets.
 
 ---
 
-- [Essential SQL](guslong_essential-mysql.pdf).
+- [Essential MySQL](guslong_essential-mysql.pdf).
 
 <center>
 ![](img/sql_nosql/guslong_essential-mysqla.png)
@@ -87,8 +83,6 @@ Cheat sheets.
 ---
 
 - [Essential PostgreSQL](52492-rc071_postgresql_2.pdf). PDF only.
-
----
 
 ## NoSQL
 
