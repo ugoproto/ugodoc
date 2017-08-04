@@ -12,7 +12,7 @@ Cheat sheets.
 
 ## SQL
 
-- [SQL 1](SQL-Cheatsheet.pdf). PDF.
+- [SQL 1](SQL-Cheatsheet.pdf).
 
 <center>
 ![](img/sql_nosql/SQL-Cheatsheet.png)
@@ -20,7 +20,7 @@ Cheat sheets.
 
 ---
 
-- [SQL 2](SQL-Cheatsheet-2.pdf). PDF.
+- [SQL 2](SQL-Cheatsheet-2.pdf).
 
 <center>
 ![](img/sql_nosql/SQL-Cheatsheet-2.png)
@@ -28,7 +28,7 @@ Cheat sheets.
 
 ### SQLite
 
-- [SQLite](richardjh_sqlite3.pdf). PDF.
+- [SQLite](richardjh_sqlite3.pdf).
 
 <center>
 ![](img/sql_nosql/richardjh_sqlite3a.png)
@@ -38,7 +38,7 @@ Cheat sheets.
 
 ### MySQL
 
-- [MySQL](davechild_mysql.pdf). PDF.
+- [MySQL](davechild_mysql.pdf).
 
 <center>
 ![](img/sql_nosql/davechild_mysqla.png)
@@ -48,7 +48,7 @@ Cheat sheets.
 
 ---
 
-- [Essential MySQL](guslong_essential-mysql.pdf). PDF.
+- [Essential MySQL](guslong_essential-mysql.pdf).
 
 <center>
 ![](img/sql_nosql/guslong_essential-mysqla.png)
@@ -62,7 +62,7 @@ Cheat sheets.
 
 ### PostgreSQL
 
-- [PostgreSQL](tme520_postgresql.pdf). PDF.
+- [PostgreSQL](tme520_postgresql.pdf).
 
 <center>
 ![](img/sql_nosql/tme520_postgresqla.png)
@@ -74,7 +74,7 @@ Cheat sheets.
 
 ---
 
-- [PostgreSQL Interactive Terminal Commands](squixy_postgresql-interactive-terminal-commands.pdf). PDF.
+- [PostgreSQL Interactive Terminal Commands](squixy_postgresql-interactive-terminal-commands.pdf).
 
 <center>
 ![](img/sql_nosql/squixy_postgresql-interactive-terminal-commands.png)

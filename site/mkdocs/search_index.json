@@ -177,7 +177,7 @@
         },
         {
             "location": "/Edition_CS/",
-            "text": "CONTENT\n\n\nMarkdown\n\n\nGit\n\n\nPrincipal commands\n\n\n\n\n\n\nWikipedia\n\n\nLaTeX\n\n\nVi/Vim\n\n\nVIM\n\n\nRegex\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nMarkdown\n\u00b6\n\n\n\n\nGitHub Markdown Syntax\n.\n\n\n\n\n\n\n\n\n\n\n\n\nGit\n\u00b6\n\n\nPrincipal commands\n\u00b6\n\n\n\n\ngit init\n: creates a new Git repository.\n\n\ngit status\n: inspects the contents of the working directory and staging area.\n\n\ngit add <filename_1> <filename_2>\n: adds files from the working directory to the staging area.\n\n\ngit add .\n, \ngit add --all\n.\n\n\ngit diff <filename_1> <filename_2>\n: shows the difference between the working directory and the staging area.\n\n\ngit commit -m \"<comments>\"\n: permanently stores file changes from the staging area in the repository.\n\n\ngit log\n: shows a lis t of all previous commits.\n\n\ngit show HEAD\n: show the most recent commit.\n\n\ngit checkout HEAD <filename_1> <filename_2>\n: discards changes in the working directory.\n\n\ngit checkout <filename_1> <filename_2>\n: idem.\n\n\ngit reset HEAD <filename_1> <filename_2>\n: unstages file changes in the staging area, restore the file in your working directory.\n\n\ngit reset <SHA> (7 characters)\n: can be used to reset to a previous commit in your commit history.\n\n\ngit branch\n: lists all a Git project\u2019s branches.\n\n\ngit branch <branch_name>\n: creates a new branch.\n\n\ngit checkout <branch_name>\n: used to switch from one branch to another (the branch_name).\n\n\ngit merge <branch_name>\n: used to join file changes from one branch to another (your in branch A, you merge branch_name with A).\n\n\ngit branch -d <branch_name>\n: deletes the branch specified.\n\n\ngit clone <remote_location> <clone_name>\n: creates a local copy of a remote.\n\n\ngit remote -v\n: lists a Git project\u2019s remotes.\n\n\ngit fetch\n: fetches work from the remote into the local copy (no merging).\n\n\ngit merge origin/master\n: Merges origin/master into your local branch.\n\n\ngit push origin <branch_name>\n: pushes a local branch to the origin remote.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit Cheat Sheet\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit Cheat Sheet\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit Cheat Sheet\n.\n\n\n\n\n\n\n\n\n\n\n\n\nWikipedia\n\u00b6\n\n\n\n\nWikipedia Syntax\n.\n\n\n\n\n\n\n\n\n\n\n\n\nLaTeX\n\u00b6\n\n\n\n\nLaTeX Quick Reference. PDF only. \nTODO\n\n\nLaTeX Font Packages\n. PDF only.\n\n\nLaTeX Cheat Sheet\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVi/Vim\n\u00b6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVi Editor\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Visual\n.\n\n\n\n\n\n\n\n\n\n\nVIM\n\u00b6\n\n\n\n\nVIM\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComprehensive VIM\n.\n\n\n\n\n\n\n\n\n\n\n\n\nRegex\n\u00b6\n\n\n\n\nRegex\n.",
+            "text": "CONTENT\n\n\nMarkdown\n\n\nGit\n\n\nPrincipal commands\n\n\n\n\n\n\nWikipedia\n\n\nLaTeX\n\n\nVi/Vim\n\n\nVIM\n\n\nRegex\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nMarkdown\n\u00b6\n\n\n\n\nGitHub Markdown Syntax\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nGit\n\u00b6\n\n\nPrincipal commands\n\u00b6\n\n\n\n\ngit init\n: creates a new Git repository.\n\n\ngit status\n: inspects the contents of the working directory and staging area.\n\n\ngit add <filename_1> <filename_2>\n: adds files from the working directory to the staging area.\n\n\ngit add .\n, \ngit add --all\n.\n\n\ngit diff <filename_1> <filename_2>\n: shows the difference between the working directory and the staging area.\n\n\ngit commit -m \"<comments>\"\n: permanently stores file changes from the staging area in the repository.\n\n\ngit log\n: shows a lis t of all previous commits.\n\n\ngit show HEAD\n: show the most recent commit.\n\n\ngit checkout HEAD <filename_1> <filename_2>\n: discards changes in the working directory.\n\n\ngit checkout <filename_1> <filename_2>\n: idem.\n\n\ngit reset HEAD <filename_1> <filename_2>\n: unstages file changes in the staging area, restore the file in your working directory.\n\n\ngit reset <SHA> (7 characters)\n: can be used to reset to a previous commit in your commit history.\n\n\ngit branch\n: lists all a Git project\u2019s branches.\n\n\ngit branch <branch_name>\n: creates a new branch.\n\n\ngit checkout <branch_name>\n: used to switch from one branch to another (the branch_name).\n\n\ngit merge <branch_name>\n: used to join file changes from one branch to another (your in branch A, you merge branch_name with A).\n\n\ngit branch -d <branch_name>\n: deletes the branch specified.\n\n\ngit clone <remote_location> <clone_name>\n: creates a local copy of a remote.\n\n\ngit remote -v\n: lists a Git project\u2019s remotes.\n\n\ngit fetch\n: fetches work from the remote into the local copy (no merging).\n\n\ngit merge origin/master\n: Merges origin/master into your local branch.\n\n\ngit push origin <branch_name>\n: pushes a local branch to the origin remote.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nWikipedia\n\u00b6\n\n\n\n\nWikipedia Syntax\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nLaTeX\n\u00b6\n\n\n\n\nLaTeX Quick Reference. PDF only. \nTODO\n\n\nLaTeX Font Packages\n. PDF only.\n\n\nLaTeX Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVi/Vim\n\u00b6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVi Editor\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Visual\n. PDF.\n\n\n\n\n\n\n\n\n\n\nVIM\n\u00b6\n\n\n\n\nVIM\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComprehensive VIM\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nRegex\n\u00b6\n\n\n\n\nRegex\n. PDF.",
             "title": "Edition Cheat Sheets"
         },
         {
@@ -187,32 +187,32 @@
         },
         {
             "location": "/Edition_CS/#principal-commands",
-            "text": "git init : creates a new Git repository.  git status : inspects the contents of the working directory and staging area.  git add <filename_1> <filename_2> : adds files from the working directory to the staging area.  git add . ,  git add --all .  git diff <filename_1> <filename_2> : shows the difference between the working directory and the staging area.  git commit -m \"<comments>\" : permanently stores file changes from the staging area in the repository.  git log : shows a lis t of all previous commits.  git show HEAD : show the most recent commit.  git checkout HEAD <filename_1> <filename_2> : discards changes in the working directory.  git checkout <filename_1> <filename_2> : idem.  git reset HEAD <filename_1> <filename_2> : unstages file changes in the staging area, restore the file in your working directory.  git reset <SHA> (7 characters) : can be used to reset to a previous commit in your commit history.  git branch : lists all a Git project\u2019s branches.  git branch <branch_name> : creates a new branch.  git checkout <branch_name> : used to switch from one branch to another (the branch_name).  git merge <branch_name> : used to join file changes from one branch to another (your in branch A, you merge branch_name with A).  git branch -d <branch_name> : deletes the branch specified.  git clone <remote_location> <clone_name> : creates a local copy of a remote.  git remote -v : lists a Git project\u2019s remotes.  git fetch : fetches work from the remote into the local copy (no merging).  git merge origin/master : Merges origin/master into your local branch.  git push origin <branch_name> : pushes a local branch to the origin remote.        Git Cheat Sheet .        Git Cheat Sheet .        Git Cheat Sheet .",
+            "text": "git init : creates a new Git repository.  git status : inspects the contents of the working directory and staging area.  git add <filename_1> <filename_2> : adds files from the working directory to the staging area.  git add . ,  git add --all .  git diff <filename_1> <filename_2> : shows the difference between the working directory and the staging area.  git commit -m \"<comments>\" : permanently stores file changes from the staging area in the repository.  git log : shows a lis t of all previous commits.  git show HEAD : show the most recent commit.  git checkout HEAD <filename_1> <filename_2> : discards changes in the working directory.  git checkout <filename_1> <filename_2> : idem.  git reset HEAD <filename_1> <filename_2> : unstages file changes in the staging area, restore the file in your working directory.  git reset <SHA> (7 characters) : can be used to reset to a previous commit in your commit history.  git branch : lists all a Git project\u2019s branches.  git branch <branch_name> : creates a new branch.  git checkout <branch_name> : used to switch from one branch to another (the branch_name).  git merge <branch_name> : used to join file changes from one branch to another (your in branch A, you merge branch_name with A).  git branch -d <branch_name> : deletes the branch specified.  git clone <remote_location> <clone_name> : creates a local copy of a remote.  git remote -v : lists a Git project\u2019s remotes.  git fetch : fetches work from the remote into the local copy (no merging).  git merge origin/master : Merges origin/master into your local branch.  git push origin <branch_name> : pushes a local branch to the origin remote.        Git Cheat Sheet . PDF.        Git Cheat Sheet . PDF.        Git Cheat Sheet . PDF.",
             "title": "Principal commands"
         },
         {
             "location": "/Edition_CS/#wikipedia",
-            "text": "Wikipedia Syntax .",
+            "text": "Wikipedia Syntax . PDF.",
             "title": "Wikipedia"
         },
         {
             "location": "/Edition_CS/#latex",
-            "text": "LaTeX Quick Reference. PDF only.  TODO  LaTeX Font Packages . PDF only.  LaTeX Cheat Sheet .",
+            "text": "LaTeX Quick Reference. PDF only.  TODO  LaTeX Font Packages . PDF only.  LaTeX Cheat Sheet . PDF.",
             "title": "LaTeX"
         },
         {
             "location": "/Edition_CS/#vivim",
-            "text": "Vi Editor .         Vim Visual .",
+            "text": "Vi Editor . PDF.         Vim Visual . PDF.",
             "title": "Vi/Vim"
         },
         {
             "location": "/Edition_CS/#vim",
-            "text": "VIM .        Comprehensive VIM .",
+            "text": "VIM . PDF.        Comprehensive VIM . PDF.",
             "title": "VIM"
         },
         {
             "location": "/Edition_CS/#regex",
-            "text": "Regex .",
+            "text": "Regex . PDF.",
             "title": "Regex"
         },
         {
@@ -577,12 +577,12 @@
         },
         {
             "location": "/OS_CS/",
-            "text": "CONTENT\n\n\nLinux\n\n\nWindows\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nLinux\n\u00b6\n\n\n\n\nUbuntu Reference\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Reference\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Line\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux Bash Shell\n. PDF only.\n\n\nLearning the Shell\n.\n\n\nbc - An arbitrary precision calculator language\n.\n\n\n\n\n\n\n\n\nWindows\n\u00b6\n\n\n\n\nPowerShell Basics\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWindows PowerShell\n.",
+            "text": "CONTENT\n\n\nLinux\n\n\nWindows\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nLinux\n\u00b6\n\n\n\n\nUbuntu Reference\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Reference\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Line\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux Bash Shell\n. PDF only.\n\n\nLearning the Shell\n.\n\n\nbc - An arbitrary precision calculator language\n.\n\n\n\n\n\n\n\n\nWindows\n\u00b6\n\n\n\n\nPowerShell Basics\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWindows PowerShell\n. PDF.",
             "title": "OS Cheat Sheets"
         },
         {
             "location": "/OS_CS/#windows",
-            "text": "PowerShell Basics .        Windows PowerShell .",
+            "text": "PowerShell Basics . PDF.        Windows PowerShell . PDF.",
             "title": "Windows"
         },
         {
@@ -782,22 +782,22 @@
         },
         {
             "location": "/SQL-NoSQL_CS/",
-            "text": "CONTENT\n\n\nSQL\n\n\nSQLite\n\n\nMySQL\n\n\nPostgreSQL\n\n\n\n\n\n\nNoSQL\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nSQL\n\u00b6\n\n\n\n\nSQL 1\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSQL 2\n.\n\n\n\n\n\n\n\n\n\n\nSQLite\n\u00b6\n\n\n\n\nSQLite\n.\n\n\n\n\n\n\n\n\n\n\n\n\nMySQL\n\u00b6\n\n\n\n\nMySQL\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEssential MySQL\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEssential Admin for MySQL\n. PDF only.\n\n\n\n\nPostgreSQL\n\u00b6\n\n\n\n\nPostgreSQL\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostgreSQL Interactive Terminal Commands\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEssential PostgreSQL\n. PDF only.\n\n\n\n\nNoSQL\n\u00b6\n\n\n\n\nNoSQL and Data Scalability\n. PDF only.\n\n\nMongoDB\n. PDF only.",
+            "text": "CONTENT\n\n\nSQL\n\n\nSQLite\n\n\nMySQL\n\n\nPostgreSQL\n\n\n\n\n\n\nNoSQL\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nSQL\n\u00b6\n\n\n\n\nSQL 1\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSQL 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\nSQLite\n\u00b6\n\n\n\n\nSQLite\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nMySQL\n\u00b6\n\n\n\n\nMySQL\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEssential MySQL\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEssential Admin for MySQL\n. PDF only.\n\n\n\n\nPostgreSQL\n\u00b6\n\n\n\n\nPostgreSQL\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPostgreSQL Interactive Terminal Commands\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEssential PostgreSQL\n. PDF only.\n\n\n\n\nNoSQL\n\u00b6\n\n\n\n\nNoSQL and Data Scalability\n. PDF only.\n\n\nMongoDB\n. PDF only.",
             "title": "SQL-NoSQL Cheat Sheets"
         },
         {
             "location": "/SQL-NoSQL_CS/#sqlite",
-            "text": "SQLite .",
+            "text": "SQLite . PDF.",
             "title": "SQLite"
         },
         {
             "location": "/SQL-NoSQL_CS/#mysql",
-            "text": "MySQL .         Essential MySQL .         Essential Admin for MySQL . PDF only.",
+            "text": "MySQL . PDF.         Essential MySQL . PDF.         Essential Admin for MySQL . PDF only.",
             "title": "MySQL"
         },
         {
             "location": "/SQL-NoSQL_CS/#postgresql",
-            "text": "PostgreSQL .          PostgreSQL Interactive Terminal Commands .        Essential PostgreSQL . PDF only.",
+            "text": "PostgreSQL . PDF.          PostgreSQL Interactive Terminal Commands . PDF.        Essential PostgreSQL . PDF only.",
             "title": "PostgreSQL"
         },
         {
@@ -982,17 +982,17 @@
         },
         {
             "location": "/Web_CS/",
-            "text": "CONTENT\n\n\nHTML\n\n\nCSS\n\n\nWeb Programming\n\n\nProject Management\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nHTML\n\u00b6\n\n\n\n\nHTML Markups\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTML Basics\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCore HTML\n. PDF only.\n\n\nHTML Character Entities 1\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTML Character Entities 2\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTML5 Quick Reference\n. PDF only.\n\n\n\n\nCSS\n\u00b6\n\n\n\n\nCSS Basics\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlueprint CSS\n.\n\n\n\n\n\n\n\n\n\n\n\n\nWeb Programming\n\u00b6\n\n\n\n\nWeb Programming\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTTP Status Code 1\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTTP Status Code 2\n.\n\n\n\n\n\n\n\n\n\n\nProject Management\n\u00b6\n\n\n\n\nScrum\n. PDF only.",
+            "text": "CONTENT\n\n\nHTML\n\n\nCSS\n\n\nWeb Programming\n\n\nProject Management\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nHTML\n\u00b6\n\n\n\n\nHTML Markups\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTML Basics\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCore HTML\n. PDF only.\n\n\nHTML Character Entities 1\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTML Character Entities 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTML5 Quick Reference\n. PDF only.\n\n\n\n\nCSS\n\u00b6\n\n\n\n\nCSS Basics\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlueprint CSS\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nWeb Programming\n\u00b6\n\n\n\n\nWeb Programming\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTTP Status Code 1\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHTTP Status Code 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\nProject Management\n\u00b6\n\n\n\n\nScrum\n. PDF only.",
             "title": "Web Cheat Sheets"
         },
         {
             "location": "/Web_CS/#css",
-            "text": "CSS Basics .         Blueprint CSS .",
+            "text": "CSS Basics . PDF.         Blueprint CSS . PDF.",
             "title": "CSS"
         },
         {
             "location": "/Web_CS/#web-programming",
-            "text": "Web Programming .         HTTP Status Code 1 .        HTTP Status Code 2 .",
+            "text": "Web Programming . PDF.         HTTP Status Code 1 . PDF.        HTTP Status Code 2 . PDF.",
             "title": "Web Programming"
         },
         {
