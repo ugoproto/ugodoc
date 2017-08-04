@@ -470,50 +470,6 @@ Scrum (cheat sheet)
 
 ## Python
 
-### Advanced, Specialized
-
-<sub>programming, coding, script</sub>
-
-Apprendre la programmation avec Python et Django, Eyrolles, 2012
-
-Data Structures and Algorithms in python, Wiley, 2013
-
-Data Wrangling With Python, Tips and Tools to Make Your Life Easier, O'Reilly, 2016
-
-Fluent Python, O'Reilly, 2014
-
-FreeCAD, Solid Modeling with the Power of Python, Packt, 2012
-
-Fundamentals of Python From First Programs through Data Structures, CC, 2010
-
-Hacking Secret Ciphers With Python, CC, 2013
-
-Learning Data Mining with Python, Harness the power of Python to analyze, data and create insightful predictive models, Packt, 2015
-
-Learning Python, 5th Edition, O'Reilly, 2013
-
-Mastering Pycharm, Use PyCharm with fluid efficiency, Packt, 2015
-
-Matplotlib (manual), 2013
-
-Programmation Python, conception et optimisation, 2e édition, Eyrolles, 2009
-
-Python Cookbook, 3rd Edition, O'Reilly, 2013
-
-Python Essential Reference, 4th Edition, Addison-Wesley, 2009
-
-Python for Data Analysis, O'Reilly, 2012
-
-Python Geospatial Development, Learn to build sophisticated mapping applications from scratch using Python tools for geospatial development, 2nd Edition, Packt, 2013
-
-Python Programming for Hackers and Reverse Engineers, No Starch Press, 2009
-
-Real World Instrumentation with Python, O'Reilly, 2010
-
-Web Scraping with Python, O'Reilly, 2015
-
-### Entry-level
-
 Automate the Boring Stuff with Python, No Starch Press, 2015 
 
 Cheat sheets
@@ -526,18 +482,12 @@ Python Final Project (uncompleted course, notes, snapshots, manual), Codecademy,
 
 Python Projects (notes, codes), Codecademy, 2015, <sub>bank account, battleship, calendar, grading, guess game, converter, game</sub>
 
-Data Science and Machine Learning with Python (course, videos)
-
-Data Science and Machine Learning with Python (videos, 9h), Udemy, 2015
-
 Intro to Python for Data Science (completed course, notes, snapshots, manual), DataCamp, 2015,
 <sub>python3</sub>
 
 Learn Python the Hard Way (completed course, videos, notes, snapshots, codes, manual)
 
 Managing Your Biological Data with Python (notes, script, images, files), CRC Press, 2014
-
-Understanding Machine Learning with Python (course, videos), 2016
 
 LPTHW Python +
 
@@ -623,21 +573,11 @@ Learn Web Scraping With Python In A Day, Acodemy, 2015
 
 ## R, Statistics
 
-### Advanced, Specialized
-
-A User's Guide to Network Analysis in R, 1st edition, Springer, 2015
-
-An Introduction to R for Spatial Analysis and Mapping, SAGE, 2015
-
-Basic Data Analysis for Time Series with R, Wiley, 2014
+### Bibliothèque
 
 Biostatistique : une approche intuitive (BANQ), De Boeck, 2013, <sub>tests, hypothesis, p-value, proportion confidence interval, survival analysis, censored, poisson, error, bias, continuous, categorical, spread, gauss, log-normal, geometric, significance, tests, type i, type ii, equivalence, comparison, group, outlier, khi-squared, propective, experimental, relative risk, survey, two mean, groups, correlation, regression, model, nonlinear, logistic, anova, nonparametric, sensitivity, roc, bayes, sample, sampling, cases</sub>
 
 Comprendre et réaliser les tests statistiques à l'aide de R : manuel de biostatistique (BANQ), De Boeck, 2014, <sub>r, descriptive statistics, random variable, data table, scientific methodology, survey, outliers, tests, probability distribution, binomial, multinomial, pascal, negative binomial, geometric, hypergeometric, poisson, laplace-gauss, normal, exponential, gamma, chi-squared, fisher-snedecor, student, mann-whitney, wilcoxon, hypothesis, type i, type ii, bias, error, proportion comparison, conformity, homogeneity, g, mantel-haenszel, mac nemar, mean comparison, welch, anova, median comparison, mann-whitney-wilcoxon, kruskal-wallis, variance comparison, ansari-bradley, bartlett, fligner-killeen, correlation comparison, pearson, spearman, kendall, distribution comparison, kolmogorov-smirnov, shapiro-wilk, regression, survival, covariance, central limit</sub>
-
-Learning Bayesian Models with R, Become an expert in Bayesian machine learning methods using R and apply them to solve real-world Big Data problems, Packt, 2015 
-
-Making your Case, Using R for Program Evaluation (BANQ, c7, c8, c8, ssdanalysis.com), Oxford University Press, 2015, <sub>test, variance, var.test, t, t.test, cohen.d, dchange, aov, wilcox, wilcox.test, kruskal, kruskal.test, mcnemar, mcnemar.test, wald, wald.test, nonconstant variance, ncvtest, log-lin, logistic regression</sub>
 
 ### Entry-level
 
