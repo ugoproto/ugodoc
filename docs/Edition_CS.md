@@ -20,6 +20,10 @@ Cheat sheets.
 ![](img/vade_mecum/markdown-cheatsheet-onlinea.png)
 </center>
 
+## Tableau
+
+- [Tableau Cheat Sheet](Tableau_Cheat_Sheet.pdf). PDF only.
+
 ## Git
 
 ### Principal commands
