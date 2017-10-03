@@ -2,9 +2,9 @@ site_name: ugodoc
 site_url: https://ugoproto.github.io/ugodoc/
 #repo_url: https://github.com/ugoproto/ugodoc
 site_description: A Data Science documentation website.
-site_author: Ugo Sparks
+site_author: Ugo Spark
 #site_favicon: favicon.ico
-copyright: © Ugo Sparks
+copyright: © Ugo Spark
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
 #remote_branch: master
 #remote_name: ugodoc
