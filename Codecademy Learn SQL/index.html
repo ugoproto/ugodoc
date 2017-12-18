@@ -227,6 +227,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../Responsive_HTML/">Responsive HTML</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../Markdown & Pandoc/">Markdown & Pandoc</a>
                 </li>
     </ul>
@@ -308,140 +312,229 @@
 <p>SQL, &lsquo;Structured Query Language&rsquo;, is a programming language designed to manage data stored in relational databases. SQL operates through simple, declarative statements. This keeps data accurate and secure, and helps maintain the integrity of databases, regardless of size.</p>
 <p>The SQL language is widely used today across web frameworks and database applications. Knowing SQL gives you the freedom to explore your data, and the power to make better decisions. By learning SQL, you will also learn concepts that apply to nearly every data storage system.</p>
 <p>The statements covered in this course, use SQLite Relational Database Management System (RDBMS). You can learn more about RDBMS&rsquo;s here. You can also access a glossary of all the SQL commands taught in this course here.</p>
-<pre><code class="sql">--Show, create, use database
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Show, create, use database</span>
 
-SHOW databases;
-CREATE DATABASE dbname;
-SHOW databases;
-USE dbname;
-</code></pre>
+<span class="k">SHOW</span> <span class="n">databases</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">dbname</span><span class="p">;</span>
+<span class="k">SHOW</span> <span class="n">databases</span><span class="p">;</span>
+<span class="n">USE</span> <span class="n">dbname</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Show tables
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Show tables</span>
 
-SHOW tables;
-</code></pre>
+<span class="k">SHOW</span> <span class="n">tables</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Create the table:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Create the table:</span>
 
-CREATE TABLE table_name (
-    column_1 data_type, 
-    column_2 data_type, 
-    column_3 data_type
-  );
-</code></pre>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="k">table_name</span> <span class="p">(</span>
+    <span class="n">column_1</span> <span class="n">data_type</span><span class="p">,</span> 
+    <span class="n">column_2</span> <span class="n">data_type</span><span class="p">,</span> 
+    <span class="n">column_3</span> <span class="n">data_type</span>
+  <span class="p">);</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">CREATE TABLE celebs (id INTEGER, name TEXT, age INTEGER);
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">celebs</span> <span class="p">(</span><span class="n">id</span> <span class="nb">INTEGER</span><span class="p">,</span> <span class="n">name</span> <span class="nb">TEXT</span><span class="p">,</span> <span class="n">age</span> <span class="nb">INTEGER</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Add a row:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Add a row:</span>
 
-INSERT INTO celebs (id,name,age) VALUES (1,&quot;Justin Bieber&quot;,21);
-</code></pre>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">celebs</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="ss">&quot;Justin Bieber&quot;</span><span class="p">,</span><span class="mi">21</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--View:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--View:</span>
 
-SELECT * From celebs;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">From</span> <span class="n">celebs</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Insert more rows:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Insert more rows:</span>
 
-INSERT INTO celebs (id,name,age) VALUES (2,&quot;Beyonce Knowles&quot;,33);
-INSERT INTO celebs (id,name,age) VALUES (3,&quot;Jeremy Lin&quot;,26);
-INSERT INTO celebs (id,name,age) VALUES (4,&quot;Taylor Swift&quot;,26);
-</code></pre>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">celebs</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="ss">&quot;Beyonce Knowles&quot;</span><span class="p">,</span><span class="mi">33</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">celebs</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="ss">&quot;Jeremy Lin&quot;</span><span class="p">,</span><span class="mi">26</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">celebs</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="ss">&quot;Taylor Swift&quot;</span><span class="p">,</span><span class="mi">26</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--View:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--View:</span>
 
-SELECT name FROM celebs;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">celebs</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Edit a row:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Edit a row:</span>
 
-UPDATE celebs SET age = 22 WHERE id = 1;
-</code></pre>
+<span class="k">UPDATE</span> <span class="n">celebs</span> <span class="k">SET</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">22</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--View:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--View:</span>
 
-SELECT * FROM celebs;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">celebs</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Add a new column:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Add a new column:</span>
 
-ALTER TABLE celebs ADD COLUMN twitter_handle TEXT;
-</code></pre>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">celebs</span> <span class="k">ADD</span> <span class="k">COLUMN</span> <span class="n">twitter_handle</span> <span class="nb">TEXT</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--View:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--View:</span>
 
-SELECT * FROM celebs;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">celebs</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Update the table:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Update the table:</span>
 
-UPDATE celebs SET twitter_handle = '@taylorswift13' WHERE id = 4;
-</code></pre>
+<span class="k">UPDATE</span> <span class="n">celebs</span> <span class="k">SET</span> <span class="n">twitter_handle</span> <span class="o">=</span> <span class="s1">&#39;@taylorswift13&#39;</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--View:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--View:</span>
 
-SELECT * FROM celebs;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">celebs</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Delete rows. NULL for missing or unknown data:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Delete rows. NULL for missing or unknown data:</span>
 
-DELETE FROM celebs WHERE twitter_handle IS NULL;
-</code></pre>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">celebs</span> <span class="k">WHERE</span> <span class="n">twitter_handle</span> <span class="k">IS</span> <span class="k">NULL</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--View:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--View:</span>
 
-SELECT * FROM celebs;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">celebs</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <h5 id="project-create-table">Project Create Table<a class="headerlink" href="#project-create-table" title="Permanent link">&para;</a></h5>
 <p>In this project you will create your own friends table and add and delete data from it.</p>
 <p>The instructions provided are a general guideline, but feel free to add more columns, insert more data, or create more tables.</p>
 <p>Notes: plan a project by drawing an ULM schema.</p>
-<pre><code class="sql">CREATE TABLE friends (id INTEGER, name TEXT, birthday DATE);
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">friends</span> <span class="p">(</span><span class="n">id</span> <span class="nb">INTEGER</span><span class="p">,</span> <span class="n">name</span> <span class="nb">TEXT</span><span class="p">,</span> <span class="n">birthday</span> <span class="nb">DATE</span><span class="p">);</span>
 
-SELECT * FROM friends;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">friends</span><span class="p">;</span>
 
-DROP tables friends;
+<span class="k">DROP</span> <span class="n">tables</span> <span class="n">friends</span><span class="p">;</span>
 
-CREATE TABLE friends (id INTEGER, name TEXT, birthday DATE);
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">friends</span> <span class="p">(</span><span class="n">id</span> <span class="nb">INTEGER</span><span class="p">,</span> <span class="n">name</span> <span class="nb">TEXT</span><span class="p">,</span> <span class="n">birthday</span> <span class="nb">DATE</span><span class="p">);</span>
 
-SHOW tables;
+<span class="k">SHOW</span> <span class="n">tables</span><span class="p">;</span>
 
-INSERT INTO friends (id, name, birthday) VALUES (1,&quot;Jane Doe&quot;,'1993-05-19');
-INSERT INTO friends (id, name, birthday) VALUES (2,&quot;Jade Donot&quot;,'1995-06-12');
-INSERT INTO friends (id, name, birthday) VALUES (3,&quot;Jack Doom&quot;,'1990-10-01');
-INSERT INTO friends (id, name, birthday) VALUES (4,&quot;John Doe&quot;,'1988-12-09');
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">friends</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="ss">&quot;Jane Doe&quot;</span><span class="p">,</span><span class="s1">&#39;1993-05-19&#39;</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">friends</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="ss">&quot;Jade Donot&quot;</span><span class="p">,</span><span class="s1">&#39;1995-06-12&#39;</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">friends</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="ss">&quot;Jack Doom&quot;</span><span class="p">,</span><span class="s1">&#39;1990-10-01&#39;</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">friends</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="ss">&quot;John Doe&quot;</span><span class="p">,</span><span class="s1">&#39;1988-12-09&#39;</span><span class="p">);</span>
 
-UPDATE friends SET name = &quot;Jane Smith&quot; WHERE id = 1; 
+<span class="k">UPDATE</span> <span class="n">friends</span> <span class="k">SET</span> <span class="n">name</span> <span class="o">=</span> <span class="ss">&quot;Jane Smith&quot;</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> 
 
-ALTER TABLE friends ADD COLUMN email TEXT;
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">friends</span> <span class="k">ADD</span> <span class="k">COLUMN</span> <span class="n">email</span> <span class="nb">TEXT</span><span class="p">;</span>
 
-UPDATE friends SET email = &quot;jdoe@example.com&quot; WHERE id = 1;
-UPDATE friends SET email = &quot;jade@example.com&quot; WHERE id = 2;
-UPDATE friends SET email = &quot;doom@example.com&quot; WHERE id = 3;
-UPDATE friends SET email = &quot;johndoe@example.com&quot; WHERE id = 4;
+<span class="k">UPDATE</span> <span class="n">friends</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="ss">&quot;jdoe@example.com&quot;</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">UPDATE</span> <span class="n">friends</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="ss">&quot;jade@example.com&quot;</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">UPDATE</span> <span class="n">friends</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="ss">&quot;doom@example.com&quot;</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">UPDATE</span> <span class="n">friends</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="ss">&quot;johndoe@example.com&quot;</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 
-DELETE FROM friends WHERE id = 1;
-</code></pre>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">friends</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="2-queries">2, Queries<a class="headerlink" href="#2-queries" title="Permanent link">&para;</a></h4>
 <p>One of the core purposes of the SQL language is to retrieve information stored in a database. This is commonly referred to as querying. Queries allow us to communicate with the database by asking questions and having the result set return data relevant to the question. In this lesson, you will be querying a database with one table named movies. Let&rsquo;s get started.</p>
-<pre><code class="sql">--Find rows:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows:</span>
 
-SELECT name, imdb_rating FROM movies;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">imdb_rating</span> <span class="k">FROM</span> <span class="n">movies</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows. SELECT DISTINCT for unique values in the result set. It filters out all duplicate values:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows. SELECT DISTINCT for unique values in the result set. It filters out all duplicate values:</span>
 
-SELECT DISTINCT genre FROM movies;
-</code></pre>
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">genre</span> <span class="k">FROM</span> <span class="n">movies</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows with WHERE:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows with WHERE:</span>
 
-SELECT * FROM movies WHERE imdb_rating &gt; 8;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">imdb_rating</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <p>Clauses:</p>
 <ul>
@@ -460,312 +553,553 @@ SELECT * FROM movies WHERE imdb_rating &gt; 8;
 </li>
 <li>&lt;= less than or equal to</li>
 </ul>
-<pre><code class="sql">--Find rows with LIKE. Se_en represents a pattern with a wildcard character. The _ means you can substitute any individual character here without breaking the pattern. The names Seven and Se7en both match this pattern:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows with LIKE. Se_en represents a pattern with a wildcard character. The _ means you can substitute any individual character here without breaking the pattern. The names Seven and Se7en both match this pattern:</span>
 
-SELECT * FROM movies WHERE name LIKE 'Se_en';
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;Se_en&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows with LIKE. % is another wildcard character that can be used with LIKE. % is a wildcard character that matches zero or more missing letters in the pattern. A% matches all movies with names that begin with &quot;A&quot;. %a matches all movies that end with &quot;a&quot;:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows with LIKE. % is another wildcard character that can be used with LIKE. % is a wildcard character that matches zero or more missing letters in the pattern. A% matches all movies with names that begin with &quot;A&quot;. %a matches all movies that end with &quot;a&quot;:</span>
 
-SELECT * FROM movies WHERE name LIKE 'a%';
-SELECT * FROM movies WHERE name LIKE '%man%';
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;a%&#39;</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;%man%&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows with BETWEEN. The values can be numbers, text or dates. Names that begin with letters &quot;A&quot; up to but not including &quot;J&quot;. Years between 1990 up to and including 2000:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows with BETWEEN. The values can be numbers, text or dates. Names that begin with letters &quot;A&quot; up to but not including &quot;J&quot;. Years between 1990 up to and including 2000:</span>
 
-SELECT * FROM movies WHERE name BETWEEN 'A' AND 'J';
-SELECT * FROM movies WHERE year BETWEEN 1990 AND 2000;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">BETWEEN</span> <span class="s1">&#39;A&#39;</span> <span class="k">AND</span> <span class="s1">&#39;J&#39;</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="k">year</span> <span class="k">BETWEEN</span> <span class="mi">1990</span> <span class="k">AND</span> <span class="mi">2000</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows with BETWEEN, AND:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows with BETWEEN, AND:</span>
 
-SELECT * FROM movies WHERE year BETWEEN 1990 AND 2000 AND genre = 'comedy';
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="k">year</span> <span class="k">BETWEEN</span> <span class="mi">1990</span> <span class="k">AND</span> <span class="mi">2000</span> <span class="k">AND</span> <span class="n">genre</span> <span class="o">=</span> <span class="s1">&#39;comedy&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows with BETWEEN, OR:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows with BETWEEN, OR:</span>
 
-SELECT * FROM movies WHERE genre = 'comedy' OR year &lt; 1980;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">genre</span> <span class="o">=</span> <span class="s1">&#39;comedy&#39;</span> <span class="k">OR</span> <span class="k">year</span> <span class="o">&lt;</span> <span class="mi">1980</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows with BETWEEN, ORDERED BY, DESC, ASC:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows with BETWEEN, ORDERED BY, DESC, ASC:</span>
 
-SELECT * FROM movies ORDER BY imdb_rating DESC;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">imdb_rating</span> <span class="k">DESC</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find rows, BETWEEN, ORDERED BY, ASC. LIMIT is a clause that lets you specify the maximum number of rows the result set will have:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find rows, BETWEEN, ORDERED BY, ASC. LIMIT is a clause that lets you specify the maximum number of rows the result set will have:</span>
 
-SELECT * FROM movies ORDER BY imdb_rating ASC LIMIT 3;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">imdb_rating</span> <span class="k">ASC</span> <span class="k">LIMIT</span> <span class="mi">3</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <h5 id="project-writing-queries">Project Writing Queries<a class="headerlink" href="#project-writing-queries" title="Permanent link">&para;</a></h5>
 <p>In this project you will write queries to retrieve information from the movies table.</p>
 <p>The instructions provided are a general guideline, but feel free to experiment writing your own queries.</p>
-<pre><code class="sql">--Return all of the unique years in the movies table.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Return all of the unique years in the movies table.</span>
 
-SELECT DISTINCT year FROM movies;
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="k">year</span> <span class="k">FROM</span> <span class="n">movies</span><span class="p">;</span>
 
---Return all of the unique years in the movies table sorted from oldest to newest.
+<span class="c1">--Return all of the unique years in the movies table sorted from oldest to newest.</span>
 
-SELECT DISTINCT year FROM movies ORDER BY year ASC;
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="k">year</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="k">year</span> <span class="k">ASC</span><span class="p">;</span>
 
---Return all movies that are dramas.
+<span class="c1">--Return all movies that are dramas.</span>
 
-SELECT * FROM movies WHERE genre = &quot;drama&quot;;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">genre</span> <span class="o">=</span> <span class="ss">&quot;drama&quot;</span><span class="p">;</span>
 
---Return all of the movies with names that contain &quot;bride&quot;.
+<span class="c1">--Return all of the movies with names that contain &quot;bride&quot;.</span>
 
-SELECT * FROM movies WHERE name LIKE '%Br%';
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;%Br%&#39;</span><span class="p">;</span>
 
---Return all of the movies that were made between 2000 and 2015.
+<span class="c1">--Return all of the movies that were made between 2000 and 2015.</span>
 
-SELECT * FROM movies WHERE year &gt;= 2000 AND year &lt;= 2015;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="k">year</span> <span class="o">&gt;=</span> <span class="mi">2000</span> <span class="k">AND</span> <span class="k">year</span> <span class="o">&lt;=</span> <span class="mi">2015</span><span class="p">;</span>
 
---Return all of the movies that were made in 1995 or have an IMDb rating of 9.
+<span class="c1">--Return all of the movies that were made in 1995 or have an IMDb rating of 9.</span>
 
-SELECT * FROM movies WHERE year = 1995 OR imdb_rating = 9;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">1995</span> <span class="k">OR</span> <span class="n">imdb_rating</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
 
---Return the name and IMDb rating of every movie made after 2009 in alphabetical order.
+<span class="c1">--Return the name and IMDb rating of every movie made after 2009 in alphabetical order.</span>
 
-SELECT name, imdb_rating FROM movies WHERE year &gt; 2009 ORDER BY name ASC;
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">imdb_rating</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="k">year</span> <span class="o">&gt;</span> <span class="mi">2009</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">name</span> <span class="k">ASC</span><span class="p">;</span>
 
---Return 3 movies with an IMDb rating of 7.
+<span class="c1">--Return 3 movies with an IMDb rating of 7.</span>
 
-SELECT * FROM movies WHERE imdb_rating = 7 LIMIT 3;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">imdb_rating</span> <span class="o">=</span> <span class="mi">7</span> <span class="k">LIMIT</span> <span class="mi">3</span><span class="p">;</span>
 
---Return 10 movies with an IMDb rating greater than 6, are comedies, were made after 1995, and sorted by IMDb rating from highest to lowest. (Hint: you can use AND more than once in a statement).
+<span class="c1">--Return 10 movies with an IMDb rating greater than 6, are comedies, were made after 1995, and sorted by IMDb rating from highest to lowest. (Hint: you can use AND more than once in a statement).</span>
 
-SELECT * FROM movies WHERE imdb_rating &gt; 6 AND genre = 'comedy' AND year &gt; 1995 ORDER BY imdb_rating ASC LIMIT 10;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">imdb_rating</span> <span class="o">&gt;</span> <span class="mi">6</span> <span class="k">AND</span> <span class="n">genre</span> <span class="o">=</span> <span class="s1">&#39;comedy&#39;</span> <span class="k">AND</span> <span class="k">year</span> <span class="o">&gt;</span> <span class="mi">1995</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">imdb_rating</span> <span class="k">ASC</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 
---Return all movies named 'Cast Away'.
-SELECT * FROM movies WHERE name = 'Cast Away';
+<span class="c1">--Return all movies named &#39;Cast Away&#39;.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Cast Away&#39;</span><span class="p">;</span>
 
---Return all movies with an IMDb rating not equal to 7.
-SELECT * FROM movies WHERE imdb_rating != 7;
+<span class="c1">--Return all movies with an IMDb rating not equal to 7.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">imdb_rating</span> <span class="o">!=</span> <span class="mi">7</span><span class="p">;</span>
 
---Return all movies with a horror genre and an IMDb rating less than 6.
-SELECT * FROM movies WHERE genre = 'horror' AND imdb_rating &lt; 6;
+<span class="c1">--Return all movies with a horror genre and an IMDb rating less than 6.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">genre</span> <span class="o">=</span> <span class="s1">&#39;horror&#39;</span> <span class="k">AND</span> <span class="n">imdb_rating</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span>
 
---Return 10 movies with an IMDb rating greater than 8 sorted by their genre.
-SELECT * FROM movies WHERE imdb_rating &gt; 8 ORDER BY genre ASC LIMIT 10;
+<span class="c1">--Return 10 movies with an IMDb rating greater than 8 sorted by their genre.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">imdb_rating</span> <span class="o">&gt;</span> <span class="mi">8</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">genre</span> <span class="k">ASC</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 
---Return all movies that include 'King' in the name.
-SELECT * FROM movies WHERE name LIKE '%King%';
+<span class="c1">--Return all movies that include &#39;King&#39; in the name.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;%King%&#39;</span><span class="p">;</span>
 
---Return all movies with names that end with the word 'Out'
-SELECT * FROM movies WHERE name LIKE '%Out';
+<span class="c1">--Return all movies with names that end with the word &#39;Out&#39;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;%Out&#39;</span><span class="p">;</span>
 
---Return all movies with names that begin with the word &quot;The&quot; sorted by IMDb rating from highest to lowest
-SELECT * FROM movies WHERE name LIKE 'The%' ORDER BY imdb_rating DESC;
+<span class="c1">--Return all movies with names that begin with the word &quot;The&quot; sorted by IMDb rating from highest to lowest</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;The%&#39;</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">imdb_rating</span> <span class="k">DESC</span><span class="p">;</span>
 
---Return all of the movies.
-SELECT * FROM movies;
+<span class="c1">--Return all of the movies.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span><span class="p">;</span>
 
---Return the name and id of each movie with an id greater than 125.
-SELECT name, id FROM movies WHERE id &gt; 125;
+<span class="c1">--Return the name and id of each movie with an id greater than 125.</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">id</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">&gt;</span> <span class="mi">125</span><span class="p">;</span>
 
---Return all movies with names that begin with 'X-Men'
-SELECT * FROM movies WHERE name LIKE 'X-Men%';
+<span class="c1">--Return all movies with names that begin with &#39;X-Men&#39;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;X-Men%&#39;</span><span class="p">;</span>
 
---Return the first 10 movies sorted in reverse alphabetical order.
-SELECT * FROM movies DESC LIMIT 10;
+<span class="c1">--Return the first 10 movies sorted in reverse alphabetical order.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">DESC</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 
---Return the id, name, and genre of all movies that are romances.
-SELECT id, name, genre FROM movies WHERE genre = 'romance';
+<span class="c1">--Return the id, name, and genre of all movies that are romances.</span>
+<span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">genre</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">genre</span> <span class="o">=</span> <span class="s1">&#39;romance&#39;</span><span class="p">;</span>
 
---Return all of the Twilight movies in order from the year they were released from oldest to newest.
-SELECT * FROM movies WHERE name LIKE '%Twilight%' ORDER BY year ASC;
+<span class="c1">--Return all of the Twilight movies in order from the year they were released from oldest to newest.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;%Twilight%&#39;</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="k">year</span> <span class="k">ASC</span><span class="p">;</span>
 
---Return all of the movies that were released in 2012 that are comedies.
-SELECT * FROM movies WHERE year = 2012 AND genre = 'comedy';
-</code></pre>
+<span class="c1">--Return all of the movies that were released in 2012 that are comedies.</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">movies</span> <span class="k">WHERE</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2012</span> <span class="k">AND</span> <span class="n">genre</span> <span class="o">=</span> <span class="s1">&#39;comedy&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="3-aggregate-functions">3, Aggregate Functions<a class="headerlink" href="#3-aggregate-functions" title="Permanent link">&para;</a></h4>
 <p>Aggregate functions compute a single result from a set of input values. For instance, when we need the sum or average of a particular column, we can use aggregate functions to quickly compute it for us. We will be learning about different aggregate functions in this lesson.</p>
 <p>For this lesson we have given you a table named fake_apps which is made up of data for fake mobile applications.</p>
-<pre><code class="sql">--View:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--View:</span>
 
-SELECT * FROM fake_apps;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Calculate the number of rows in a table. where the column is not NULL. Here, we want to count every row so we pass * as an argument:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Calculate the number of rows in a table. where the column is not NULL. Here, we want to count every row so we pass * as an argument:</span>
 
-SELECT COUNT(*) FROM fake_apps;
-</code></pre>
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Count * or columns):
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Count * or columns):</span>
 
-SELECT COUNT(*) FROM fake_apps WHERE price = 0;
-</code></pre>
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Aggregate. GROUP BY is a clause in SQL that is only used with aggregate functions. It is used in collaboration with the SELECT statement to arrange identical data into groups. Here, our aggregate function is COUNT() and we are passing price as an argument to GROUP BY. SQL will count the total number of apps for each price in the table:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Aggregate. GROUP BY is a clause in SQL that is only used with aggregate functions. It is used in collaboration with the SELECT statement to arrange identical data into groups. Here, our aggregate function is COUNT() and we are passing price as an argument to GROUP BY. SQL will count the total number of apps for each price in the table:</span>
 
-SELECT price, COUNT(*) FROM fake_apps GROUP BY price;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">price</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">price</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--It calculates the total number of apartments in each neighborhood in the cities table and groups them by neighborhood.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--It calculates the total number of apartments in each neighborhood in the cities table and groups them by neighborhood.</span>
 
-SELECT neighborhood, SUM(apartments) FROM cities GROUP BY neighborhood;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">neighborhood</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">apartments</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">cities</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">neighborhood</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Sum up, aggregate by category:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Sum up, aggregate by category:</span>
 
-SELECT category, SUM(downloads) FROM fake_apps GROUP BY category;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">category</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find the maximum, minimum, global, categorical:
-SELECT MAX(downloads) FROM fake_apps;
-SELECT name, category, MAX(downloads) FROM fake_apps GROUP BY category;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find the maximum, minimum, global, categorical:</span>
+<span class="k">SELECT</span> <span class="k">MAX</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
 
-SELECT MIN(downloads) FROM fake_apps;
-SELECT name, category, MIN(downloads) FROM fake_apps GROUP BY category;
-</code></pre>
+<span class="k">SELECT</span> <span class="k">MIN</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--It returns the title, genre and checkout count for the book with the most checkouts in the library_books table.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--It returns the title, genre and checkout count for the book with the most checkouts in the library_books table.</span>
 
-SELECT title, genre, MAX(checkouts) FROM library_books
-GROUP BY genre;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">title</span><span class="p">,</span> <span class="n">genre</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">checkouts</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">library_books</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">genre</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Find the average, or category average:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Find the average, or category average:</span>
 
-SELECT AVG(downloads) FROM fake_apps;
-SELECT price, AVG(downloads) FROM fake_apps GROUP BY price;
-</code></pre>
+<span class="k">SELECT</span> <span class="k">AVG</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">price</span><span class="p">,</span> <span class="k">AVG</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">price</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Round up to x decimal(s):
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Round up to x decimal(s):</span>
 
-SELECT price, ROUND(AVG(downloads), 2) FROM fake_apps GROUP BY price;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">price</span><span class="p">,</span> <span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="n">downloads</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">price</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <h5 id="project-fake-apps">Project Fake Apps<a class="headerlink" href="#project-fake-apps" title="Permanent link">&para;</a></h5>
 <p>In this project you will write queries with aggregate functions to retrieve information from the fake_apps table.</p>
 <p>The instructions provided are a general guideline, but feel free to experiment writing your own queries, creating your own tables, or adding your own apps to the existing table!</p>
-<pre><code class="sql">--Return the total number of apps in the table fake_apps.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Return the total number of apps in the table fake_apps.</span>
 
-SELECT COUNT(*) FROM fake_apps;
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
 
---Return the name, category, and price of the app that has been downloaded the least amount of times.
+<span class="c1">--Return the name, category, and price of the app that has been downloaded the least amount of times.</span>
 
-SELECT name, category, price, MIN(downloads) FROM fake_apps;
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
 
---Return the total number of apps for each category.
+<span class="c1">--Return the total number of apps for each category.</span>
 
-SELECT COUNT(*) FROM fake_apps GROUP BY category;
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
 
---Return the name and category of the app that has been downloaded the most amount of times.
+<span class="c1">--Return the name and category of the app that has been downloaded the most amount of times.</span>
 
-SELECT name, category, MAX(downloads) FROM fake_apps;
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
 
---Return the name and category of the app that has been downloaded the least amount of times.
+<span class="c1">--Return the name and category of the app that has been downloaded the least amount of times.</span>
 
-SELECT name, category, MIN(downloads) FROM fake_apps;
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
 
---Return the average price for an app in each category.
+<span class="c1">--Return the average price for an app in each category.</span>
 
-SELECT AVG(price) FROM fake_apps GROUP BY category;
+<span class="k">SELECT</span> <span class="k">AVG</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
 
---Return the average price for an app in each category. Round the averages to two decimal places.
+<span class="c1">--Return the average price for an app in each category. Round the averages to two decimal places.</span>
 
-SELECT ROUND(AVG(price),2) FROM fake_apps GROUP BY category;
+<span class="k">SELECT</span> <span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="n">price</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
 
---Return the maximum price for an app.
+<span class="c1">--Return the maximum price for an app.</span>
 
-SELECT MAX(price) FROM fake_apps;
+<span class="k">SELECT</span> <span class="k">MAX</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
 
---Return the minimum number of downloads for an app.
+<span class="c1">--Return the minimum number of downloads for an app.</span>
 
-SELECT MIN(downloads) FROM fake_apps;
+<span class="k">SELECT</span> <span class="k">MIN</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span><span class="p">;</span>
 
---Return the total number of downloads for apps that belong to the Games category.
+<span class="c1">--Return the total number of downloads for apps that belong to the Games category.</span>
 
-SELECT MIN(downloads) FROM fake_apps WHERE category = 'Games';
+<span class="k">SELECT</span> <span class="k">MIN</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">category</span> <span class="o">=</span> <span class="s1">&#39;Games&#39;</span><span class="p">;</span>
 
---Return the total number of apps that are free.
+<span class="c1">--Return the total number of apps that are free.</span>
 
-SELECT COUNT(*) FROM fake_apps WHERE price = 0;
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
---Return the total number of apps that cost 14.99.
+<span class="c1">--Return the total number of apps that cost 14.99.</span>
 
-SELECT COUNT(*) FROM fake_apps WHERE price = 14.99;
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">14</span><span class="p">.</span><span class="mi">99</span><span class="p">;</span>
 
---Return the sum of the total number of downloads for apps that belong to the Music category.
+<span class="c1">--Return the sum of the total number of downloads for apps that belong to the Music category.</span>
 
-SELECT SUM(downloads) FROM fake_apps WHERE category = 'Music';
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">category</span> <span class="o">=</span> <span class="s1">&#39;Music&#39;</span><span class="p">;</span>
 
---Return the sum of the total number of downloads for apps that belong to the Business category.
+<span class="c1">--Return the sum of the total number of downloads for apps that belong to the Business category.</span>
 
-SELECT SUM(downloads) FROM fake_apps WHERE category = 'Business';
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">category</span> <span class="o">=</span> <span class="s1">&#39;Business&#39;</span><span class="p">;</span>
 
---Return the name of each category with the total number of apps that belong to it.
+<span class="c1">--Return the name of each category with the total number of apps that belong to it.</span>
 
-SELECT name, COUNT(*) FROM fake_apps GROUP BY category;
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
 
---Return the price and average number of downloads grouped by price.
+<span class="c1">--Return the price and average number of downloads grouped by price.</span>
 
-SELECT price, AVG(downloads) FROM fake_apps GROUP BY price;
+<span class="k">SELECT</span> <span class="n">price</span><span class="p">,</span> <span class="k">AVG</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">price</span><span class="p">;</span>
 
---Return the price and average number of downloads grouped by price. Round the averages to the nearest integer.
+<span class="c1">--Return the price and average number of downloads grouped by price. Round the averages to the nearest integer.</span>
 
-SELECT ROUND(price,0), AVG(downloads) FROM fake_apps GROUP BY price;
+<span class="k">SELECT</span> <span class="n">ROUND</span><span class="p">(</span><span class="n">price</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="k">AVG</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">price</span><span class="p">;</span>
 
---Return the name and category and price of the most expensive app for each category.
+<span class="c1">--Return the name and category and price of the most expensive app for each category.</span>
 
-SELECT name, category, price, MAX(price) FROM fake_apps GROUP BY category;
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">category</span><span class="p">;</span>
 
---Return the total number of apps whose name begin with the letter 'A'.
+<span class="c1">--Return the total number of apps whose name begin with the letter &#39;A&#39;.</span>
 
-SELECT COUNT(*) FROM fake_apps WHERE name LIKE 'A%';
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;A%&#39;</span><span class="p">;</span>
 
---Return the total number of downloads for apps belonging to the Sports or Health &amp; Fitness category.
+<span class="c1">--Return the total number of downloads for apps belonging to the Sports or Health &amp; Fitness category.</span>
 
-SELECT SUM(downloads) FROM fake_apps WHERE category = 'Sports' OR category = 'Health &amp; Fitness';
-</code></pre>
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">downloads</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">fake_apps</span> <span class="k">WHERE</span> <span class="n">category</span> <span class="o">=</span> <span class="s1">&#39;Sports&#39;</span> <span class="k">OR</span> <span class="n">category</span> <span class="o">=</span> <span class="s1">&#39;Health &amp; Fitness&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="4-multiple-tables">4, Multiple Tables<a class="headerlink" href="#4-multiple-tables" title="Permanent link">&para;</a></h4>
 <p>Most of the time, data is distributed across multiple tables in the database. Imagine a database with two tables, artists and albums. An artist can produce many different albums, and an album is produced by an artist.</p>
 <p>The data in these tables are related to each other. Through SQL, we can write queries that combine data from multiple tables that are related to one another. This is one of the most powerful features of relational databases.</p>
-<pre><code class="sql">--We have created a table named albums for you. Create a second table named artists. Using the CREATE TABLE statement we added a PRIMARY KEY to the id column. A primary key serves as a unique identifier for each row or record in a given table. The primary key is literally an id value for a record. We're going to use this value to connect artists to the albums they have produced. By specifying that the id column is the PRIMARY KEY, SQL makes sure that none of the values in this column are NULL and each value in this column is unique:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--We have created a table named albums for you. Create a second table named artists. Using the CREATE TABLE statement we added a PRIMARY KEY to the id column. A primary key serves as a unique identifier for each row or record in a given table. The primary key is literally an id value for a record. We&#39;re going to use this value to connect artists to the albums they have produced. By specifying that the id column is the PRIMARY KEY, SQL makes sure that none of the values in this column are NULL and each value in this column is unique:</span>
 
-CREATE TABLE artists(id INTEGER PRIMARY KEY, name TEXT);
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">artists</span><span class="p">(</span><span class="n">id</span> <span class="nb">INTEGER</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span> <span class="n">name</span> <span class="nb">TEXT</span><span class="p">);</span>
 
---View both tables:
+<span class="c1">--View both tables:</span>
 
-SELECT * FROM albums;
-SELECT * FROM artists;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">albums</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">artists</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--Query:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Query:</span>
 
-SELECT * FROM artists WHERE id = 3;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">artists</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--A foreign key is a column that contains the primary key of another table in the database. We use foreign keys and primary keys to connect rows in two different tables. One table's foreign key holds the value of another table's primary key. Unlike primary keys, foreign keys do not need to be unique and can be NULL. Here, artist_id is a foreign key in the albums table. We can see that Michael Jackson has an id of 3 in the artists table. All of the albums by Michael Jackson also have a 3 in the artist_id column in the albums table. This is how SQL is linking data between the two tables. The relationship between the artists table and the albums table is the id value of the artists.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--A foreign key is a column that contains the primary key of another table in the database. We use foreign keys and primary keys to connect rows in two different tables. One table&#39;s foreign key holds the value of another table&#39;s primary key. Unlike primary keys, foreign keys do not need to be unique and can be NULL. Here, artist_id is a foreign key in the albums table. We can see that Michael Jackson has an id of 3 in the artists table. All of the albums by Michael Jackson also have a 3 in the artist_id column in the albums table. This is how SQL is linking data between the two tables. The relationship between the artists table and the albums table is the id value of the artists.</span>
 
-SELECT * FROM albums WHERE artist_id = 3;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">WHERE</span> <span class="n">artist_id</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--One way to query multiple tables is to write a SELECT statement with multiple table names separated by a comma. This is also known as a CROSS JOIN. Here, albums and artists are the different tables we are querying. When querying more than one table, column names need to be specified by table_name.column_name. Here, the result set includes the name and year columns from the albums table and the name column from the artists table. Unfortunately the result of this cross join is not very useful. It combines every row of the artists table with every row of the albums table. It would be more useful to only combine the rows where the album was created by the artist.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--One way to query multiple tables is to write a SELECT statement with multiple table names separated by a comma. This is also known as a CROSS JOIN. Here, albums and artists are the different tables we are querying. When querying more than one table, column names need to be specified by table_name.column_name. Here, the result set includes the name and year columns from the albums table and the name column from the artists table. Unfortunately the result of this cross join is not very useful. It combines every row of the artists table with every row of the albums table. It would be more useful to only combine the rows where the album was created by the artist.</span>
 
-SELECT albums.name, albums.year, artists.name FROM albums, artists;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">albums</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">albums</span><span class="p">.</span><span class="k">year</span><span class="p">,</span> <span class="n">artists</span><span class="p">.</span><span class="n">name</span> <span class="k">FROM</span> <span class="n">albums</span><span class="p">,</span> <span class="n">artists</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--In SQL, joins are used to combine rows from two or more tables. The most common type of join in SQL is an INNER JOIN. An inner join will combine rows from different tables if the join condition is true. Let's look at the syntax to see how it works. SELECT * specifies the columns our result set will have. Here, we want to include every column in both tables. FROM albums specifies the first table we are querying. JOIN artists ON specifies the type of join we are going to use as well as the name of the second table. Here, we want to do an inner join and the second table we want to query is artists. albums.artist_id = artists.id is the join condition that describes how the two tables are related to each other. Here, SQL uses the foreign key column artist_id in the albums table to match it with exactly one row in the artists table with the same value in the id column. We know it will only match one row in the artists table because id is the PRIMARY KEY of artists.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--In SQL, joins are used to combine rows from two or more tables. The most common type of join in SQL is an INNER JOIN. An inner join will combine rows from different tables if the join condition is true. Let&#39;s look at the syntax to see how it works. SELECT * specifies the columns our result set will have. Here, we want to include every column in both tables. FROM albums specifies the first table we are querying. JOIN artists ON specifies the type of join we are going to use as well as the name of the second table. Here, we want to do an inner join and the second table we want to query is artists. albums.artist_id = artists.id is the join condition that describes how the two tables are related to each other. Here, SQL uses the foreign key column artist_id in the albums table to match it with exactly one row in the artists table with the same value in the id column. We know it will only match one row in the artists table because id is the PRIMARY KEY of artists.</span>
 
-SELECT * FROM albums JOIN artists ON albums.artist_id = artists.id;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">JOIN</span> <span class="n">artists</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">artists</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--OUTER JOINS (LEFT or RIGHT) also combine rows from two or more tables, but unlike inner joins, they do not require the join condition to be met. Instead, every row in the left table is returned in the result set, and if the join condition is not met, then NULL values are used to fill in the columns from the right table. The left table is simply the first table that appears in the statement. Here, the left table is albums. Likewise, the right table is the second table that appears. Here, artists is the right table.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--OUTER JOINS (LEFT or RIGHT) also combine rows from two or more tables, but unlike inner joins, they do not require the join condition to be met. Instead, every row in the left table is returned in the result set, and if the join condition is not met, then NULL values are used to fill in the columns from the right table. The left table is simply the first table that appears in the statement. Here, the left table is albums. Likewise, the right table is the second table that appears. Here, artists is the right table.</span>
 
-SELECT * FROM albums LEFT JOIN artists ON albums.artist_id = artists.id;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">artists</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">artists</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">--AS is a keyword in SQL that allows you to rename a column or table using an alias. The new name can be anything you want as long as you put it inside of single quotes. Here we want to rename the albums.name column as 'Album', and the artists.name column as 'Artist'. It is important to note that the columns have not been renamed in either table. The aliases only appear in the result set.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--AS is a keyword in SQL that allows you to rename a column or table using an alias. The new name can be anything you want as long as you put it inside of single quotes. Here we want to rename the albums.name column as &#39;Album&#39;, and the artists.name column as &#39;Artist&#39;. It is important to note that the columns have not been renamed in either table. The aliases only appear in the result set.</span>
 
-SELECT albums.name, albums.year, artists.name FROM albums JOIN artists ON albums.artist_id = artists.id WHERE albums.year &gt; 1980;
-</code></pre>
+<span class="k">SELECT</span> <span class="n">albums</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">albums</span><span class="p">.</span><span class="k">year</span><span class="p">,</span> <span class="n">artists</span><span class="p">.</span><span class="n">name</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">JOIN</span> <span class="n">artists</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">artists</span><span class="p">.</span><span class="n">id</span> <span class="k">WHERE</span> <span class="n">albums</span><span class="p">.</span><span class="k">year</span> <span class="o">&gt;</span> <span class="mi">1980</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">SELECT albums.name AS 'Album', albums.year, artists.name AS 'Artist' FROM albums JOIN artists ON albums.artist_id = artists.id WHERE albums.year &gt; 1980;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">albums</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="s1">&#39;Album&#39;</span><span class="p">,</span> <span class="n">albums</span><span class="p">.</span><span class="k">year</span><span class="p">,</span> <span class="n">artists</span><span class="p">.</span><span class="n">name</span> <span class="k">AS</span> <span class="s1">&#39;Artist&#39;</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">JOIN</span> <span class="n">artists</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">artists</span><span class="p">.</span><span class="n">id</span> <span class="k">WHERE</span> <span class="n">albums</span><span class="p">.</span><span class="k">year</span> <span class="o">&gt;</span> <span class="mi">1980</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
 
 <h5 id="recap">Recap<a class="headerlink" href="#recap" title="Permanent link">&para;</a></h5>
 <ul>
@@ -779,37 +1113,67 @@ SELECT albums.name, albums.year, artists.name FROM albums JOIN artists ON albums
 <h5 id="project-querying-tables">Project Querying Tables<a class="headerlink" href="#project-querying-tables" title="Permanent link">&para;</a></h5>
 <p>In this project you will practice querying multiple tables using joins.</p>
 <p>The instructions provided are a general guideline, but feel free to experiment creating your own tables, adding data, and writing more queries.</p>
-<pre><code class="sql">--Create a table named tracks with an id, title, and album_id column. The id column should be the PRIMARY KEY.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--Create a table named tracks with an id, title, and album_id column. The id column should be the PRIMARY KEY.</span>
 
-CREATE TABLE tracks (id INTEGER PRIMARY KEY, title TEXT, albums_id INTEGER);
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">tracks</span> <span class="p">(</span><span class="n">id</span> <span class="nb">INTEGER</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span> <span class="n">title</span> <span class="nb">TEXT</span><span class="p">,</span> <span class="n">albums_id</span> <span class="nb">INTEGER</span><span class="p">);</span>
 
---&quot;Smooth Criminal&quot; is a track from Michael Jackson's &quot;Bad&quot; album. Add this track to the database.
+<span class="c1">--&quot;Smooth Criminal&quot; is a track from Michael Jackson&#39;s &quot;Bad&quot; album. Add this track to the database.</span>
 
-INSERT INTO tracks (id,title,albums_id) VALUES (1,&quot;Smooth Criminal&quot;, 8);
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tracks</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">albums_id</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="ss">&quot;Smooth Criminal&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
 
---Add more tracks to the database.
-INSERT INTO tracks (id,title,albums_id) VALUES (2,&quot;aaa&quot;, 1);
-INSERT INTO tracks (id,title,albums_id) VALUES (3,&quot;bbb&quot;, 1);
-INSERT INTO tracks (id,title,albums_id) VALUES (4,&quot;ccc&quot;, 8);
-INSERT INTO tracks (id,title,albums_id) VALUES (5,&quot;ddd&quot;, 8);
-INSERT INTO tracks (id,title,albums_id) VALUES (6,&quot;eee&quot;, 8);
+<span class="c1">--Add more tracks to the database.</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tracks</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">albums_id</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="ss">&quot;aaa&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tracks</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">albums_id</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="ss">&quot;bbb&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tracks</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">albums_id</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="ss">&quot;ccc&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tracks</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">albums_id</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="ss">&quot;ddd&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">tracks</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">albums_id</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="ss">&quot;eee&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
 
---Combine the albums and tracks tables using an INNER JOIN. Order the query by album_id.
+<span class="c1">--Combine the albums and tracks tables using an INNER JOIN. Order the query by album_id.</span>
 
-SELECT * FROM albums JOIN tracks ON albums.artist_id = tracks.id;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">JOIN</span> <span class="n">tracks</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">tracks</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
 
---Combine the albums and artists table using a LEFT OUTER JOIN. Let albums be the left table.
+<span class="c1">--Combine the albums and artists table using a LEFT OUTER JOIN. Let albums be the left table.</span>
 
-SELECT * FROM albums LEFT JOIN artists ON albums.artist_id = artists.id;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">artists</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">artists</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
 
---Combine the albums and artists table using a LEFT OUTER JOIN. Let artists be the left table.
+<span class="c1">--Combine the albums and artists table using a LEFT OUTER JOIN. Let artists be the left table.</span>
 
-SELECT * FROM artists LEFT JOIN albums ON albums.artist_id = artists.id;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">artists</span> <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">albums</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">artists</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
 
---Use any join you like to combine the albums and tracks table. Rename the album_id column to Albums.
+<span class="c1">--Use any join you like to combine the albums and tracks table. Rename the album_id column to Albums.</span>
 
-SELECT * FROM albums LEFT JOIN tracks ON albums.artist_id = tracks.id;
-</code></pre>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">albums</span> <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">tracks</span> <span class="k">ON</span> <span class="n">albums</span><span class="p">.</span><span class="n">artist_id</span> <span class="o">=</span> <span class="n">tracks</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
               
             </div>
           </div>

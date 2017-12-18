@@ -189,6 +189,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../Responsive_HTML/">Responsive HTML</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../Markdown & Pandoc/">Markdown & Pandoc</a>
                 </li>
     </ul>
@@ -242,74 +246,102 @@
 <p>Code snippets.</p>
 <hr />
 <p>Sort in alphabetical order:</p>
-<pre><code class="bash">$ sort myfile.txt
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt
+</pre></div>
+</td></tr></table>
 
 <p>Sort in numerical order:</p>
-<pre><code class="bash">$ sort -n myfile.txt
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -n myfile.txt
+</pre></div>
+</td></tr></table>
 
 <p>Sort on multiple column (on column 2 in numerical order, then on column 1 in alphabetical order):</p>
-<pre><code class="bash">$ sort myfile.txt -k2n -k1
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt -k2n -k1
+</pre></div>
+</td></tr></table>
 
 <p>Sort a comma-separated table:</p>
-<pre><code class="bash">$ sort -k2 -k3 k1 -t ',' myfile.txt
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -k2 -k3 k1 -t <span class="s1">&#39;,&#39;</span> myfile.txt
+</pre></div>
+</td></tr></table>
 
 <p>Sort in reversed order:</p>
-<pre><code class="bash">$ sort -r myfile.txt
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -r myfile.txt
+</pre></div>
+</td></tr></table>
 
 <p>Sort a pip-separated file in reverses order by the second column:</p>
-<pre><code class="bash">$ sort myfile.txt -nrk 2 -st '|'
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt -nrk <span class="m">2</span> -st <span class="s1">&#39;|&#39;</span>
+</pre></div>
+</td></tr></table>
 
 <p>Search text files for lines matching regular expressions (regex) with <code>grep &lt;'matching string'&gt; &lt;source&gt;</code>:</p>
-<pre><code class="bash">$ grep ArticleTitle webpage.html
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep ArticleTitle webpage.html
+</pre></div>
+</td></tr></table>
 
 <p>An asterisk (<code>*</code>) indicates any character (the matching expression starts with &lsquo;Ar&rsquo; and ends with &lsquo;le&rsquo;):</p>
-<pre><code class="bash">$ grep Ar*le mytext.txt
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep Ar*le mytext.txt
+</pre></div>
+</td></tr></table>
 
 <p>Search for starting metacharacter <code>&gt;</code>:</p>
-<pre><code class="bash">$ grep ^'&gt;' mytext.txt
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep ^<span class="s1">&#39;&gt;&#39;</span> mytext.txt
+</pre></div>
+</td></tr></table>
 
 <p>List the access rights for all files:</p>
-<pre><code class="bash">$ ls -lag
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -lag
+</pre></div>
+</td></tr></table>
 
 <p>Run commands in background, kill the job running in the foreground, suspend the job running in the foreground, and background the suspended job:</p>
-<pre><code class="bash">$ command &amp;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">command</span> <span class="p">&amp;</span>
 
 $ ^C
 
 $ ^Z
 
-$ bg
-</code></pre>
+$ <span class="nb">bg</span>
+</pre></div>
+</td></tr></table>
 
 <p>List the current jobs, foreground job number 1, and kills job number 1:</p>
-<pre><code class="bash">$ jobs
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">jobs</span>
 
 $ fg%1
 
 $ kill%1
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <p>List current processes, and kill process number 26152:</p>
-<pre><code class="bash">$ ps
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ps
 
-$ kill 26152
-</code></pre>
+$ <span class="nb">kill</span> <span class="m">26152</span>
+</pre></div>
+</td></tr></table>
 
 <p>Help about commands:</p>
-<pre><code class="bash">$ man &lt;command name&gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ man &lt;<span class="nb">command</span> name&gt;
 
-$ whatis &lt;command name&gt;
-</code></pre>
+$ whatis &lt;<span class="nb">command</span> name&gt;
+</pre></div>
+</td></tr></table>
               
             </div>
           </div>

@@ -254,6 +254,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../Responsive_HTML/">Responsive HTML</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../Markdown & Pandoc/">Markdown & Pandoc</a>
                 </li>
     </ul>
@@ -422,18 +426,26 @@
 <p>You can then see what I have for output followed by another <code>$</code> or <code>&gt;</code> prompt. That content is the output and you should see the same output.</p>
 <p>Let&rsquo;s do a simple first command so you can get the hang of this:</p>
 <h5 id="linuxosx">Linux/OSX<a class="headerlink" href="#linuxosx" title="Permanent link">&para;</a></h5>
-<pre><code class="bash">$ pwd 
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">pwd</span> 
 /Users/zedshaw
 $
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <h5 id="windows_2">Windows<a class="headerlink" href="#windows_2" title="Permanent link">&para;</a></h5>
-<pre><code class="bash">PS C:\&gt; pwd
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>PS C:<span class="se">\&gt;</span> <span class="nb">pwd</span>
 
-C:\Users\zed
+C:<span class="se">\U</span>sers<span class="se">\z</span>ed
 
-PS C:\&gt;
-</code></pre>
+PS C:<span class="se">\&gt;</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="view-a-file-less-more">View a File (less, more)<a class="headerlink" href="#view-a-file-less-more" title="Permanent link">&para;</a></h4>
 <p>To do this exercise you&rsquo;re going to do some work using the commands you know so far. You&rsquo;ll also need a text editor that can make plain text (.txt) files. Here&rsquo;s what you do:</p>
@@ -444,23 +456,38 @@ PS C:\&gt;
 </ul>
 <p>Once you&rsquo;ve done that, complete this exercise:</p>
 <h5 id="linuxosx_1">Linux/OSX<a class="headerlink" href="#linuxosx_1" title="Permanent link">&para;</a></h5>
-<pre><code class="bash">$ less test.txt
-[displays file here]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ less test.txt
+<span class="o">[</span>displays file here<span class="o">]</span>
 $
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <p>That&rsquo;s it. To get out of <code>less</code> just type <code>:q</code> (as in quit).</p>
 <h5 id="windows_3">Windows<a class="headerlink" href="#windows_3" title="Permanent link">&para;</a></h5>
-<pre><code class="bash">&gt; more test.txt
-[displays file here]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&gt; more test.txt
+<span class="o">[</span>displays file here<span class="o">]</span>
 &gt; 
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <h4 id="stream-a-file-cat">Stream a File (cat)<a class="headerlink" href="#stream-a-file-cat" title="Permanent link">&para;</a></h4>
 <p>You&rsquo;re going to do some more setup for this one so you get used to making files in one program and then accessing them from the command line. With the same text editor from the last exercise, create another file named <code>test2.txt</code> but this time save it directly to your <code>temp</code> directory:</p>
 <h5 id="linuxosx_2">Linux/OSX<a class="headerlink" href="#linuxosx_2" title="Permanent link">&para;</a></h5>
-<pre><code class="bash">$ less test2.txt
-[displays file here]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ less test2.txt
+<span class="o">[</span>displays file here<span class="o">]</span>
 $ cat test2.txt
 I am a fun guy.
 Dont you know why?
@@ -469,11 +496,21 @@ that make babies cry.
 $ cat test.txt
 Hi there this is cool.
 $
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <h5 id="windows_4">Windows<a class="headerlink" href="#windows_4" title="Permanent link">&para;</a></h5>
-<pre><code class="bash">&gt; more test2.txt
-[displays file here]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&gt; more test2.txt
+<span class="o">[</span>displays file here<span class="o">]</span>
 &gt; cat test2.txt
 I am a fun guy.
 Dont you know why?
@@ -482,7 +519,8 @@ that make babies cry.
 &gt; cat test.txt
 Hi there this is cool.
 &gt; 
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <h5 id="edit-a-file-cat-nano-pico-vim">Edit a file (cat, nano, pico, vim)<a class="headerlink" href="#edit-a-file-cat-nano-pico-vim" title="Permanent link">&para;</a></h5>
 <ul>
@@ -495,12 +533,14 @@ Hi there this is cool.
 </ul>
 <h4 id="exiting-your-terminal-exit">Exiting Your Terminal (exit)<a class="headerlink" href="#exiting-your-terminal-exit" title="Permanent link">&para;</a></h4>
 <h5 id="linuxosx_3">Linux/OSX<a class="headerlink" href="#linuxosx_3" title="Permanent link">&para;</a></h5>
-<pre><code class="bash">$ exit
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">exit</span>
+</pre></div>
+</td></tr></table>
 
 <h5 id="windows_5">Windows<a class="headerlink" href="#windows_5" title="Permanent link">&para;</a></h5>
-<pre><code class="shell">&gt; exit
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&gt; <span class="nb">exit</span>
+</pre></div>
+</td></tr></table>
 
 <h5 id="unix-bash-references">Unix Bash References<a class="headerlink" href="#unix-bash-references" title="Permanent link">&para;</a></h5>
 <ul>
