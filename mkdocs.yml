@@ -39,6 +39,7 @@ pages:
         - Web Cheat Sheets: 'Web_CS.md'
         - Build a Website: 'Build a Website.md'
         - HTML and CSS: 'HTML and CSS.md'
+        - Responsive HTML: 'Responsive_HTML.md'
         - Markdown & Pandoc: 'Markdown & Pandoc.md'
     - Tests: 'tests.md'
 
@@ -66,3 +67,5 @@ markdown_extensions:
         permalink: True
         baselevel: 3
     - footnotes
+    - codehilite(linenums=true)
+    

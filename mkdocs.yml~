@@ -5,7 +5,7 @@ site_description: A Data Science documentation website.
 site_author: Ugo Sparks
 #site_favicon: favicon.ico
 copyright: © Ugo Sparks
-#google_analytics: ['UA-36723568-3', 'mkdocs.org']
+google_analytics: ['UA-93008985-3', 'mkdocs.org']
 #remote_branch: master
 #remote_name: ugodoc
 
@@ -39,6 +39,7 @@ pages:
         - Web Cheat Sheets: 'Web_CS.md'
         - Build a Website: 'Build a Website.md'
         - HTML and CSS: 'HTML and CSS.md'
+        - Responsive HTML: 'Responsive_HTML.md'
         - Markdown & Pandoc: 'Markdown & Pandoc.md'
     - Tests: 'tests.md'
 
@@ -66,3 +67,6 @@ markdown_extensions:
         permalink: True
         baselevel: 3
     - footnotes
+    - codehilite(linenums=true)
+    - toc(permalink=true)
+    

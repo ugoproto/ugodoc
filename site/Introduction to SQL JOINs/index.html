@@ -216,6 +216,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../Responsive_HTML/">Responsive HTML</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../Markdown & Pandoc/">Markdown & Pandoc</a>
                 </li>
     </ul>
@@ -295,248 +299,419 @@
 <h4 id="inner-join">Inner JOIN<a class="headerlink" href="#inner-join" title="Permanent link">&para;</a></h4>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/INNER_JOIN.png" /></p>
 <p>This is the simplest, most understood Join and is the most common. This query will return all of the records in the left table (table A) that have a matching record in the right table (table B). This Join is written as follows:</p>
-<pre><code class="sql">SELECT &lt;select_list&gt; 
-FROM Table_A A
-INNER JOIN Table_B B
-ON A.Key = B.Key
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span> 
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="left-join">Left JOIN<a class="headerlink" href="#left-join" title="Permanent link">&para;</a></h4>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/LEFT_JOIN.png" /></p>
 <p>This query will return all of the records in the left table (table A) regardless if any of those records have a match in the right table (table B). It will also return any matching records from the right table. This Join is written as follows:</p>
-<pre><code class="sql">SELECT &lt;select_list&gt;
-FROM Table_A A
-LEFT JOIN Table_B B
-ON A.Key = B.Key
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="right-join">Right JOIN<a class="headerlink" href="#right-join" title="Permanent link">&para;</a></h4>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/RIGHT_JOIN.png" /></p>
 <p>This query will return all of the records in the right table (table B) regardless if any of those records have a match in the left table (table A). It will also return any matching records from the left table. This Join is written as follows:</p>
-<pre><code class="sql">SELECT &lt;select_list&gt;
-FROM Table_A A
-RIGHT JOIN Table_B B
-ON A.Key = B.Key
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="outer-join">Outer JOIN<a class="headerlink" href="#outer-join" title="Permanent link">&para;</a></h4>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/FULL_OUTER_JOIN.png" /></p>
 <p>This Join can also be referred to as a FULL OUTER JOIN or a FULL JOIN. This query will return all of the records from both tables, joining records from the left table (table A) that match records from the right table (table B). This Join is written as follows:</p>
-<pre><code class="sql">SELECT &lt;select_list&gt;
-FROM Table_A A
-FULL OUTER JOIN Table_B B
-ON A.Key = B.Key
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">FULL</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="left-excluding-join">Left Excluding JOIN<a class="headerlink" href="#left-excluding-join" title="Permanent link">&para;</a></h4>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/LEFT_EXCLUDING_JOIN.png" /></p>
 <p>This query will return all of the records in the left table (table A) that do not match any records in the right table (table B). This Join is written as follows:</p>
-<pre><code class="sql">SELECT &lt;select_list&gt; 
-FROM Table_A A
-LEFT JOIN Table_B B
-ON A.Key = B.Key
-WHERE B.Key IS NULL
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span> 
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span>
+<span class="k">WHERE</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span> <span class="k">IS</span> <span class="k">NULL</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="right-excluding-join">Right Excluding JOIN<a class="headerlink" href="#right-excluding-join" title="Permanent link">&para;</a></h4>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/RIGHT_EXCLUDING_JOIN.png" /></p>
 <p>This query will return all of the records in the right table (table B) that do not match any records in the left table (table A). This Join is written as follows:</p>
-<pre><code class="sql">SELECT &lt;select_list&gt;
-FROM Table_A A
-RIGHT JOIN Table_B B
-ON A.Key = B.Key
-WHERE A.Key IS NULL
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span>
+<span class="k">WHERE</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="k">IS</span> <span class="k">NULL</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="outer-excluding-join">Outer Excluding JOIN<a class="headerlink" href="#outer-excluding-join" title="Permanent link">&para;</a></h4>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/OUTER_EXCLUDING_JOIN.png" /></p>
 <p>This query will return all of the records in the left table (table A) and all of the records in the right table (table B) that do not match. I have yet to have a need for using this type of Join, but all of the others, I use quite frequently. This Join is written as follows:</p>
-<pre><code class="sql">SELECT &lt;select_list&gt;
-FROM Table_A A
-FULL OUTER JOIN Table_B B
-ON A.Key = B.Key
-WHERE A.Key IS NULL OR B.Key IS NULL
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">select_list</span><span class="o">&gt;</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">FULL</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span>
+<span class="k">WHERE</span> <span class="n">A</span><span class="p">.</span><span class="k">Key</span> <span class="k">IS</span> <span class="k">NULL</span> <span class="k">OR</span> <span class="n">B</span><span class="p">.</span><span class="k">Key</span> <span class="k">IS</span> <span class="k">NULL</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
 <p>Suppose we have two tables, Table_A and Table_B. The data in these tables are shown below:</p>
-<pre><code class="sql">TABLE_A
-  PK Value
----- ----------
-   1 FOX
-   2 COP
-   3 TAXI
-   6 WASHINGTON
-   7 DELL
-   5 ARIZONA
-   4 LINCOLN
-  10 LUCENT
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">TABLE_A</span>
+  <span class="n">PK</span> <span class="n">Value</span>
+<span class="c1">---- ----------</span>
+   <span class="mi">1</span> <span class="n">FOX</span>
+   <span class="mi">2</span> <span class="n">COP</span>
+   <span class="mi">3</span> <span class="n">TAXI</span>
+   <span class="mi">6</span> <span class="n">WASHINGTON</span>
+   <span class="mi">7</span> <span class="n">DELL</span>
+   <span class="mi">5</span> <span class="n">ARIZONA</span>
+   <span class="mi">4</span> <span class="n">LINCOLN</span>
+  <span class="mi">10</span> <span class="n">LUCENT</span>
 
-TABLE_B
-  PK Value
----- ----------
-   1 TROT
-   2 CAR
-   3 CAB
-   6 MONUMENT
-   7 PC
-   8 MICROSOFT
-   9 APPLE
-  11 SCOTCH
-</code></pre>
+<span class="n">TABLE_B</span>
+  <span class="n">PK</span> <span class="n">Value</span>
+<span class="c1">---- ----------</span>
+   <span class="mi">1</span> <span class="n">TROT</span>
+   <span class="mi">2</span> <span class="n">CAR</span>
+   <span class="mi">3</span> <span class="n">CAB</span>
+   <span class="mi">6</span> <span class="n">MONUMENT</span>
+   <span class="mi">7</span> <span class="n">PC</span>
+   <span class="mi">8</span> <span class="n">MICROSOFT</span>
+   <span class="mi">9</span> <span class="n">APPLE</span>
+  <span class="mi">11</span> <span class="n">SCOTCH</span>
+</pre></div>
+</td></tr></table>
 
 <p>The results of the seven Joins are shown below:</p>
 <p><strong>INNER JOIN</strong></p>
-<pre><code class="sql">--INNER JOIN
-SELECT A.PK AS A_PK, A.Value AS A_Value,
-       B.Value AS B_Value, B.PK AS B_PK
-FROM Table_A A
-INNER JOIN Table_B B
-ON A.PK = B.PK
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--INNER JOIN</span>
+<span class="k">SELECT</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">A_PK</span><span class="p">,</span> <span class="n">A</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">A_Value</span><span class="p">,</span>
+       <span class="n">B</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">B_Value</span><span class="p">,</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">B_PK</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">A_PK A_Value    B_Value    B_PK
----- ---------- ---------- ----
-   1 FOX        TROT          1
-   2 COP        CAR           2
-   3 TAXI       CAB           3
-   6 WASHINGTON MONUMENT      6
-   7 DELL       PC            7
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">A_PK</span> <span class="n">A_Value</span>    <span class="n">B_Value</span>    <span class="n">B_PK</span>
+<span class="c1">---- ---------- ---------- ----</span>
+   <span class="mi">1</span> <span class="n">FOX</span>        <span class="n">TROT</span>          <span class="mi">1</span>
+   <span class="mi">2</span> <span class="n">COP</span>        <span class="n">CAR</span>           <span class="mi">2</span>
+   <span class="mi">3</span> <span class="n">TAXI</span>       <span class="n">CAB</span>           <span class="mi">3</span>
+   <span class="mi">6</span> <span class="n">WASHINGTON</span> <span class="n">MONUMENT</span>      <span class="mi">6</span>
+   <span class="mi">7</span> <span class="n">DELL</span>       <span class="n">PC</span>            <span class="mi">7</span>
 
-(5 row(s) affected)
-</code></pre>
+<span class="p">(</span><span class="mi">5</span> <span class="k">row</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">affected</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><strong>LEFT JOIN</strong></p>
-<pre><code class="sql">--LEFT JOIN
-SELECT A.PK AS A_PK, A.Value AS A_Value,
-B.Value AS B_Value, B.PK AS B_PK
-FROM Table_A A
-LEFT JOIN Table_B B
-ON A.PK = B.PK
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--LEFT JOIN</span>
+<span class="k">SELECT</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">A_PK</span><span class="p">,</span> <span class="n">A</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">A_Value</span><span class="p">,</span>
+<span class="n">B</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">B_Value</span><span class="p">,</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">B_PK</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">A_PK A_Value    B_Value    B_PK
----- ---------- ---------- ----
-   1 FOX        TROT          1
-   2 COP        CAR           2
-   3 TAXI       CAB           3
-   4 LINCOLN    NULL       NULL
-   5 ARIZONA    NULL       NULL
-   6 WASHINGTON MONUMENT      6
-   7 DELL       PC            7
-  10 LUCENT     NULL       NULL
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">A_PK</span> <span class="n">A_Value</span>    <span class="n">B_Value</span>    <span class="n">B_PK</span>
+<span class="c1">---- ---------- ---------- ----</span>
+   <span class="mi">1</span> <span class="n">FOX</span>        <span class="n">TROT</span>          <span class="mi">1</span>
+   <span class="mi">2</span> <span class="n">COP</span>        <span class="n">CAR</span>           <span class="mi">2</span>
+   <span class="mi">3</span> <span class="n">TAXI</span>       <span class="n">CAB</span>           <span class="mi">3</span>
+   <span class="mi">4</span> <span class="n">LINCOLN</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+   <span class="mi">5</span> <span class="n">ARIZONA</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+   <span class="mi">6</span> <span class="n">WASHINGTON</span> <span class="n">MONUMENT</span>      <span class="mi">6</span>
+   <span class="mi">7</span> <span class="n">DELL</span>       <span class="n">PC</span>            <span class="mi">7</span>
+  <span class="mi">10</span> <span class="n">LUCENT</span>     <span class="k">NULL</span>       <span class="k">NULL</span>
 
-(8 row(s) affected)
-</code></pre>
+<span class="p">(</span><span class="mi">8</span> <span class="k">row</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">affected</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><strong>RIGHT JOIN</strong></p>
-<pre><code class="sql">--RIGHT JOIN
-SELECT A.PK AS A_PK, A.Value AS A_Value,
-B.Value AS B_Value, B.PK AS B_PK
-FROM Table_A A
-RIGHT JOIN Table_B B
-ON A.PK = B.PK
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--RIGHT JOIN</span>
+<span class="k">SELECT</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">A_PK</span><span class="p">,</span> <span class="n">A</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">A_Value</span><span class="p">,</span>
+<span class="n">B</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">B_Value</span><span class="p">,</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">B_PK</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">A_PK A_Value    B_Value    B_PK
----- ---------- ---------- ----
-   1 FOX        TROT          1
-   2 COP        CAR           2
-   3 TAXI       CAB           3
-   6 WASHINGTON MONUMENT      6
-   7 DELL       PC            7
-NULL NULL       MICROSOFT     8
-NULL NULL       APPLE         9
-NULL NULL       SCOTCH       11
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">A_PK</span> <span class="n">A_Value</span>    <span class="n">B_Value</span>    <span class="n">B_PK</span>
+<span class="c1">---- ---------- ---------- ----</span>
+   <span class="mi">1</span> <span class="n">FOX</span>        <span class="n">TROT</span>          <span class="mi">1</span>
+   <span class="mi">2</span> <span class="n">COP</span>        <span class="n">CAR</span>           <span class="mi">2</span>
+   <span class="mi">3</span> <span class="n">TAXI</span>       <span class="n">CAB</span>           <span class="mi">3</span>
+   <span class="mi">6</span> <span class="n">WASHINGTON</span> <span class="n">MONUMENT</span>      <span class="mi">6</span>
+   <span class="mi">7</span> <span class="n">DELL</span>       <span class="n">PC</span>            <span class="mi">7</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">MICROSOFT</span>     <span class="mi">8</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">APPLE</span>         <span class="mi">9</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">SCOTCH</span>       <span class="mi">11</span>
 
-(8 row(s) affected)
-</code></pre>
+<span class="p">(</span><span class="mi">8</span> <span class="k">row</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">affected</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><strong>OUTER JOIN</strong></p>
-<pre><code class="sql">--OUTER JOIN
-SELECT A.PK AS A_PK, A.Value AS A_Value,
-B.Value AS B_Value, B.PK AS B_PK
-FROM Table_A A
-FULL OUTER JOIN Table_B B
-ON A.PK = B.PK
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--OUTER JOIN</span>
+<span class="k">SELECT</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">A_PK</span><span class="p">,</span> <span class="n">A</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">A_Value</span><span class="p">,</span>
+<span class="n">B</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">B_Value</span><span class="p">,</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">B_PK</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">FULL</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">A_PK A_Value    B_Value    B_PK
----- ---------- ---------- ----
-   1 FOX        TROT          1
-   2 COP        CAR           2
-   3 TAXI       CAB           3
-   6 WASHINGTON MONUMENT      6
-   7 DELL       PC            7
-NULL NULL       MICROSOFT     8
-NULL NULL       APPLE         9
-NULL NULL       SCOTCH       11
-   5 ARIZONA    NULL       NULL
-   4 LINCOLN    NULL       NULL
-  10 LUCENT     NULL       NULL
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">A_PK</span> <span class="n">A_Value</span>    <span class="n">B_Value</span>    <span class="n">B_PK</span>
+<span class="c1">---- ---------- ---------- ----</span>
+   <span class="mi">1</span> <span class="n">FOX</span>        <span class="n">TROT</span>          <span class="mi">1</span>
+   <span class="mi">2</span> <span class="n">COP</span>        <span class="n">CAR</span>           <span class="mi">2</span>
+   <span class="mi">3</span> <span class="n">TAXI</span>       <span class="n">CAB</span>           <span class="mi">3</span>
+   <span class="mi">6</span> <span class="n">WASHINGTON</span> <span class="n">MONUMENT</span>      <span class="mi">6</span>
+   <span class="mi">7</span> <span class="n">DELL</span>       <span class="n">PC</span>            <span class="mi">7</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">MICROSOFT</span>     <span class="mi">8</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">APPLE</span>         <span class="mi">9</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">SCOTCH</span>       <span class="mi">11</span>
+   <span class="mi">5</span> <span class="n">ARIZONA</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+   <span class="mi">4</span> <span class="n">LINCOLN</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+  <span class="mi">10</span> <span class="n">LUCENT</span>     <span class="k">NULL</span>       <span class="k">NULL</span>
 
-(11 row(s) affected)
-</code></pre>
+<span class="p">(</span><span class="mi">11</span> <span class="k">row</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">affected</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><strong>LEFT EXCLUDING JOIN</strong></p>
-<pre><code class="sql">--LEFT EXCLUDING JOIN
-SELECT A.PK AS A_PK, A.Value AS A_Value,
-B.Value AS B_Value, B.PK AS B_PK
-FROM Table_A A
-LEFT JOIN Table_B B
-ON A.PK = B.PK
-WHERE B.PK IS NULL
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--LEFT EXCLUDING JOIN</span>
+<span class="k">SELECT</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">A_PK</span><span class="p">,</span> <span class="n">A</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">A_Value</span><span class="p">,</span>
+<span class="n">B</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">B_Value</span><span class="p">,</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">B_PK</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span>
+<span class="k">WHERE</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">IS</span> <span class="k">NULL</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">A_PK A_Value    B_Value    B_PK
----- ---------- ---------- ----
-   4 LINCOLN    NULL       NULL
-   5 ARIZONA    NULL       NULL
-  10 LUCENT     NULL       NULL
-(3 row(s) affected)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">A_PK</span> <span class="n">A_Value</span>    <span class="n">B_Value</span>    <span class="n">B_PK</span>
+<span class="c1">---- ---------- ---------- ----</span>
+   <span class="mi">4</span> <span class="n">LINCOLN</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+   <span class="mi">5</span> <span class="n">ARIZONA</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+  <span class="mi">10</span> <span class="n">LUCENT</span>     <span class="k">NULL</span>       <span class="k">NULL</span>
+<span class="p">(</span><span class="mi">3</span> <span class="k">row</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">affected</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><strong>RIGHT EXCLUDING JOIN</strong></p>
-<pre><code class="sql">-RIGHT EXCLUDING JOIN
-SELECT A.PK AS A_PK, A.Value AS A_Value,
-B.Value AS B_Value, B.PK AS B_PK
-FROM Table_A A
-RIGHT JOIN Table_B B
-ON A.PK = B.PK
-WHERE A.PK IS NULL
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">-</span><span class="k">RIGHT</span> <span class="k">EXCLUDING</span> <span class="k">JOIN</span>
+<span class="k">SELECT</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">A_PK</span><span class="p">,</span> <span class="n">A</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">A_Value</span><span class="p">,</span>
+<span class="n">B</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">B_Value</span><span class="p">,</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">B_PK</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span>
+<span class="k">WHERE</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">IS</span> <span class="k">NULL</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">A_PK A_Value    B_Value    B_PK
----- ---------- ---------- ----
-NULL NULL       MICROSOFT     8
-NULL NULL       APPLE         9
-NULL NULL       SCOTCH       11
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">A_PK</span> <span class="n">A_Value</span>    <span class="n">B_Value</span>    <span class="n">B_PK</span>
+<span class="c1">---- ---------- ---------- ----</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">MICROSOFT</span>     <span class="mi">8</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">APPLE</span>         <span class="mi">9</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">SCOTCH</span>       <span class="mi">11</span>
 
-(3 row(s) affected)
-</code></pre>
+<span class="p">(</span><span class="mi">3</span> <span class="k">row</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">affected</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><strong>OUTER EXCLUDING JOIN</strong></p>
-<pre><code class="sql">--OUTER EXCLUDING JOIN
-SELECT A.PK AS A_PK, A.Value AS A_Value,
-B.Value AS B_Value, B.PK AS B_PK
-FROM Table_A A
-FULL OUTER JOIN Table_B B
-ON A.PK = B.PK
-WHERE A.PK IS NULL
-OR B.PK IS NULL
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">--OUTER EXCLUDING JOIN</span>
+<span class="k">SELECT</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">A_PK</span><span class="p">,</span> <span class="n">A</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">A_Value</span><span class="p">,</span>
+<span class="n">B</span><span class="p">.</span><span class="n">Value</span> <span class="k">AS</span> <span class="n">B_Value</span><span class="p">,</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">AS</span> <span class="n">B_PK</span>
+<span class="k">FROM</span> <span class="n">Table_A</span> <span class="n">A</span>
+<span class="k">FULL</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">Table_B</span> <span class="n">B</span>
+<span class="k">ON</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="o">=</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span>
+<span class="k">WHERE</span> <span class="n">A</span><span class="p">.</span><span class="n">PK</span> <span class="k">IS</span> <span class="k">NULL</span>
+<span class="k">OR</span> <span class="n">B</span><span class="p">.</span><span class="n">PK</span> <span class="k">IS</span> <span class="k">NULL</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="sql">A_PK A_Value    B_Value    B_PK
----- ---------- ---------- ----
-NULL NULL       MICROSOFT     8
-NULL NULL       APPLE         9
-NULL NULL       SCOTCH       11
-   5 ARIZONA    NULL       NULL
-   4 LINCOLN    NULL       NULL
-  10 LUCENT     NULL       NULL
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">A_PK</span> <span class="n">A_Value</span>    <span class="n">B_Value</span>    <span class="n">B_PK</span>
+<span class="c1">---- ---------- ---------- ----</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">MICROSOFT</span>     <span class="mi">8</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">APPLE</span>         <span class="mi">9</span>
+<span class="k">NULL</span> <span class="k">NULL</span>       <span class="n">SCOTCH</span>       <span class="mi">11</span>
+   <span class="mi">5</span> <span class="n">ARIZONA</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+   <span class="mi">4</span> <span class="n">LINCOLN</span>    <span class="k">NULL</span>       <span class="k">NULL</span>
+  <span class="mi">10</span> <span class="n">LUCENT</span>     <span class="k">NULL</span>       <span class="k">NULL</span>
 
-(6 row(s) affected)
-</code></pre>
+<span class="p">(</span><span class="mi">6</span> <span class="k">row</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">affected</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h4>
 <p>Note on the OUTER JOIN that the inner joined records are returned first, followed by the right joined records, and then finally the left joined records (at least, that&rsquo;s how my Microsoft SQL Server did it; this, of course, is without using any ORDER BY statement).</p>
