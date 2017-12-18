@@ -15,7 +15,7 @@ Responsive HTML by adding a single line of CSS.
 ## Initial grid looks
 
 <center>
-<img src="/img/HTML_CSS/CSS_1.png" hspace=2 vspace=2>
+<img src="../img/HTML_CSS/CSS_1.png" hspace=2 vspace=2>
 </center>
 
 Here is the HTML:
@@ -54,13 +54,13 @@ CSS Grid brings with it a whole new value called a fraction unit: written like `
 ~~~
 
 <center>
-<img src="/img/HTML_CSS/CSS_2.gif" hspace=2 vspace=2>
+<img src="../img/HTML_CSS/CSS_2.gif" hspace=2 vspace=2>
 </center>
 
 If we change the grid-template-columns value to `1fr 2fr 1fr`, the second column will now be twice as wide as the two other columns:
 
 <center>
-<img src="/img/HTML_CSS/CSS_3.gif" hspace=2 vspace=2>
+<img src="../img/HTML_CSS/CSS_3.gif" hspace=2 vspace=2>
 </center>
 
 ## Advanced responsiveness
@@ -80,7 +80,7 @@ highlight line 3
 In other words, `repeat(3, 100px)` is identical to `100px 100px 100px`:
 
 <center>
-<img src="/img/HTML_CSS/CSS_4.png" hspace=2 vspace=2>
+<img src="../img/HTML_CSS/CSS_4.png" hspace=2 vspace=2>
 </center>
 
 ### `auto-fit`
@@ -99,7 +99,7 @@ highlight line 4
 ~~~
 
 <center>
-<img src="/img/HTML_CSS/CSS_5.gif" hspace=2 vspace=2>
+<img src="../img/HTML_CSS/CSS_5.gif" hspace=2 vspace=2>
 </center>
 
 The grid now varies the amount of columns with the width of the container.
@@ -118,7 +118,7 @@ highlight line 4
 ~~~
 
 <center>
-<img src="/img/HTML_CSS/CSS_6.gif" hspace=2 vspace=2>
+<img src="../img/HTML_CSS/CSS_6.gif" hspace=2 vspace=2>
 </center>
 
 The `minmax()` function defines a size range greater than or equal to min and less than or equal to max.
@@ -144,6 +144,7 @@ To make the image fit into the item, we’ll set the it to be as wide and tall a
 ~~~
 
 <center>
-<img src="/img/HTML_CSS/CSS_7.gif" hspace=2 vspace=2>
+<img src="../img/HTML_CSS/CSS_7.gif" hspace=2 vspace=2>
 </center>
 
+---
