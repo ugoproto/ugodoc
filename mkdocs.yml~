@@ -68,5 +68,4 @@ markdown_extensions:
         baselevel: 3
     - footnotes
     - codehilite(linenums=true)
-    - toc(permalink=true)
     

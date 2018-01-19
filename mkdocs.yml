@@ -29,6 +29,7 @@ pages:
         - The Linux Command Line: 'The Linux Command Line.md'
         - Ubuntu 16.04: 'Ubuntu.md'
         - Install & Run on Linux: 'Install_tarball.md'
+        - Useful Shell Commands for Data Science: 'Usefull+Shell+Commands+for+Data+Science.md'
     - SQL & NoSQL:
         - SQL-NoSQL Cheat Sheets: 'SQL-NoSQL_CS.md'
         - Codecademy Learn SQL: 'Codecademy Learn SQL.md'
