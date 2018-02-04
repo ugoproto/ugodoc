@@ -452,13 +452,23 @@
         },
         {
             "location": "/Infographies/",
-            "text": "CONTENT\n\n\nBig \u2013 Data \u2013 Science\n\n\nData Science\n\n\n\n\n\n\n\n\nForeword\n\n\nNotes. An image is worth\u2026\n\n\n\n\nBig \u2013 Data \u2013 Science\n\u00b6\n\n\nThe rise\n\n\n\n\nWhat?\n\n\n\n\nProcess\n\n\n\n\nData Science\n\u00b6\n\n\nKnowledge base\n\n\n\n\n\n\n\n\n\n\n\n\nLearning\n\n\n\n\nTalent Big Picture\n\n\n\n\n\n\n\n\nData Scientist\n\n\nHybrid role\u2026\n\n\n\n\nCross Over to Data Science\n\n\n\n\n\n\n\n\nProgramming Languages\n\n\n\n\nData Software",
+            "text": "CONTENT\n\n\nBig \u2013 Data \u2013 Science\n\n\nData Science\n\n\nLanguages and Software\n\n\nScience\n\n\n\n\n\n\n\n\nForeword\n\n\nNotes. An image is worth\u2026\n\n\n\n\nBig \u2013 Data \u2013 Science\n\u00b6\n\n\nThe rise\n\n\n\n\nWhat?\n\n\n\n\nProcess\n\n\n\n\nData Science\n\u00b6\n\n\nKnowledge base\n\n\n\n\n\n\n\n\n\n\n\n\nLearning\n\n\n\n\nTalent Big Picture\n\n\n\n\n\n\n\n\nData Scientist\n\n\nHybrid role\u2026\n\n\n\n\nCross Over to Data Science\n\n\n\n\nLanguages and Software\n\u00b6\n\n\n\n\nProgramming Languages\n\n\n\n\nData Software\n \n\n\n\n\nScience\n\u00b6",
             "title": "Infographies"
         },
         {
             "location": "/Infographies/#data-science",
-            "text": "Knowledge base       Learning   Talent Big Picture     Data Scientist  Hybrid role\u2026   Cross Over to Data Science     Programming Languages   Data Software",
+            "text": "Knowledge base       Learning   Talent Big Picture     Data Scientist  Hybrid role\u2026   Cross Over to Data Science",
             "title": "Data Science"
+        },
+        {
+            "location": "/Infographies/#languages-and-software",
+            "text": "Programming Languages   Data Software",
+            "title": "Languages and Software"
+        },
+        {
+            "location": "/Infographies/#science",
+            "text": "",
+            "title": "Science"
         },
         {
             "location": "/latex_snippets/",
