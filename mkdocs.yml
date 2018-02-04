@@ -5,7 +5,9 @@ site_description: A Data Science documentation website.
 site_author: Ugo Sparks
 #site_favicon: favicon.ico
 copyright: © Ugo Sparks
-google_analytics: ['UA-93008985-3', 'mkdocs.org']
+google_analytics: 
+    - 'UA-93008985-3'
+    - 'auto'
 #remote_branch: master
 #remote_name: ugodoc
 
