@@ -8,7 +8,7 @@
 
 Code snippets. With SQLite. From Codecademy in collaboration with [Periscope Data](https://www.periscopedata.com).
 
---
+---
 
 ## Specifying Comments
 
