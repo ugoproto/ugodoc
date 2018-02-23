@@ -10,109 +10,39 @@ Corpus of documents: titles and keywords.
 
 ---
 
-## Employment, Education
+## To Do
 
-Articles (notes)
+DropBox: Certification à mettre sur Documents, eLearning aussi, Podcasts aussi, Python aussi
 
-Cartes de visite (notes, examples)
-
-Infographies (notes)
-
-Resume templates (notes)
-
-The Infographic Resume, How to Create a Visual Portfolio that Showcases Your Skills and Lands the Job (+ notes), McGraw-Hill Education, 2014, <sub>workforce, technology, paper, morphing, job boards, databases, referrals, mismatch, gig, masses, linkedIn, power to the people, online portfolio, assets, explaining, pitching, social medias, work, visual flair, graphic designer, data visualization, shareability, success story, design, profile, checklist, interactive, slideshows, talent, checklists</sub>
-
-A Game Plan for Success in Data Analytics (pdf, epub), Fru Nde, <sub>hiring, demand, jobs, postings, industry, companies, roles, specialization, salaries, growth, data analysis, responsibilities, skill sets, tools, training, job description, excel, pivot tables, presentations, business intelligence, sql, warehouse, multidimensional, cube, programming,  programs, lifecycle, predictive analytics, changes</sub>
-
-Cracking the Coding Interview, 150 Programming Interview Questions and Solutions, 4th Edition, CareerCup, 2010, <sub>interview, behind the scenes, while stories, before, resume, behavioural, preparation, questions, mistakes, frequently asked questions, data structure, algorithms, programming languages, problem solving, knowledge</sub>
-
-Getting a Big Data Job For Dummies, 1st Edition, 2015, <sub>career path, public sector, academia, commercial organizations, corporate information technology, marketing departments, business units, big data firms, consulting companies, Groves, predictions, skills, attitudes, self-assessment, gaps, education, experience, milestones, timeline, risk, compliance, financial services, healthcare, government, retail, business analyst, data scientist, software developer, foundation, books, online tutorials, on-the-job training, goals, inventory, knowledge, tools, sql, nosql, hadoop, pig, hive, spark, business analytics, business intelligence, visualization, sentiment analysis, machine learning, consultant, specialist, startup, job landing, resume, interview, story, behaviour, motivation</sub>
-
-Peter Days World Of Business, In Business Recruiting By Algorithm (podcast), 2016, <sub>algorithms, online assessment, recruiting, business, interview, computer, filter, ranking, tracking, bias, workforce, blind recruiting, pool, diversity, the voice, blind audition, personality, questionnaires, psychology, sift, sieve, filter, keywords, saber software, dating websites, successful relationship, assessing, interview, expand, candidates, recruitment, robot, dating, core behaviours, templates, looking, similar, traits, compare, drivers, in modeling applicants, successful employees, training, models</sub>
-
-Poste de Data Scientist (article), <sub>resume</sub>
-
-Technical Recruiter Cheat Sheet
-
-Udacity, Ultimate Skill Checklist For Your First Data Analyst Job, Udacity, 2015, <sub>skills, competencies, talent, data analyst, programming, statistics, experimental design, mathematics, machine learning, data wrangling, communication, visualization, intuition, learning</sub>
-
-Data Analyst Nanodegree, Udacity, <sub>statistics, databases, data wrangling, exploration, identification, fraud, machine learning, visualization, web, a/b testing</sub>
-
-Machine Learning Engineer Nanodegree, Udacity, <sub>exploration, prediction, identification, segmentation, training, learning, artificial intelligence, machine learning</sub>
-
-Tech Entrepreneur Nanodegree, Udacity, <sub>Product design, monetization, interactive prototype, marketing, distribution, plan, storytelling, pitch, submission</sub>
-
-University, Microprograms (notes) 
-
-## Industry
-
-Applied Business Analytics: Integrating Business Process, Big Data, and Advanced Analytics, Pearson, 2015, <sub>business, analytics, financial management, customer management, hr management, internal operations, value, governance, quality, methodology, process, forecast, sales force, decision, feedback, identify opportunities, patterns, causality, events, workflows, customers, crm, competencies, ecosystem, exploratory, data preparation, cube</sub>
-
-Big Data, Tirer parti des données massives pour développer l'entreprise, Wiley, 2013, <sub>walmart, transformation, perspectives, activity optimisation, data monetization, metrics, medias, target users, life cycle analysis, business intelligence, not why but what, decision-making, client management, value, visualization, satisfaction, segmentation, merchandising, user experience, ux, profitability, priority, client behaviour, efficiency, fraud, network, hadoop, mapreduce, hive, hbase, pig, etl</sub>
-
-Enjeux et usages du big data : Technologies, méthodes et mise en oeuvre, Hermes, 2013, <sub>deluge, it systems, data volume, open data, velocity, variety, finance, banks, telecoms, utilities, business, public services, health, transports, distribution, sales, wholesales, medical, education, building, leisure, value, gains, data mining, methodology, machine learning, automated learning, statistical learning, social networks, a/b testing, crownsourcing, geomarketing, time series, visualization, competencies, hr, data scientists, qualities, it, profile, resume, manage a project, methodology</sub>
-
-Infographies (notes)
-
-Internet, ce qui nous échappe, Yves Michel, 2015, <sub>internet, how it works, changes, changes, black oil, moore's law, connected objects, disruptive innovation, silicon valley, platforms, economic war, bytes, society, behaviour, backlash, repositories, data centers</sub>
-
-La Révolution Big Data, Dunod, 2015, <sub>social networks, mobile, cloud, social business, volume, velocity, variety, repositories, hadoop, real time visualization, privacy, personal data, governance, business models, changes, marketing, sales, production, logistics, risks, frauds, hr, telecoms, energy, utilities, banks, public sector, health, open data, cognitive computing</sub>
-
-Le Big Data, Que sais-je, 2015, <sub>volume, sequencers, and, genetics, internet of things, connected objects, google flu, prediction, computer structure, architecture, software, inferential, decision, correlation, reason, causality, scientific research, users, crowdsourcing, business models, competencies</sub>
-
-Traque Interdite (émission web), R-C, 2015, <sub>web personalization, categorization, five personality traits, algorithms, surveillance, massive, target users, demography, password, hacking, piracy, follow, mobile phone, protect, manipulation, bugs, facebook, tracking, data policy, cookies, chrome, firefox, twitter, publicity, instagram, personal data, bubble, anonymity, metadata, myths, video games, smart city, account, access, rights, linkedin, netflix, culture, personality, rick taking, wifi, friends, links, social networks, secure, apps, skynet, state, smartphone, revealing, online</sub>
-
-Big Data - A Business and Legal Guide, Wiley, 2014, <sub>executive, security, compliance, information, privacy, Big Data, laws, risk, license, antitrust, insurance, human resources, hr,  </sub>
-
-Big Data et machine learning, Manuel du data scientist, Dunod, 2015, <sub>data explosion, economic cause, internet giants, web, price decrease, competitive advantage, demanding clients, value, eldorado, ecosystem, needs, cloud, value creation, resulting, velocity, variety, applications, competencies, hadoop, modeling, new tools, impacts, consequences, companies, clients, suppliers, legal, big brother, nosql, large-scale, repositories, data centers, documents, column-oriented, document-oriented, graph-oriented, future, algorithm, mapreduce, statistical analysis, joints, matrices, framework, data scientist, data collection, workflow, deluge, sources, formats, quality, exploratory, statistics, cleaning, enrich, transform, etl, programming, machine learning, understanding, predicting, models, overfitting, supervised, unsupervised, regression, classification, linear, nonlinear, parametric, nonparametric, incremental, geometric, probabilistic, linear regression, k-nn, knn, naïve bayes, logistic regression, k-means, decision trees, random forest, support vector machines, examples, noise, visualization, graphs, complex, interactive, hadoop distributions, hadoop ecosystem</sub>
-
-Big Data For Dummies, 2013, <sub>And data management, waves, content management, structured data, unstructured data, distributed computing, parallel computing, redundant physical infrastructure, storage, servers, security, interfaces, databases, services, tools, warehouses, analytics, virtualization, network, processor, memory, storage, cloud, relational, nonrelational database, key-value, document, mongodb, couchdb, columnar, column-bases, hbase, graph, neo4j, special, postgis, opengio suite, polyglot, persistence, mapreduce, hadoop, distributed file system, hdfs, nodes, ecosystem, yarn, hbase, hive, pig, pig latin, sqoop, zookeeper, extraction,  extract, transformation, transform, loading, load, elt, operationalized, business intelligence, analytical, infrastructure, text, taxonomies, voice of the customer, social media, exploratory, codifying, integration, incorporation, traditional, validity, talent, return on investment, roi, roadmap, urgency, capacity, methodology, budget, skill sets, risk, governance, experiment, experimentation, streaming, improving business, needs, customer experience, best action, fraud, sources</sub>
-
-Big Data MBA Driving Business Strategies with Data Science, Wiley, 1st Edition, 2015, <sub>business mandate, model maturity, strategy, prioritization, user experience, customer engagement, employees, channels, analyst, characteristics, approaches, models, business, exploratory, algorithms, models, date lake, learning, data science, data scientist, techniques, score, monetization, metamorphosis, creative thinking, creativity</sub>
-
-The Patient Revolution, How Big Data and Analytics Are Transforming the Health Care Experience, Wiley, 2015, <sub>startup, experience is a teacher, healthcare, banking, retail, patient empowerment, health cloud, analytics, trends, behavioural, personal health, population, consumer, choices, incentive, adoption, costs, outcomes, providers, diagnoses, machine learning, artificial intelligence, natural language processing, nlp, modernization, workflows,  experiences</sub>
-
-Big Data, A Revolution that will Transform who we Live, Work, and Think, 2013, <sub>now, more, messy, correlation, date, value, implications, risks, control, next</sub>
-
-Blockchain Revolution: How the Technology Behind Bitcoin Is Changing Money, Business, and the World, Portfolio, 2016, <sub>protocol, ledger, digital age, internet, prosperity, platform, design, principles, integrity, power, incentive, security, privacy, rights, inclusion, financial services, banks, banking, reputation, credit score, prediction, governance, accounting, business model, apps, agent, autonomous, open, networked, hacking, people, computing, internet of things, disruption, smart, smart phone, smart things, smart cities, prosperity, remittances, humanitarian aid, ownership, state, government, empowerment, democracy, voting, politics, justice, engaging citizens, crowd sourcing, streaming, connecting, education, energy, paradigm, NASCAR operation, job killer, big brother, criminals, ecosystem, cautionary tale, regulation, framework, agenda, trust</sub>
-
-La Révolution Big data, Les données au coeur de la transformation de l'entreprise, Dunod, 2014
-
-Who's tracking you in public (article), <sub>facial recognition, department stores, casinos, cruise ships, churches, crowd, facebook, face Prince, 3d modeling, surveillance, database, privacy, public</sub>
+Google Drive: Bayeux, Jeux
 
 ## Bash, Powershell
 
-<sub>cli, command line, interface, directory, bash, shell, powershell, file, filename, terminal, folders, print, search, uppercase, lowercase, occurrence, text, file names, line, lines, sort, reverse, random, randomly, number, numbers, size, characters, programs, inputs, outputs, input, output, pause, time, touch, create, execute, modify, view, delete, run, process, ps, pstree, killall, graphic, load, list, top, bottom, end, kill, pid, sudo, superuser, do, group, user, permission, permissions, right, write, chain, pipe, archive, compress, decompress, zip, unzip, install, update, upgrade, configure, bc, arbitrary precision calculator language, format-control, date, time, copy, move, retrieve, find, locate, which, find within, grep, variable, conditional, if, else, loops, for, while, logs, import, csv, text, array, gui, email, error, reporting, html, database, mailbox, extract, formatting, jobs, debug, breakpoints</sub>
+Learning the bash Shell, Third Edition, O'Reilly, 2005
 
-Cheat sheets
-
-Learn the Command Line (completed course, notes, snapshots, codes, manual, exercises), Codecademy, 2015
-
-Command Line Crash Course (completed course, notes, snapshots, codes, manual, exercises), Learn Python the Hard Way, 2015
+Managing Projects with GNU Make, Third Edition, O'Reilly, 2005
 
 The Linux Command Line (completed course, notes, snapshots, codes, manual, exercises), No Starch Press, living book!
 
-Les commandes Fondamentales De Linux, CC, 2016
+## Big Data, Spark, Cloud
 
-Linux Shortcuts and Commands (notes), <sub> i/o, pipes, filter, permissions, job control, script, flow control, shortcuts, sanity, commands, operations, network, file compression, process control, administration commands, program installation, drive, partition, music-related, graphic-related, files, folders, directory</sub>
+Advanced Analytics with Spark, Patterns for learning from Data at Scale, O'Reilly, 2017
 
-The Administrator Crash Course, Windows PowerShell v2, Realtime, 2010
+Apache Spark 2 Cookbook, 2nd Edition
 
-## Cloud Computing
+AWS Amazon Web Services, CC, 2017
 
-How to Become A Data Scientist Using Azure Machine Learning (course, video)
+Introducing Data Science, Big Data, Machine Learning and more, using Python tools, Manning, 2016, <sub>big data, project management, machine learning, large data, steps, nosql, graph databases, text mining, text analytics, data visualization, user</sub>
 
-Spark Big Data Cluster Computing in Production, Wiley, 2016, <sub>cloud, text, sequence, avro, parquet, cluster, standalone, yarn, mesos, tuning, partitioning, shuffling, serialization, cache, memory, shared, locality, security, acl, network, encryption, fault, execution</sub>
+Large Scale Machine Learning with Spark, Packt, 2016
 
-Cloud computing, sécurité, gouvernance du SI hybride et panorama du marché, Dunod, 2016
+Learning PySpark, Packt, 2017
 
-Open Source Cloud Computing for Complete Beginners, Building and Scaling High-Performance Web Servers on the Amazon Cloud (tutorial)
+Spark 2.0 for Beginners, Packt, 2016
 
-## Data
+## Blockchain
 
-Data Source Handbook, O'Reilly, 2011, <sub>open data, public data, repositories, api, whois, bit.ly, compete, github, whitepages, facebook, twitter, boss, wikipedia, simplegeo, us census, crunchbase, zoominfo, maxming, books, films, music, products</sub>
-
-Open Data, consommation, traitement, analyse et visualisation de la donnée publique, eni, 2016, <sub>open data, consumption, processing, analysis, visualization, public data</sub>
+Diverse...
 
 ## DataCamp
 
@@ -196,153 +126,61 @@ Time Series in R The Power of xts and zoo (completed courses, IPython notebook, 
 
 Visualization with Bokeh (completed courses, IPython notebook, datasets)
 
+## Digital Humanities
+
+Diverse...
+
+## Docker
+
+Docker Cookbook, Packt, 2015
+
+Docker in Action, Manning, 2016
+
 ## Econometrics, Spatial, GIS
 
 A Primer for Spatial Econometrics with Applications in R, Palgrave, 2014
 
-Applied Econometrics, Palgrave, 2011
+An Introduction to R for Quantitative Economics, Springer, 2015, <sub>rstudio, crude oil price, supply, demand, fish, function, derivative, elasticity, linear, log-log, cobb,douglas, matrix, statistics, regression, simulation, normal, uniform, binomial, central limit theorem, t-test, logit, anscombe, graphs, scatter, growth, time series, time, random walks, cycles, stochastic, difference, air passengers, inflation, phillips curve, stock market</sub>
+
+cas (notes)
+
+Mathematics for Marketing Models (notes)
 
 Econometrics by Example, Palgrave Macmillan, 2014
 
-Économétrie non paramétrique, Economica, 2008
+Event History Analysis with R, CRC Press, 2012 (PAPER)
 
-Economics and History: Surveys in Cliometrics, Wiley-Blackwell, 2011
+Introduction to Python for Econometrics, Statistics and Data Analysis, CC, 2014
 
-Introduction à l'économétrie, Puf, 2009
-
-Mastering Metrics, Princeton, 2015
-
-The Esri Guide to GIS Analysis, Volume 2: Spatial Measurements and Statistics, Esri Press, 2005
-
-Visualizing Data Patterns, CRC Press, 2010, <sub>map, visualization, graph, geographical, geointelligence, interactive</sub>
-
-An Introduction to R for Spatial Analysis and Mapping, SAGE, 2015
-
-Analyzing Financial Data and Implementing Financial Models using R, Springer, 2015
-
-Applied Econometrics with R, Springer, 2008
-
-Handbook of Applied Spatial Analysis, Springer, 2010
-
-Introduction to Spatial Econometrics, CRC Press, 2009
-
-Perspectives on Spatial Data Analysis, Springer, 2010
-
-QGIS-2.14-PyQGISDeveloperCookbook-fr (manual)
-
-QGIS-2.14-QGISTrainingManual-fr (manual)
-
-QGIS-2.14-UserGuide-fr (manual)
+Introducing Survival and Event History Analysis, SAGE, 2011, <sub>survival, event, history, r, data, exploration, descriptive statistics, data structures, nonparametric, kaplan-meier estimator, 
+Introduction to Stochastic Process with R, Wiley, 2016, <sub>markov chain, stationary, periodicity, ergodic, time, absorbing, branching, probability, extinction, monte carlo, gibbs sampler, sampler, eigenvalue, card shuffling, poisson process, arrival, interarrival, thinning, superposition, uniform distribution, spatial poisson, nonhomogeneous, parting, continuous-time, brownian motion, gaussian process, transformation, properties, variations, applications, ito integral, discrete random variable, joint distribution, continuous random variable, common probability distributions, moment-generating functino, matrix algebra</sub>
 
 Spatial Analysis, Statistics, Visualization, and Computational Methods, CRC Press, 2016
 
-Spatial Statistics & Geostatistics, SAGE, 2013
+Spatial Statistics & Geostatistics, SAGE, 2013 (PAPER)
 
-Using Econometrics A Practical Guide, 6th edition, Pearson, 2014
+Statistics Done Wrong, No Starch Press, 2015
 
-## Git
+The Cox Model and Its Applications, Springer, 2016
 
-Cheat sheets...
+## Employment, Education
 
-Learn Git (completed course, notes, snapshots, manual), Codecademy, 2015
+21 clés pour activer la transformation numérique de votre entreprise, Eyrolles, 2017
 
-Git maitrisez la gestion de vos versions, eni, 2016
+Cracking the Coding Interview, 150 Programming Interview Questions and Solutions, 4th Edition, CareerCup, 2010, <sub>interview, behind the scenes, while stories, before, resume, behavioural, preparation, questions, mistakes, frequently asked questions, data structure, algorithms, programming languages, problem solving, knowledge</sub>
 
-Pragmatic Guide to Git, 1st edition, Pragmatic Bookshelf, 2010
+Prévenir plutôt que guérir la révolution de la e-sant, Eyrolles, 2017
 
-Pragmatic Version Control Using Git, Pragmatic Bookshelf, 2009
+## Industry
 
-Pro Git, 2nd ed
-
-## Hadoop
-
-<sub>hadoop, vmware, conception, development, developer, training, skills, administration, big data, apps, building, projects</sub>
-
-Big Data Concept et mise en oeuvre de Hadoop, eni, 2014
-
-Cheatsheets...
-
-Projects in Hadoop and Big Data, Learn by Building Apps, Udemy, 2015
-
-Udemy potential courses:
-
-- Become a certified hadoop developer training tutorial
-- introduction to big data hadoop map-reduce
-- Master apache hadoop infinite skills hadoop training
-- Master big data and hadoop administration
-- Master apache hadoop, infinite skills hadoop training
-- Master big data and hadoop administration
-- Master big data and Hadoop step-by-step from scratch
-- Projects in hadoop and big data, learn by building apps
-- and many more
-
-## HTML, CSS
-
-Cheat sheets...
-
-Deploy a Website (completed course, notes, snapshots, codes, manual), Codecademy, 2015, <sub>static website generator</sub>
-
-HTML & CSS Final Project (uncompleted course, notes, snapshots, codes, manual), Codecademy, 2015
-
-Make a Website (completed course, notes, snapshots, codes, manual) , Codecademy, 2015, <sub>static website generator</sub>
-
-Make an Interactive Website (completed course, notes, snapshots, codes, manual) , Codecademy, 2016, <sub>static website generator</sub>
-
-Concevez votre site web avec PHP et MySQL, Simple IT, Livre du Zéro, 2010, <sub>html, css, dynamic, wamp, mamp, xampp, editor, variable, conditional, loops, function, table, url, form, transmit, transmission, password, session, cookie, read, write, open, close, files, sql, database, record, save, error, insert, update, delete, chat, comment, joint, image, regular expression, mvc architecture, member, script</sub>
-
-Réalisez votre site web avec HTML5 et CSS3, Simple IT, Livre du Zéro, 2011, <sub>html, css, static, web page, markup, attributes, comments, paragraph, title, list, links, image, figure, style, class, id, selector, size, police, alignment, floating, italic, bold, underline, color, background, transparency, border, round, shadow, click, select, block, inline, dimension, margin, absolute, relative, design, content, table, form, video, audio, adaptative, responsive, query, dom, javascript, canvas, svg, sockets, dynamic, php, jee, asp, .net, domain, host, heading, footer, debug</sub>
-
-## Import.io
-
-## Internet of Things
-
-<sub>wearable, electronics, design, prototype, wear, interactive, garments, hackable, magazine, raspberry pi, arduino, internet of things, connected object, domotic, quantify-self</sub>
-
-Arduino, maitrisez sa programmation et ses cartes d'interface (shields), 2e édition, Dunod, 2014
-
-Arduino 3, Premiers pas en informatique embarquée, 2014
-
-Le guide de la maison et des objets connectés, Eyrolles, 2016
-
-Make: Wearable Electronics
-
-Objects connectés, la nouvelle révolution numérique, eni, 2016
-
-## JavaScript
-
-Cheat sheets...
-
-JavaScript (completed course, notes, snapshots, codes, manual), Codecademy, 2016, <sub>static website generator</sub>
-
-JavaScript API (uncompleted course, notes, snapshots, codes, manual) , Codecademy, 2016, <sub>api, soundcloud, youtube</sub>
-
-JavaScript Final Project (uncompleted course, notes, snapshots, manual), Codecademy, 2016, <sub>static website generator</sub>
-
-D3.js in Action, Manning, 2015, <sub>visualization, interactive, online, server-side, back-end, web, website, web page</sub>
-
-Data Visualization with JavaScript, No Starch Press, 2015
-
-Data Visualization with Python and JavaScript, O'Reilly, 2016
-
-JavaScript, Dunod, 2010
-
-Web Development with Node and Express, O'Reilly, 2014
+Big Data Analytics, A Practical Guide for Managers, Auerbach Publications, 2015
 
 ## LaTeX, Markdown
 
-<sub>mathematics, markdown, r, text, formulas, tex, packages, markup</sub>
+LaTeX pour l'impatient, 4e édition, MiniMax, 2016 (BANQ)
 
-Cheat sheets...
-
-LaTeX pour l'impatient, 3e édition, MiniMax, 2009
-
-LaTeX appliqué aux sciences humaines, Atramenta, 2012
-
-Pandoc - Demos, <sub>pandoc, cli document converter, pdf, html, markdown,  md, latex, tex, word, doc, txt, rft</sub>
-
-Rédigez des documents de qualité avec LaTeX, Simple IT, Livre du Zéro, 2010
-
-The Not So Short Introduction to LaTeX, CC, 2015
+LaTeX appliqué aux sciences humaines
+, Atramenta, 2012
 
 TikZ pour l'impatient, CC, 2017
 
@@ -350,61 +188,30 @@ Tout ce que vous avez toujours voulu savoir sur LaTeX sans jamais oser le demand
 
 ## Linux
 
-Cheat sheets...
+Python for Unix and Linux System Administration, O'Reilly, 
 
-Linux (notes)
+## NLP, Text
 
-Linux in a Nutshell, 6th Edition, O'Reilly, 2009
+Analyzing Linguistic Data, A Practical Introduction to Statistics using R, cambridge, 2008
 
-Linux, base d'administration et de programmation (scans), <sub>virtual, virtualization, server, samba, administration, debug, commands</sub>
+Natural Language Processing: Python and NLTK, Packt, 2016
 
-Reprenez le contrôle à l'aide de linux, Simple IT, Livre du Zéro, 2010
+NLTK Essentials, Packt, 2015
 
-The Linux Command Line, 2nd Edition, CC, 2013
+Statistics for Linguistics with R, A Practical Introduction, 2nd edition, 2013
 
-## NLP, Digital Humanities
+Text Analysis with R for Students of Literature, Springer, 2014
 
-<sub>digital humanities, history, text mining, machine learning</sub>
+## Neural Networks
 
-Cheat sheets...
+diverse...
 
-Statistiques en sciences humaines avec R, PUL, 2013, <sub>quantitative methods, social sciences, quantitative research, hypotheses, database, univariate, seminary, histogram, list, frequency table, text exploration, multivariate, relation, correlation, Association, regression, cohen, time series, residuals, error margin, function, significance, tests, power, inferential, partial correlation, real estate, voting, road death toll, logistic, principal component, correspondence analysis</sub>
-
-A century of trends in adult human height (article), eLIFE, 2015, <sub>public health</sub>
-
-Computational Folklorists (article), ACM, 2012
-
-Exploring Big Historical Data, Imperial College Press, 2015
-
-NLTK Essentials, Build cool NLP and machine learning applications using NLTK and other Python libraries, Packt, 2015
-
-Text Mining Infrastructure in R (article), Journal of Statistical Software, 2008
-
-## NoSQL
-
-Big Data and Reporting with MongoDB, PluralSight, 2014
-
-Cheat sheets...
-
-The Magical Marvels of MongoDB (completed course, videos, notes, snapshots, manual), Code School, 2015, <sub>install, run, launch, commands, cli, shell, format, robomongo, gui, driver, university, course, tutorial, pluralsight</sub>
-
-Learn NoSQL Database From Scratch, MongoDB, Udemy, 2014
-
-MongoDB Initiating the Next Step, Udemy, 2016
-
-Bases de données orientées graphes avec Neo4j, Eyrolles, 2016
-
-Les bases de données NoSQL et le Big Data, 2e édition, Eyrolles, 2016
-
-MongoDB Data Modeling, Focus on data usage and better design schemas with the help of MongoDB, Packt, 2015
-
-MongoDB Applied Design Patterns, O'Reilly, 2013
-
-NoSQL For Dummies, 2015
+Hands-On Machine Learning with Scikit-Learn & TensorFlow, O'Reilly, 2017
 
 ## No Starch Press Collection
 
 Absolute OpenBSD, Unix For The Practical Paranoid
+
 Book of Ruby
 
 Building a Server with FreeBSD 7
@@ -446,337 +253,155 @@ Write Great Code, Volume II, Thinking Low-Level, Writing High-Level
 
 Write Great Code, Volume I, Understanding The Machine
 
+## Orange
+
+software...
+
 ## Predictive Modeling, Data Science, Data Mining, Marketing Analytics
-
-<sub>preferences, choices, market basket, economic data analysis, operation management, text analysis, sentiment analysis, sports analytics, spatial data analysis, brands and prices, linear models, regression, naïve bayes, clustering, k-means, optimization, non-linear programming, algorithms, time series, forecasting, smoothing, monte carlo, outliers, data preprocessing, data analysis, exploratory, statistical analysis, statistics, k-nn, decision trees, neural networks, k-means, kohonen, association rules, missing data, charts, models, visualization, data mining, machine learning, words clouds, charts, keywords search, semantic search, svn, markov model, logistic regression, classification, curve fitting, scoring, supervises, unsupervised, cases, classification, distribution, relationship, random forest, pruning, prediction, misclassification, evaluation, errors, generalized linear regression, polynomial regression, piecewise-linear regression, least squares, correlation, distance, k-medians, k-medoids, k-centers, models, average, weighted average, kernel, svr, transformation, attribute, hypothesis, tests, learning, testing, support vector machine, missing data, segmentation, overfitting, fitting, underfitting, neighbours, confusion matrix, roc, Lift, text mining, bag of words, term frequency, topic analysis, co-occurence, redux, mapreduce, hadoop, parallel processing, nosql, sql, random, expectations, descriptive, inferential, ordinary least squares, topology, spatial plot, map, mapping, factor analysis, principal component analysis, correspondence analysis, association analysis, bayesian methods, bootstrapping, scoring, web mining, social media mining, mail mining, email mining, github mining, facebook mining, linkedin mining, twitter mining</sub>
-
-SEE: Econometrics, Spatial, GIS; R, Statistics; PYTHON
 
 Analytics for Insurance, The Real Business of Big Data, Wiley, 2016, <sub>risk, management, underwriting, claim, marketing, property, liability, life, pensions, people</sub>
 
-Data Smart Excel: Using Data Science to Transform Information into Insight, Wiley, 2013, <sub>excel</sub>
+Big Data opportunité ou menace pour l'assurance, RB Édition, 2016
 
-Getting Started with Data Science, Making Sense of Data with Analytics, Pearson, 2015, <sub>tables, htmlTable, graphic, hypothesis testing, tests, regression, categorical data, spatial data analytics, time series, data mining</sub>
+Marketing Analytics, A Practical Guide to Real Marketing Science, Wiley, 2015, <sub>statistics, consumer, behaviour, strategy, regression, business case, segmentation, elasticity, test, control, lift, collinearity, logistic, market basket analysis, survival, lifetime, value, ltv, descriptive, predictive, simultaneous equations, segment, k0means, lca, rfm, behavioural, missing value, research, conjoint analysis, structural equation, sem, sample, a/b, testing, factorial, engagement</sub> (BANQ)
 
-Marketing Analytics, A Practical Guide to Real Marketing Science (excerpts, BANQ), Wiley, 2015, <sub>statistics, consumer, behaviour, strategy, regression, business case, segmentation, elasticity, test, control, lift, collinearity, logistic, market basket analysis, survival, lifetime, value, ltv, descriptive, predictive, simultaneous equations, segment, k0means, lca, rfm, behavioural, missing value, research, conjoint analysis, structural equation, sem, sample, a/b, testing, factorial, engagement</sub>
+Marketing Data Science, Modeling Techniques in Predictive Analytics with R and Python, Wiley, 2015, <sub>market, consumer choice, customer, retention, acquisition, positioning, promiting, recommending, brands, prices, social networks, competitors, predicting, sales, database, regression, bayesian, data mining, machine learning, data visualization, text, sentiment analysis, time series, market response, sampling, www, social media, surveys, experiments, interviews, focus groups, field search cases</sub>
 
-Statistical Methods in Customer Relationship Management (excerpts, BANQ), Wiley, 2012, <sub>with sas, crm, acquisition, retention, churn, win-back, models, vector autoregressive, lifetime, tobit, multinomial, logit, hazard, survival, event, poisson, regression, binomial</sub> 
+Marketing analytics : a practical guide to real marketing science, Kogan Page, 2015 (BANQ)
 
-Data science, Fondamentaux et études de cas_R_Py, Machine Learning avec Python et R, Eyrolles, 2015
+Real-World Machine Learning, Manning, 2017
 
-Data Science for Business, What You Need to Know About Data Mining and Data-Analytic Thinking, O'Reilly, 2013
+Think Like a Data Scientist, Manning, 2017
 
-Marketing Analytics, Wiley, 2014, <sub>excel, spreadsheet, pivot table, pricing, bundling, skimming, revenue, forecasting, regression, trend, winter's, moving average, neural networks, conjoint analysis, logistic, discrete choice, lifetime customer value, monte carlo, acquisition, retention, segmentation, cluster, tree, s curve, bass diffusion, copernican, duration, market basket, lift, rfm, scan*pro, retail space, sales, point of sales, pos, advertising, media, pay per click, online, principal compenent, pca, multidimentional scaling, mds, naive bayes, discriminant analysis, anova, internet, network, viral, text, mining</sub>
-
-Marketing Data Science, Modeling Techniques in Predictive Analytics with R and Python (epub), Wiley, 2015, <sub>market, consumer choice, customer, retention, acquisition, positioning, promiting, recommending, brands, prices, social networks, competitors, predicting, sales, database, regression, bayesian, data mining, machine learning, data visualization, text, sentiment analysis, time series, market response, sampling, www, social media, surveys, experiments, interviews, focus groups, field search cases</sub>
-
-Practical Data Analysis, Transform, model, and visualize your data through hands-on projects, developped in open source tools, Packt, 2013, <sub>python, mlpy, d3.js, mongodb, data source, open data, text files, excel files, sql databases, nosql databases, multimedia, web scraping, data scrubing, csv, json, xml, yaml, openrefine, d3.js, html, dom, css, javascript, svg, text classification, image retrieval, stock prices, predicting prices, modeling epidemiology, social graphs, social networks, facebook, gephi, gdf, json, twitter, oauth, twython, sentiment classification, nltk, mapreduce, ipython, wakari, infrastructure, ubuntu, windows, python3, numpy, scipy, mlpy, openrefine</sub>
-
-## Programmation for Kids
-
-À l'aventure avec Arduino !, Eyrolles, 2015
-
-Apprendre à coder en Python grace à Minecraft, Eyrolles, 2014
-
-BBC micro:bit, 27 Projects for Students, Level 1, 2016
+## Programmation pour les kids
 
 Cahier d'activités 3D pour les kids, Eyrolles, 2017
 
-Cahier d'activité, Scratch pour les kids, Eyrolles, 2015
+Arduino pour les Nuls poche, 2e édition, 2017, First
 
-CodeMTL cahier, Ateliers
+Sylvia présente Super Projets Arduino
 
-JavaScript for Kids, No Starch Press, 2014
-
-JavaScript for Kids For Dummies 2015
-
-JavaScript pour les Kids, Eyrolles, 2014
-
-Making Games with Python & Pygame, CC, 2012
-
-MicroPython for ESP8266 Development Workshop, 2016
-
-Python pour les kids, La programmation accessible à tous ! Dès 10 ans, Eyrolles, 2013
-
-Python pour les kids, Dès 10 ans, Eyrolles, 2016
-
-Super Scratch Programming Adventure, No Starch Press, 2010
-
-The Official ScratchJr Book Help Your Kids Learn to Code, No Starch Press, 2016
-
-The R Student Companion, CRC Press, 2013, <sub>script, function, graphs, input, output, loops, logic, control, mathematic functions, arithmetics, trigonometrics, matrix, system linear equation, graphs, probability, simulation, fitting</sub>
+Programmer avec Arduino en s'amusant, 2017, First
 
 ## Project Management
 
-Learning Path, DevOps with Docker (course, video)
-
-DevOps for Digital Leaders, Reignite Business with a Modern DevOps-Enabled Software Factory, 1st Ed, CA Press, 2016
+An Entire MBA in 1 Book, 2016
 
 Effective DevOps, O'Reilly, 2015
 
-Mastering IT Project Management (PCO et ITIL) (notes), <sub>pco, pmi, pmp, itil, skills, process</sub>
+Negotiating 101, From Planning Your Strategy
 
-Scrum (cheat sheet)
+Project Management Metrics, KPIs, and Dashboards, A Guide to Measuring and Monitoring Project Performance, 3rd Edition, Wiley, 2017
+
+### PMI-ACP
+
+...
 
 ## Python
 
-Automate the Boring Stuff with Python, No Starch Press, 2015 
+An Introduction to Statistics with Python, With Applications in the Life Sciences, Springer, 2016
 
-Cheat sheets
+Automate the Boring Stuff with Python, No Starch Press, 2015
 
-Python (completed course, notes, snapshots, codes, manual), Codecademy, 2015
+A Whirlwind Tour of Python, O'Reilly, 2016
 
-Python API (completed course, notes, snapshots, codes, manual), Codecademy, 2016, <sub>api, dwolla, nhtsa, npr, wepay</sub>
-
-Python Final Project (uncompleted course, notes, snapshots, manual), Codecademy, 2015, <sub>markov chain, github</sub>
-
-Python Projects (notes, codes), Codecademy, 2015, <sub>bank account, battleship, calendar, grading, guess game, converter, game</sub>
-
-Intro to Python for Data Science (completed course, notes, snapshots, manual), DataCamp, 2015,
-<sub>python3</sub>
-
-Learn Python the Hard Way (completed course, videos, notes, snapshots, codes, manual)
-
-Managing Your Biological Data with Python (notes, script, images, files), CRC Press, 2014
-
-LPTHW Python +
-
-Python Glossary
-
-A Comprehensive Introduction to Python Programming and GUI Design Using Tkinter (article)
-
-Amazon Web Services in Action, Manning, 2016
-
-An introduction to GUI programming with Tkinter (presentation), SciNet, 2014
-
-An Introduction to Tkinter (presentation), CC, 2008
-
-Apprenez à programmer en Python, Simple IT, Livre du Zéro, 2011
-
-Bayesian Methods for Hackers, Addison-Wesley, 2016, <sub>bayesian, inference, pymc, python, a/b testing, cases, distribution, algorithms, plot, graphs, statistics, probability, loss function, machine learning</sub>
-
-Building Machine Learning Systems with Python, Master the art of machine learning with Python and build effective machine learning systems with this intensive hands-on guide, Packt, 2013
+Bayesian Methods for Hackers, Addison-Wesley
+, 2016, <sub>bayesian, inference, pymc, python, a/b testing, cases, distribution, algorithms, plot, graphs, statistics, probability, loss function, machine learning</sub> (https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
 
 Building Machine Learning Systems with Python, Get more from your data through creating practical machine learning systems with Python, 2nd Edition, Packt, 2015, <sub>iris, classifying, scikit-learn, clustering, bag of words, k-means, topic modelling, data mining, knn, logistic, regression, sentiment analysis, naive bayes, classifier, tweets, clean, word,  cross-validation, penalize, regulatize, lasso, elasticnet, text, predictions, recommendations, basket analysis, classification, music, computer vision, dimension reduction, big data, amazon web service</sub>
+
+Building Recommendation Engines, Packt, 2017
 
 Data Science from Scratch First Principles with Python, O'Reilly, 2015, <sub>visualization, linear algebra, statistics, probability, hypothesis, inference, gradient descent, fetch, read, file, scraping, web, api, twitter, exploring, machine learning, k-nearest neighbours, knn, naive bayes, regression, logistic, decision tree, neural networks, clustering, natural language processing, network analysis, recommender system, databases, sql, mapreduce</sub>
 
 Data Wrangling with Python Tips and Tools to Make Your Life Easier, O'Reilly, 2016, <sub>excel, spreadsheet, pdf, storing, clean, format, outilier, bad, duplicates, match, regex, standardizing, scripting, exploration, presenting, reporting, web, scraping, screen, spiders, api, automation, scaling</sub> 
 
-Flask By Example, Unleash the full potential of the Flask web framework by creating simple yet powerful web applications, Packt, 2016
+Hands-On Machine Learning with Scikit-Learn & TensorFlow, O'Reilly, 2017
 
-Flask Framework Cookbook, Over 80 hands-on recipes to help you create small-to-large web applications using Flask, Packt, 2014
+Introducing Data Science, Big Data, Machine Learning and more, using Python tools, Manning, 2016
 
-Flask Web Development, Developing Web Applications with Python, O'Reilly, 2014
+Geoprocessing with Python, Manning, 2016
 
-Introducing Data Science, Big Data, Machine Learning and more, using Python tools, Manning, 2016, <sub>big data, project management, machine learning, large data, steps, nosql, graph databases, text mining, text analytics, data visualization, user</sub>
+Introduction to Machine Learning with Python, O'Reilly, 2017
 
-Introduction to Computation and Programming Using Python (theory), Revised, MIT Press, 2013, <sub>testing, debugging, exceptions, assertions, classes, oop, algorithmic complexity, algorithms, plotting, stochastic, programs, probability, statistics, random walks, data visualization, monte carlo, experimental data, dynamic programming, machine learning</sub>
+Learning Predictive Analytics with Python, Packt, 2016
 
-Introduction to Machine Learning with Python, O'Reilly, 2017, <sub>scikit-learn, jupyter, ipython, knn, regression naive bayes, decision trees, ensembles, support vector machines, neural networks, decision function, train, test, scale, pca, principal component, non-negative matrix factorization, nmf, manifold learning with t-sne, clustering, k-means, binning, trees, polynomials, nonlinear, regression, models, forms, statistics, cross-validation, grid search, metrics, scoring, preprocessing, pipeline, text, strings, bag of words, ngram, topic modeling, token, document, stemming, lemmatization</sub>
+Managing your Biological Data with Python, CRC Press, 2014 (PAPER)
 
-Introduction to Python for Econometrics, Statistics and Data Analysis, CC, 2014
+Mastering Python Regular Expressions, Leverage regular expressions in Python even for the most complex features, Packt, 2014
 
-IPython Interactive Computing and Visualization Cookbook, Over 100 hands-on recipes to sharpen your skills in high-performance numerical computing and data science with Python, Packt, 2014
+Practical Data Analysis, Packt, 2013
 
-IPython Notebook Essentials, Compute scientific data and execute code interactively with NumPy and SciPy, Packt, 2014
+Practical Statistics for Data Scientists 50 Essential Concepts, O'Reilly, 2017
 
-Large Scale Machine Learning with Python, Learn to build powerful machine learning models quickly and deploy large-scale predictive applications, Packt, 2016, <sub>scalability, ipython, scikit-learn, streaming, stochastic, learning, support vector machines, nonlinearity, hyperparameter, neural networks, deep learning, h2o, tensorflow, neural networks, keras, tree, classification, cart, boosting, xgboost, random forest, pca, principal component analysis, k-means, lda, cpu, memory, machine, distributed, hadoop, spark, virtual box, hdfs, yarn, spark, pyspark, machine learning, cluster, preprocessing, </sub>
+Python Data Analysis, 2nd edition, Packt, 2017
 
-Learning IPython for Interactive Computing and Data Visualization, Learn IPython for interactive Python programming, high-performance numerical computing, and data visualization, Packt, 2013
+Python Data Analysis Cookbook, Packt, 2016
 
-Machine Learning in Python, Essential Techniques for Predictive Analysis, Wiley, 2015, <sub>machine learning, classification, visualization, predictive, balancing performance, big data, linear regression, penalize, predictive model, logistic, binary, multinomial, emsembles, tree, bootstrap, gradient boosting, random forest, bagging, binary classification</sub>
+Python Data Visualization, 2nd edition, Packt, 2015
 
-Mastering Machine Learning with scikit-learn, Apply effective learning algorithms to real-world problems using scikit-learn, Packt, 2014, <sub>linear regression, polynomial, regularizatino, gradient descent, machine learning, scikit-learn, extraction, preprocessing, text, images, logistic regression, binary classifier, tree, clustering, k-means, pca, principal component analysis, perceptron, support vector machines, neural networks, </sub>
+Python Geospatial Analysis Cookbook, Packt, 2015
 
-Mining the Social Web Data Mining Facebook, Twitter, LinkedIn, Google+, GitHub, O'Reilly, 2013
+Python Geospatial Analysis Essentials, Packt 2015
 
-Programmation en Python pour les mathématiques, 2e édition, Dunod, 2011
+Python Geospatial Development, Third Edition, Packt, 2016
 
-Programming ArcGIS 10.1 with Python Cookbook, Over 75 recipes to help you automate geoprocessing tasks, create solutions, and solve problems for ArcGIS with Python, Packt, 2013, <sub>geoprocessing script, ArcPy, map, documents, layers, referencing, data frame, layers, tables, symbology, finding, fixing, broken data, find, replace, automating, production, printing, exporting, map book, geoprocessing, retrieving, tool, creating tools, querying, data, table, listing, gis, describing, customizing, interface, add-ins, error handling, troubleshooting, python, script</sub> 
+Python Machine Learning Cookbook, Packt, 2016
 
-Python 3 niveau avancé, CC, 2016
-
-Python Data Visualization Cookbook, Over 70 recipes, based on the principal concepts of data visualization, to get you started with popular Python libraries, 2nd edition, Packt, 2015, <sub>importing, exporting, reading, cleaning, generating random, smoothing noise, plotting, customizing plot, 3d, visualiztion, charts, images, maps, capchat, logarithm, spectogram, vector flow, colormaps, cross correlation, autocorrelation, matplotlib, drawing, latex, api, plotly, cloud</sub>
-
-Python For Data Analysis, O'Reilly, 2013, <sub>ipython, numpy, pandas, loading, storage, formats, data, wrangling, cleaning, transforming, merging, reshaping, plotting, visualizing, visulization, aggregation, operations, time series, financial, economic, data, app, manipulation, advanced, sorting, matrix, broadcasting</sub>
-
-Python for Data Science For Dummies, 2015
-
-Python for Education, Learning Maths & Science using Python and writing them in LATEX, CC, 2010
-
-Python Machine Learning, Unlock deeper insights into machine learning with this vital guide to cutting-edge predictive analytics, Packt, 2015, <sub>algorithms, training, classification, neural networks, classifier, scikit-learn, logistic,  regression, support vector machines, kernel, nonlinear problems, tree, knn, missing data, categorical data, train, test, regularization, dimensionality reduction, discriminant analysis, nonlinear mapping, hyperparameter, tuning, cross-validation, pipelines, debugging, metrics, emsembles, bagging, bootstrap, sentiment analysis, bag of words, online algorithm, sqlite, flash, into web app, flask, web application, displaying, predicting, ols, regularize, polynomial,  clustering, k-means, tree, neural networks, handwritten, backpropagation, gradient, parallelizing</sub>
-
-Python Pocket Reference, 5th Edition, O'Reilly, 2014
-
-Python Real World Machine Learning, Learn to solve challenging data science problems by building powerful machine learning models using Python, Packt, 2016, <sub>preprocessing, label, endoding, linear, regression, model persitence, ridge, polynomial, price, demand, classifier, regression, logistic, naive bayes, train, test, cross-validation, confusion matrix, performance, curves, support vector machines, hyperparameters, predictor, clustering, k-means, vector, cluster, algorithm, recommendation, pipeline, euclidean distance, pearson distance, movie recommendation, stemming, lemmatization, chunking, bad of words, text, gender, sentiment, topic modeling, speech recognition, audio, frequency, music, markov model, speech recognizer, time series, conditional random fields, images, detecting, biometric, face, recognition, deep neural networks, visualizing, pca, principal component analysis, k-means, deep learning, bolzmann, denoising autoendoders, convolutional, cnn, text, engineering, cleaning, tagging, nltk, correlation, lasso, recursive feature elimination, genetic model, restful, api, twitter, ensembles, random forests, xgboost, stacking, lasagne, tensorflow, scalability, python, scikit-learn, h2o, gensim, theano, sknn, theanets, keras, streaming, stochastic, deep learning, cart, boosting, gradient boosting, virtual box, hadoop, hdfs, yarn, spark</sub>
-
-Python Testing with unittest, nose, pytest, Leanpub, 2014
-
-Real Python, An introduction to Python through practical examples, CC, 2013
-
-scikit-learn Cookbook, Over 50 recipes to incorporate scikit-learn into every step of the data science pipeline, from feature extraction to model building and model evaluation, Packt, 2014, <sub>workflow, source, sample, categorical, label, missing value, pipelines, pca, principal component analysis, factor analysis, nonlinear dimensionality, truncated, support machines, gradient descent, fitting, linear model, regression, ridge, sparsity, regularize, lars, classification, logistic, bayesian, boosting, k-means, centroids, cluster, knn, tree, random forests, support vector machines, multiclass, classification, lda, qda, stochastic, naive bayes, propagation, cross-validation, grid search, dummy estimator</sub>
-
-Scipy, Lectures Notes, CC, living book
-
-Learn Web Scraping With Python In A Day, Acodemy, 2015
+Real-World Machine Learning, Manning, 2017
 
 ## R, Statistics
 
-### Bibliothèque
+An Introduction to Statistical Learning with Applications in R, Springer, 2015
 
-Biostatistique : une approche intuitive (BANQ), De Boeck, 2013, <sub>tests, hypothesis, p-value, proportion confidence interval, survival analysis, censored, poisson, error, bias, continuous, categorical, spread, gauss, log-normal, geometric, significance, tests, type i, type ii, equivalence, comparison, group, outlier, khi-squared, propective, experimental, relative risk, survey, two mean, groups, correlation, regression, model, nonlinear, logistic, anova, nonparametric, sensitivity, roc, bayes, sample, sampling, cases</sub>
+Analyse de données avec R, PUR, 2016, <sub>pca, principal components, fa, factorial, factor, analysis, multiple, correspondence, classifier, classification, visualization</sub> (BANQ)
 
-Comprendre et réaliser les tests statistiques à l'aide de R : manuel de biostatistique (BANQ), De Boeck, 2014, <sub>r, descriptive statistics, random variable, data table, scientific methodology, survey, outliers, tests, probability distribution, binomial, multinomial, pascal, negative binomial, geometric, hypergeometric, poisson, laplace-gauss, normal, exponential, gamma, chi-squared, fisher-snedecor, student, mann-whitney, wilcoxon, hypothesis, type i, type ii, bias, error, proportion comparison, conformity, homogeneity, g, mantel-haenszel, mac nemar, mean comparison, welch, anova, median comparison, mann-whitney-wilcoxon, kruskal-wallis, variance comparison, ansari-bradley, bartlett, fligner-killeen, correlation comparison, pearson, spearman, kendall, distribution comparison, kolmogorov-smirnov, shapiro-wilk, regression, survival, covariance, central limit</sub>
+Applied Spatial Data Analysis with R, Springer, 2nd edition, 2013
 
-### Entry-level
+Biostatistique: une approche intuitive, De Boeck, 2013, <sub>tests, hypothesis, p-value, proportion confidence interval, survival analysis, censored, poisson, error, bias, continuous, categorical, spread, gauss, log-normal, geometric, significance, tests, type i, type ii, equivalence, comparison, group, outlier, khi-squared, propective, experimental, relative risk, survey, two mean, groups, correlation, regression, model, nonlinear, logistic, anova, nonparametric, sensitivity, roc, bayes, sample, sampling, cases</sub> (BANQ)
 
-Cheat sheets
+Comprendre et réaliser les tests statistiques à l'aide de R: manuel de biostatistique, De Boeck, 2014, <sub>r, descriptive statistics, random variable, data table, scientific methodology, survey, outliers, tests, probability distribution, binomial, multinomial, pascal, negative binomial, geometric, hypergeometric, poisson, laplace-gauss, normal, exponential, gamma, chi-squared, fisher-snedecor, student, mann-whitney, wilcoxon, hypothesis, type i, type ii, bias, error, proportion comparison, conformity, homogeneity, g, mantel-haenszel, mac nemar, mean comparison, welch, anova, median comparison, mann-whitney-wilcoxon, kruskal-wallis, variance comparison, ansari-bradley, bartlett, fligner-killeen, correlation comparison, pearson, spearman, kendall, distribution comparison, kolmogorov-smirnov, shapiro-wilk, regression, survival, covariance, central limit</sub> (BANQ)
 
-Analyse de données avec R (extraits), PUR, 2016, <sub>pca, principal components, fa, factorial, factor, analysis, multiple, correspondence, classifier, classification, visualization</sub>
+Data Mining with R, Learning with Case Studies, CRC Press, 2011 (PAPER)
 
-Calcul parallèle avec R, UDP Sciences, 2016, <sub>parallel, computation, optimize, improve, speed up, test, measure, processor, memory, amdahl law, gustagson law, snow, multicore, foreach, doparallel, c++, openmp, distributed computation, hpc, mpi, cluster, big data, cp-gpu, cores, nodes, rcpp</sub>
+Data Scientist et langage R, ENI, (Table des matières)
 
-Data Mining Applications with R, Elsevier, 2013, <sub>power grid, hadoop, property value, web, random forest, data mining, classification, images, crime analyses, football mining, internet dns, traffic, optimization, bayesian classifiers, text mining, topic modeling, social network,  recommender systems, response modeling, direct marketing, insurance customer profile, predicting bank loan default, customer preference analysis</sub>
-
-Discovering Knowledge in Data, An Introduction to Data Mining, 2nd edition, Wiley, 2014, <sub>larose</sub>
-
-Doing Bayesian Data Analysis, 2nd edition, AP, 2014, <sub>credibility, model, parameters, bayesian, r, probability, bayes's rule, inferring, binomial, probability, markov chain, monte carlo, jags, hierarchival model, model comparison, hypothesis, testing, sample size, stan, generalized linear model, metric, predicted, predictor, dichotomous, qualitative, nominal, ordinal, count, tools</sub>
-
-Guidebook to R Graphics Using Microsoft Windows, Wiley, 2012
-
-Introducing Survival and Event History Analysis, SAGE, 2011, <sub>survival, event, history, r, data, exploration, descriptive statistics, data structures, nonparametric, kaplan-meier estimator, 
-Introduction to Stochastic Process with R, Wiley, 2016, <sub>markov chain, stationary, periodicity, ergodic, time, absorbing, branching, probability, extinction, monte carlo, gibbs sampler, sampler, eigenvalue, card shuffling, poisson process, arrival, interarrival, thinning, superposition, uniform distribution, spatial poisson, nonhomogeneous, parting, continuous-time, brownian motion, gaussian process, transformation, properties, variations, applications, ito integral, discrete random variable, joint distribution, continuous random variable, common probability distributions, moment-generating functino, matrix algebra</sub>
-
-Introduction to Stochastic Process with R, Wiley, 2016, <sub>markov chain, branching, monte carlo, poisson process, continuous-time markov chain, brownian motion, stochastic calculus, probability, algebra</sub>
-
-Learning RStudio (notes)
-
-Making your Case, Using R for Program Evaluation, Oxford University Press, 2015, <sub>data, graphics, describing, factors, interaction, mediatin, regression, logistic regression</sub>
-
-Modeling Techniques in Predictive Analytics, Business Problems and Solutions with R, Pearson, 2014
-
-Modélisation prédictive et apprentissage statistique avec R (Tufféry, aperçu), Technip, 2015
-
-Modern Multivariate Statistical Techniques, Regression, Classification, and Manifold Learning (extracts), Springer, 2008
-
-Monte Carlo Simulation and Resampling Methods for Social Science with R, SAGE, 2013, <sub>probability, random number generation, statistical stimulation, linear model, generalized linear model, simulation, testing theory, resampling</sub>
-
-Multivariate generalized linear mixed models using R, CRC Press, 2011, <sub>generalized linear models, continuous, interval, scale, logistic, logit, probit, likelihood, binary data, ordinal data, ordered logit, ordered categories, poisson regression models, count data, mixed models, continuous, interval, scale data, two-level logistic, general two-level logistic, intraclass correlation, two-level ordered logit model, likelihood, tow-level poisson model, three-level, duration, event history, left censoring, right censoring, time-varying, competing risk, single-level, two-level, three-level, renewal models, stayer, non-susceptible, endpoint, mover-stayer, handling initial condition, state dependence, random effect, initial contition problems, condition analysis, woordridge conditinal model, joint analysis, random effect, link function, dummy, sabrer, r</sub>
-
-Nonlinear Parameter Optimization Using R Tools, Wiley, 2014, <sub>optimization, algorithms, one-parameter, root-finding, minimization, optimize, nonlinear least squares, nonlinear equations, function, calculation, derivatives, bound, constraints, masks, scaling, centering, mathematical programming, global optimization, reparameterization, solution, kkt, tuning, terminating, neos, nlopt, bugs, differential equation, miscellaneous, generalized nonlinear model, systems of equations, noisy objective functino, moving forward</sub>
-
-R Graphics, 2nd edition, CRC Press, 2011
-
-Spatial and Spatio-temporal Bayesian Models with R-INLA, Wiley, 2015, <sub>bayesian methods, computing, regression, hierarchical, nonlinear regression, random walk, household and income, generalized linear model, cd4 counts, aids, cancer, mortality, spatial modeling, gmrf, mapping, mym, suicide, disease, zero-inflated model, geostatistical model, spde, spatial prediction, spatio-temporal, bivariate model, joint model, gaussian distribution, non-gaussian distribution, semicontinuous model, rainfall, spatio-temporal dynamic model, besag, space-time model</sub>
-
-Spatial Regression Model, SAGE, 2011, <sub>interaction, social science, spatial dependence, map, spatial association, correlation, proximity, spatial model, spatially lagged dependent variable, maximum likelihood, equilibrium effect, spatial dependence, italy, different weights matrices, ols, dummy variable, spatial error, maximum likelihood, democracy, development, dyadic trade flow, connectivities, inference</sub>
-
-Statistical Hypothesis Testing with SAS and R, Wiley, 2014, <sub>normal distribution, tests, mean, t-test, z-test, variance, sample, f-test, binomial distribution, proportion, sample, k-sample, poisson distribution, exponential distribution, correlation, nonparametric, location, wilcoxon, krustal-wallis, scale difference, siegel-tukey, ansari-bradley, goodness-of-fit, edf, kolmogorov-smirnov, anderson-darling, cramer-von mises, shapiro-wilk, jarque-bera, distribution, randomness, wald-wolfowitz, run, von neumann, von newmann rank, contingency, fisher, pearson, likelihood, cohen, kappa, large sample, outliers, grubb, david-hartley-pearson, regression, slope, intercept, anova, bartlett, levene</sub>
-
-Statistiques avec R (extraits), PUR, 2012, <sub>cheat sheets, summary tables, small cases, snippets, reminders</sub>
-
-Statistiques et probabilités appliquées, puf, 2008, <sub>descriptive, frequency, centre, average, median, pourcentile, variance, distribution, range, absolute, parameters, probability, events, conditional, independence, random variable, discrete, binomial, continuous, normal, gaussian, test, poisson distribution, exponential distribution, function, sampling, confidence interval, hypothesis, difference, regression</sub>
-
-Text Mining and Visualization, Case Studies Using Open-Source ToolsCRC Press (RapidMiner, Knime, Python, R), 2016, <sub>rapidminer, text analytics, corpus, token, repository, mining, visualization, documents, rank-frequency, sequential window, zipf-mandelbrot, knime, preprocessing, frequencies, transformation, data table, social media, network mining, slashdot, python, mongodb, sparse matrix, character encoding, web scraping, cleansing, visualization, exploration, classification, clustering, pca, principal compenent analysis, sentiment, mining search, logs, r</sub>
-
-An Introduction to R (pdf)
-
-An Introduction to R for Quantitative Economics, Springer, 2015, <sub>rstudio, crude oil price, supply, demand, fish, function, derivative, elasticity, linear, log-log, cobb,douglas, matrix, statistics, regression, simulation, normal, uniform, binomial, central limit theorem, t-test, logit, anscombe, graphs, scatter, growth, time series, time, random walks, cycles, stochastic, difference, air passengers, inflation, phillips curve, stock market</sub>
-
-An Introduction to Statistical Learning with Applications in R, Springer, 2013
-
-Analysis of Questionnaire Data with R, CRC Press, 2012, <sub>description, response, summary statistics, plotting, graphs, relationships, variable, risk, odds, ratio, correlation, hierarchical, clustering, hypothesis, confidence interval, proportion, mean, percentage, means, correlation, groups, linear, logistic, poisson, regression, binary, multinomial, categorical, count, multilevel, predictors, interaction, missing data, bootstrap, random effects, multilevel, composite, distribution, multi-trait, multi-method, error, alpha, structural equation, factor analysis, memory card, univariate, bivariate, multidimensional, inference</sub>
-
-Analyzing Baseball Data with R, CRC Press, 2014, <sub>database, retrosheet, game, paly, pitch, graphics, run, win, expectancy, balls, strikes, career, simulation, streak, bat, mysql, package, mlbam, data</sub>
-
-Art of R Programming - A Tour of Statistical Software Design, No Starch Press, 2011, <sub>vector, matrix, array, data frame, programming, math, simulation, oop, input, output, graphics, debugging, speed, memory, code, language, parallel</sub>
-
-Automated Data Collection with R A Practical Guide to Web Scraping and Text Mining, Wiley, 2015, <sub>web scraping, text mining, html, primer, syntax, tag, attribute, xml, json, parsing, xpath, web document, extracting, http, protocol, libcurl, rcurl, ajax, javascript, dom, chrome, tools, sql, relational, database, dbms, regular expression, regex, string, stringr, toolbox, web, retrieval, api, oauth, robots, statistical text processing, tm, corpus, ngram, cleansing, support vector machines, random forest, maximum entropy, rtexttools, press release, processing, loop, plyr, progress feedback, error, exception, case studies, bills, network, ftp, server, twitter, rest, streaming, visualizing, mining, tweet, geographic distribution, data collection, website inspection, mapping, automating, gathering, storage, sentiment, collecting, analyzing</sub>
-
-Beginning SQL Server R Services, Analytics for Data Scientists, 1st Ed, Apress, 2016, <sub>setup, installation, visual studio, project, scenario, scope, building model, sample, package, plotting, regression, case, wind speed by airport, average temperature by airport, configuring, connecting, reporting, account, url, database, portal, email, encryption, subscription, scaling, bi, report, imporring, generating, cases</sub>
-
-Big Data Analytics with R and Hadoop, Set up an integrated infrastructure of R and Hadoop to turn your data analytics into Big Data analytics, Packt, 2013, <sub>installing, linux, ubuntu, single node, multinode, hdfs, mapreduce, project, subproject, writing, programmes, scenario, shuffling, sorting, executing, limitations, solving, dataflow, examples, rhadoop, rhipe, streaming, analytics, preprocessing, visualizing, web page categorization, frequency of stock change, sale price of books, machine learning, regression, clustering, recommendation, algorithms, importing, exporting, package, mysql, rmysql, excel, mongodb, sqlite, postgresql, hive, hbase</sub>
-
-Building a Recommendation System with R, Learn the art of building robust and powerful recommendation engines using R, Packt, 2015, <sub>data analysis, processing, simlar, euclidian, distance, cosine, pearson, dimensionality, reduction, principal component analysis, data mining, clustering, k-means, tree, ensembles, bagging, random forest, boosting, system, recommenderlab, datasets, matrix, exploration, preparation, item-based, flitering, user-based, evaluating, case, building, engine</sub>
-
-Computational Biology A Practical Introduction to BioData, A Practical Introduction to BioData Processing and Analysis with Linux, MySQL, and R, 2nd edition, Springer, 2013, <sub>linux, shell, sed, awk, perl, mysql, r, operating system, windows, max os x, vmware, files, directories, moving, copying, renaming, attributes, web, remote, wget, curl, scp, ssh, rsync, text, cat, sorting, lines, scrolling, character, word, line, splitting, cut, paste, grep, finding, sparse, pico, vim, dos, pipe, alias, batch, job, command, wildcard, blast, clustalw, ftp, script, path, variables, input, output, echo, read, substitution, quoting, flow control, conditional, logic, notification, debugging, regular expression, sed, pattern, space, substitution, transliteration, deletion, insertion, change, printing, reading, writing, mysql, relational database, example, case</sub>
-
-Computational Finance with R, An Introductory Course with R, Springer, 2014, <sub>securities, bonds, stocks, options, derivatives, portfolios, investments, engineering, trading, price, discounted cash flow, arbitrage, risk, efficient, market, computational, time series, returns, distributions, density, stationary, autocovariance, forecasting, volatility, correlations, causalities, similarities, rank granger, nonparametric, grouping, clustering, graphs, models, trend, seasonality, arch, garch, nonlinear, semiparametric, neural networksds, support vector machines, tests, brownian motion, binomial tree, monte carlo, continuous, time process, wiener, ito, lemma, geometric, option pricing, black-scholes, trade, mining, value estimation, technical analysis, fundamental analysis, optimization, heuristic, combinatorial, annealing, genetic programming, ant colony, portfolio optimization, mean-variance, online finance, price search, online trading, portfolio selection</sub>  
-
-Data Mining Algorithms Explained using R, Wiley, 2015
-
-Data mining and business analytics with R, Wiley, 2013, <sub>regression, polynomial, nonparametric, model selection, parsimony, false discovery, lasso, logistic regression, binary classification, knn, naive bayes, multinomial logistic regression, discriminant analysis, fisher's, tree, chaid, baggin, boosting, random forests, support vector machines, neural networks, rattle, data mining, clustering, k-means, hierarchical clustering, market basket analysis, association, lift, dimension reduction, factorial, factor, principal component analysis, pca, multicollinear, partial least squares, text, sentiment, network</sub>
-
-Data Mining and Statistics for Decision Making, Wiley (Tufféry), 2008
-
-Data Mining with R - Learning with Case Studies, Torgo L., CRC Press, 2011, <sub>visualization, summarization, unknown value, filling, missing value, prediction model, regression, tree, evaluation, stock market returns, time-dependent, reading files, csv, web, mysql, windows, linux, prediction, predictors, models, neural networks, support vector machines, splines, simulation, monte carlo, experimental comparison, trading, testing, fraudulent, transactions, dataset, data mining, precision, recall, lift, outlier, box lot, outlier, clustering, class imbalance, naive bayes, adaboost, classifying, anova, random forest, clustering, prediction, evaluation, knn</sub>
-
-Displaying Time Series, Spatial, and Space-Time Data with R, CRC Press, 2014, <sub>time series, horizontal axis, meteorological, scale, stacked, graphs, grouping, scatter, polylines, colors, positioning, panel, siar, unemployment, gross national income, co2, emission, spatial data, package, mapping, choropleth, raster, vector, physical map, openstreemap, googlemap, air quality, election, lang cover, space-time, spatiotemporal, level, exploratory, animation</sub>
-
-Event History Analysis with R, CRC Press, 2012, <sub>survival, censoring, truncated, time scales, continuous time model, discrete time model, cox regression, proportinal hazards, log-rank test, baseline, explanatory variables, interactions, parameters, model, male mortality, poisson regression, pricewise constant hazards, time-varying covariates, communal covatiates, event times, risk sets, residuals, assumptions, period survival, parametric, proportianal hazards, accelerated failure, frailty, stratification, competing rick, probabilities, causality, matching, aalen, additive hazards, dynamic path, inference, symptotic, distribution</sub>
-
-Extending the Linear Model with R Generalized Linear, Mixed Effects and Nonparametric Regression Models, CRC Press, 2005, <sub>binomial, count, regression, contingency, table, multinomial data, generalized linear model, gml, random effect, repeated measures, longitudinal, mixed effect, nonnormal, response, nonparametric, additive, tree, neural networks</sub>
-
-Foundations of Statistical Algorithms With References to R Packages, CRC Press, 2013, <sub>regression, iteration, optimization, univariate, multivariate, neural networks, constrained, linear programming, quadratic programming, evolutionary computing, simulated, annealing, maximum-likelihood, pls, em, algorithm, k-means, randomization, uniform distribution, recommended generator, bernouilli, binomial, hypergeometrical, poisson, waiting time, continuous, triangular, normal, mixture, exponential, lognormal, gibbs, rejection, metropolis-hasting, convergence, chain, mcmc, bugs, repetition, resampling, cross-validation, bootstrap, subsampling, hyperparameter, classification, evaluation, error, nonlinear, neural networks, latent variable, scalability, parallelization, parallel computing</sub>
-
-ggplot2 - Elegant Graphics for Data Analysis, 2nd Edition, Springer, 2016, <sub>colour, size, shape, aesthetic, facetting, geoms, smoother, boxplot, jittered, histogram, frequency, bar chart, time series, line, path, axes, labels, annotation, groups, surface, maps, vecotr, metadata, raster, area, uncertainty, overplotting, grammar, layers, scales, coordinate, legends, limits, positioning, linear coordinate, nonlinear coordinate, themes, elements, data analysis, tidy, spread, gather, separate, unite, filter, create variable, group-wise, summary, pipeline, trend, model, coefficient, programming, multiple component, function, functional programming</sub>
-
-Guide to Programming and Algorithms using R, Springer, 2013, <sub>loop, 1-norm, finding, nested, iteration, geometric, babylonian, recursion, recursive, fibonacci, factorial, solving, highest common factor, lowest common multiple, towers of hanoi, binary search, sequence generation, determinant, program, algorithms, inner product, order notation, infinity norm, matrix-vector, matrix-matrix, binary search, sequence generation, traveling salesman, binomial coefficients, accuracy, polynomial, horner's algorithm, sorting, bubble sort, insertion sort, quick sort, comparisons, linear systems of equations, triangular system, forward substitution, backward substitution, gaussian elimination, factorization, banded matrices, cholesky, gauss-jordan, determinant, inverting, file processing, investigating, modifying, multiple files, outputs, projects, traffic, words</sub>
-
-Lattice Multivariate Data Visualization with R, Springer, 2008, <sub>treillis, layout, grouped displays, annotation, captions, labels, legends, graphings, panel, univariate, density, histogram, q-q, normality, box-cox transformation, empirical cdf, box-and-whisker, violin, strip coercion, discrete, distribution, multiway table, bar chart, categorical, scatter, superposition, splom, scatter-plot, matrix, parallel coordinate, trivariate, 3d, surface, parameters, themes, devices, graphics, coordinate, axis, scales, labels, legends, data manipulation, subsetting, shingles, ordering, strips, tukey mean-difference, specialized, manipulating, inveractive additions, panel, function, box-and-whisker, corrgram, 3d, maps</sub>
-
-Le logiciel R, maîtriser le langage, effectuer des analyses (bio)statistiquesLe logiciel R, maîtriser le langage, effectuer des analyses (bio)statistiques (pdf)
-
-Le modèle linéaire généralisé (scan), <sub>generalized linear model, logit, binary, odds, inference, test, deviance, coefficient, ols, explanatory power, residuals, multicollinearity, nonlinear, multinomial, probability, ordinal<sub>
+Large Scale Machine Learning with Spark, Packt, 2016
 
 Learning Data Mining with R, Develop key skills and techniques with R to create and customize data mining algorithms, Packt, 2015
 
-Learning R for Geospatial Analysis, Leverage the power of R to elegantly manage crucial geospatial analysis tasks, Packt, 2014, <sub>time series, vector, function, graphical, function, tables, csv, data frames, code, raster, matrix, array, subsetting, overlay, reclassification, points, lines, polygons, properties, geometrical, calculations, reprojection, projection, layers, geometries, joining, modifying, analyzing, merging, cropping, trimming, aggregating, resampling, filtering, clumping, topography, hillshade, slope, time, spatial, combining, rasterizing, conversion, interpolation, knn, idw, kriging, ggplot2, ggmap, plotting</sub>
+Learning Predictive Analytics with R, Packt, 2015
 
-Learning RStudio for R Statistical Computing, Learn to effectively perform R development, statistical analysis and reporting with the most popular R IDE, Packt, 2012 
+Mastering RStudio, Packt, 2015
 
-Machine Learning with R, Learn how to use R to apply powerful machine learning methods and gain an insight into real-world applications, Packt, 2013
+Modeling Techniques in Predictive Analytics, Business Problems and Solutions with R, Pearson, 2014 (BANQ)
 
-Mastering RStudio - Develop, Communicate, and Collaborate with R, Harness the power of RStudio to create web applications, R packages, markdown reports and pretty data visualizations, Packt, 2015
+Modélisation prédictive et apprentissage statistique avec R, Technip, 2015 (BANQ)
 
-Mastering Social Media Mining with R, Extract valuable data from social media sites and make better business decisions using R, Packt, 2015, <sub>graph, text, authentification, web, oauth, visualization, packages, opinion, sentiment, exploring, twitter, api, app, corpus, facebook, network, degree, betweenness, closeness, cluster, communities, trend, influencer, ctr, spam, stories, instagram, public media, hashtag, location, user, follower, user, comment, dataset, travel-related, follow, who, most, more, top, viral, popular, like, about, picture, github, active, metrics, exploratory, graphical, language, matcher, fork, issue, trend, repositories, repository, eda, correlation, regression, segmented, wikipedia, tumblr, quora, google maps, linkedin, blogger, foursquare, yelp</sub>
+Political Analysis Using R, Springer, 2015 (PAPER)
 
-Modéliser des interactions et des non-linéarités (scan), <sub>moderator, qualitative, dummy, groups, quantitative, multicollinearity, coefficient, nonlinear, change, piecewise, model, power, quadratic, polynomial</sub>
+R for Data Science, Import, Tidy, Transform, Visualize, and Model Data, O'Reilly, 2017, <sub>ggplots2, workflow, transformation, dplyr, filter, arrange, select, add, group, mutate, summary, script, exploratory, question, variation, missing value, covariation, patterns, models, wrangle, tibbles, data frames, older code, readr, parsing, writing, tidy, spreading, gathering, separating, pull, missing value, case, nontidy, mutating, joins, stringr, string, regular expression, regex, pattern, factor, farcats, social survey, factor order, levels, dates, times, spans, zones, pipe, magrittr, function, conditional, arguments, return, vector, atomic recursive vector, iteration, purrr, loops, map, failure, modelr, visualizing, formulas, families, missing values, model, broom, gapminder, list-columns, markdown, output, document, notebook, presentation, dashboard, interactivity, website, format</sub>
 
-Parallel Computing for Data Science With Examples in R, C++ and CUDA (The R Series), CRC Press, 2015, <sub>speed, obstacles, parallel, loop, scheduling, shared-memory, c, gpu, thrust, mapreduce, parallel, sorting, merging, matrix, subset, algebra</sub>
+=R for Marketing Research and Analytics, Springer, 2015
 
-Parallel R, O'Reilly, 2012, <sub>snow, cluster, k-means, workers, load, balancing, chunking, vectorizing, redux, function, environment, random number generation, rmpi, executing, queueing, troubleshooting, multicore, parallel, mapreduce, hadoop, rhadoop, rhipe, segue, revoscale, revoconnectr, cloudnumbers</sub>
+R for Microsoft Excel Users, Making the Transition, Pearson Education, 2017 
 
-R and Data Mining, Examples and Case Studies, CC, 2013, <sub>cases</sub>
-
-R Compilation (see below)
-
-R for Data Science_ Import, Tidy, Transform, Visualize, and Model Data, O'Reilly, 2017, <sub>ggplots2, workflow, transformation, dplyr, filter, arrange, select, add, group, mutate, summary, script, exploratory, question, variation, missing value, covariation, patterns, models, wrangle, tibbles, data frames, older code, readr, parsing, writing, tidy, spreading, gathering, separating, pull, missing value, case, nontidy, mutating, joins, stringr, string, regular expression, regex, pattern, factor, farcats, social survey, factor order, levels, dates, times, spans, zones, pipe, magrittr, function, conditional, arguments, return, vector, atomic recursive vector, iteration, purrr, loops, map, failure, modelr, visualizing, formulas, families, missing values, model, broom, gapminder, list-columns, markdown, output, document, notebook, presentation, dashboard, interactivity, website, format</sub>
-
-R for Marketing Research and Analytics, Springer, 2015
-
-R Graphics Cookbook, O'Reilly, 2013, <sub>exploring, bar graph, line, scatter, summarize, distribution, histogram, density, curve, frequency, polygon, boxplot, violin, dot, annotation, text, mathematical expression, segment, arrow, shaded, rectangle, highlighting, error bar, axes, x, y, range, continuous, categorical scaling, position, tick mark, appearance, logarithm, circular graph, date, time, themes, grid, facet, legend, position, order, title, appearance, label, facet, splitting, color, mapping, variable, discrete variable, palette, colorbling, region, correlation, function, subregion, network, heat, map, 3d, dendrogram, q-q, cumulative, mosaic, pie, map, choropleth, background, pdf, svg, output, file, presentation, shape, data frame, adding, deleting, renaming, reordering, subsetting, removing, changing, recoding, transforming, summarizing, converting, ggplot2</sub>
+R Graphics Cookbook, O'Reilly, 2013 (PAPER)
 
 R in Action, Data Analysis and Graphics with R, 2nd Edition, Manning, 2015
 
-Regression Modeling Strategies With Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis, 2nd edition, 2015, <sub>linear, cubic spline, knot, nonparametric, tree-based, interaction, ordinal, missing data, reduction, clustering, scaling, simultaneous, transformation, scoring, predictive modeling, influential, observations, bootstrap, resampling, sampling, validating, simplifying, generalized, principal components, smoothers, hypothesis test, maximum likelihood, ninary, logistic, ordinal, transform, survival analysis, nonparametric, parametric, cox, proportinal hazards, accelerated failure time, aft</sub>
+Regression Modeling Strategies With Applications to Linear Models
+, Logistic and Ordinal Regression, and Survival Analysis, 2nd edition, 2015, <sub>linear, cubic spline, knot, nonparametric, tree-based, interaction, ordinal, missing data, reduction, clustering, scaling, simultaneous, transformation, scoring, predictive modeling, influential, observations, bootstrap, resampling, sampling, validating, simplifying, generalized, principal components, smoothers, hypothesis test, maximum likelihood, ninary, logistic, ordinal, transform, survival analysis, nonparametric, parametric, cox, proportinal hazards, accelerated failure time, aft</sub>
 
-R Packages Organize, Test, Document and Share Your Code, O'Reilly, 2015, <sub>metadata, object documentation, vignette, testing, namespace, external data, compile, file, component, git, github, checking, releasing</sub>
+Séries temporelles avec R, Springer, 2011 (PAPER)
 
-Régression avec R, Springer, 2011
+Statistiques en sciences humaines avec R, de boeck, 2014 (PAPER)
 
-Regression Models, Methods and Applications, Springer, 2013, <sub>linear, mixed, nonparametric, additive, generalized, geoadditive, location, beyond mean, scale, shape, quantile, estimation, parameters, hypothesis, choice, variable, model, quality, criteria, diagnosis, weighted least squares, heteroscedasticity, autocorrelation, regularization, ridge, shrinkage, operator, geometric, partial regularization, boosting, componentwise boosting, bayesian, conjugate analysis, spike, slab, binary, maximum likelihood, fit, overdispersion, count, continuous, response, quasi-likelihood, beyesian generalized linear, bayesian inference, mcmc, boosting, categorical, unordered, ordinal, cumulative, sequential, mixed, longitudinal, cluseted, random, intercept, coefficient, slope, notation, conditional, stochastic, lmm, variance-covariance, covariance, glmm, penalized likelihood, empirical bayes estimation, application, nonparametric, polynomial splines, p-splines, smoothing, random walks, kriging, bivariate, spatial smoothing, structured addtive, random effects, boosting, star, case, quantile, matrix algebra, probability, calculus, statistical, inference, normal distribution, likelihood function, bayesian inference</sub>
+Text Mining and Visualization, Case Studies Using Open-Source ToolsCRC Press (RapidMiner, Knime, Python, R), 2016, <sub>rapidminer, text analytics, corpus, token, repository, mining, visualization, documents, rank-frequency, sequential window, zipf-mandelbrot, knime, preprocessing, frequencies, transformation, data table, social media, network mining, slashdot, python, mongodb, sparse matrix, character encoding, web scraping, cleansing, visualization, exploration, classification, clustering, pca, principal compenent analysis, sentiment, mining search, logs, r</sub> (BANQ)
 
-Social Media Mining with R, Deploy cutting-edge sentiment analysis techniques to real-world social media data using R, Packt, 2014, <sub>big data, mining, twitter, social media, opinion, sentiment, emotion, polarity, lexicon, naive bayes, response, case</sub>
+Text Mining with R, O'Reilly, 2017
 
-Statistical Analysis and Data Display, An Intermediate Course with Examples in R, 2nd Edition, Springer, 2009
-
-The elements of statistical learning, Data Mining, Inference, and Prediction, 2nd Edition, Springer, 2011
-
-Tiny Handbook of R, A SpringerBriefs in Statistics, Springer, 2011, <sub>command line, script, function, project, data structure, operation, vector, matrix, factor, index, reshape, stack, unstack, wide, long, merge, missing value, mapping, apply, function, writing, tables, graphs, hypothesis, linear, formula, fit, general linear, regression, diagnostics, testing, coefficient, prediction, stepwise, residualizing, anova, comparison</sub>
-
-Web Application Development with R using Shiny, Harness the graphical and statistical power of R and rapidly develop interactive user interfaces using the superb Shiny package, Packt, 2013, <sub>application, example, widget type, google analytics, reactive, web page, running, html, serer, interface, javascript, jquery, inputs, outputs, ui, interface, reactivity, get, graphics, sharing, running, github, git, zip, tar, glimmer, shiny server, browser</sub>
+Web Application Development with R Using Shiny, Packt, 2013
 
 ### R Compilation
 
@@ -971,197 +596,24 @@ Web Application Development with R using Shiny, Harness the graphical and statis
 - Wavelet Methods in Statistics with R - Nason G. - 2008
 - XML and Web Technologies for Data Sciences with R [Nolan & Lang 2014-01-27]
 
-## Regex
+## SQL, NoSQL
 
-<sub>regular expressions, text mining</sub>
+High Performance MySQL, Second Edition, O'Reilly, 2008
 
-Cheat sheets...
+MySQL High Availability, O'Reilly, 2010
 
-Breaking the Ice with Regular Expressions (completed course, videos, notes, snapshots, manual), Code School, 2015, <sub>regex</sub>
-
-Les expressions régulières par l'exemple, HK, 2005, <sub>Javascript, Python, POSIX</sub>
-
-Mastering Python Regular Expressions, Leverage regular expressions in Python even for the most complex features, Packt, 2014
-
-Regular Expressions Cookbook 2nd Edition, O'Reilly, 2012
-
-## SQL
-
-Business Intelligence avec SQL Server, Maitrisez les concept et réalisez un système décisionnel, eni, 2014
-
-Cheat sheets...
-
-Soup to Bits, SQL (completed course, manual, 2 videos, notes), Code School, 2015, <sub>uml, databases, udacity, github, article, mysql, install, cli, command, bash, create, table, data, entry, password, log in, case, weather, data, insurance, csv, gui, workbench, wamp, postgresql, install, cli, command, bash, gui, pgadmin, pgadmin iii</sub>
-
-SQL Analyzing Business Metrics (completed course, snapshots, notes), Codecademy, 2015
-
-Learn Java (completed course, notes, snapshots, codes, manual), Codecademy, 2015, <sub>mysql</sub>
-
-Learn SQL (completed course, snapshots, notes, codes, manual), Codecademy, 2015
-
-SQL Table Transformation (completed course, snapshots, notes), Codecademy, 2015
-
-LinuxCBT PostgreSQL Edition (videos, 17h), LinuxCBT, 2013
-
-PostgreSQL, Getting Started (videos, 2h), PluralSight, 2015
-
-Python Programming with PostgreSQL (videos, 5.5h)
-
-SQL Pocket Guide, O'Reilly, 2011
-
-SQL Server 2014, SQL, Transact SQL, Conception et realisation d'une base de données, avec exercices pratiques et corrigés, eni, 2014
-
-Apprendre SQL avec MySQL, Avec 40 exercices corrigés, Eyrolles, 2006
-
-Introduction to SQL JOINs (notes)
-
-Le langage MDX pour les requêtes de cubes OLAP (notes)
-
-Learning PostgreSQL, Create, develop, and manage relational databases in real-world applications using PostgreSQL, Packt, 2015
-
-MDX tutorial, introduction to Multidimensional Expressions (videos), <sub>cube, olap, vba, excel, pivot, table, powerpivot, powerview, powerquery, powermap, business, analytics, big data, bi</sub>
-
-MySQL in a Nutshell, 2nd Edition, O'Reilly, 2008
-
-PostgreSQL Cookbook, Over 90 hands-on recipes to effectively manage, administer, and design solutions using PostgreSQL, Packt, 2015
-
-PostgreSQL for Data Architects, Discover how to design, develop, and maintain your database application effectively with PostgreSQL, Packt, 2015 
-
-Programmer avec MySQL, SQL, transactions, PHP, Java, Optimisation, Avec 40 exercices corrigés, 4e édition, Eyrolles, 2015
+PostgreSQL Administration Cookbook, Package, 2017
 
 ## Storytelling, Visualization
 
 Storytelling with data, Wiley, 2015
 
-The Wall Street Journal Guide to Information Graphics, The does and don'ts of presenting data, facts, and figures, W.W. Norton & Company, 2013
-
-Visualize This, The FlowingData Guide to Design, Visualization, and Statistics, Wiley, 2011
-
-Data Visualization with Python and JavaScript, O'Reilly, 2016
-
 Excel Sparklines (notes)
-
-Interactive Data Visualization for the Web, O'Reilly, 2013 
-
-Interactive Data Visualization, Foundations, Techniques, and Applications, 2nd Edition, CRC Press, 2015
-
-Storytelling with data (notes)
-
-The Grammar of Graphics, 2nd Edition, Springer, 2005
-
-Which chart or graph is right, Tableau (article), 2012
 
 ## Tableau
 
-<sub>software</sub>
+desktop Tableau Getting Started 9.0
 
-Cases
-
-Data Analysis Fundamentals with Tableau (videos, 5h), PluralSight, 2013
-
-Enterprise Business Intelligence with Tableau Server (videos, 1h30), PlusralSight, 2013
-
-Communicating Data with Tableau.pdf
-
-Getting started (manual)
-
-Learning Tableau.pdf
+Learning Tableau (9), Packt, 2015
 
 Which chart or graph is right, Tableau (article), 2012
-
-## TeamTreeHouse
-
-<sub>software, programming, coding, script</sub>
-
-Learning Tracks:
-
-- TTH Business
-- TTH CSS
-- TTH Databases
-- TTH Development Tools
-- TTH HTML
-- TTH JavaScript
-- TTH Python
-- TTH Starting a Business Track
-- TTH Web Design Track
-
-Course topics:
-
-- App in Heroku
-- Business, Google Analytics
-- Business, SEO
-- Business, build a company
-- Business, freelance
-- Business, market a business
-- Business, social Media Strategy
-- Business, soft skills
-- Business, start a business
-- Business, user needs
-- Business, write a business plan
-- CSS
-- Console
-- D3.js
-- Django
-- Dynamic Site, Node.js
-- Flask
-- Geolocation
-- Git
-- GitHub
-- HTML
-- JavaScript
-- MongoDB
-- Python, databases
-- Python, dates, times
-- Python, decorators
-- Python, image
-- Python, setup
-- Python, testing
-- Python, write better code
-- Regex
-- Scrum
-- Website
-
-Setting Up a Local Python Environment (notes)
-
-TeamTreeHouse Course List (notes)
-
-## Udemy
-
-Potential courses:
-
-- A-B Testing
-- Applied Multivariate Analysis with R
-- Coding
-- Customer Choice Modeling
-- Data Analysis and Visualization
-- Data Science
-- Machine Learning
-- MongoDB
-- MySQL
-- PostgreSQL
-- Python
-- and many more
-
-Udemy courses (notes), <sub>python, mysql, postgresql, mongodb, tableau, r, text mining, machine learning, javascript, nlp, psychology</sub>
-
-## vim
-
-Cheat sheets...
-
-## Miscellanous
-
-<sub>vba, macros, excel, word, linux, r, packages, scrum</sub>
-
-Le livre du zéro (série: C#, C, Java, iPhone, C++, Word)
-
-Algorithms in a Nutshell, 2nd Edition, O'Reilly, 2010
-
-Algorithms in a Nutshell, O'Reilly, 2009
-
-La chance et les jeux de hasard (notes)
-
-Macros et langage VBA (notes)
-
-Windev20 (notes)
-
-Word, habillage de figure (notes)
