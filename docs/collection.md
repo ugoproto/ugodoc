@@ -326,11 +326,19 @@ Introduction to Machine Learning with Python, O'Reilly, 2017
 
 Learning Predictive Analytics with Python, Packt, 2016
 
+Mastering Python Regular Expressions, Packt, 2014
+
 Managing your Biological Data with Python, CRC Press, 2014 (PAPER)
 
 Mastering Python Regular Expressions, Leverage regular expressions in Python even for the most complex features, Packt, 2014
 
 Practical Data Analysis, Packt, 2013
+
+Practical Data Science Cookbook, 2nd Edition, Packt, 2017
+
+Python in 8 hours, 2017
+
+Python Data Analysis, 2nd Edition, Packt, 2017
 
 Practical Statistics for Data Scientists 50 Essential Concepts, O'Reilly, 2017
 
@@ -338,7 +346,11 @@ Python Data Analysis, 2nd edition, Packt, 2017
 
 Python Data Analysis Cookbook, Packt, 2016
 
+Python Data Science Handbook, O'Reilly, 2017
+
 Python Data Visualization, 2nd edition, Packt, 2015
+
+Python End-to-end Data Analysis, Packt, 2016
 
 Python Geospatial Analysis Cookbook, Packt, 2015
 

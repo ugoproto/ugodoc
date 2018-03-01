@@ -93,9 +93,9 @@ Cheat sheets.
 
 ## LaTeX
 
-- LaTeX Quick Reference. PDF only. **TODO**
 - [LaTeX Font Packages](latex-font-packages.pdf). PDF only.
-- [LaTeX Cheat Sheet](latexsheet.pdf). PDF.
+- [LaTeX Cheat Sheet 4p](latexcheatsheet_1.pdf). PDF only.
+- [LaTeX Cheat Sheet 2p](latexsheet.pdf). PDF.
 
 </center>
 ![](img/vade_mecum/latexsheeta.png)
@@ -106,26 +106,6 @@ Cheat sheets.
 </center>
 
 ## Vi/Vim
-
-<center>
-![](img/vade_mecum/vi-vim-cheat-sheet.png)
-
-![](img/vade_mecum/vi-vim-tutorial-1.png)
-
-![](img/vade_mecum/vi-vim-tutorial-2.png)
-
-![](img/vade_mecum/vi-vim-tutorial-3.png)
-
-![](img/vade_mecum/vi-vim-tutorial-4.png)
-
-![](img/vade_mecum/vi-vim-tutorial-5.png)
-
-![](img/vade_mecum/vi-vim-tutorial-6.png)
-
-![](img/vade_mecum/vi-vim-tutorial-7.png)
-</center>
-
----
 
 - [Vi Editor](viEditorCheatSheet.pdf). PDF.
 
@@ -141,24 +121,6 @@ Cheat sheets.
 
 <center>
 ![](img/vade_mecum/vim-cheat-sheet-en.png)
-</center>
-
-## VIM
-
-- [VIM](setevoy2_vim.pdf). PDF.
-
-<center>
-![](img/vade_mecum/setevoy2_vim.png)
-</center>
-
----
-
-- [Comprehensive VIM](typo209_comprehensive-vim-cheat-sheet.pdf). PDF.
-
-<center>
-![](img/vade_mecum/typo209_comprehensive-vim-cheat-sheeta.png)
-
-![](img/vade_mecum/typo209_comprehensive-vim-cheat-sheetb.png)
 </center>
 
 ## Regex
