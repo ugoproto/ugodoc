@@ -163,6 +163,8 @@ Statistics Done Wrong, No Starch Press, 2015
 
 The Cox Model and Its Applications, Springer, 2016
 
+Think Stat 2, Exploratory Data Analysis in Python, Green Tea Press, 2014
+
 ## Employment, Education
 
 21 clés pour activer la transformation numérique de votre entreprise, Eyrolles, 2017
@@ -301,6 +303,8 @@ Project Management Metrics, KPIs, and Dashboards, A Guide to Measuring and Monit
 
 An Introduction to Statistics with Python, With Applications in the Life Sciences, Springer, 2016
 
+Apprendre à programmer en Python 3, CC, 2012
+
 Automate the Boring Stuff with Python, No Starch Press, 2015
 
 A Whirlwind Tour of Python, O'Reilly, 2016
@@ -336,6 +340,8 @@ Practical Data Analysis, Packt, 2013
 
 Practical Data Science Cookbook, 2nd Edition, Packt, 2017
 
+Python 3, Apprendre à programmer en Python avec Pyzo et Jupyter Notebook, Dunod, 2017
+
 Python in 8 hours, 2017
 
 Python Data Analysis, 2nd Edition, Packt, 2017
@@ -361,6 +367,8 @@ Python Geospatial Development, Third Edition, Packt, 2016
 Python Machine Learning Cookbook, Packt, 2016
 
 Real-World Machine Learning, Manning, 2017
+
+Une introduction à Python 3, CC 
 
 ## R, Statistics
 
