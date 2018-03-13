@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -157,8 +158,6 @@ Creates an annotated list of programs in a directory. Useful for exploring your 
 
 ### Manuals ###
 
-Granneman, Scott, Linux Phrasebook, 2015
-
-Parker, Steve, Shell Scripting: Expert Recipes for Linux, Bash and more, 2011
-
-Ward, Brian, How Linux Works: What Every Superuser Should Know, 2014
+- Granneman, Scott, Linux Phrasebook, 2015.
+- Parker, Steve, Shell Scripting: Expert Recipes for Linux, Bash and more, 2011.
+- Ward, Brian, How Linux Works: What Every Superuser Should Know, 2014.

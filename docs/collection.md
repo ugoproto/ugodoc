@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -9,12 +10,6 @@
 Corpus of documents: titles and keywords.
 
 ---
-
-## To Do
-
-DropBox: Certification à mettre sur Documents, eLearning aussi, Podcasts aussi, Python aussi
-
-Google Drive: Bayeux, Jeux
 
 ## Bash, Powershell
 

@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -46,13 +47,13 @@ Sort a pip-separated file in reverses order by the second column:
 $ sort myfile.txt -nrk 2 -st '|'
 ```
 
-Search text files for lines matching regular expressions (regex) with `grep <'matching string'> <source>`:
+Search text files for lines matching regular expressions (regex) with `grep <matching string> <source>`:
 
 ```bash
 $ grep ArticleTitle webpage.html
 ```
 
-An asterisk (`*`) indicates any character (the matching expression starts with 'Ar' and ends with 'le'):
+An asterisk (`*`) indicates any character (the matching expression starts with `Ar` and ends with `le`):
 
 ```bash
 $ grep Ar*le mytext.txt
@@ -82,7 +83,7 @@ $ ^Z
 $ bg
 ```
 
-List the current jobs, foreground job number 1, and kills job number 1:
+List the current jobs, foreground job number 1, and kill job number 1:
 
 ```bash
 $ jobs

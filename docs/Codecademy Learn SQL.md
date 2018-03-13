@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -12,13 +13,13 @@ Code Snippets. From Codecademy.
 
 ## Specifying Comments
 
-- Line comment. This is indicated by two negative signs (eg. --). The remainder of the text on the line is the comment.
-- Block comment. The start of the block comment is indicated by /*, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.
-- Rem or @. For Oracle, a line starting with either REM or @ is a comment line.
+- Line comment. This is indicated by two negative signs (eg. `--`). The remainder of the text on the line is the comment.
+- Block comment. The start of the block comment is indicated by `/*`, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.
+- `Rem` or `@`. For Oracle, a line starting with either `REM` or `@` is a comment line.
 
-## 1, Manipulation
+## Manipulation
 
-SQL, 'Structured Query Language', is a programming language designed to manage data stored in relational databases. SQL operates through simple, declarative statements. This keeps data accurate and secure, and helps maintain the integrity of databases, regardless of size.
+SQL, for Structured Query Language, is a programming language designed to manage data stored in relational databases. SQL operates through simple, declarative statements. This keeps data accurate and secure, and helps maintain the integrity of databases, regardless of size.
 
 The SQL language is widely used today across web frameworks and database applications. Knowing SQL gives you the freedom to explore your data, and the power to make better decisions. By learning SQL, you will also learn concepts that apply to nearly every data storage system.
 
@@ -163,7 +164,7 @@ UPDATE friends SET email = "johndoe@example.com" WHERE id = 4;
 DELETE FROM friends WHERE id = 1;
 ```
 
-## 2, Queries
+## Queries
 
 One of the core purposes of the SQL language is to retrieve information stored in a database. This is commonly referred to as querying. Queries allow us to communicate with the database by asking questions and having the result set return data relevant to the question. In this lesson, you will be querying a database with one table named movies. Let's get started.
 
@@ -187,12 +188,12 @@ SELECT * FROM movies WHERE imdb_rating > 8;
 
 Clauses:
 
-- = equals
-- != not equals
-- > greater than
-- < less than
-- >= greater than or equal to
-- <= less than or equal to
+- `=`, equals.
+- `!=`, not equals.
+- `>`, greater than.
+- `<`, less than.
+- `>=`, greater than or equal to.
+- `<=`, less than or equal to.
 
 ```sql
 --Find rows with LIKE. Se_en represents a pattern with a wildcard character. The _ means you can substitute any individual character here without breaking the pattern. The names Seven and Se7en both match this pattern:
@@ -324,7 +325,7 @@ SELECT * FROM movies WHERE name LIKE '%Twilight%' ORDER BY year ASC;
 SELECT * FROM movies WHERE year = 2012 AND genre = 'comedy';
 ```
 
-## 3, Aggregate Functions
+## Aggregate Functions
 
 Aggregate functions compute a single result from a set of input values. For instance, when we need the sum or average of a particular column, we can use aggregate functions to quickly compute it for us. We will be learning about different aggregate functions in this lesson.
 
@@ -483,7 +484,7 @@ SELECT COUNT(*) FROM fake_apps WHERE name LIKE 'A%';
 SELECT SUM(downloads) FROM fake_apps WHERE category = 'Sports' OR category = 'Health & Fitness';
 ```
 
-## 4, Multiple Tables
+## Multiple Tables
 
 Most of the time, data is distributed across multiple tables in the database. Imagine a database with two tables, artists and albums. An artist can produce many different albums, and an album is produced by an artist.
 
@@ -542,12 +543,12 @@ SELECT albums.name AS 'Album', albums.year, artists.name AS 'Artist' FROM albums
 
 ### Recap
 
-- Primary Key is a column that serves a unique identifier for row in the table. Values in this column must be unique and cannot be NULL.
+- Primary Key is a column that serves a unique identifier for row in the table. Values in this column must be unique and cannot be `NULL`.
 - Foreign Key is a column that contains the primary key to another table in the database. It is used to identify a particular row in the referenced table.
 - Joins are used in SQL to combine data from multiple tables.
-- INNER JOIN will combine rows from different tables if the join condition is true.
-- LEFT OUTER JOIN will return every row in the left table, and if the join condition is not met, NULL values are used to fill in the columns from the right table.
-- AS is a keyword in SQL that allows you to rename a column or table in the result set using an alias.
+- `INNER JOIN` will combine rows from different tables if the join condition is true.
+- `LEFT OUTER JOIN` will return every row in the left table, and if the join condition is not met, `NULL` values are used to fill in the columns from the right table.
+- `AS` is a keyword in SQL that allows you to rename a column or table in the result set using an alias.
 
 ### Project Querying Tables
 

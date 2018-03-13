@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Commands and code snippets. From Codecademy.
 
 ---
 
-## Section 1, Navigation
+## Navigation
 
 - Bash means 'Bourne again shell'.
 - There exists other bash programs : ksh, tcsh, zsh, etc.
@@ -82,7 +83,8 @@ Commands and code snippets. From Codecademy.
 	- `h`; help.
 - For other files extensions like `tar` and GNU archive, use `tvf`.
 
-## Section 2, Manipulation
+## Manipulation
+
 **List file & dir**
 
 - `ls`; list of directories and files.
@@ -137,7 +139,7 @@ Commands and code snippets. From Codecademy.
 - `rm -rf aaa`; remove directory `aaa` and its files.
 - `rm -i`; interactive, prompt the user.
 
-## Section 3, Redirection
+## Redirection
 
 - Let's begin by taking a closer look at input and output. In the terminal, after the shell prompt, type :
 
@@ -439,7 +441,7 @@ $ sed 's/snow/rain/g' forests.txt
 - `ls -l | head`; the list shows the 10 top lines only.
 - `ls -l | tail`; the list shows the 10 bottom lines only.
 
-## Section 4, Environment
+## Environment
 
 - Each time we launch the terminal application, it creates a new session. The session immediately loads settings and preferences that make up the command line environment.
 - We can configure this environment to support the commands and programs, customize greetings and command aliases, and create variables to share across commands and programs.
@@ -709,7 +711,7 @@ $ env | grep aliasname
 - `export PATH=/home/dir/bin:$PATH` appends the new path to environment variable PATH.
 - `env` returns a list of environment variables.
 
-## Section 5, Multi-Users
+## Multi-Users
 
 - Linux is multi-user : multiple users at the same time as opposed to OS X or Windows; just like the UNIX mainframe computers with terminals, users and superuser concepts. 
 
@@ -800,7 +802,7 @@ rwx rw- --x
 - `sudo apt-get purge git`; remove 'git' and purge any remainings.
 - `sudo chnow user file`; change the owner.
 
-## Section 6, Multi-Tasks
+## Multi-Tasks
 
 - Linux is multi-task; multiple tasks can run at the same time like OS X or Windows or UNIX; Linux kernel runs processes; they take turns at the processor(s). All programs and processes can be launched/killed from the GUI and the CLI.
 

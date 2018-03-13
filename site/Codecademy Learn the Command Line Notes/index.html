@@ -1,277 +1,822 @@
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Ugo Sparks">
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Codecademy Learn the Command Line Notes - ugodoc</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Codecademy Learn the Command Line Notes";
-    var mkdocs_page_input_path = "Codecademy Learn the Command Line Notes.md";
-    var mkdocs_page_url = "/Codecademy Learn the Command Line Notes/";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
-  
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-93008985-3', 'auto');
-      ga('send', 'pageview');
-  </script>
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> ugodoc</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Data Science documentation website.">
+      
+      
+        <link rel="canonical" href="https://ugoproto.github.io/ugodoc/Codecademy Learn the Command Line Notes/">
+      
+      
+        <meta name="author" content="Ugo Sparks">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>Codecademy, Learn the Command Line Notes - ugodoc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#manipulation" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://ugoproto.github.io/ugodoc/" title="ugodoc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">layers</i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../collection/">Collection</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Vade Mecum</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Edition_CS/">Edition Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Digital Humanities/">Digital Humanities</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Learn Git/">Learn Git</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Resources for Data Science/">Resources for Data Science</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Storytelling with Data/">Storytelling with Data</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Data_Storytelling/">10 Kinds of Stories to Tell with Data</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Infographies/">Infographies</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../latex_snippets/">LaTeX Snippets</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">OS & CLI</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../OS_CS/">OS Cheat Sheets</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Codecademy Learn the Command Line Notes</a>
-    <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#section-2-manipulation">Section 2, Manipulation</a></li>
-    
-
-    <li class="toctree-l3"><a href="#section-3-redirection">Section 3, Redirection</a></li>
-    
-
-    <li class="toctree-l3"><a href="#section-4-environment">Section 4, Environment</a></li>
-    
-
-    <li class="toctree-l3"><a href="#section-5-multi-users">Section 5, Multi-Users</a></li>
-    
-
-    <li class="toctree-l3"><a href="#section-6-multi-tasks">Section 6, Multi-Tasks</a></li>
-    
-
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Command Line Crash Course/">Command Line Crash Course</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Command Shell Snippets/">Command Shell Snippets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../The Linux Command Line/">The Linux Command Line</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Ubuntu/">Ubuntu 16.04</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Install_tarball/">Install & Run on Linux</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Usefull+Shell+Commands+for+Data+Science/">Useful Shell Commands for Data Science</a>
-                </li>
-    </ul>
-	    </li>
+              <span class="md-header-nav__topic">
+                ugodoc
+              </span>
+              <span class="md-header-nav__topic">
+                Codecademy, Learn the Command Line Notes
+              </span>
+            
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">SQL & NoSQL</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../SQL-NoSQL_CS/">SQL-NoSQL Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Codecademy Learn SQL/">Codecademy Learn SQL</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Codecademy SQL, Analyzing Business Metrics/">Codecademy SQL, Analyzing Business Metrics</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Codecademy SQL, Table Transformation/">Codecademy SQL, Table Transformation</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Introduction to SQL JOINs/">Introduction to SQL JOINs</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Web</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Web_CS/">Web Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Build a Website/">Build a Website</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../HTML and CSS/">HTML and CSS</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Responsive_HTML/">Responsive HTML</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Markdown & Pandoc/">Markdown & Pandoc</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../tests/">Tests</a>
-	    </li>
-          
-        </ul>
+        </div>
       </div>
-      &nbsp;
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugodoc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugodoc
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">layers</i>
+      
+    </span>
+    ugodoc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugodoc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugodoc
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../collection/" title="Collection" class="md-nav__link">
+      Collection
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Vade Mecum
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Vade Mecum
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Edition_CS/" title="Edition Cheat Sheets" class="md-nav__link">
+      Edition Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../latex_snippets/" title="LaTeX Snippets" class="md-nav__link">
+      LaTeX Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Digital Humanities/" title="Digital Humanities" class="md-nav__link">
+      Digital Humanities
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Learn Git/" title="Learn Git" class="md-nav__link">
+      Learn Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Resources for Data Science/" title="Resources for Data Science" class="md-nav__link">
+      Resources for Data Science
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Storytelling with Data/" title="Storytelling with Data" class="md-nav__link">
+      Storytelling with Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Data_Storytelling/" title="Ten Kinds of Stories to Tell with Data" class="md-nav__link">
+      Ten Kinds of Stories to Tell with Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Infographies/" title="Infographies" class="md-nav__link">
+      Infographies
+    </a>
+  </li>
+
+        
+      </ul>
     </nav>
+  </li>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">ugodoc</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>OS & CLI &raquo;</li>
-        
       
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <li>Codecademy Learn the Command Line Notes</li>
-    <li class="wy-breadcrumbs-aside">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      OS & CLI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        OS & CLI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OS_CS/" title="OS Cheat Sheets" class="md-nav__link">
+      OS Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Codecademy, Learn the Command Line Notes
+      </label>
+    
+    <a href="./" title="Codecademy, Learn the Command Line Notes" class="md-nav__link md-nav__link--active">
+      Codecademy, Learn the Command Line Notes
+    </a>
+    
       
-    </li>
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#manipulation" title="Manipulation" class="md-nav__link">
+    Manipulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redirection" title="Redirection" class="md-nav__link">
+    Redirection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment" title="Environment" class="md-nav__link">
+    Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-users" title="Multi-Users" class="md-nav__link">
+    Multi-Users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-tasks" title="Multi-Tasks" class="md-nav__link">
+    Multi-Tasks
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Command Line Crash Course/" title="Command Line Crash Course" class="md-nav__link">
+      Command Line Crash Course
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Command Shell Snippets/" title="Command Shell Snippets" class="md-nav__link">
+      Command Shell Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../The Linux Command Line/" title="The Linux Command Line" class="md-nav__link">
+      The Linux Command Line
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Ubuntu/" title="Ubuntu 16.04" class="md-nav__link">
+      Ubuntu 16.04
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Install_tarball/" title="Install & Run on Linux" class="md-nav__link">
+      Install & Run on Linux
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Usefull+Shell+Commands+for+Data+Science/" title="Useful Shell Commands for Data Science" class="md-nav__link">
+      Useful Shell Commands for Data Science
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      SQL & NoSQL
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        SQL & NoSQL
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../SQL-NoSQL_CS/" title="SQL-NoSQL Cheat Sheets" class="md-nav__link">
+      SQL-NoSQL Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Codecademy Learn SQL/" title="Codecademy, Learn SQL" class="md-nav__link">
+      Codecademy, Learn SQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Codecademy SQL, Analyzing Business Metrics/" title="Codecademy, SQL, Analyzing Business Metrics" class="md-nav__link">
+      Codecademy, SQL, Analyzing Business Metrics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Codecademy SQL, Table Transformation/" title="Codecademy, SQL, Table Transformation" class="md-nav__link">
+      Codecademy, SQL, Table Transformation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction to SQL JOINs/" title="Introduction to SQL JOINs" class="md-nav__link">
+      Introduction to SQL JOINs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Web
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Web
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Web_CS/" title="Web Cheat Sheets" class="md-nav__link">
+      Web Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../HTML and CSS/" title="HTML and CSS" class="md-nav__link">
+      HTML and CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Responsive_HTML/" title="Responsive HTML" class="md-nav__link">
+      Responsive HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Markdown & Pandoc/" title="Markdown & Pandoc" class="md-nav__link">
+      Markdown & Pandoc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tests/" title="tests" class="md-nav__link">
+      tests
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#manipulation" title="Manipulation" class="md-nav__link">
+    Manipulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redirection" title="Redirection" class="md-nav__link">
+    Redirection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment" title="Environment" class="md-nav__link">
+    Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-users" title="Multi-Users" class="md-nav__link">
+    Multi-Users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-tasks" title="Multi-Tasks" class="md-nav__link">
+    Multi-Tasks
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#section-1-navigation">Section 1, Navigation</a></li>
-<li><a href="#section-2-manipulation">Section 2, Manipulation</a></li>
-<li><a href="#section-3-redirection">Section 3, Redirection</a></li>
-<li><a href="#section-4-environment">Section 4, Environment</a></li>
-<li><a href="#section-5-multi-users">Section 5, Multi-Users</a></li>
-<li><a href="#section-6-multi-tasks">Section 6, Multi-Tasks</a></li>
-</ul>
-</div>
+                
+                  <a href="https://github.com/ugoproto/ugodoc.git/edit/master/docs/Codecademy Learn the Command Line Notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Codecademy, Learn the Command Line Notes</h1>
+                
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
 <p>Commands and code snippets. From Codecademy.</p>
 <hr />
-<h4 id="section-1-navigation">Section 1, Navigation<a class="headerlink" href="#section-1-navigation" title="Permanent link">&para;</a></h4>
+<h4 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Bash means &lsquo;Bourne again shell&rsquo;.</li>
 <li>There exists other bash programs : ksh, tcsh, zsh, etc.</li>
@@ -280,133 +825,133 @@
 </ul>
 <p><strong>Terminal</strong></p>
 <ul>
-<li><code>bash</code>; open another &lsquo;bash&rsquo; in the same bash window.</li>
-<li><code>exit</code>; close one instance of &lsquo;bash&rsquo;.</li>
-<li><code>export</code>; export variable to the next bash.<ul>
-<li><code>export MESSAGE="Hi"</code>.</li>
+<li><code class="codehilite">bash</code>; open another &lsquo;bash&rsquo; in the same bash window.</li>
+<li><code class="codehilite">exit</code>; close one instance of &lsquo;bash&rsquo;.</li>
+<li><code class="codehilite">export</code>; export variable to the next bash.<ul>
+<li><code class="codehilite">export MESSAGE=&quot;Hi&quot;</code>.</li>
 <li>Variables are associated with one bash. </li>
 <li>One change in one bash does not affect the other bash.</li>
 </ul>
 </li>
-<li><code>man &lt;cmd&gt;</code>; call the manual, help about a command.<ul>
-<li><code>man cp</code>; open the manual about command <code>cp</code> (or any other command).</li>
+<li><code class="codehilite">man &lt;cmd&gt;</code>; call the manual, help about a command.<ul>
+<li><code class="codehilite">man cp</code>; open the manual about command <code class="codehilite">cp</code> (or any other command).</li>
 </ul>
 </li>
-<li><code>cp --help</code>; command <code>cp</code> arguments (or any other command).</li>
-<li><code>command cp</code>; get info on command <code>cp</code> (or any other command).</li>
-<li><code>type cp</code>; find where command <code>cp</code> is located and what kind of command (an <code>alias</code> or <code>else</code>) (or any other command).</li>
-<li><code>which cp</code>; locate command <code>cp</code> (or any other command).</li>
-<li><code>which make</code>; check out where <code>make</code> is. </li>
-<li><code>pwd</code>; print working directory.</li>
-<li><code>dir</code>; list of directory.</li>
-<li><code>up</code>/<code>down</code> arrow; resume a past command.</li>
-<li><code>tab</code>; autocomplete.</li>
+<li><code class="codehilite">cp --help</code>; command <code class="codehilite">cp</code> arguments (or any other command).</li>
+<li><code class="codehilite">command cp</code>; get info on command <code class="codehilite">cp</code> (or any other command).</li>
+<li><code class="codehilite">type cp</code>; find where command <code class="codehilite">cp</code> is located and what kind of command (an <code class="codehilite">alias</code> or <code class="codehilite">else</code>) (or any other command).</li>
+<li><code class="codehilite">which cp</code>; locate command <code class="codehilite">cp</code> (or any other command).</li>
+<li><code class="codehilite">which make</code>; check out where <code class="codehilite">make</code> is. </li>
+<li><code class="codehilite">pwd</code>; print working directory.</li>
+<li><code class="codehilite">dir</code>; list of directory.</li>
+<li><code class="codehilite">up</code>/<code class="codehilite">down</code> arrow; resume a past command.</li>
+<li><code class="codehilite">tab</code>; autocomplete.</li>
 </ul>
 <p><strong>Change dir</strong></p>
 <ul>
-<li><code>cd/aaa</code>; change to directory <code>aaa</code>.</li>
-<li><code>cd ~</code>, <code>cd ~user</code>; go back home to <code>user</code> directory.</li>
-<li><code>cd ..</code>; go up one level.</li>
-<li><code>cd ../..</code>; go up two levels.</li>
-<li><code>cd ../../..</code>; go up three levels.</li>
-<li><code>cd temp</code>; go to directory <code>temp</code>.</li>
-<li><code>cd stuff</code>; if we are in dir <code>temp</code>, switch to directory <code>stuff</code>.</li>
-<li><code>cd temp/stuff</code>; switch directly to directory <code>stuff</code>.</li>
-<li><code>cd 'en co re'</code>; switch to directory <code>en co re</code>.</li>
+<li><code class="codehilite">cd/aaa</code>; change to directory <code class="codehilite">aaa</code>.</li>
+<li><code class="codehilite">cd ~</code>, <code class="codehilite">cd ~user</code>; go back home to <code class="codehilite">user</code> directory.</li>
+<li><code class="codehilite">cd ..</code>; go up one level.</li>
+<li><code class="codehilite">cd ../..</code>; go up two levels.</li>
+<li><code class="codehilite">cd ../../..</code>; go up three levels.</li>
+<li><code class="codehilite">cd temp</code>; go to directory <code class="codehilite">temp</code>.</li>
+<li><code class="codehilite">cd stuff</code>; if we are in dir <code class="codehilite">temp</code>, switch to directory <code class="codehilite">stuff</code>.</li>
+<li><code class="codehilite">cd temp/stuff</code>; switch directly to directory <code class="codehilite">stuff</code>.</li>
+<li><code class="codehilite">cd &#39;en co re&#39;</code>; switch to directory <code class="codehilite">en co re</code>.</li>
 </ul>
 <p><strong>Make dir</strong></p>
 <ul>
-<li><code>mkdir aaa</code>; make directory <code>aaa</code>.</li>
-<li><code>mkdir -p aaa/bbb</code>; make directory <code>aaa</code> with sub-directory <code>bbb</code>.</li>
-<li><code>mkdir 'en co re'</code>; make directory <code>en co re</code>.</li>
+<li><code class="codehilite">mkdir aaa</code>; make directory <code class="codehilite">aaa</code>.</li>
+<li><code class="codehilite">mkdir -p aaa/bbb</code>; make directory <code class="codehilite">aaa</code> with sub-directory <code class="codehilite">bbb</code>.</li>
+<li><code class="codehilite">mkdir &#39;en co re&#39;</code>; make directory <code class="codehilite">en co re</code>.</li>
 </ul>
 <p><strong>Remove dir</strong></p>
 <ul>
-<li><code>rmdir aaa</code>; remove directory <code>aaa</code>.</li>
-<li><code>rmdir 'en co re'</code>; remove directory <code>en co re</code>.</li>
-<li><code>rmdir aaa/bbb</code>; remove both directory and sub-directory (if both empty).</li>
-<li><code>rmdir -p aaa/bbb</code>; remove all <em>(you cannot remove a directory if it is non-empty (filled with sub-directories and files))</em>.<ul>
-<li><code>rmdir -p aaa/*</code>; remove all.</li>
+<li><code class="codehilite">rmdir aaa</code>; remove directory <code class="codehilite">aaa</code>.</li>
+<li><code class="codehilite">rmdir &#39;en co re&#39;</code>; remove directory <code class="codehilite">en co re</code>.</li>
+<li><code class="codehilite">rmdir aaa/bbb</code>; remove both directory and sub-directory (if both empty).</li>
+<li><code class="codehilite">rmdir -p aaa/bbb</code>; remove all <em>(you cannot remove a directory if it is non-empty (filled with sub-directories and files))</em>.<ul>
+<li><code class="codehilite">rmdir -p aaa/*</code>; remove all.</li>
 </ul>
 </li>
 </ul>
 <p><strong>Switch dir</strong></p>
 <ul>
-<li><code>pushd</code>; save current location; then, change location (another directory).</li>
-<li><code>popd</code>; return to pushd. <em>(for example, you are in <code>aaa</code>, type <code>pushd</code>, go to <code>bbb</code>, type <code>pushb</code>, go to <code>ccc</code>, type <code>popd</code>, return to <code>bbb</code>, type <code>popd</code>, return to <code>aaa</code>)</em>.</li>
+<li><code class="codehilite">pushd</code>; save current location; then, change location (another directory).</li>
+<li><code class="codehilite">popd</code>; return to pushd. <em>(for example, you are in <code class="codehilite">aaa</code>, type <code class="codehilite">pushd</code>, go to <code class="codehilite">bbb</code>, type <code class="codehilite">pushb</code>, go to <code class="codehilite">ccc</code>, type <code class="codehilite">popd</code>, return to <code class="codehilite">bbb</code>, type <code class="codehilite">popd</code>, return to <code class="codehilite">aaa</code>)</em>.</li>
 </ul>
 <p><strong>Make file</strong></p>
 <ul>
-<li><code>touch iamcoo.txt</code>; create an empty text file.</li>
-<li><code>touch temp/ismvoo.txt</code>; create an empty text file in the <code>temp</code> directory.</li>
+<li><code class="codehilite">touch iamcoo.txt</code>; create an empty text file.</li>
+<li><code class="codehilite">touch temp/ismvoo.txt</code>; create an empty text file in the <code class="codehilite">temp</code> directory.</li>
 </ul>
 <p><strong>Edit file</strong></p>
 <ul>
-<li><code>less test.txt</code>; open the file and display its content.</li>
-<li>Within <code>less</code> :<ul>
-<li><code>q</code>; quit.</li>
-<li>arrows, <code>pgUp</code>, <code>pgDn</code>; move.</li>
-<li><code>h</code>; help.</li>
+<li><code class="codehilite">less test.txt</code>; open the file and display its content.</li>
+<li>Within <code class="codehilite">less</code> :<ul>
+<li><code class="codehilite">q</code>; quit.</li>
+<li>arrows, <code class="codehilite">pgUp</code>, <code class="codehilite">pgDn</code>; move.</li>
+<li><code class="codehilite">h</code>; help.</li>
 </ul>
 </li>
-<li>For other files extensions like <code>tar</code> and GNU archive, use <code>tvf</code>.</li>
+<li>For other files extensions like <code class="codehilite">tar</code> and GNU archive, use <code class="codehilite">tvf</code>.</li>
 </ul>
-<h4 id="section-2-manipulation">Section 2, Manipulation<a class="headerlink" href="#section-2-manipulation" title="Permanent link">&para;</a></h4>
+<h4 id="manipulation">Manipulation<a class="headerlink" href="#manipulation" title="Permanent link">&para;</a></h4>
 <p><strong>List file &amp; dir</strong></p>
 <ul>
-<li><code>ls</code>; list of directories and files.</li>
-<li><code>ls /bin/bash</code>; list of a remote directory and files.</li>
-<li><code>ls -a</code>; list all.</li>
-<li><code>ls -t</code>; list in alphanumeric order, when they were last modified.</li>
-<li><code>ls -l</code>; list in long format.</li>
-<li><code>ls -la</code>; list all in long format.</li>
-<li><code>ls -alt</code>; list all in long format and ordered.</li>
-<li><code>ls /aaa /bbb</code>; list both directories.</li>
-<li><code>ls -r</code>; list in reverse.</li>
-<li><code>ls ../paint/</code>; list an upper directory.</li>
+<li><code class="codehilite">ls</code>; list of directories and files.</li>
+<li><code class="codehilite">ls /bin/bash</code>; list of a remote directory and files.</li>
+<li><code class="codehilite">ls -a</code>; list all.</li>
+<li><code class="codehilite">ls -t</code>; list in alphanumeric order, when they were last modified.</li>
+<li><code class="codehilite">ls -l</code>; list in long format.</li>
+<li><code class="codehilite">ls -la</code>; list all in long format.</li>
+<li><code class="codehilite">ls -alt</code>; list all in long format and ordered.</li>
+<li><code class="codehilite">ls /aaa /bbb</code>; list both directories.</li>
+<li><code class="codehilite">ls -r</code>; list in reverse.</li>
+<li><code class="codehilite">ls ../paint/</code>; list an upper directory.</li>
 </ul>
 <p><strong>Copy file &amp; dir</strong></p>
 <ul>
-<li><code>cp aaa.txt bbb.txt</code>; copy <code>aaa.txt</code> file, paste it or create a copy named <code>bbb.txt</code>.</li>
-<li><code>cp aaa.txt dir/</code>; copy <code>aaa.txt</code> into directory <code>dir</code>.</li>
-<li><code>cp aaa.txt bbb.txt dir/</code>; copy <code>aaa.txt</code> and <code>bbb.txt</code>into directory <code>dir</code>.</li>
-<li><code>cp \*.txt dir/</code>; copy all <code>.txt</code> files into directory <code>dir</code>.</li>
-<li><code>cp aaa.txt dir/dir2</code>; copy <code>aaa.txt</code> into sub-directory <code>dir2</code>.</li>
-<li><code>cp -r aaa bbb</code>; copy <code>dir1</code>, create a copy names <code>dir2</code> with the exact same content.</li>
-<li><code>cp -i</code>; interactive, to prompt the user.</li>
-<li><code>cp f\* ../paint/</code>; copy all files beginning with <code>f</code> to an upper directory.</li>
+<li><code class="codehilite">cp aaa.txt bbb.txt</code>; copy <code class="codehilite">aaa.txt</code> file, paste it or create a copy named <code class="codehilite">bbb.txt</code>.</li>
+<li><code class="codehilite">cp aaa.txt dir/</code>; copy <code class="codehilite">aaa.txt</code> into directory <code class="codehilite">dir</code>.</li>
+<li><code class="codehilite">cp aaa.txt bbb.txt dir/</code>; copy <code class="codehilite">aaa.txt</code> and <code class="codehilite">bbb.txt</code>into directory <code class="codehilite">dir</code>.</li>
+<li><code class="codehilite">cp \*.txt dir/</code>; copy all <code class="codehilite"><span class="na">.txt</span></code> files into directory <code class="codehilite">dir</code>.</li>
+<li><code class="codehilite">cp aaa.txt dir/dir2</code>; copy <code class="codehilite">aaa.txt</code> into sub-directory <code class="codehilite">dir2</code>.</li>
+<li><code class="codehilite">cp -r aaa bbb</code>; copy <code class="codehilite">dir1</code>, create a copy names <code class="codehilite">dir2</code> with the exact same content.</li>
+<li><code class="codehilite">cp -i</code>; interactive, to prompt the user.</li>
+<li><code class="codehilite">cp f\* ../paint/</code>; copy all files beginning with <code class="codehilite">f</code> to an upper directory.</li>
 </ul>
 <p><strong>Wildcards</strong></p>
 <ul>
-<li><code>\*</code>; wildcard for any string.</li>
-<li><code>?</code>; wildcard for any character.</li>
-<li><code>\*.txt</code>; all files finishing with <code>.txt</code>.</li>
-<li><code>r\*</code>; all files beginning with <code>r</code>.</li>
-<li><code>??a.txt</code>; all files beginning with two characters + <code>a.txt</code>.</li>
-<li><code>backup[[:digit:]]</code>; all file beginning with <code>backup</code> + any digit.</li>
-<li><code>[abc]\*</code>; all files beginning with either <code>a</code>, <code>b</code> or <code>c</code></li>
-<li><code>[[:upper:]]\*</code>; all files beginning with an upper case.</li>
-<li><code>\*[![:lower:]]</code>; all file not finishing with a lower case.</li>
+<li><code class="codehilite">\*</code>; wildcard for any string.</li>
+<li><code class="codehilite">?</code>; wildcard for any character.</li>
+<li><code class="codehilite">\*.txt</code>; all files finishing with <code class="codehilite"><span class="na">.txt</span></code>.</li>
+<li><code class="codehilite">r\*</code>; all files beginning with <code class="codehilite">r</code>.</li>
+<li><code class="codehilite">??a.txt</code>; all files beginning with two characters + <code class="codehilite">a.txt</code>.</li>
+<li><code class="codehilite">backup[[:digit:]]</code>; all file beginning with <code class="codehilite">backup</code> + any digit.</li>
+<li><code class="codehilite">[abc]\*</code>; all files beginning with either <code class="codehilite">a</code>, <code class="codehilite">b</code> or <code class="codehilite">c</code></li>
+<li><code class="codehilite">[[:upper:]]\*</code>; all files beginning with an upper case.</li>
+<li><code class="codehilite">\*[![:lower:]]</code>; all file not finishing with a lower case.</li>
 </ul>
 <p><strong>Move file &amp; dir</strong></p>
 <ul>
-<li><code>mv aaa.txt bbb.txt</code>; move file or cut <code>aaa.txt</code> and paste <code>bbb.txt</code>.</li>
-<li><code>mv aaa.txt dir/</code>; move file <code>aaa.txt</code> into directory <code>dir</code>.</li>
-<li><code>mv aaa.txt bbb.txt dir/</code>; move files <code>aaa.txt</code> and <code>bbb.txt</code> into directory <code>dir</code>.</li>
-<li><code>mv \*.txt dir/</code>; move all <code>.txt</code> files into directory <code>dir</code>.</li>
-<li><code>mv aaa.txt dir/dir2</code>; move file <code>aaa.txt</code> into sub-directory <code>dir2</code>.</li>
-<li><code>mv -i</code>; interactive, prompt the user.</li>
+<li><code class="codehilite">mv aaa.txt bbb.txt</code>; move file or cut <code class="codehilite">aaa.txt</code> and paste <code class="codehilite">bbb.txt</code>.</li>
+<li><code class="codehilite">mv aaa.txt dir/</code>; move file <code class="codehilite">aaa.txt</code> into directory <code class="codehilite">dir</code>.</li>
+<li><code class="codehilite">mv aaa.txt bbb.txt dir/</code>; move files <code class="codehilite">aaa.txt</code> and <code class="codehilite">bbb.txt</code> into directory <code class="codehilite">dir</code>.</li>
+<li><code class="codehilite">mv \*.txt dir/</code>; move all <code class="codehilite"><span class="na">.txt</span></code> files into directory <code class="codehilite">dir</code>.</li>
+<li><code class="codehilite">mv aaa.txt dir/dir2</code>; move file <code class="codehilite">aaa.txt</code> into sub-directory <code class="codehilite">dir2</code>.</li>
+<li><code class="codehilite">mv -i</code>; interactive, prompt the user.</li>
 </ul>
 <p><strong>Remove file &amp; dir</strong></p>
 <ul>
-<li><code>rm aaa.txt</code>; remove file <code>aaa.txt</code>.</li>
-<li><code>rm test1.txt test2.txt</code>; remove both files.</li>
-<li><code>rm aaa/\*</code>; remove all files in the directory <code>aaa</code>.</li>
-<li><code>rm -r aaa</code>; remove directory <code>aaa</code>, must be empty.</li>
-<li><code>rm -rf aaa</code>; remove directory <code>aaa</code> and its files.</li>
-<li><code>rm -i</code>; interactive, prompt the user.</li>
+<li><code class="codehilite">rm aaa.txt</code>; remove file <code class="codehilite">aaa.txt</code>.</li>
+<li><code class="codehilite">rm test1.txt test2.txt</code>; remove both files.</li>
+<li><code class="codehilite">rm aaa/\*</code>; remove all files in the directory <code class="codehilite">aaa</code>.</li>
+<li><code class="codehilite">rm -r aaa</code>; remove directory <code class="codehilite">aaa</code>, must be empty.</li>
+<li><code class="codehilite">rm -rf aaa</code>; remove directory <code class="codehilite">aaa</code> and its files.</li>
+<li><code class="codehilite">rm -i</code>; interactive, prompt the user.</li>
 </ul>
-<h4 id="section-3-redirection">Section 3, Redirection<a class="headerlink" href="#section-3-redirection" title="Permanent link">&para;</a></h4>
+<h4 id="redirection">Redirection<a class="headerlink" href="#redirection" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Let&rsquo;s begin by taking a closer look at input and output. In the terminal, after the shell prompt, type :</li>
 </ul>
@@ -415,13 +960,13 @@
 </td></tr></table>
 
 <ul>
-<li>The <code>echo</code> command accepts the string &lsquo;Hello&rsquo; as standard input, and echoes the string <code>'Hello'</code> back to the terminal as standard output. <ul>
-<li>standard input, abbreviated as <code>stdin</code>, is information inputted into the terminal through the keyboard or input device.</li>
-<li>standard output, abbreviated as <code>stdout</code>, is the information outputted after a process is run.</li>
-<li>standard error, abbreviated as <code>stderr</code>, is an error message outputted by a failed process.</li>
+<li>The <code class="codehilite">echo</code> command accepts the string &lsquo;Hello&rsquo; as standard input, and echoes the string <code class="codehilite">&#39;Hello&#39;</code> back to the terminal as standard output. <ul>
+<li>standard input, abbreviated as <code class="codehilite">stdin</code>, is information inputted into the terminal through the keyboard or input device.</li>
+<li>standard output, abbreviated as <code class="codehilite">stdout</code>, is the information outputted after a process is run.</li>
+<li>standard error, abbreviated as <code class="codehilite">stderr</code>, is an error message outputted by a failed process.</li>
 </ul>
 </li>
-<li>Redirection (<code>&gt;</code>) reroutes standard input, standard output, and standard error to or from a different location. Type :</li>
+<li>Redirection (<code class="codehilite">&gt;</code>) reroutes standard input, standard output, and standard error to or from a different location. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Hello&#39;</span> &gt; hello.txt
 </pre></div>
@@ -435,9 +980,9 @@
 </td></tr></table>
 
 <ul>
-<li>The <code>&gt;</code> command redirects the standard output to a file. The standard output <code>'Hello'</code> is redirected by <code>&gt;</code> to the file <code>hello.txt</code>, and entered as the standard input.</li>
+<li>The <code class="codehilite">&gt;</code> command redirects the standard output to a file. The standard output <code class="codehilite">&#39;Hello&#39;</code> is redirected by <code class="codehilite">&gt;</code> to the file <code class="codehilite">hello.txt</code>, and entered as the standard input.</li>
 <li>
-<p>The cat command outputs the contents of a file to the terminal. When you type <code>cat hello.txt</code>, the contents of <code>hello.txt</code> are displayed.</p>
+<p>The cat command outputs the contents of a file to the terminal. When you type <code class="codehilite">cat hello.txt</code>, the contents of <code class="codehilite">hello.txt</code> are displayed.</p>
 </li>
 <li>
 <p>Type :</p>
@@ -462,21 +1007,21 @@
 </td></tr></table>
 
 <ul>
-<li>Use <code>cat</code> to view the contents of <code>continents.txt</code>. Notice that we only see oceans as output:</li>
+<li>Use <code class="codehilite">cat</code> to view the contents of <code class="codehilite">continents.txt</code>. Notice that we only see oceans as output:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat continents.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Here the standard output of cat <code>oceans.txt</code> is redirected to <code>continents.txt</code>. Note that <code>&gt;</code> OVERWRITES all original content in <code>continents.txt</code>. When you view the output data by typing cat on <code>continents.txt</code>, you will see only the contents of <code>oceans.txt</code>. Type :</li>
+<li><code class="codehilite">&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Here the standard output of cat <code class="codehilite">oceans.txt</code> is redirected to <code class="codehilite">continents.txt</code>. Note that <code class="codehilite">&gt;</code> OVERWRITES all original content in <code class="codehilite">continents.txt</code>. When you view the output data by typing cat on <code class="codehilite">continents.txt</code>, you will see only the contents of <code class="codehilite">oceans.txt</code>. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat glaciers.txt &gt;&gt; rivers.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>Use <code>cat</code> to view the contents of <code>rivers.txt</code>:</li>
+<li>Use <code class="codehilite">cat</code> to view the contents of <code class="codehilite">rivers.txt</code>:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat rivers.txt
 </pre></div>
@@ -491,7 +1036,7 @@
 
 <ul>
 <li>
-<p><code>&gt;&gt;</code> takes the standard output of the command on the left and APPENDS it to the file on the right. You can view the output data of the file with cat and the filename. Here, the output data of <code>rivers.txt</code> will contain the original contents of <code>rivers.txt</code> with the content of <code>glaciers.txt</code> appended to it. </p>
+<p><code class="codehilite">&gt;&gt;</code> takes the standard output of the command on the left and APPENDS it to the file on the right. You can view the output data of the file with cat and the filename. Here, the output data of <code class="codehilite">rivers.txt</code> will contain the original contents of <code class="codehilite">rivers.txt</code> with the content of <code class="codehilite">glaciers.txt</code> appended to it. </p>
 </li>
 <li>
 <p>Type :</p>
@@ -509,7 +1054,7 @@
 </td></tr></table>
 
 <ul>
-<li><code>&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left. Here, <code>lakes.txt</code> is the standard input for the <code>cat</code> command. The standard output appears in the terminal. Let&rsquo;s try some more redirection commands. Type :</li>
+<li><code class="codehilite">&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left. Here, <code class="codehilite">lakes.txt</code> is the standard input for the <code class="codehilite">cat</code> command. The standard output appears in the terminal. Let&rsquo;s try some more redirection commands. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch volcanoes.txt
 </pre></div>
@@ -530,14 +1075,14 @@
 </td></tr></table>
 
 <ul>
-<li>Use <code>cat</code> to output the contents in <code>islands.txt</code>. The next command should now equals <code>$ cat volcanoes.txt | wc</code>.</li>
+<li>Use <code class="codehilite">cat</code> to output the contents in <code class="codehilite">islands.txt</code>. The next command should now equals <code class="codehilite">$ cat volcanoes.txt <span class="p">|</span> wc</code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>|</code> is a &lsquo;pipe&rsquo; or &lsquo;pipeline&rsquo; The <code>|</code> takes the standard output of the command on the left, and PIPES it as standard input to the command on the right. You can think of this as &lsquo;command to command&rsquo; redirection. Here, again, the output of cat <code>volcanoes.txt</code> is the standard input of <code>wc</code>. In turn, the <code>wc</code> command outputs the number of lines, words, and characters in <code>volcanoes.txt</code>, respectively:</li>
+<li><code class="codehilite">|</code> is a &lsquo;pipe&rsquo; or &lsquo;pipeline&rsquo; The <code class="codehilite">|</code> takes the standard output of the command on the left, and PIPES it as standard input to the command on the right. You can think of this as &lsquo;command to command&rsquo; redirection. Here, again, the output of cat <code class="codehilite">volcanoes.txt</code> is the standard input of <code class="codehilite">wc</code>. In turn, the <code class="codehilite">wc</code> command outputs the number of lines, words, and characters in <code class="codehilite">volcanoes.txt</code>, respectively:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc <span class="p">|</span> cat &gt; islands.txt
@@ -546,8 +1091,8 @@ $ less islands.txt
 </td></tr></table>
 
 <ul>
-<li>Multiple <code>|</code>s can be chained together. Here the standard output of cat <code>volcanoes.txt</code> is &lsquo;piped&rsquo; to the <code>wc</code> command. The standard output of <code>wc</code> is then &lsquo;piped&rsquo; to cat. Finally, the standard output of cat is redirected to <code>islands.txt</code>. You can view the output data of this chain by typing cat <code>islands.txt</code>. </li>
-<li>A few commands are particularly powerful when combined with redirection. Let&rsquo;s try them out. First, use <code>cat</code> to output the contents of <code>lakes.txt</code>. Then, <code>sort</code> it. Type :</li>
+<li>Multiple <code class="codehilite">|</code>s can be chained together. Here the standard output of cat <code class="codehilite">volcanoes.txt</code> is &lsquo;piped&rsquo; to the <code class="codehilite">wc</code> command. The standard output of <code class="codehilite">wc</code> is then &lsquo;piped&rsquo; to cat. Finally, the standard output of cat is redirected to <code class="codehilite">islands.txt</code>. You can view the output data of this chain by typing cat <code class="codehilite">islands.txt</code>. </li>
+<li>A few commands are particularly powerful when combined with redirection. Let&rsquo;s try them out. First, use <code class="codehilite">cat</code> to output the contents of <code class="codehilite">lakes.txt</code>. Then, <code class="codehilite">sort</code> it. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt
@@ -556,22 +1101,22 @@ $ sort lakes.txt
 </td></tr></table>
 
 <ul>
-<li>The lakes in <code>lakes.txt</code> are listed in alphabetical order. Type:</li>
+<li>The lakes in <code class="codehilite">lakes.txt</code> are listed in alphabetical order. Type:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt <span class="p">|</span> sort
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>sort</code> takes the standard input and orders it alphabetically for the standard output. The lakes in <code>lakes.txt</code> are listed in alphabetical order.</li>
-<li>Use cat to output the contents of <code>sorted-lakes.txt</code>.</li>
+<li><code class="codehilite">sort</code> takes the standard input and orders it alphabetically for the standard output. The lakes in <code class="codehilite">lakes.txt</code> are listed in alphabetical order.</li>
+<li>Use cat to output the contents of <code class="codehilite">sorted-lakes.txt</code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt <span class="p">|</span> sort &gt; sorted-lakes.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>The command takes the standard output from cat <code>lakes.txt</code> and &lsquo;pipes&rsquo; it to sort in ascending order. The standard output of <code>sort</code> is redirected to <code>sorted-lakes.txt</code>. You can view the output data by typing:</li>
+<li>The command takes the standard output from cat <code class="codehilite">lakes.txt</code> and &lsquo;pipes&rsquo; it to sort in ascending order. The standard output of <code class="codehilite">sort</code> is redirected to <code class="codehilite">sorted-lakes.txt</code>. You can view the output data by typing:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat sorted-lakes.txt
 </pre></div>
@@ -613,9 +1158,9 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>You save the result in <code>uniq-deserts.txt</code>.</li>
-<li>Use <code>cat</code> to output the contents of <code>uniq-deserts.txt</code>.</li>
-<li><code>uniq</code> stands for &lsquo;unique&rsquo; and filters out ADJACENT, duplicate lines in a file. Here <code>uniq deserts.txt</code> filters out duplicates of &lsquo;Sahara Desert&rsquo;, because the duplicate of &lsquo;Sahara Desert&rsquo; directly follows the previous instance. The &lsquo;Kalahari Desert&rsquo; duplicates are not adjacent, and thus remain.</li>
+<li>You save the result in <code class="codehilite">uniq-deserts.txt</code>.</li>
+<li>Use <code class="codehilite">cat</code> to output the contents of <code class="codehilite">uniq-deserts.txt</code>.</li>
+<li><code class="codehilite">uniq</code> stands for &lsquo;unique&rsquo; and filters out ADJACENT, duplicate lines in a file. Here <code class="codehilite">uniq deserts.txt</code> filters out duplicates of &lsquo;Sahara Desert&rsquo;, because the duplicate of &lsquo;Sahara Desert&rsquo; directly follows the previous instance. The &lsquo;Kalahari Desert&rsquo; duplicates are not adjacent, and thus remain.</li>
 <li>Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep Mount mountains.txt
@@ -623,14 +1168,14 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li><code>grep</code> stands for &lsquo;global regular expression print&rsquo;. It searches files for lines that match a pattern and returns the results. It is also case sensitive. Here, <code>grep</code> searches for &lsquo;Mount&rsquo; in <code>mountains.txt</code>. Type:</li>
+<li><code class="codehilite">grep</code> stands for &lsquo;global regular expression print&rsquo;. It searches files for lines that match a pattern and returns the results. It is also case sensitive. Here, <code class="codehilite">grep</code> searches for &lsquo;Mount&rsquo; in <code class="codehilite">mountains.txt</code>. Type:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -i Mount mountains.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>grep -i</code> enables the command to be case insensitive. Here, <code>grep</code> searches for capital or lowercase strings that match &lsquo;Mount&rsquo; in <code>mountains.txt</code>. The above commands are a great way to get started with <code>grep</code>. If you are familiar with regular expressions, you can use regular expressions to search for patterns in files. <code>grep</code> can also be used to search within a directory. Type :</li>
+<li><code class="codehilite">grep -i</code> enables the command to be case insensitive. Here, <code class="codehilite">grep</code> searches for capital or lowercase strings that match &lsquo;Mount&rsquo; in <code class="codehilite">mountains.txt</code>. The above commands are a great way to get started with <code class="codehilite">grep</code>. If you are familiar with regular expressions, you can use regular expressions to search for patterns in files. <code class="codehilite">grep</code> can also be used to search within a directory. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Arctic /home/ccuser/workspace/geography
 </pre></div>
@@ -644,31 +1189,31 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li><code>grep -R</code> searches files in a directory and outputs filenames and lines containing matched results. <code>-R</code> stands for &lsquo;recursive&rsquo;. Here <code>grep -R</code> searches the <code>/home/ccuser/workspace/geography</code> directory for the string &lsquo;Arctic&rsquo; and outputs filenames and lines with matched results. Type:</li>
+<li><code class="codehilite">grep -R</code> searches files in a directory and outputs filenames and lines containing matched results. <code class="codehilite">-R</code> stands for &lsquo;recursive&rsquo;. Here <code class="codehilite">grep -R</code> searches the <code class="codehilite">/home/ccuser/workspace/geography</code> directory for the string &lsquo;Arctic&rsquo; and outputs filenames and lines with matched results. Type:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Gambino .
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>grep -R</code> searches ALL files recursively and outputs filenames and lines containing matched results.</li>
+<li><code class="codehilite">grep -R</code> searches ALL files recursively and outputs filenames and lines containing matched results.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -Rl Arctic /home/ccuser/workspace/geography
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>grep -Rl</code> searches all files in a directory and outputs only filenames with matched results. <code>-R</code> stands for &lsquo;recursive&rsquo; and <code>l</code> stands for &lsquo;files with matches&rsquo;. Here <code>grep -Rl</code> searches the <code>/home/ccuser/workspace/geography</code> directory for the string &lsquo;Arctic&rsquo; and outputs filenames with matched results. Use <code>cat</code> to display the contents of <code>forests.txt</code>. </li>
-<li><code>grep this file.txt</code>; search for <code>this</code> in <code>file.txt,</code> print the output on screen.</li>
-<li><code>grep this &lt; file.txt</code>; feed <code>file.txt</code> to process <code>grep</code> to look for <code>this</code>, print on screen</li>
-<li><code>grep this file.txt &gt; file_this.txt</code>; write, overwrite the output in <code>file_this.txt</code>.</li>
-<li><code>grep this file.txt &gt;&gt; file_this.txt</code>; write, append the output in <code>file_this.txt</code>.</li>
-<li><code>grep "is" file.txt</code>; search pattern <code>is</code>, precisely, in words or alone.</li>
-<li><code>grep line file.txt</code>; search pattern <code>line</code>.</li>
-<li><code>grep -n line file.txt</code>; show the line number where it finds pattern <code>line</code>.</li>
-<li><code>grep -i line file.txt</code>; case insensitive</li>
+<li><code class="codehilite">grep -Rl</code> searches all files in a directory and outputs only filenames with matched results. <code class="codehilite">-R</code> stands for &lsquo;recursive&rsquo; and <code class="codehilite">l</code> stands for &lsquo;files with matches&rsquo;. Here <code class="codehilite">grep -Rl</code> searches the <code class="codehilite">/home/ccuser/workspace/geography</code> directory for the string &lsquo;Arctic&rsquo; and outputs filenames with matched results. Use <code class="codehilite">cat</code> to display the contents of <code class="codehilite">forests.txt</code>. </li>
+<li><code class="codehilite">grep this file.txt</code>; search for <code class="codehilite">this</code> in <code class="codehilite">file.txt,</code> print the output on screen.</li>
+<li><code class="codehilite">grep this &lt; file.txt</code>; feed <code class="codehilite">file.txt</code> to process <code class="codehilite">grep</code> to look for <code class="codehilite">this</code>, print on screen</li>
+<li><code class="codehilite">grep this file.txt &gt; file_this.txt</code>; write, overwrite the output in <code class="codehilite">file_this.txt</code>.</li>
+<li><code class="codehilite">grep this file.txt &gt;&gt; file_this.txt</code>; write, append the output in <code class="codehilite">file_this.txt</code>.</li>
+<li><code class="codehilite">grep &quot;is&quot; file.txt</code>; search pattern <code class="codehilite">is</code>, precisely, in words or alone.</li>
+<li><code class="codehilite">grep line file.txt</code>; search pattern <code class="codehilite">line</code>.</li>
+<li><code class="codehilite">grep -n line file.txt</code>; show the line number where it finds pattern <code class="codehilite">line</code>.</li>
+<li><code class="codehilite">grep -i line file.txt</code>; case insensitive</li>
 <li>
-<p><code>grep -v line file.txt</code>; inverse or when it does not have the pattern line</p>
+<p><code class="codehilite">grep -v line file.txt</code>; inverse or when it does not have the pattern line</p>
 </li>
 <li>
 <p>If you search for one &ldquo;file&rdquo; in the current directory, type:</p>
@@ -679,22 +1224,22 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li><code>find / _name "file.txt"</code> searches &ldquo;file&rdquo; in multiple directories.</li>
-<li><code>find dirA dirB dirC _name "file.txt"</code> search &ldquo;file&rdquo; in one or more directories. Type :</li>
+<li><code class="codehilite">find / _name &quot;file.txt&quot;</code> searches &ldquo;file&rdquo; in multiple directories.</li>
+<li><code class="codehilite">find dirA dirB dirC _name &quot;file.txt&quot;</code> search &ldquo;file&rdquo; in one or more directories. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sed <span class="s1">&#39;s/snow/rain/&#39;</span> forests.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>sed</code> stands for &lsquo;stream editor&rsquo;. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to &lsquo;find and replace&rsquo;. </li>
-<li>Let&rsquo;s look at the expression <code>'s/snow/rain/'</code>:<ul>
-<li><code>s</code>: stands for &lsquo;substitution&rsquo;. it is always used when using sed for substitution.</li>
-<li><code>snow</code>: the search string, the text to find.</li>
-<li><code>rain</code>: the replacement string, the text to add in place.</li>
+<li><code class="codehilite">sed</code> stands for &lsquo;stream editor&rsquo;. It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to &lsquo;find and replace&rsquo;. </li>
+<li>Let&rsquo;s look at the expression <code class="codehilite">&#39;s/snow/rain/&#39;</code>:<ul>
+<li><code class="codehilite">s</code>: stands for &lsquo;substitution&rsquo;. it is always used when using sed for substitution.</li>
+<li><code class="codehilite">snow</code>: the search string, the text to find.</li>
+<li><code class="codehilite">rain</code>: the replacement string, the text to add in place.</li>
 </ul>
 </li>
-<li>In this case, <code>sed</code> searches <code>forests.txt</code> for the word <code>'snow'</code> and replaces it with <code>'rain'</code>. Importantly, the above command will only replace the FIRST instance of <code>'snow'</code> on a line.</li>
+<li>In this case, <code class="codehilite">sed</code> searches <code class="codehilite">forests.txt</code> for the word <code class="codehilite">&#39;snow&#39;</code> and replaces it with <code class="codehilite">&#39;rain&#39;</code>. Importantly, the above command will only replace the FIRST instance of <code class="codehilite">&#39;snow&#39;</code> on a line.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sed <span class="s1">&#39;s/snow/rain/g&#39;</span> forests.txt
 </pre></div>
@@ -702,80 +1247,80 @@ $ uniq deserts.txt
 
 <ul>
 <li>
-<p>The above command uses the <code>g</code> expression, meaning &lsquo;global&rsquo;. Here <code>sed</code> searches <code>forests.txt</code> for the word <code>'snow'</code> and replaces it with <code>'rain'</code>, globally. ALL instances of <code>'snow'</code> on a line will be turned to <code>'rain'</code>.</p>
+<p>The above command uses the <code class="codehilite">g</code> expression, meaning &lsquo;global&rsquo;. Here <code class="codehilite">sed</code> searches <code class="codehilite">forests.txt</code> for the word <code class="codehilite">&#39;snow&#39;</code> and replaces it with <code class="codehilite">&#39;rain&#39;</code>, globally. ALL instances of <code class="codehilite">&#39;snow&#39;</code> on a line will be turned to <code class="codehilite">&#39;rain&#39;</code>.</p>
 </li>
 <li>
 <p>Let&rsquo;s summarize what we&rsquo;ve done so far.</p>
 </li>
 <li>The common redirection commands are:<ul>
-<li><code>&gt;</code>; redirects standard output of a command to a file, overwriting previous content.</li>
-<li><code>&gt;&gt;</code>; redirects standard output of a command to a file, appending new content to old content.</li>
-<li><code>&lt;</code>; redirects standard input to a command.</li>
-<li><code>|</code>; redirects standard output of a command to another command.</li>
+<li><code class="codehilite">&gt;</code>; redirects standard output of a command to a file, overwriting previous content.</li>
+<li><code class="codehilite">&gt;&gt;</code>; redirects standard output of a command to a file, appending new content to old content.</li>
+<li><code class="codehilite">&lt;</code>; redirects standard input to a command.</li>
+<li><code class="codehilite">|</code>; redirects standard output of a command to another command.</li>
 </ul>
 </li>
 <li>A number of other commands are powerful when combined with redirection commands:<ul>
-<li><code>echo 'a'</code>; display &lsquo;a&rsquo; in the terminal.</li>
-<li><code>touch</code>; create a file.</li>
-<li><code>cat</code>; display the content of a file in the terminal.</li>
-<li><code>less</code>; edit the content of a file in the terminal; prefer <code>nano</code>, it&rsquo;s more user-friendly.</li>
-<li><code>sort</code>; sorts lines in a file in alphabetical order.</li>
-<li><code>uniq</code>; filters duplicates in a file.</li>
-<li><code>grep</code>; searches for a text pattern in files and outputs it.</li>
-<li><code>find</code>; searches for files, not the content.</li>
-<li><code>sed</code>; searches for a text pattern in files, modifies it, and outputs it.</li>
-<li><code>head</code>/<code>tail</code>; <code>ls</code>, but only the top/bottom results.</li>
+<li><code class="codehilite">echo &#39;a&#39;</code>; display &lsquo;a&rsquo; in the terminal.</li>
+<li><code class="codehilite">touch</code>; create a file.</li>
+<li><code class="codehilite">cat</code>; display the content of a file in the terminal.</li>
+<li><code class="codehilite">less</code>; edit the content of a file in the terminal; prefer <code class="codehilite">nano</code>, it&rsquo;s more user-friendly.</li>
+<li><code class="codehilite">sort</code>; sorts lines in a file in alphabetical order.</li>
+<li><code class="codehilite">uniq</code>; filters duplicates in a file.</li>
+<li><code class="codehilite">grep</code>; searches for a text pattern in files and outputs it.</li>
+<li><code class="codehilite">find</code>; searches for files, not the content.</li>
+<li><code class="codehilite">sed</code>; searches for a text pattern in files, modifies it, and outputs it.</li>
+<li><code class="codehilite">head</code>/<code class="codehilite">tail</code>; <code class="codehilite">ls</code>, but only the top/bottom results.</li>
 </ul>
 </li>
 </ul>
 <p><strong>Examples</strong></p>
 <ul>
-<li><code>echo 'thisthat'</code>; show <code>thisthat</code>.</li>
-<li><code>echo $USER</code>; show user variable.</li>
-<li><code>echo \*</code>, <code>d\*</code>, <code>s\*</code>, <code>[[:upper]]\*</code>, <code>/usr/\*/share</code>; show the content of the current directory according to the specified string (wildcards and characters).</li>
-<li><code>echo ~</code>; show <code>/home/user</code>.</li>
-<li><code>echo .\*</code>; show hidden files.</li>
-<li><code>echo 2 + 2</code>; show 2 + 2.</li>
-<li><code>echo $((2 + 2))</code>; show 4.</li>
-<li><code>echo $(($((5 \*\* 2)) \* 3))</code>; show 75.</li>
-<li><code>echo Front-{A,B,C}-Back</code>; show Front-A-Back Front-B-Back Front-C-Back.</li>
-<li><code>echo Number-{1...5}</code>; show Number-1 Number-2 Number-3 Number-4 Number-5.</li>
-<li><code>echo {Z...A}</code>; show Z Y X W…</li>
-<li><code>echo a{A{1,2}, B{3,4}}b</code>; show aS1b aA2b aB3b aB4b.</li>
-<li><code>mkdir {2007...2009}-0{1...9} {2007...2009}-{10...12}</code>; show 2007-01 2007-02 2007-03 2007-04 2007-05 2007-06 2007-07 2007-08 2007-09 2007-10 2007-11 2007-12 2008-01…</li>
-<li><code>echo $(ls)</code>; show, not a list, but a paragraph of files and directories.</li>
-<li><code>echo $USER $((2 + 2))</code>; show user 4.</li>
-<li><code>echo $(cal) or echo ' $(cal) '</code>; show a calendar.</li>
-<li>With <code>.</code>, special characters become ordinary characters except for <code>$</code>, <code>\</code> or <code>'</code>; and with <code>.</code>, it doesn&rsquo;t suppress commands, variables and aliases as with <code>.</code>. Try :</li>
-<li><code>echo text ~/\*.txt {a,b} $(echo foo) $((2 + 2))</code> .</li>
-<li><code>echo 'text ~/\*.txt {a,b} $(echo foo) $((2 + 2))'</code> .</li>
-<li><code>echo 'text ~/\*.txt {a,b} $(echo foo) $((2 + 2))'</code>.</li>
-<li><code>print env | less</code>; show a list of available variables.</li>
-<li><code>cat test.txt</code>; showthe content of file <code>text.txt</code>.</li>
-<li><code>ls &gt; file.txt</code>; send command and results into a file, if the file exists, it overwrite it, use <code>cat file.txt</code> to edit it.</li>
-<li><code>ls &gt;&gt; file.txt</code>; send command and results into a file, if the file exists, it appends the new content to the existing one, use <code>cat file.txt</code> to edit it.</li>
-<li><code>cat test.txt &gt; bbb.txt</code>; write (overwrite) the (existing) content of <code>test.txt</code> into <code>bbb.txt</code>.</li>
-<li><code>cat test.txt &gt;&gt; bbb.txt</code>; write the content of <code>test.txt</code> into <code>bbb.txt</code> or append it to <code>bbb.txt</code>.</li>
-<li><code>wc test.txt</code>; count lines, words and bytes of <code>test.txt</code>.</li>
-<li><code>cat test.txt | wc</code>; show the wc of <code>test.txt</code>.</li>
-<li><code>cat test.txt | wc &gt; bbb.txt</code>; write the <code>wc</code> of <code>test.txt</code> into <code>bbb.txt</code>.</li>
-<li><code>sort &lt; file.txt</code>; push the content into command sort.</li>
-<li><code>cat &lt; aaa.txt</code>; open file <code>aaa.txt</code> to edit.</li>
-<li><code>sort file.txt</code>; sort the content.</li>
-<li><code>cat aaa.txt | sort &gt; sorted_aaa.txt</code>; in addition, send the results in a new files.</li>
-<li><code>uniq file.txt</code>; extract unique values of the content.</li>
-<li><code>ls -l | less</code>; the list goes into the reader.</li>
-<li><code>ls -l | head</code>; the list shows the 10 top lines only.</li>
-<li><code>ls -l | tail</code>; the list shows the 10 bottom lines only.</li>
+<li><code class="codehilite">echo &#39;thisthat&#39;</code>; show <code class="codehilite">thisthat</code>.</li>
+<li><code class="codehilite">echo $USER</code>; show user variable.</li>
+<li><code class="codehilite">echo \*</code>, <code class="codehilite">d\*</code>, <code class="codehilite">s\*</code>, <code class="codehilite">[[:upper]]\*</code>, <code class="codehilite">/usr/\*/share</code>; show the content of the current directory according to the specified string (wildcards and characters).</li>
+<li><code class="codehilite">echo ~</code>; show <code class="codehilite">/home/user</code>.</li>
+<li><code class="codehilite">echo .\*</code>; show hidden files.</li>
+<li><code class="codehilite">echo 2 + 2</code>; show 2 + 2.</li>
+<li><code class="codehilite">echo $((2 + 2))</code>; show 4.</li>
+<li><code class="codehilite">echo $(($((5 \*\* 2)) \* 3))</code>; show 75.</li>
+<li><code class="codehilite">echo Front-{A,B,C}-Back</code>; show Front-A-Back Front-B-Back Front-C-Back.</li>
+<li><code class="codehilite">echo Number-{1...5}</code>; show Number-1 Number-2 Number-3 Number-4 Number-5.</li>
+<li><code class="codehilite">echo {Z...A}</code>; show Z Y X W…</li>
+<li><code class="codehilite">echo a{A{1,2}, B{3,4}}b</code>; show aS1b aA2b aB3b aB4b.</li>
+<li><code class="codehilite">mkdir {2007...2009}-0{1...9} {2007...2009}-{10...12}</code>; show 2007-01 2007-02 2007-03 2007-04 2007-05 2007-06 2007-07 2007-08 2007-09 2007-10 2007-11 2007-12 2008-01…</li>
+<li><code class="codehilite">echo $(ls)</code>; show, not a list, but a paragraph of files and directories.</li>
+<li><code class="codehilite">echo $USER $((2 + 2))</code>; show user 4.</li>
+<li><code class="codehilite">echo $(cal) or echo &#39; $(cal) &#39;</code>; show a calendar.</li>
+<li>With <code class="codehilite">.</code>, special characters become ordinary characters except for <code class="codehilite">$</code>, <code class="codehilite">\</code> or <code class="codehilite">&#39;</code>; and with <code class="codehilite">.</code>, it doesn&rsquo;t suppress commands, variables and aliases as with <code class="codehilite">.</code>. Try :</li>
+<li><code class="codehilite">echo text ~/\*.txt {a,b} $(echo foo) $((2 + 2))</code> .</li>
+<li><code class="codehilite">echo &#39;text ~/\*.txt {a,b} $(echo foo) $((2 + 2))&#39;</code> .</li>
+<li><code class="codehilite">echo &#39;text ~/\*.txt {a,b} $(echo foo) $((2 + 2))&#39;</code>.</li>
+<li><code class="codehilite">print env | less</code>; show a list of available variables.</li>
+<li><code class="codehilite">cat test.txt</code>; showthe content of file <code class="codehilite">text.txt</code>.</li>
+<li><code class="codehilite">ls &gt; file.txt</code>; send command and results into a file, if the file exists, it overwrite it, use <code class="codehilite">cat file.txt</code> to edit it.</li>
+<li><code class="codehilite">ls &gt;&gt; file.txt</code>; send command and results into a file, if the file exists, it appends the new content to the existing one, use <code class="codehilite">cat file.txt</code> to edit it.</li>
+<li><code class="codehilite">cat test.txt &gt; bbb.txt</code>; write (overwrite) the (existing) content of <code class="codehilite">test.txt</code> into <code class="codehilite">bbb.txt</code>.</li>
+<li><code class="codehilite">cat test.txt &gt;&gt; bbb.txt</code>; write the content of <code class="codehilite">test.txt</code> into <code class="codehilite">bbb.txt</code> or append it to <code class="codehilite">bbb.txt</code>.</li>
+<li><code class="codehilite">wc test.txt</code>; count lines, words and bytes of <code class="codehilite">test.txt</code>.</li>
+<li><code class="codehilite">cat test.txt | wc</code>; show the wc of <code class="codehilite">test.txt</code>.</li>
+<li><code class="codehilite">cat test.txt | wc &gt; bbb.txt</code>; write the <code class="codehilite">wc</code> of <code class="codehilite">test.txt</code> into <code class="codehilite">bbb.txt</code>.</li>
+<li><code class="codehilite">sort &lt; file.txt</code>; push the content into command sort.</li>
+<li><code class="codehilite">cat &lt; aaa.txt</code>; open file <code class="codehilite">aaa.txt</code> to edit.</li>
+<li><code class="codehilite">sort file.txt</code>; sort the content.</li>
+<li><code class="codehilite">cat aaa.txt | sort &gt; sorted_aaa.txt</code>; in addition, send the results in a new files.</li>
+<li><code class="codehilite">uniq file.txt</code>; extract unique values of the content.</li>
+<li><code class="codehilite">ls -l | less</code>; the list goes into the reader.</li>
+<li><code class="codehilite">ls -l | head</code>; the list shows the 10 top lines only.</li>
+<li><code class="codehilite">ls -l | tail</code>; the list shows the 10 bottom lines only.</li>
 </ul>
-<h4 id="section-4-environment">Section 4, Environment<a class="headerlink" href="#section-4-environment" title="Permanent link">&para;</a></h4>
+<h4 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Each time we launch the terminal application, it creates a new session. The session immediately loads settings and preferences that make up the command line environment.</li>
 <li>
 <p>We can configure this environment to support the commands and programs, customize greetings and command aliases, and create variables to share across commands and programs.</p>
 </li>
 <li>
-<p>A simple, command line text editor: <code>nano</code>. It is more powerful than <code>less</code>. Type :</p>
+<p>A simple, command line text editor: <code class="codehilite">nano</code>. It is more powerful than <code class="codehilite">less</code>. Type :</p>
 </li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano hello.txt
@@ -783,72 +1328,72 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>In <code>nano</code>, at the top of the window, type :</li>
+<li>In <code class="codehilite">nano</code>, at the top of the window, type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="s1">&#39;Hello, I am nano.&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>Using the menu at the bottom of the terminal for reference, type <code>Ctrl + o</code> (the letter, not the number) to save the file. Press <code>Enter</code>, when prompted about the filename to write. Then type <code>Ctrl + x</code> to exit <code>nano</code>. Finally, type <code>clear</code> to clear the terminal window. The command prompt should now be at the top of the window. You just edited a file in the <code>nano</code> text editor. Type:</li>
+<li>Using the menu at the bottom of the terminal for reference, type <code class="codehilite">Ctrl + o</code> (the letter, not the number) to save the file. Press <code class="codehilite">Enter</code>, when prompted about the filename to write. Then type <code class="codehilite">Ctrl + x</code> to exit <code class="codehilite">nano</code>. Finally, type <code class="codehilite">clear</code> to clear the terminal window. The command prompt should now be at the top of the window. You just edited a file in the <code class="codehilite">nano</code> text editor. Type:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano hello.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>nano</code> is a command line text editor. It works just like a desktop text editor, except that it is accessible from the command line and only accepts keyboard input. The command <code>nano hello.txt</code> opens a new text file named <code>hello.txt</code> in the <code>nano</code> text editor. &lsquo;Hello, I am nano&rsquo; is a text string entered in <code>nano</code> through the cursor.</li>
-<li>The menu of keyboard commands at the bottom of the window allow us to save changes to <code>hello.txt</code> and exit <code>nano</code>. The <code>^</code> stands for the <code>Ctrl</code> key.<ul>
-<li><code>Ctrl + o</code> saves a file. <code>o</code> stands for output.</li>
-<li><code>Ctrl + x</code> exits the <code>nano</code> program. <code>x</code> stands for exit.</li>
-<li><code>Ctrl + g</code> opens a help menu.</li>
-<li><code>Clear</code> clears the terminal window, moving the command prompt to the top of the screen.</li>
+<li><code class="codehilite">nano</code> is a command line text editor. It works just like a desktop text editor, except that it is accessible from the command line and only accepts keyboard input. The command <code class="codehilite">nano hello.txt</code> opens a new text file named <code class="codehilite">hello.txt</code> in the <code class="codehilite">nano</code> text editor. &lsquo;Hello, I am nano&rsquo; is a text string entered in <code class="codehilite">nano</code> through the cursor.</li>
+<li>The menu of keyboard commands at the bottom of the window allow us to save changes to <code class="codehilite">hello.txt</code> and exit <code class="codehilite">nano</code>. The <code class="codehilite">^</code> stands for the <code class="codehilite">Ctrl</code> key.<ul>
+<li><code class="codehilite">Ctrl + o</code> saves a file. <code class="codehilite">o</code> stands for output.</li>
+<li><code class="codehilite">Ctrl + x</code> exits the <code class="codehilite">nano</code> program. <code class="codehilite">x</code> stands for exit.</li>
+<li><code class="codehilite">Ctrl + g</code> opens a help menu.</li>
+<li><code class="codehilite">Clear</code> clears the terminal window, moving the command prompt to the top of the screen.</li>
 </ul>
 </li>
 <li><a href="http://www.nano-editor.org/">nano editor</a></li>
-<li>Now that you are familiar with editing text in <code>nano</code>, let&rsquo;s create a file to store environment settings. Type :</li>
+<li>Now that you are familiar with editing text in <code class="codehilite">nano</code>, let&rsquo;s create a file to store environment settings. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano ~/.bash_profile
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>This opens up a new file in <code>nano</code>. In <code>~/.bash_profile</code>, at the top of the file, type :</li>
+<li>This opens up a new file in <code class="codehilite">nano</code>. In <code class="codehilite">~/.bash_profile</code>, at the top of the file, type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Welcome, Jane Doe&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>You can use your name in place of &lsquo;Jane Doe&rsquo;. Type <code>Ctrl + o</code> to save the file. Press <code>Enter</code> to write the filename. Type <code>Ctrl + x</code> to exit. Finally, type <code>clear</code> to clear the terminal window. Type :</li>
+<li>You can use your name in place of &lsquo;Jane Doe&rsquo;. Type <code class="codehilite">Ctrl + o</code> to save the file. Press <code class="codehilite">Enter</code> to write the filename. Type <code class="codehilite">Ctrl + x</code> to exit. Finally, type <code class="codehilite">clear</code> to clear the terminal window. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>You should see the greeting you entered. You created a file in <code>nano</code> called <code>~/.bash_profile</code> and added a greeting.</li>
+<li>You should see the greeting you entered. You created a file in <code class="codehilite">nano</code> called <code class="codehilite">~/.bash_profile</code> and added a greeting.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano ~/.bash_profile
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>~/.bash_profile</code> is the name of file used to store environment settings. It is commonly called the &lsquo;bash profile&rsquo;. When a session starts, it will load the contents of the bash profile before executing commands.<ul>
-<li>The <code>~</code> represents the user&rsquo;s home directory.</li>
-<li>The <code>.</code> indicates a hidden file.</li>
+<li><code class="codehilite">~/.bash_profile</code> is the name of file used to store environment settings. It is commonly called the &lsquo;bash profile&rsquo;. When a session starts, it will load the contents of the bash profile before executing commands.<ul>
+<li>The <code class="codehilite">~</code> represents the user&rsquo;s home directory.</li>
+<li>The <code class="codehilite">.</code> indicates a hidden file.</li>
 </ul>
 </li>
-<li>The name <code>~/.bash_profile</code> is important, since this is how the command line recognizes the bash profile.</li>
-<li>The command <code>nano ~/.bash_profile</code> opens up <code>~/.bash_profile</code> in <code>nano</code>. The text echoes &lsquo;Welcome, Jane Doe&rsquo; and creates a greeting in the bash profile, which is saved. It tells the command line to echo the string &lsquo;Welcome, Jane Doe&rsquo; when a terminal session begins. The command source <code>~/.bash_profile</code> ACTIVATES the changes in <code>~/.bash_profile</code> for the current session.</li>
-<li>Now that we know what bash profile is, let&rsquo;s continue configuring the environment by adding command aliases. Open <code>~/.bash_profile</code> in <code>nano</code>. In <code>~/.bash_profile</code>, beneath the greeting you created, type :</li>
+<li>The name <code class="codehilite">~/.bash_profile</code> is important, since this is how the command line recognizes the bash profile.</li>
+<li>The command <code class="codehilite">nano ~/.bash_profile</code> opens up <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. The text echoes &lsquo;Welcome, Jane Doe&rsquo; and creates a greeting in the bash profile, which is saved. It tells the command line to echo the string &lsquo;Welcome, Jane Doe&rsquo; when a terminal session begins. The command source <code class="codehilite">~/.bash_profile</code> ACTIVATES the changes in <code class="codehilite">~/.bash_profile</code> for the current session.</li>
+<li>Now that we know what bash profile is, let&rsquo;s continue configuring the environment by adding command aliases. Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. In <code class="codehilite">~/.bash_profile</code>, beneath the greeting you created, type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">pd</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>Save the file. Press <code>Enter</code> to write the filename. Exit <code>nano</code>. Clear the terminal window.</li>
+<li>Save the file. Press <code class="codehilite">Enter</code> to write the filename. Exit <code class="codehilite">nano</code>. Clear the terminal window.</li>
 <li>In the command line, use the source command to activate the changes in the current session.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
@@ -863,22 +1408,22 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>You should see the same output as you would by typing the <code>pwd</code> command. What happens when you store this alias in <code>~/.bash_profile</code>?</li>
+<li>You should see the same output as you would by typing the <code class="codehilite">pwd</code> command. What happens when you store this alias in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">pd</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>The alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands. Here alias <code>pd='pwd'</code> creates the alias <code>pd</code> for the <code>pwd</code> command, which is then saved in the bash profile. Each time you enter <code>pd</code>, the output will be the same as the pwd command. The command source <code>~/.bash_profile</code> makes the alias <code>pd</code> available in the current session. Each time we open up the terminal, we can use the <code>pd</code> alias.</li>
-<li>Let&rsquo;s practice aliases some more. Open <code>~/.bash_profile</code> in <code>nano</code>. In the bash profile, beneath the previous alias, add :</li>
+<li>The alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands. Here alias <code class="codehilite">pd=&#39;pwd&#39;</code> creates the alias <code class="codehilite">pd</code> for the <code class="codehilite">pwd</code> command, which is then saved in the bash profile. Each time you enter <code class="codehilite">pd</code>, the output will be the same as the pwd command. The command source <code class="codehilite">~/.bash_profile</code> makes the alias <code class="codehilite">pd</code> available in the current session. Each time we open up the terminal, we can use the <code class="codehilite">pd</code> alias.</li>
+<li>Let&rsquo;s practice aliases some more. Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. In the bash profile, beneath the previous alias, add :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">hy</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>Save the file. Press <code>Enter</code> to write the filename.</li>
+<li>Save the file. Press <code class="codehilite">Enter</code> to write the filename.</li>
 <li>Add another alias:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
@@ -887,8 +1432,8 @@ $ uniq deserts.txt
 
 <ul>
 <li>Save the file.</li>
-<li>Press <code>Enter</code> to write the filename.</li>
-<li>Exit <code>nano</code>.</li>
+<li>Press <code class="codehilite">Enter</code> to write the filename.</li>
+<li>Exit <code class="codehilite">nano</code>.</li>
 <li>Clear the terminal window.</li>
 <li>In the command line, use source to activate the changes to the bash profile for the current session.</li>
 <li>Let&rsquo;s try out the aliases. Type:</li>
@@ -898,23 +1443,23 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>What happens when you store the following aliases in <code>~/.bash_profile</code>?</li>
+<li>What happens when you store the following aliases in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">hy</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>hy</code> is set as alias for the history command in the bash profile. The alias is then made available in the current session through source. By typing <code>hy</code>, the command line outputs a history of commands that were entered in the current session. Type:</li>
+<li><code class="codehilite">hy</code> is set as alias for the history command in the bash profile. The alias is then made available in the current session through source. By typing <code class="codehilite">hy</code>, the command line outputs a history of commands that were entered in the current session. Type:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>ll</code> is set as an alias for <code>ls -la</code> and made available in the current session through source. By typing <code>ll</code>, the command line now outputs all contents and directories in long format, including all hidden files.</li>
+<li><code class="codehilite">ll</code> is set as an alias for <code class="codehilite">ls -la</code> and made available in the current session through source. By typing <code class="codehilite">ll</code>, the command line now outputs all contents and directories in long format, including all hidden files.</li>
 <li>Now that you are familiar with configuring greetings and aliases, let&rsquo;s move on to setting environment variables.</li>
-<li>Open <code>~/.bash_profile</code> in <code>nano</code>.</li>
+<li>Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>.</li>
 <li>In the bash profile, beneath the aliases, on a new line, type:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">USER</span><span class="o">=</span><span class="s1">&#39;Jane Doe&#39;</span>
@@ -922,7 +1467,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>Feel free to use your own name. Save the file. Press <code>Enter</code> to write the filename. Exit <code>nano</code>. Finally, clear the terminal.</li>
+<li>Feel free to use your own name. Save the file. Press <code class="codehilite">Enter</code> to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal.</li>
 <li>In the command line, use source to activate the changes in the bash profile for the current session. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$USER</span>
@@ -930,22 +1475,22 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>This should return the value of the variable that you set. What happens when you store this in <code>~/.bash_profile</code>?</li>
+<li>This should return the value of the variable that you set. What happens when you store this in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">USER</span><span class="o">=</span><span class="s1">&#39;Jane Doe&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>Environment variables are variables that can be used across commands and programs and hold information about the environment. The line <code>USER='Jane Doe'</code> sets the environment variable <code>USER</code> to a name <code>'Jane Doe'</code>. Usually the <code>USER</code> variable is set to the name of the computer&rsquo;s owner. The line export makes the variable to be available to all child sessions initiated from the session you are in. This is a way to make the variable persist across programs. At the command line, the command echo <code>$USER</code> returns the value of the variable. Note that <code>$</code> is always used when returning a variable&rsquo;s value. Here, the command echo <code>$USER</code> returns the name set for the variable.</li>
-<li>Let&rsquo;s learn a few more environment variables, starting with the variable for the command prompt. Open <code>~/.bash_profile</code> in <code>nano</code>. On a new line, beneath the last entry, type</li>
+<li>Environment variables are variables that can be used across commands and programs and hold information about the environment. The line <code class="codehilite">USER=&#39;Jane Doe&#39;</code> sets the environment variable <code class="codehilite">USER</code> to a name <code class="codehilite">&#39;Jane Doe&#39;</code>. Usually the <code class="codehilite">USER</code> variable is set to the name of the computer&rsquo;s owner. The line export makes the variable to be available to all child sessions initiated from the session you are in. This is a way to make the variable persist across programs. At the command line, the command echo <code class="codehilite">$USER</code> returns the value of the variable. Note that <code class="codehilite">$</code> is always used when returning a variable&rsquo;s value. Here, the command echo <code class="codehilite">$USER</code> returns the name set for the variable.</li>
+<li>Let&rsquo;s learn a few more environment variables, starting with the variable for the command prompt. Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. On a new line, beneath the last entry, type</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;&gt;&gt; &#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>Save the file. Press Enter to write the filename. Exit <code>nano</code>. Finally, clear the terminal window. In the command line, use source to activate the changes in the bash profile for the current shell session. Let&rsquo;s try out the new command prompt. Type :</li>
+<li>Save the file. Press Enter to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal window. In the command line, use source to activate the changes in the bash profile for the current shell session. Let&rsquo;s try out the new command prompt. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;hello&#39;</span>
 </pre></div>
@@ -959,31 +1504,31 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>Did you notice that the prompt has changed? What happens when this is stored in <code>~/.bash_profile</code>?</li>
+<li>Did you notice that the prompt has changed? What happens when this is stored in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;&gt;&gt; &#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li><code>PS1</code> is a variable that defines the makeup and style of the command prompt.</li>
-<li><code>echo $PS1</code> prints the variable.</li>
-<li><code>PS1="value"</code> changes the variable value.</li>
-<li><code>PS1='&gt;&gt; '</code> sets the command prompt variable and exports the variable. It makes the variable available in all sub programs of the current shell. Here we change the default command prompt from <code>$</code> to <code>&gt;&gt;</code>. After using the source command, the command line displays the new command prompt. Let&rsquo;s learn about two more environment variables. Type :</li>
+<li><code class="codehilite">PS1</code> is a variable that defines the makeup and style of the command prompt.</li>
+<li><code class="codehilite">echo $PS1</code> prints the variable.</li>
+<li><code class="codehilite">PS1=&quot;value&quot;</code> changes the variable value.</li>
+<li><code class="codehilite">PS1=&#39;&gt;&gt; &#39;</code> sets the command prompt variable and exports the variable. It makes the variable available in all sub programs of the current shell. Here we change the default command prompt from <code class="codehilite">$</code> to <code class="codehilite">&gt;&gt;</code>. After using the source command, the command line displays the new command prompt. Let&rsquo;s learn about two more environment variables. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$HOME</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>This returns the value of the <code>HOME</code> variable. What happens when you type this command?</li>
+<li>This returns the value of the <code class="codehilite">HOME</code> variable. What happens when you type this command?</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$HOME</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>The <code>HOME</code> variable is an environment variable that displays the path of the home directory. Here by typing echo <code>$HOME</code>, the terminal displays the path <code>/home/ccuser</code> as output. <code>cd $HOME</code> goes to the home directory. You can customize the <code>HOME</code> variable if needed, but in most cases this is not necessary. In the command line, type :</li>
+<li>The <code class="codehilite">HOME</code> variable is an environment variable that displays the path of the home directory. Here by typing echo <code class="codehilite">$HOME</code>, the terminal displays the path <code class="codehilite">/home/ccuser</code> as output. <code class="codehilite">cd $HOME</code> goes to the home directory. You can customize the <code class="codehilite">HOME</code> variable if needed, but in most cases this is not necessary. In the command line, type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$PATH</span>
 </pre></div>
@@ -1013,31 +1558,31 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li><code>PATH</code> is an environment variable that stores a list of directories separated by a colon. Looking carefully, echo <code>$PATH</code> lists the following directories:<ul>
-<li><code>/home/ccuser/.gem/ruby/2.0.0/bin</code>.</li>
-<li><code>/usr/local/sbin</code>.</li>
-<li><code>/usr/local/bin</code>.</li>
-<li><code>/usr/bin</code>.</li>
-<li><code>/usr/sbin</code>.</li>
-<li><code>/sbin</code>.</li>
-<li><code>/bin</code>.</li>
+<li><code class="codehilite">PATH</code> is an environment variable that stores a list of directories separated by a colon. Looking carefully, echo <code class="codehilite">$PATH</code> lists the following directories:<ul>
+<li><code class="codehilite">/home/ccuser/.gem/ruby/2.0.0/bin</code>.</li>
+<li><code class="codehilite">/usr/local/sbin</code>.</li>
+<li><code class="codehilite">/usr/local/bin</code>.</li>
+<li><code class="codehilite">/usr/bin</code>.</li>
+<li><code class="codehilite">/usr/sbin</code>.</li>
+<li><code class="codehilite">/sbin</code>.</li>
+<li><code class="codehilite">/bin</code>.</li>
 </ul>
 </li>
-<li>Each directory contains scripts for the command line to execute. The <code>PATH</code> variable simply lists which directories contain scripts. For example, many COMMANDS we&rsquo;ve learned are scripts stored in the <code>/bin</code> directory.</li>
+<li>Each directory contains scripts for the command line to execute. The <code class="codehilite">PATH</code> variable simply lists which directories contain scripts. For example, many COMMANDS we&rsquo;ve learned are scripts stored in the <code class="codehilite">/bin</code> directory.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ /bin/pwd
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>This is the script that is executed when you type the <code>pwd</code> command.</li>
+<li>This is the script that is executed when you type the <code class="codehilite">pwd</code> command.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ /bin/ls
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>This is the script that is executed when you type the ls command. In advanced cases, you can customize the <code>PATH</code> variable when adding scripts of your own. Type :</li>
+<li>This is the script that is executed when you type the ls command. In advanced cases, you can customize the <code class="codehilite">PATH</code> variable when adding scripts of your own. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env
 </pre></div>
@@ -1058,7 +1603,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>The <code>env</code> command stands for &lsquo;environment&rsquo;, and returns a list of the environment variables for the current user. Here, the <code>env</code> command returns a number of variables, including <code>PATH</code>, <code>PWD</code>, <code>PS1</code>, and <code>HOME</code>.</li>
+<li>The <code class="codehilite">env</code> command stands for &lsquo;environment&rsquo;, and returns a list of the environment variables for the current user. Here, the <code class="codehilite">env</code> command returns a number of variables, including <code class="codehilite">PATH</code>, <code class="codehilite">PWD</code>, <code class="codehilite">PS1</code>, and <code class="codehilite">HOME</code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env <span class="p">|</span> grep PATH
@@ -1067,25 +1612,25 @@ $ env <span class="p">|</span> grep aliasname
 </td></tr></table>
 
 <ul>
-<li><code>env | grep PATH</code> is a command that displays the value of a single environment variable. Here the standard output of env is &lsquo;piped&rsquo; to the <code>grep</code> command. <code>grep</code> searches for the value of the variable <code>PATH</code> and outputs it to the terminal. You learned to use the bash profile to configure the environment. What can we generalize so far? The environment refers to the preferences and settings of the current user.</li>
+<li><code class="codehilite">env | grep PATH</code> is a command that displays the value of a single environment variable. Here the standard output of env is &lsquo;piped&rsquo; to the <code class="codehilite">grep</code> command. <code class="codehilite">grep</code> searches for the value of the variable <code class="codehilite">PATH</code> and outputs it to the terminal. You learned to use the bash profile to configure the environment. What can we generalize so far? The environment refers to the preferences and settings of the current user.</li>
 </ul>
 <hr />
 <ul>
 <li>Let&rsquo;s summarize what we&rsquo;ve done so far.</li>
-<li>The <code>nano</code> editor is a command line text editor used to configure the environment.</li>
-<li><code>~/.bash_profile</code> is where environment settings are stored. You can edit this file with <code>nano</code>.</li>
+<li>The <code class="codehilite">nano</code> editor is a command line text editor used to configure the environment.</li>
+<li><code class="codehilite">~/.bash_profile</code> is where environment settings are stored. You can edit this file with <code class="codehilite">nano</code>.</li>
 <li>Environment variables are variables that can be used across commands and programs and hold information about the environment.</li>
-<li><code>export VARIABLE='Value'</code> sets and exports an environment variable.</li>
-<li><code>USER</code> is the name of the current user.</li>
-<li><code>PS1</code> is the command prompt.</li>
-<li><code>HOME</code> is the home directory. It is usually not customized.</li>
-<li><code>PATH</code> returns a colon separated list of file paths. It is customized in advanced cases.</li>
-<li><code>echo $PATH</code> prints the path.</li>
-<li><code>PATH="value"</code> changes the path..</li>
-<li><code>export PATH=/home/dir/bin:$PATH</code> appends the new path to environment variable PATH.</li>
-<li><code>env</code> returns a list of environment variables.</li>
+<li><code class="codehilite">export VARIABLE=&#39;Value&#39;</code> sets and exports an environment variable.</li>
+<li><code class="codehilite">USER</code> is the name of the current user.</li>
+<li><code class="codehilite">PS1</code> is the command prompt.</li>
+<li><code class="codehilite">HOME</code> is the home directory. It is usually not customized.</li>
+<li><code class="codehilite">PATH</code> returns a colon separated list of file paths. It is customized in advanced cases.</li>
+<li><code class="codehilite">echo $PATH</code> prints the path.</li>
+<li><code class="codehilite">PATH=&quot;value&quot;</code> changes the path..</li>
+<li><code class="codehilite">export PATH=/home/dir/bin:$PATH</code> appends the new path to environment variable PATH.</li>
+<li><code class="codehilite">env</code> returns a list of environment variables.</li>
 </ul>
-<h4 id="section-5-multi-users">Section 5, Multi-Users<a class="headerlink" href="#section-5-multi-users" title="Permanent link">&para;</a></h4>
+<h4 id="multi-users">Multi-Users<a class="headerlink" href="#multi-users" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Linux is multi-user : multiple users at the same time as opposed to OS X or Windows; just like the UNIX mainframe computers with terminals, users and superuser concepts. </li>
 </ul>
@@ -1101,37 +1646,37 @@ $ env <span class="p">|</span> grep aliasname
 <li>
 <p>Read, from left to right :</p>
 <ul>
-<li><code>–</code> or <code>d</code>: file or dir.</li>
+<li><code class="codehilite">–</code> or <code class="codehilite">d</code>: file or dir.</li>
 <li>File or dir name.</li>
-<li>Owner access (<code>r w x…-</code>).</li>
-<li>Group access (<code>r w x…-</code>).</li>
-<li>All access (<code>r w x…-</code>).</li>
+<li>Owner access (<code class="codehilite">r w x…-</code>).</li>
+<li>Group access (<code class="codehilite">r w x…-</code>).</li>
+<li>All access (<code class="codehilite">r w x…-</code>).</li>
 <li>Owner group, size, date.</li>
 </ul>
 </li>
 <li>
-<p>How do we change the acces rights? With <code>chmod</code>.</p>
+<p>How do we change the acces rights? With <code class="codehilite">chmod</code>.</p>
 </li>
 <li>First, there are access right for:<ul>
-<li><code>u</code> ser.</li>
-<li><code>g</code> roup.</li>
-<li><code>o</code> thers.</li>
+<li><code class="codehilite">u</code> ser.</li>
+<li><code class="codehilite">g</code> roup.</li>
+<li><code class="codehilite">o</code> thers.</li>
 </ul>
 </li>
 <li>Second, there levels. Each level has a numeric value.:<ul>
-<li><code>r</code> ead: 4.</li>
-<li><code>w</code> rite: 2.</li>
-<li><code>x</code> ecute: 1.<br />
+<li><code class="codehilite">r</code> ead: 4.</li>
+<li><code class="codehilite">w</code> rite: 2.</li>
+<li><code class="codehilite">x</code> ecute: 1.<br />
 For example, using levels:</li>
-<li><code>o+w</code>: others can write the file (create).</li>
-<li><code>u+x</code>: users can execute the file.</li>
-<li><code>g-x</code>: group can no longer execute the file.</li>
+<li><code class="codehilite">o+w</code>: others can write the file (create).</li>
+<li><code class="codehilite">u+x</code>: users can execute the file.</li>
+<li><code class="codehilite">g-x</code>: group can no longer execute the file.</li>
 <li>etc.</li>
-<li><code>chmod o+w file1.txt</code> for example.</li>
+<li><code class="codehilite">chmod o+w file1.txt</code> for example.</li>
 </ul>
 </li>
 </ul>
-<p>Why numeric value? It an alternative way for <code>chmod</code> to assign access rights. Levels are ranked with values:</p>
+<p>Why numeric value? It an alternative way for <code class="codehilite">chmod</code> to assign access rights. Levels are ranked with values:</p>
 <table>
 <thead>
 <tr>
@@ -1169,14 +1714,14 @@ For example, using levels:</li>
 </tbody>
 </table>
 <ul>
-<li>A <code>7</code> grants full rights vs a <code>0</code> that grants no rights. For example:<ul>
-<li><code>chmod 600 file</code>; change the file access rights to <code>rw- --- ---</code>.</li>
-<li><code>chmod 600 dir</code>; change the directory access rights.</li>
+<li>A <code class="codehilite">7</code> grants full rights vs a <code class="codehilite">0</code> that grants no rights. For example:<ul>
+<li><code class="codehilite">chmod 600 file</code>; change the file access rights to <code class="codehilite">rw- --- ---</code>.</li>
+<li><code class="codehilite">chmod 600 dir</code>; change the directory access rights.</li>
 </ul>
 </li>
 <li>How are the values calculated?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1188,9 +1733,8 @@ r+w   <span class="o">=</span> <span class="m">4</span>+2   <span class="o">=</s
 ...
 ...
 </pre></div>
-</td></tr></table>
-
-<p>Once you have the values, you can set the access rights:</p>
+</td></tr></table><br />
+Once you have the values, you can set the access rights:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -1202,119 +1746,157 @@ rwx rw- --x
 </td></tr></table>
 
 <ul>
-<li>Therefore, <code>chmod 761</code> set the access rights <code>rwx rw- --x</code> to a file, files, a directory or directories.</li>
+<li>Therefore, <code class="codehilite">chmod 761</code> set the access rights <code class="codehilite">rwx rw- --x</code> to a file, files, a directory or directories.</li>
 </ul>
 <p><strong>Ownership</strong></p>
 <ul>
-<li><code>chown thou file</code>; assign a new owner, <code>thou</code>, to &lsquo;file&rsquo;.</li>
-<li><code>chown thou dir</code>; &hellip; to dir.</li>
-<li><code>chgrp newgr file</code> assign a new group owner, <code>newgr</code>, to &lsquo;file&rsquo;.</li>
-<li><code>chgrp newgr dir</code>; &hellip; to dir.</li>
+<li><code class="codehilite">chown thou file</code>; assign a new owner, <code class="codehilite">thou</code>, to &lsquo;file&rsquo;.</li>
+<li><code class="codehilite">chown thou dir</code>; &hellip; to dir.</li>
+<li><code class="codehilite">chgrp newgr file</code> assign a new group owner, <code class="codehilite">newgr</code>, to &lsquo;file&rsquo;.</li>
+<li><code class="codehilite">chgrp newgr dir</code>; &hellip; to dir.</li>
 </ul>
 <p><strong>Superuser</strong></p>
 <ul>
-<li><code>su</code>; superuser login.</li>
-<li><code>su file</code>; unlock the file with the superuser password.</li>
-<li><code>sudo</code>; do it with the privilege of a superuser.</li>
-<li><code>sudo apt-get update</code>; updates the database.</li>
-<li><code>sudo apt-get upgrade</code>; upgrades all packages (update before upgrading).</li>
-<li><code>sudo apt-get install build-essential</code>; install a useful package (or any other package).</li>
-<li><code>sudo apt-get install git</code>; install &lsquo;git&rsquo;.</li>
-<li><code>which git</code>; find where &lsquo;git&rsquo; is located (if it&rsquo;s instaled).</li>
-<li><code>sudo apt-get remove git</code>; remove &lsquo;git&rsquo;.</li>
-<li><code>sudo apt-get purge git</code>; remove &lsquo;git&rsquo; and purge any remainings.</li>
-<li><code>sudo chnow user file</code>; change the owner.</li>
+<li><code class="codehilite">su</code>; superuser login.</li>
+<li><code class="codehilite">su file</code>; unlock the file with the superuser password.</li>
+<li><code class="codehilite">sudo</code>; do it with the privilege of a superuser.</li>
+<li><code class="codehilite">sudo apt-get update</code>; updates the database.</li>
+<li><code class="codehilite">sudo apt-get upgrade</code>; upgrades all packages (update before upgrading).</li>
+<li><code class="codehilite">sudo apt-get install build-essential</code>; install a useful package (or any other package).</li>
+<li><code class="codehilite">sudo apt-get install git</code>; install &lsquo;git&rsquo;.</li>
+<li><code class="codehilite">which git</code>; find where &lsquo;git&rsquo; is located (if it&rsquo;s instaled).</li>
+<li><code class="codehilite">sudo apt-get remove git</code>; remove &lsquo;git&rsquo;.</li>
+<li><code class="codehilite">sudo apt-get purge git</code>; remove &lsquo;git&rsquo; and purge any remainings.</li>
+<li><code class="codehilite">sudo chnow user file</code>; change the owner.</li>
 </ul>
-<h4 id="section-6-multi-tasks">Section 6, Multi-Tasks<a class="headerlink" href="#section-6-multi-tasks" title="Permanent link">&para;</a></h4>
+<h4 id="multi-tasks">Multi-Tasks<a class="headerlink" href="#multi-tasks" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Linux is multi-task; multiple tasks can run at the same time like OS X or Windows or UNIX; Linux kernel runs processes; they take turns at the processor(s). All programs and processes can be launched/killed from the GUI and the CLI.</li>
 </ul>
 <p><strong>Show</strong></p>
 <ul>
-<li><code>top</code>; show process dashboard by PID number; <code>?</code> for help, <code>q</code> for quit.</li>
-<li><code>ps</code>; show the process list.<ul>
-<li><code>ps aux</code>; show all process.</li>
-<li><code>ps aux | grep 'top'</code>; filter top processes.</li>
-<li><code>ps aux | grep bash</code>; filter processes related to the bash.</li>
-<li><code>ps aux | grep bash | sort</code>; &hellip; and sort them.</li>
+<li><code class="codehilite">top</code>; show process dashboard by PID number; <code class="codehilite">?</code> for help, <code class="codehilite">q</code> for quit.</li>
+<li><code class="codehilite">ps</code>; show the process list.<ul>
+<li><code class="codehilite">ps aux</code>; show all process.</li>
+<li><code class="codehilite">ps aux | grep &#39;top&#39;</code>; filter top processes.</li>
+<li><code class="codehilite">ps aux | grep bash</code>; filter processes related to the bash.</li>
+<li><code class="codehilite">ps aux | grep bash | sort</code>; &hellip; and sort them.</li>
 </ul>
 </li>
 </ul>
 <p><strong>Manage</strong></p>
 <ul>
-<li><code>ctrl + z</code>; pause a process, put it in the background.</li>
-<li><code>fg</code>; foreground, bring back the process.</li>
-<li><code>jobs</code>; list paused processes.</li>
-<li><code>fg #PID</code>; bring back process #PID (if there is more than one process on pause, you must identify the process).</li>
-<li><code>ctrl + c</code>; terminate the active process.</li>
-<li><code>xload</code>; display the system load in a new windows, but jam the current terminal (open another or several terminals then).</li>
-<li><code>xload &amp;</code>; runs in the background</li>
-<li><code>CTRL + x</code>; suspend the process and unjam the terminal.</li>
-<li><code>by</code>; resume the process.</li>
-<li><code>ps</code>; show processes and their #PID.</li>
-<li><code>ps x | grep bad_program</code>; find the bad processes.</li>
-<li><code>kill</code> can send a signal from the OS to a process. For example : when you log off, you send a signal to terminate a word processing program and save the file before closing.<ul>
-<li><code>kill #PID</code>; kill the process.</li>
-<li><code>kill -STOP #PID</code>; pause the process.</li>
-<li><code>kill -TERM #PID</code>;  terminate the process.</li>
-<li><code>kill -SIGTERM #PID</code>;  terminate the process.</li>
-<li><code>kill -SIGKILL #PID</code>; kill the process.</li>
-<li><code>kill -KILL</code>; force closing of the current process.</li>
-<li><code>kill -9 #PID</code>;  force closing the process.</li>
+<li><code class="codehilite">ctrl + z</code>; pause a process, put it in the background.</li>
+<li><code class="codehilite">fg</code>; foreground, bring back the process.</li>
+<li><code class="codehilite">jobs</code>; list paused processes.</li>
+<li><code class="codehilite">fg #PID</code>; bring back process #PID (if there is more than one process on pause, you must identify the process).</li>
+<li><code class="codehilite">ctrl + c</code>; terminate the active process.</li>
+<li><code class="codehilite">xload</code>; display the system load in a new windows, but jam the current terminal (open another or several terminals then).</li>
+<li><code class="codehilite">xload &amp;</code>; runs in the background</li>
+<li><code class="codehilite">CTRL + x</code>; suspend the process and unjam the terminal.</li>
+<li><code class="codehilite">by</code>; resume the process.</li>
+<li><code class="codehilite">ps</code>; show processes and their #PID.</li>
+<li><code class="codehilite">ps x | grep bad_program</code>; find the bad processes.</li>
+<li><code class="codehilite">kill</code> can send a signal from the OS to a process. For example : when you log off, you send a signal to terminate a word processing program and save the file before closing.<ul>
+<li><code class="codehilite">kill #PID</code>; kill the process.</li>
+<li><code class="codehilite">kill -STOP #PID</code>; pause the process.</li>
+<li><code class="codehilite">kill -TERM #PID</code>;  terminate the process.</li>
+<li><code class="codehilite">kill -SIGTERM #PID</code>;  terminate the process.</li>
+<li><code class="codehilite">kill -SIGKILL #PID</code>; kill the process.</li>
+<li><code class="codehilite">kill -KILL</code>; force closing of the current process.</li>
+<li><code class="codehilite">kill -9 #PID</code>;  force closing the process.</li>
 </ul>
 </li>
 <li>Killing sequence:<ul>
-<li><code>kill #PID</code>; doesn&rsquo;t work…</li>
-<li><code>kill -9 #PID</code>, or..</li>
+<li><code class="codehilite">kill #PID</code>; doesn&rsquo;t work…</li>
+<li><code class="codehilite">kill -9 #PID</code>, or..</li>
 </ul>
 </li>
 </ul>
+                
+                  
+                
               
-            </div>
+              
+                
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Command Line Crash Course/" class="btn btn-neutral float-right" title="Command Line Crash Course">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../OS_CS/" class="btn btn-neutral" title="OS Cheat Sheets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OS_CS/" title="OS Cheat Sheets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                OS Cheat Sheets
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Command Line Crash Course/" title="Command Line Crash Course" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Command Line Crash Course
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>© Ugo Sparks</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
-        </div>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Ugo Sparks
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
       </div>
-
-    </section>
-    
+      
+        
+      
+    </div>
   </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+</footer>
       
+    </div>
+    
+      <script src="../assets/javascripts/application.8eb9be28.js"></script>
       
-        <span><a href="../OS_CS/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
-        <span style="margin-left: 15px"><a href="../Command Line Crash Course/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+    
       
-    </span>
-</div>
-    <script src="../js/theme.js"></script>
-
-</body>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-93008985-3","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
 </html>

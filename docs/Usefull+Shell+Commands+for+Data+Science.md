@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -16,7 +17,7 @@ Use bash or alternative such as zsh.
 
 Examples are based on the [adult](http://archive.ics.uci.edu/ml/machine-learning-databases/adult/) dataset from the UCI Machine Learning repository (Census Income dataset). This data set is commonly used to predict whether income exceeds $50K/yr based on census data. With 48842 rows and 14 attributes.
 
-Move to the directory with `cd <dir>` and print the current working directory with `pwd`. Move up with `cd ..`
+Move to the directory with `cd <dir>` and print the current working directory with `pwd`. Move up with `cd ..`.
 
 # Count with `wc`
 
@@ -45,7 +46,7 @@ ls -l
 
     total 9540
     -rw-rw-r-- 1 ugo ugo 3974305 jan 17 19:47 adult.data
-    drwxrwxr-x 2 ugo ugo    4096 jan 17 19:59 [0m[01;34mfolder[0m
+    drwxrwxr-x 2 ugo ugo    4096 jan 17 19:59 adult
     -rw-rw-r-- 1 ugo ugo 5776165 jan 19 14:37 os
     -rw-rw-r-- 1 ugo ugo    6619 jan 19 14:37 Usefull shell commands for Data Science.ipynb
 
@@ -82,7 +83,7 @@ head -n 2 adult.data
 # Concatenate with `cat`
 
 - Print a file content with `cat adult.data`.
-- Concatenate files and create (replace) a file with `>`. `>>` will appends:
+- Concatenate files and create (replace) a file with `>`. `>>` will appends.
 
 
 ```bash
@@ -144,10 +145,10 @@ grep ", ?," adult.csv | wc -l
 
 Second, 
 
-- replace all the columns with `?`
-    - `"s/<string to replace>/"`
-- by an empty string 
-    - `"/<string to replace it with>/g"`. Use column delimiter `,`
+- replace all the columns with `?`...
+    - `"s/<string to replace>/"`.
+- by an empty string...
+    - `"/<string to replace it with>/g"`. Use column delimiter `,`.
 
 
 ```bash
@@ -195,8 +196,8 @@ cat header.csv adult_sample.csv > adult_sample_with_header.csv
 
 Find adjacent repeated lines in a file.
 
-- `uniq -c` adds the repetition count to each line,
-- `uniq -d` only outputs duplicate lines,
+- `uniq -c` adds the repetition count to each line.
+- `uniq -d` only outputs duplicate lines.
 - `uniq -u` only outputs unique lines.
 
 First, sort the file to bunch duplicates together. Second, count the duplicates.

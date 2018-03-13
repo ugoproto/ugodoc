@@ -1,7 +1,7 @@
----
+<!-----
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -24,25 +24,25 @@ Notes.
 
 Create a webpage with notepad, notepad++ or gedit (among many text editors) using simple HTML and CSS.
 
-1. PDF: [Web Page Design](http://web.cerritos.edu/pnguyen/SitePages/cis160/web%20page%20design.pdf)
-1. Tutorial: [Building your First Web Page](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
-1. Comprehensive Tutorial: [HTML 4.01 Specification](https://www.w3.org/TR/REC-html40/cover.html#minitoc)
+1. PDF: [Web Page Design](http://web.cerritos.edu/pnguyen/SitePages/cis160/web%20page%20design.pdf).
+1. Tutorial: [Building your First Web Page](http://learn.shayhowe.com/html-css/building-your-first-web-page/).
+1. Comprehensive Tutorial: [HTML 4.01 Specification](https://www.w3.org/TR/REC-html40/cover.html#minitoc).
 
 ## Add CSS
 
-- [Adding CSS](http://matthewjamestaylor.com/blog/adding-css-to-html-with-link-embed-inline-and-import)
+- [Adding CSS](http://matthewjamestaylor.com/blog/adding-css-to-html-with-link-embed-inline-and-import).
 
 ## CSS Generators
 
-- [http://csscreator.com/tools/cssgenerate](http://csscreator.com/tools/cssgenerate)
-- [http://csslayoutgenerator.com/](http://csslayoutgenerator.com/)
-- [http://jdstiles.com/java/ssgen.html](http://jdstiles.com/java/ssgen.html)
-- [http://www.css3maker.com/](http://www.css3maker.com/)
-- [http://www.generatecss.com/](http://www.generatecss.com/)
-- [http://www.htmlbasix.com/stylesheet.shtml](http://www.htmlbasix.com/stylesheet.shtml)
-- [http://www.madsubmitter.com/css-generator/](http://www.madsubmitter.com/css-generator/)
+- [CSS Creator](http://csscreator.com/tools/cssgenerate).
+- [CSSlayoutgenerator](http://csslayoutgenerator.com/).
+- [Uncle Jim's Web Design](http://jdstiles.com/java/ssgen.html).
+- [CSS 3.0 Maker](http://www.css3maker.com/).
+- [GenerateCSS](http://www.generatecss.com/).
+- [HTMLBasix](http:/./www.htmlbasix.com/stylesheet.shtml)
+- [MadSubmitter](http://www.madsubmitter.com/css-generator/)
 
 ## Web Generator Lists
 
-- [http://www.html.am/](http://www.html.am/)
-- [http://www.webdesignerdepot.com/2012/04/15-great-html5-and-css3-generators/](http://www.webdesignerdepot.com/2012/04/15-great-html5-and-css3-generators/)
+- [HTML](http://www.html.am/).
+- [WebdesignerDepot](http://www.webdesignerdepot.com/2012/04/15-great-html5-and-css3-generators/).

@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -19,10 +20,6 @@ Cheat sheets.
 
 ![](img/vade_mecum/markdown-cheatsheet-onlinea.png)
 </center>
-
-## Tableau
-
-- [Tableau Cheat Sheet](Tableau_Cheat_Sheet.pdf). PDF only.
 
 ## Git
 
@@ -81,21 +78,11 @@ Cheat sheets.
 ![](img/vade_mecum/github-git-cheat-sheetb.png)
 </center>
 
-## Wikipedia
-
-- [Wikipedia Syntax](davechild_wikipedia.pdf). PDF.
-
-<center>
-![](img/vade_mecum/davechild_wikipediaa.png)
-
-![](img/vade_mecum/davechild_wikipediab.png)
-</center>
-
 ## LaTeX
 
 - [LaTeX Font Packages](latex-font-packages.pdf). PDF only.
-- [LaTeX Cheat Sheet 4p](latexcheatsheet_1.pdf). PDF only.
-- [LaTeX Cheat Sheet 2p](latexsheet.pdf). PDF.
+- [LaTeX Cheat Sheet, 4p](latexcheatsheet_1.pdf). PDF only.
+- [LaTeX Cheat Sheet, 2p](latexsheet.pdf). PDF.
 
 </center>
 ![](img/vade_mecum/latexsheeta.png)
@@ -104,6 +91,18 @@ Cheat sheets.
 
 ![](img/vade_mecum/latexsheetb.png)
 </center>
+
+## Regex
+
+- [Regex](davechild_regular-expressions.pdf). PDF.
+
+<center>
+![](img/vade_mecum/davechild_regular-expressions.png)
+</center>
+
+## Tableau
+
+- [Tableau Cheat Sheet](Tableau_Cheat_Sheet.pdf). PDF only.
 
 ## Vi/Vim
 
@@ -123,10 +122,13 @@ Cheat sheets.
 ![](img/vade_mecum/vim-cheat-sheet-en.png)
 </center>
 
-## Regex
+## Wikipedia
 
-- [Regex](davechild_regular-expressions.pdf). PDF.
+- [Wikipedia Syntax](davechild_wikipedia.pdf). PDF.
 
 <center>
-![](img/vade_mecum/davechild_regular-expressions.png)
+![](img/vade_mecum/davechild_wikipediaa.png)
+
+![](img/vade_mecum/davechild_wikipediab.png)
 </center>
+

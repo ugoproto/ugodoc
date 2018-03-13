@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,26 +11,9 @@ Notes.
 
 ---
 
-## Markdown Editors
+## RMarkdown Documentation
 
-### Windows
-
-- [MarkdownPad](http://www.markdownpad.com/).
-- [MarkPad](http://code52.org/DownmarkerWPF/).
-
-### Linux
- 
-- [Remarkable](http://remarkableapp.github.io/).
-
-### Online
-
-- [dilliger](dillinger.io).
-- [stackedit](stackedit.io).
-- [tablesgenerator](http://www.tablesgenerator.com/).
-
-## R Markdown Documentation
-
-- [R Markdown](http://rmarkdown.rstudio.com/html_document_format.html).
+- [RMarkdown](http://rmarkdown.rstudio.com/html_document_format.html).
 - [Quicktour](http://rmarkdown.rstudio.com/authoring_quick_tour.html).
 
 ## Pandoc, Document Converter

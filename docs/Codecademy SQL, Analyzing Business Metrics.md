@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -12,9 +13,9 @@ Code snippets. With SQLite. From Codecademy in collaboration with [Periscope Dat
 
 ## Specifying Comments
 
-- Line comment. This is indicated by two negative signs (eg. ). The remainder of the text on the line is the comment.
-- Block comment. The start of the block comment is indicated by /*, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.
-- Rem or @. For Oracle, a line starting with either REM or @ is a comment line.
+- Line comment. This is indicated by two negative signs. The remainder of the text on the line is the comment.
+- Block comment. The start of the block comment is indicated by `/*`, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.
+- `Rem` or `@`. For Oracle, a line starting with either REM or @ is a comment line.
 
 ## Avanced Aggregates
 
@@ -24,7 +25,7 @@ Chief among data analysis tasks is data aggregation, the grouping of data to exp
 
 This course was developed in partnership with our good friends at Periscope Data. If you're new to SQL, we recommend you do this course first.
 
-Complete each query by replacing the comments /**/ with SQL code.
+Complete each query by replacing the comments `/**/` with SQL code.
 
 We'll start by looking at SpeedySpoon's data. The orders table has a row for each order of a SpeedySpoon delivery. It says when the order took place, and who ordered it.
 
@@ -51,7 +52,7 @@ SELECT * FROM order_items ORDER BY id LIMIT 100;
 
 Now that we have a good handle on our data, let's dive into some common business queries. We'll begin with the Daily Count of orders placed. To make our Daily Count metric, we'll focus on the date function and the ordered_at field.
 
-To get the Daily Metrics we need the date. Most dates in databases are timestamps, which have hours and minutes, as well as the year, month, and day. Timestamps look like 2015-01-05 14:43:31, while dates are the first part: 2015-01-05.
+To get the Daily Metrics we need the date. Most dates in databases are timestamps, which have hours and minutes, as well as the year, month, and day. Timestamps look like `2015-01-05 14:43:31`, while dates are the first part: `2015-01-05`.
 
 We can easily select the date an item was ordered at with the date function and the ordered_at field:
 
@@ -278,7 +279,7 @@ Let's generalize what we've learned so far:
 
 - Reorder Rate is the ratio of the total number of orders to the number of people making orders.
 
-2.Common Metrics
+## Common Metrics
 
 As a data scientist, when you're not investigating spikes or dips in your data, you might be building dashboards of KPIs, or key performance indicators for a company.
 

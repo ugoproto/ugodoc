@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -37,7 +38,7 @@ Install the tarball on `/usr/local`:
 - Compile all the source files into executable binaries.
     - `$ make`.
 - Install the binaries and any supporting files into the appropriate locations.
-    - `$ sudo make install`.    
+    - `$ sudo make install`.
     
 ## Run an Executive file on Linux
 
