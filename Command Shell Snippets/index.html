@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -293,6 +293,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../latex_snippets/" title="LaTeX Snippets" class="md-nav__link">
+      LaTeX Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Digital Humanities/" title="Digital Humanities" class="md-nav__link">
       Digital Humanities
     </a>
@@ -355,18 +367,6 @@
   <li class="md-nav__item">
     <a href="../Infographies/" title="Infographies" class="md-nav__link">
       Infographies
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../latex_snippets/" title="LaTeX Snippets" class="md-nav__link">
-      LaTeX Snippets
     </a>
   </li>
 
@@ -626,18 +626,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Build a Website/" title="Build a Website" class="md-nav__link">
-      Build a Website
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../HTML and CSS/" title="HTML and CSS" class="md-nav__link">
       HTML and CSS
     </a>
@@ -702,8 +690,12 @@
                 
                   <h1>Command Shell Snippets</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul></ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
 <p>Code snippets.</p>
@@ -738,12 +730,12 @@
 </pre></div>
 </td></tr></table>
 
-<p>Search text files for lines matching regular expressions (regex) with <code class="codehilite">grep &lt;&#39;matching string&#39;&gt; &lt;source&gt;</code>:</p>
+<p>Search text files for lines matching regular expressions (regex) with <code class="codehilite">grep &lt;matching string&gt; &lt;source&gt;</code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep ArticleTitle webpage.html
 </pre></div>
 </td></tr></table>
 
-<p>An asterisk (<code class="codehilite">*</code>) indicates any character (the matching expression starts with &lsquo;Ar&rsquo; and ends with &lsquo;le&rsquo;):</p>
+<p>An asterisk (<code class="codehilite">*</code>) indicates any character (the matching expression starts with <code class="codehilite">Ar</code> and ends with <code class="codehilite">le</code>):</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep Ar*le mytext.txt
 </pre></div>
 </td></tr></table>
@@ -775,7 +767,7 @@ $ <span class="nb">bg</span>
 </pre></div>
 </td></tr></table>
 
-<p>List the current jobs, foreground job number 1, and kills job number 1:</p>
+<p>List the current jobs, foreground job number 1, and kill job number 1:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3

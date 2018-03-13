@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -297,6 +297,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../latex_snippets/" title="LaTeX Snippets" class="md-nav__link">
+      LaTeX Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Digital Humanities/" title="Digital Humanities" class="md-nav__link">
       Digital Humanities
     </a>
@@ -359,18 +371,6 @@
   <li class="md-nav__item">
     <a href="../Infographies/" title="Infographies" class="md-nav__link">
       Infographies
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../latex_snippets/" title="LaTeX Snippets" class="md-nav__link">
-      LaTeX Snippets
     </a>
   </li>
 
@@ -699,18 +699,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Build a Website/" title="Build a Website" class="md-nav__link">
-      Build a Website
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../HTML and CSS/" title="HTML and CSS" class="md-nav__link">
       HTML and CSS
     </a>
@@ -846,17 +834,12 @@
                 
                   <h1>Useful Shell Commands for Data Science</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#quick-notes">Quick notes</a></li>
-<li><a href="#count-with-wc">Count with wc</a></li>
-<li><a href="#concatenate-with-cat">Concatenate with cat</a></li>
-<li><a href="#modify-with-sed">Modify with sed</a></li>
-<li><a href="#subset">Subset</a></li>
-<li><a href="#find-duplicates-with-uniq">Find duplicates with uniq</a></li>
-<li><a href="#select-columns-with-cut">Select columns with cut</a></li>
-<li><a href="#loop">Loop</a></li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
 <p>Code snippets and excerpts from the tutorial. bash. From DataCamp.</p>
@@ -864,7 +847,7 @@
 <h3 id="quick-notes">Quick notes<a class="headerlink" href="#quick-notes" title="Permanent link">&para;</a></h3>
 <p>Use bash or alternative such as zsh.</p>
 <p>Examples are based on the <a href="http://archive.ics.uci.edu/ml/machine-learning-databases/adult/">adult</a> dataset from the UCI Machine Learning repository (Census Income dataset). This data set is commonly used to predict whether income exceeds $50K/yr based on census data. With 48842 rows and 14 attributes.</p>
-<p>Move to the directory with <code class="codehilite">cd &lt;dir&gt;</code> and print the current working directory with <code class="codehilite">pwd</code>. Move up with <code class="codehilite">cd ..</code></p>
+<p>Move to the directory with <code class="codehilite">cd &lt;dir&gt;</code> and print the current working directory with <code class="codehilite">pwd</code>. Move up with <code class="codehilite">cd ..</code>.</p>
 <h3 id="count-with-wc">Count with <code class="codehilite">wc</code><a class="headerlink" href="#count-with-wc" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># count lines</span>
@@ -894,11 +877,11 @@ wc -w adult.data
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">total</span> <span class="nt">9540</span>
-<span class="nt">-rw-rw-r--</span> <span class="nt">1</span> <span class="nt">ugo</span> <span class="nt">ugo</span> <span class="nt">3974305</span> <span class="nt">jan</span> <span class="nt">17</span> <span class="nt">19</span><span class="p">:</span><span class="nd">47</span> <span class="nt">adult</span><span class="p">.</span><span class="nc">data</span>
-<span class="nt">drwxrwxr-x</span> <span class="nt">2</span> <span class="nt">ugo</span> <span class="nt">ugo</span>    <span class="nt">4096</span> <span class="nt">jan</span> <span class="nt">17</span> <span class="nt">19</span><span class="p">:</span><span class="nd">59</span> <span class="err"></span><span class="cp">[</span><span class="mi">0</span><span class="nx">m</span><span class="err">[</span><span class="mi">01</span><span class="p">;</span><span class="mi">34</span><span class="nx">mfolder</span><span class="err">[</span><span class="mi">0</span><span class="nx">m</span>
-<span class="na">-rw-rw-r</span><span class="o">--</span> <span class="mi">1</span> <span class="nx">ugo</span> <span class="nx">ugo</span> <span class="mi">5776165</span> <span class="nx">jan</span> <span class="mi">19</span> <span class="mi">14</span><span class="p">:</span><span class="mi">37</span> <span class="nx">os</span>
-<span class="na">-rw-rw-r</span><span class="o">--</span> <span class="mi">1</span> <span class="nx">ugo</span> <span class="nx">ugo</span>    <span class="mi">6619</span> <span class="nx">jan</span> <span class="mi">19</span> <span class="mi">14</span><span class="p">:</span><span class="mi">37</span> <span class="nx">Usefull</span> <span class="nx">shell</span> <span class="nx">commands</span> <span class="nx">for</span> <span class="kd">Data</span> <span class="nx">Science.ipynb</span>
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>total 9540
+-rw-rw-r-- 1 ugo ugo 3974305 jan 17 19:47 adult.data
+drwxrwxr-x 2 ugo ugo    4096 jan 17 19:59 adult
+-rw-rw-r-- 1 ugo ugo 5776165 jan 19 14:37 os
+-rw-rw-r-- 1 ugo ugo    6619 jan 19 14:37 Usefull shell commands for Data Science.ipynb
 </pre></div>
 </td></tr></table>
 
@@ -939,7 +922,7 @@ head -n <span class="m">2</span> adult.data
 <h3 id="concatenate-with-cat">Concatenate with <code class="codehilite">cat</code><a class="headerlink" href="#concatenate-with-cat" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Print a file content with <code class="codehilite">cat adult.data</code>.</li>
-<li>Concatenate files and create (replace) a file with <code class="codehilite">&gt;</code>. <code class="codehilite">&gt;&gt;</code> will appends:</li>
+<li>Concatenate files and create (replace) a file with <code class="codehilite">&gt;</code>. <code class="codehilite">&gt;&gt;</code> will appends.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cat adult.data adult.data &gt; target_file.csv
 </pre></div>
@@ -990,12 +973,12 @@ head -n <span class="m">2</span> adult.data
 
 <p>Second, </p>
 <ul>
-<li>replace all the columns with <code class="codehilite">?</code><ul>
-<li><code class="codehilite">&quot;s/&lt;string to replace&gt;/&quot;</code></li>
+<li>replace all the columns with <code class="codehilite">?</code>&hellip;<ul>
+<li><code class="codehilite">&quot;s/&lt;string to replace&gt;/&quot;</code>.</li>
 </ul>
 </li>
-<li>by an empty string <ul>
-<li><code class="codehilite">&quot;/&lt;string to replace it with&gt;/g&quot;</code>. Use column delimiter <code class="codehilite">,</code></li>
+<li>by an empty string&hellip;<ul>
+<li><code class="codehilite">&quot;/&lt;string to replace it with&gt;/g&quot;</code>. Use column delimiter <code class="codehilite">,</code>.</li>
 </ul>
 </li>
 </ul>
@@ -1032,8 +1015,8 @@ head -n <span class="m">2</span> adult.data
 <h3 id="find-duplicates-with-uniq">Find duplicates with <code class="codehilite">uniq</code><a class="headerlink" href="#find-duplicates-with-uniq" title="Permanent link">&para;</a></h3>
 <p>Find adjacent repeated lines in a file.</p>
 <ul>
-<li><code class="codehilite">uniq -c</code> adds the repetition count to each line,</li>
-<li><code class="codehilite">uniq -d</code> only outputs duplicate lines,</li>
+<li><code class="codehilite">uniq -c</code> adds the repetition count to each line.</li>
+<li><code class="codehilite">uniq -d</code> only outputs duplicate lines.</li>
 <li><code class="codehilite">uniq -u</code> only outputs unique lines.</li>
 </ul>
 <p>First, sort the file to bunch duplicates together. Second, count the duplicates.</p>

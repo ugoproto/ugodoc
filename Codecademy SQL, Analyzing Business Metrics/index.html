@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -297,6 +297,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../latex_snippets/" title="LaTeX Snippets" class="md-nav__link">
+      LaTeX Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Digital Humanities/" title="Digital Humanities" class="md-nav__link">
       Digital Humanities
     </a>
@@ -359,18 +371,6 @@
   <li class="md-nav__item">
     <a href="../Infographies/" title="Infographies" class="md-nav__link">
       Infographies
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../latex_snippets/" title="LaTeX Snippets" class="md-nav__link">
-      LaTeX Snippets
     </a>
   </li>
 
@@ -580,6 +580,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#common-metrics" title="Common Metrics" class="md-nav__link">
+    Common Metrics
+  </a>
+  
+</li>
+      
       
       
       
@@ -647,18 +654,6 @@
   <li class="md-nav__item">
     <a href="../Web_CS/" title="Web Cheat Sheets" class="md-nav__link">
       Web Cheat Sheets
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Build a Website/" title="Build a Website" class="md-nav__link">
-      Build a Website
     </a>
   </li>
 
@@ -741,6 +736,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#common-metrics" title="Common Metrics" class="md-nav__link">
+    Common Metrics
+  </a>
+  
+</li>
+      
       
       
       
@@ -762,26 +764,27 @@
                 
                   <h1>Codecademy, SQL, Analyzing Business Metrics</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#specifying-comments">Specifying Comments</a></li>
-<li><a href="#avanced-aggregates">Avanced Aggregates</a></li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
 <p>Code snippets. With SQLite. From Codecademy in collaboration with <a href="https://www.periscopedata.com">Periscope Data</a>.</p>
 <hr />
 <h4 id="specifying-comments">Specifying Comments<a class="headerlink" href="#specifying-comments" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Line comment. This is indicated by two negative signs (eg. ). The remainder of the text on the line is the comment.</li>
-<li>Block comment. The start of the block comment is indicated by /*, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.</li>
-<li>Rem or @. For Oracle, a line starting with either REM or @ is a comment line.</li>
+<li>Line comment. This is indicated by two negative signs. The remainder of the text on the line is the comment.</li>
+<li>Block comment. The start of the block comment is indicated by <code class="codehilite"><span class="cm">/*</span></code>, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.</li>
+<li><code class="codehilite">Rem</code> or <code class="codehilite">@</code>. For Oracle, a line starting with either REM or @ is a comment line.</li>
 </ul>
 <h4 id="avanced-aggregates">Avanced Aggregates<a class="headerlink" href="#avanced-aggregates" title="Permanent link">&para;</a></h4>
 <p>At the heart of every great business decision is data. Since most businesses store critical data in SQL databases, a deep understanding of SQL is a necessary skill for every data analyst.</p>
 <p>Chief among data analysis tasks is data aggregation, the grouping of data to express in summary form. We&rsquo;ll be working with SpeedySpoon, a meal delivery app. The folks at SpeedySpoon have asked us to look into their deliveries and help them optimize their process.</p>
 <p>This course was developed in partnership with our good friends at Periscope Data. If you&rsquo;re new to SQL, we recommend you do this course first.</p>
-<p>Complete each query by replacing the comments /**/ with SQL code.</p>
+<p>Complete each query by replacing the comments <code class="codehilite"><span class="cm">/**/</span><span class="w"></span></code> with SQL code.</p>
 <p>We&rsquo;ll start by looking at SpeedySpoon&rsquo;s data. The orders table has a row for each order of a SpeedySpoon delivery. It says when the order took place, and who ordered it.</p>
 <p>Add code to the select statement to select all columns in the orders table.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -805,7 +808,7 @@
 </td></tr></table>
 
 <p>Now that we have a good handle on our data, let&rsquo;s dive into some common business queries. We&rsquo;ll begin with the Daily Count of orders placed. To make our Daily Count metric, we&rsquo;ll focus on the date function and the ordered_at field.</p>
-<p>To get the Daily Metrics we need the date. Most dates in databases are timestamps, which have hours and minutes, as well as the year, month, and day. Timestamps look like 2015-01-05 14:43:31, while dates are the first part: 2015-01-05.</p>
+<p>To get the Daily Metrics we need the date. Most dates in databases are timestamps, which have hours and minutes, as well as the year, month, and day. Timestamps look like <code class="codehilite">2015-01-05 14:43:31</code>, while dates are the first part: <code class="codehilite">2015-01-05</code>.</p>
 <p>We can easily select the date an item was ordered at with the date function and the ordered_at field:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="nb">date</span><span class="p">(</span><span class="n">ordered_at</span><span class="p">)</span>
@@ -1067,7 +1070,7 @@
 <p>Reorder Rate is the ratio of the total number of orders to the number of people making orders.</p>
 </li>
 </ul>
-<p>2.Common Metrics</p>
+<h4 id="common-metrics">Common Metrics<a class="headerlink" href="#common-metrics" title="Permanent link">&para;</a></h4>
 <p>As a data scientist, when you&rsquo;re not investigating spikes or dips in your data, you might be building dashboards of KPIs, or key performance indicators for a company.</p>
 <p>KPIs are often displayed on TVs on the walls of the office, and serve as high level health metrics for the business. While every company&rsquo;s metrics are defined slightly differently, the basics are usually very similar.</p>
 <p>In this lesson we&rsquo;ll take a look at basic KPIs like Daily Revenue, Daily Active Users, ARPU, and Retention for a video game, Mineblocks.</p>
