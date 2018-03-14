@@ -11,7 +11,7 @@ Notes.
 
 ---
 
-## Install a Tarball on Linux
+# Install a Tarball on Linux
 
 Download the tarball; it can have different extensions:
 
@@ -40,7 +40,7 @@ Install the tarball on `/usr/local`:
 - Install the binaries and any supporting files into the appropriate locations.
     - `$ sudo make install`.
     
-## Run an Executive file on Linux
+# Run an Executive file on Linux
 
 - Run a .sh file in the bash.
     - `$ bash file.sh`.

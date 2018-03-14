@@ -11,9 +11,7 @@ Notes.
 
 ---
 
-Responsive HTML by adding a single line of CSS.
-
-## Initial grid looks
+# Initial grid looks
 
 <center>
 <img src="../img/HTML_CSS/CSS_1.png" hspace=2 vspace=2>
@@ -42,7 +40,7 @@ And the CSS:
 }
 ~~~
 
-## Basic responsiveness with the fraction unit
+# Basic responsiveness with the fraction unit
 
 CSS Grid brings with it a whole new value called a fraction unit: written like `fr`. It splits the container into as many fractions.
 
@@ -64,9 +62,9 @@ If we change the grid-template-columns value to `1fr 2fr 1fr`, the second column
 <img src="../img/HTML_CSS/CSS_3.gif" hspace=2 vspace=2>
 </center>
 
-## Advanced responsiveness
+# Advanced responsiveness
 
-### `repeat()`
+## `repeat()`
 
 highlight line 3
 
@@ -84,7 +82,7 @@ In other words, `repeat(3, 100px)` is identical to `100px 100px 100px`:
 <img src="../img/HTML_CSS/CSS_4.png" hspace=2 vspace=2>
 </center>
 
-### `auto-fit`
+## `auto-fit`
 
 
       
@@ -105,7 +103,7 @@ highlight line 4
 
 The grid now varies the amount of columns with the width of the container.
 
-### `minmax()`
+## `minmax()`
 
 highlight line 4
 
@@ -126,7 +124,7 @@ The `minmax()` function defines a size range greater than or equal to min and le
 
 So the columns will now always be at least 100px. However if there are more available space, the grid will simply distribute this equally to each of the columns, as the columns turn into a fraction unit instead of 100 px.
 
-## Adding the images
+# Adding the images
 
 Now the final step is to add the images.
 

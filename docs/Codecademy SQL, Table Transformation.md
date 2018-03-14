@@ -13,7 +13,7 @@ Code snippets. From Codecademy.
 
 While working with databases, we often need to transform data from one format to achieve a desired result. In SQL, this is often called data transformation or table transformation.
 
-## Subqueries
+# Subqueries
 
 Subqueries, sometimes referred to as inner queries or nested queries, are used to transform table data by nesting one query within another query. 
 
@@ -45,7 +45,7 @@ SELECT * FROM flights WHERE origin in (
     SELECT code FROM airports WHERE elevation < 2000);
 ```
  
-### Non-Correlated Subqueries
+# Non-Correlated Subqueries
  
 A non-correlated subquery is a subquery that can be run independently of the outer query and as we saw, can be used to complete a multi-step transformation.
 
@@ -103,7 +103,7 @@ GROUP BY 1,2
 ORDER BY 1,2;
 ```
 
-### Correlated Subqueries
+# Correlated Subqueries
 
 In a correlated subquery, the subquery can not be run independently of the outer query. The order of operations is important in a correlated subquery:
 
@@ -157,7 +157,7 @@ SELECT origin, id,
     FROM flights;
 ```
 
-### What can we generalize so far?
+## What can we generalize so far?
 
 - Subqueries are used to complete an SQL transformation by nesting one query within another query.
 - A non-correlated subquery is a subquery that can be run independently of the outer query and can be used to complete a multi-step transformation.
@@ -176,14 +176,14 @@ In our database, we have products tables that contain metadata about each produc
 SELECT * FROM new_products LIMIT 10;
 ```
 
-## Merging Tables Together
+# Merging Tables Together
 
 Sometimes, in order to answer certain questions based on data, we need to merge two tables together and then query the merged result. Perhaps we have two tables that contain information about products in an ecommerce store that we would like to combine. There are two ways of doing this:
 
 - Merge the rows, called a `JOIN`.
 - Merge the columns, called a `UNION`.
 
-### `UNION`
+## `UNION`
 
 We'll focus on unions here. Union combines the result of two or more `SELECT` statements, using the following syntax:
 
@@ -248,7 +248,7 @@ SELECT id, avg(a.sale_price) FROM (
 
 Before running the top analysis, create an alias a with the preliminary results, run the `avg(a.sale_price)`, and group by 1 to view separate records and not a unique aggregate record!!!
 
-### `INTERSECT`
+## `INTERSECT`
 
 ...is used to combine two `SELECT` statements, but returns rows only from the first `SELECT` statement that are identical to a row in the second `SELECT` statement. This means that it returns only common rows returned by the two `SELECT` statements.
 
@@ -274,7 +274,7 @@ INTERSECT
 SELECT category FROM legacy_products;
 ```
 
-### `EXCEPT`
+## `EXCEPT`
 
 ...is constructed in the same way, but returns distinct rows from the first `SELECT` statement that aren’t output by the second `SELECT` statement.
 
@@ -300,14 +300,14 @@ EXCEPT
 SELECT category FROM new_products;
 ```
 
-### What can we generalize so far?
+## What can we generalize so far?
 
 - The `UNION` clause allows us to utilize information from multiple tables in our queries.
 - The `UNION ALL` clause allows us to utilize information from multiple tables in our queries, including duplicate values.
 - `INTERSECT` is used to combine two `SELECT` statements, but returns rows only from the first `SELECT` statement that are identical to a row in the second `SELECT` statement.
 - `EXCEPT` returns distinct rows from the first `SELECT` statement that aren’t output by the second `SELECT` statement
 
-## Conditional Aggregates
+# Conditional Aggregates
 
 Aggregate functions compute a single result from a set of multiple input values. You can think of aggregate data as data collected from multiple rows at a time. In this lesson, we'll continue learning about aggregate functions by focusing on conditionals, sums, and combining aggregate functions.
 
@@ -419,14 +419,14 @@ Find the percentage of high elevation airports (`elevation >= 2000`) by state fr
 SELECT state, 100.0 * sum(CASE WHEN elevation >= 2000 THEN 1 ELSE 0 END) / count(*)  as percentage_high_elevation_airports FROM airports GROUP BY state;
 ```
 
-### What can we generalize so far?
+## What can we generalize so far?
 
 - Conditional Aggregates are aggregate functions the compute a result set based on a given set of conditions.
 - `NULL` can be used to denote an empty field value
 - `CASE` statements allow for custom classification of data
 - `CASE` statements can be used inside aggregates (like `SUM()` and `COUNT()`) to provide filtered measures
 
-## Date, Number, and String Functions
+# Date, Number, and String Functions
 
 Oftentimes, data in columns of tables is not in the exact format we need to complete our desired analysis. We may need to extract a date from a full timestamp, manipulate a number, or combine first and last name columns to create a full name.
 
@@ -586,7 +586,7 @@ SELECT REPLACE(ingredients,'enriched_',' ') as item_ingredients
 FROM baked_goods;
 ```
 
-### What can we generalize so far?
+## What can we generalize so far?
 
 - Date Functions:
 	- `DATETIME`; Returns the date and time of the column specified. This can be modified to return only the date or only the time.

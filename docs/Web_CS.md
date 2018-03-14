@@ -11,7 +11,7 @@ Cheat sheets.
 
 ---
 
-## HTML
+# HTML
 
 - [HTML Markups](kesavanbr_html-cheatsheet.pdf). PDF.
 
@@ -52,7 +52,7 @@ Cheat sheets.
 
 - [HTML5 Quick Reference](html5-cheat-sheet.pdf). PDF only.
 
-## CSS
+# CSS
 
 - [CSS Basics](kvzhuang_miiicasa-css-cheat-sheet.pdf). PDF.
 
@@ -70,7 +70,7 @@ Cheat sheets.
 ![](img/web/blueprintcss-1-0-1-cheatsheet-4-4-gjmsb.png)
 </center>
 
-## Web Programming
+# Web Programming
 
 - [Web Programming](sanoj_web-programming.pdf). PDF.
 
@@ -95,6 +95,6 @@ Cheat sheets.
 ![](img/web/kstep_http-status-codes.png)
 </center>
 
-## Project Management
+# Project Management
 
 - [Scrum](Scrum.pdf). PDF only.

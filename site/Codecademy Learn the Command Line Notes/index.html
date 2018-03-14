@@ -816,7 +816,7 @@
 <p><strong>Foreword</strong></p>
 <p>Commands and code snippets. From Codecademy.</p>
 <hr />
-<h4 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h4>
+<h3 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Bash means &lsquo;Bourne again shell&rsquo;.</li>
 <li>There exists other bash programs : ksh, tcsh, zsh, etc.</li>
@@ -896,7 +896,7 @@
 </li>
 <li>For other files extensions like <code class="codehilite">tar</code> and GNU archive, use <code class="codehilite">tvf</code>.</li>
 </ul>
-<h4 id="manipulation">Manipulation<a class="headerlink" href="#manipulation" title="Permanent link">&para;</a></h4>
+<h3 id="manipulation">Manipulation<a class="headerlink" href="#manipulation" title="Permanent link">&para;</a></h3>
 <p><strong>List file &amp; dir</strong></p>
 <ul>
 <li><code class="codehilite">ls</code>; list of directories and files.</li>
@@ -951,7 +951,7 @@
 <li><code class="codehilite">rm -rf aaa</code>; remove directory <code class="codehilite">aaa</code> and its files.</li>
 <li><code class="codehilite">rm -i</code>; interactive, prompt the user.</li>
 </ul>
-<h4 id="redirection">Redirection<a class="headerlink" href="#redirection" title="Permanent link">&para;</a></h4>
+<h3 id="redirection">Redirection<a class="headerlink" href="#redirection" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Let&rsquo;s begin by taking a closer look at input and output. In the terminal, after the shell prompt, type :</li>
 </ul>
@@ -1313,7 +1313,7 @@ $ uniq deserts.txt
 <li><code class="codehilite">ls -l | head</code>; the list shows the 10 top lines only.</li>
 <li><code class="codehilite">ls -l | tail</code>; the list shows the 10 bottom lines only.</li>
 </ul>
-<h4 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h4>
+<h3 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Each time we launch the terminal application, it creates a new session. The session immediately loads settings and preferences that make up the command line environment.</li>
 <li>
@@ -1335,7 +1335,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>Using the menu at the bottom of the terminal for reference, type <code class="codehilite">Ctrl + o</code> (the letter, not the number) to save the file. Press <code class="codehilite">Enter</code>, when prompted about the filename to write. Then type <code class="codehilite">Ctrl + x</code> to exit <code class="codehilite">nano</code>. Finally, type <code class="codehilite">clear</code> to clear the terminal window. The command prompt should now be at the top of the window. You just edited a file in the <code class="codehilite">nano</code> text editor. Type:</li>
+<li>Using the menu at the bottom of the terminal for reference, type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span> (the letter, not the number) to save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span>, when prompted about the filename to write. Then type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span> to exit <code class="codehilite">nano</code>. Finally, type <code class="codehilite">clear</code> to clear the terminal window. The command prompt should now be at the top of the window. You just edited a file in the <code class="codehilite">nano</code> text editor. Type:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano hello.txt
 </pre></div>
@@ -1343,10 +1343,10 @@ $ uniq deserts.txt
 
 <ul>
 <li><code class="codehilite">nano</code> is a command line text editor. It works just like a desktop text editor, except that it is accessible from the command line and only accepts keyboard input. The command <code class="codehilite">nano hello.txt</code> opens a new text file named <code class="codehilite">hello.txt</code> in the <code class="codehilite">nano</code> text editor. &lsquo;Hello, I am nano&rsquo; is a text string entered in <code class="codehilite">nano</code> through the cursor.</li>
-<li>The menu of keyboard commands at the bottom of the window allow us to save changes to <code class="codehilite">hello.txt</code> and exit <code class="codehilite">nano</code>. The <code class="codehilite">^</code> stands for the <code class="codehilite">Ctrl</code> key.<ul>
-<li><code class="codehilite">Ctrl + o</code> saves a file. <code class="codehilite">o</code> stands for output.</li>
-<li><code class="codehilite">Ctrl + x</code> exits the <code class="codehilite">nano</code> program. <code class="codehilite">x</code> stands for exit.</li>
-<li><code class="codehilite">Ctrl + g</code> opens a help menu.</li>
+<li>The menu of keyboard commands at the bottom of the window allow us to save changes to <code class="codehilite">hello.txt</code> and exit <code class="codehilite">nano</code>. The <code class="codehilite">^</code> stands for the <span class="keys"><kbd class="key-control">Ctrl</kbd></span> key.<ul>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span> saves a file. <code class="codehilite">o</code> stands for output.</li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span> exits the <code class="codehilite">nano</code> program. <code class="codehilite">x</code> stands for exit.</li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-g">G</kbd></span> opens a help menu.</li>
 <li><code class="codehilite">Clear</code> clears the terminal window, moving the command prompt to the top of the screen.</li>
 </ul>
 </li>
@@ -1365,7 +1365,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>You can use your name in place of &lsquo;Jane Doe&rsquo;. Type <code class="codehilite">Ctrl + o</code> to save the file. Press <code class="codehilite">Enter</code> to write the filename. Type <code class="codehilite">Ctrl + x</code> to exit. Finally, type <code class="codehilite">clear</code> to clear the terminal window. Type :</li>
+<li>You can use your name in place of &lsquo;Jane Doe&rsquo;. Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span> to save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span> to exit. Finally, type <code class="codehilite">clear</code> to clear the terminal window. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
 </pre></div>
@@ -1393,7 +1393,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>Save the file. Press <code class="codehilite">Enter</code> to write the filename. Exit <code class="codehilite">nano</code>. Clear the terminal window.</li>
+<li>Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Exit <code class="codehilite">nano</code>. Clear the terminal window.</li>
 <li>In the command line, use the source command to activate the changes in the current session.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
@@ -1423,7 +1423,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>Save the file. Press <code class="codehilite">Enter</code> to write the filename.</li>
+<li>Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename.</li>
 <li>Add another alias:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
@@ -1432,7 +1432,7 @@ $ uniq deserts.txt
 
 <ul>
 <li>Save the file.</li>
-<li>Press <code class="codehilite">Enter</code> to write the filename.</li>
+<li>Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename.</li>
 <li>Exit <code class="codehilite">nano</code>.</li>
 <li>Clear the terminal window.</li>
 <li>In the command line, use source to activate the changes to the bash profile for the current session.</li>
@@ -1467,7 +1467,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>Feel free to use your own name. Save the file. Press <code class="codehilite">Enter</code> to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal.</li>
+<li>Feel free to use your own name. Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal.</li>
 <li>In the command line, use source to activate the changes in the bash profile for the current session. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$USER</span>
@@ -1490,7 +1490,7 @@ $ uniq deserts.txt
 </td></tr></table>
 
 <ul>
-<li>Save the file. Press Enter to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal window. In the command line, use source to activate the changes in the bash profile for the current shell session. Let&rsquo;s try out the new command prompt. Type :</li>
+<li>Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal window. In the command line, use source to activate the changes in the bash profile for the current shell session. Let&rsquo;s try out the new command prompt. Type :</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;hello&#39;</span>
 </pre></div>
@@ -1630,7 +1630,7 @@ $ env <span class="p">|</span> grep aliasname
 <li><code class="codehilite">export PATH=/home/dir/bin:$PATH</code> appends the new path to environment variable PATH.</li>
 <li><code class="codehilite">env</code> returns a list of environment variables.</li>
 </ul>
-<h4 id="multi-users">Multi-Users<a class="headerlink" href="#multi-users" title="Permanent link">&para;</a></h4>
+<h3 id="multi-users">Multi-Users<a class="headerlink" href="#multi-users" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Linux is multi-user : multiple users at the same time as opposed to OS X or Windows; just like the UNIX mainframe computers with terminals, users and superuser concepts. </li>
 </ul>
@@ -1769,7 +1769,7 @@ rwx rw- --x
 <li><code class="codehilite">sudo apt-get purge git</code>; remove &lsquo;git&rsquo; and purge any remainings.</li>
 <li><code class="codehilite">sudo chnow user file</code>; change the owner.</li>
 </ul>
-<h4 id="multi-tasks">Multi-Tasks<a class="headerlink" href="#multi-tasks" title="Permanent link">&para;</a></h4>
+<h3 id="multi-tasks">Multi-Tasks<a class="headerlink" href="#multi-tasks" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Linux is multi-task; multiple tasks can run at the same time like OS X or Windows or UNIX; Linux kernel runs processes; they take turns at the processor(s). All programs and processes can be launched/killed from the GUI and the CLI.</li>
 </ul>
@@ -1786,14 +1786,14 @@ rwx rw- --x
 </ul>
 <p><strong>Manage</strong></p>
 <ul>
-<li><code class="codehilite">ctrl + z</code>; pause a process, put it in the background.</li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-z">Z</kbd></span>; pause a process, put it in the background.</li>
 <li><code class="codehilite">fg</code>; foreground, bring back the process.</li>
 <li><code class="codehilite">jobs</code>; list paused processes.</li>
 <li><code class="codehilite">fg #PID</code>; bring back process #PID (if there is more than one process on pause, you must identify the process).</li>
-<li><code class="codehilite">ctrl + c</code>; terminate the active process.</li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span>; terminate the active process.</li>
 <li><code class="codehilite">xload</code>; display the system load in a new windows, but jam the current terminal (open another or several terminals then).</li>
 <li><code class="codehilite">xload &amp;</code>; runs in the background</li>
-<li><code class="codehilite">CTRL + x</code>; suspend the process and unjam the terminal.</li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span>`; suspend the process and unjam the terminal.</li>
 <li><code class="codehilite">by</code>; resume the process.</li>
 <li><code class="codehilite">ps</code>; show processes and their #PID.</li>
 <li><code class="codehilite">ps x | grep bad_program</code>; find the bad processes.</li>

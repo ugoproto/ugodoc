@@ -10,17 +10,17 @@ Notes.
 
 ---
 
-## Option One: Convert
+# Option One: Convert
 
 - Write a document in Word, Markdown and save it in HTML, including a style (no or minimal CSS).
 - Use Pandoc to convert Word, Markdown, and other format to HTML.
 
-## Option Two: Generate
+# Option Two: Generate
 
 - Look for a HTML generator online.
 - Use a PC generator: [StaticGen](https://www.staticgen.com/)
 
-## Option Three: Learn and Code
+# Option Three: Learn and Code
 
 Create a webpage with notepad, notepad++ or gedit (among many text editors) using simple HTML and CSS.
 
@@ -28,11 +28,11 @@ Create a webpage with notepad, notepad++ or gedit (among many text editors) usin
 1. Tutorial: [Building your First Web Page](http://learn.shayhowe.com/html-css/building-your-first-web-page/).
 1. Comprehensive Tutorial: [HTML 4.01 Specification](https://www.w3.org/TR/REC-html40/cover.html#minitoc).
 
-## Add CSS
+# Add CSS
 
 - [Adding CSS](http://matthewjamestaylor.com/blog/adding-css-to-html-with-link-embed-inline-and-import).
 
-## CSS Generators
+# CSS Generators
 
 - [CSS Creator](http://csscreator.com/tools/cssgenerate).
 - [CSSlayoutgenerator](http://csslayoutgenerator.com/).
@@ -42,7 +42,7 @@ Create a webpage with notepad, notepad++ or gedit (among many text editors) usin
 - [HTMLBasix](http:/./www.htmlbasix.com/stylesheet.shtml)
 - [MadSubmitter](http://www.madsubmitter.com/css-generator/)
 
-## Web Generator Lists
+# Web Generator Lists
 
 - [HTML](http://www.html.am/).
 - [WebdesignerDepot](http://www.webdesignerdepot.com/2012/04/15-great-html5-and-css3-generators/).

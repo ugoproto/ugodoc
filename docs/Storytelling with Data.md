@@ -11,7 +11,7 @@ Notes.
 
 ---
 
-## The importance of context
+# The importance of context
 
 - Exploratory vs explanatory graphics.
 	- Exploratory is for the analyst.
@@ -24,7 +24,7 @@ Notes.
 - If you had 3 minutes to tell a story, what would be the big idea : the unique point of view in one sentence?
 - Let's now move to storyboarding.
 
-## Choosing an effective visual
+# Choosing an effective visual
 
 - Go with a simple text or a figure.
 -  Available charts: scatterplot, table, lines, slopegraph, vertical bars, horizontal bars, stacked vertical bars, stacked horizontal bars, waterfall, square areas.
@@ -38,7 +38,7 @@ Notes.
 	- Avoid pie charts or donut charts.
 	- Prefer a horizontal bar chart.
 
-## Clutter is your enemy !
+# Clutter is your enemy !
 
 - Avoid cognitive load: a simple chart, a few line, one image.
 - Avoid borders (limited to the L axes), avoid gridlines and background shading. 
@@ -50,7 +50,7 @@ Notes.
 - Add details to the important areas (annotate).
 - Add the legend on the graph, not outside.
 
-## Focus your audience’s attention
+# Focus your audience’s attention
 
 - Use preattentive attributes in text : bold, italics, separate spatially, underlined, more tone or color (B&W), data stand out, numbered data, size.
 -  Avoid shades of red and green.
@@ -60,7 +60,7 @@ Notes.
 	- Cultural Color Connotations, David McCandless.
 	- The Visual Miscellaneum : A Colourful Guide to the World’s Most Consequential Trivia.
 
-## Think like a designer
+# Think like a designer
 
 - Eliminate distractions.
 - Not all data are equally important.
@@ -71,13 +71,13 @@ Notes.
 - Legible, clean, straightforward language.
 - Action titles.
 
-## Lessons in storytelling
+# Lessons in storytelling
 
 - Write a story with a schema (in 3 acts).
 - Write a narrative structure (the hero's journey).
 - Use the power of repetition: 3, 7, 12, 30, 40, 100, 500, 1000.
 
-## Final thoughts
+# Final thoughts
 
 - Learn your tools well.
 	- Google Spreadsheet, Tableau, R, D3 (JavaScript), Processing, Python, etc.
@@ -100,7 +100,7 @@ Notes.
 	- [Storytelling with data, Cole Nussbaumer Knaflic](http://www.storytellingwithdata.com/).
 	- and many more.
 
-## Wrap up
+# Wrap up
 
 1.	Understand the context.
 2.	Choose an appropriate visual display.

@@ -11,7 +11,7 @@ This page tests possibilities.
 
 ---
 
-## Sane list
+# Sane list
 
 - 'Apprenez à programmer en Python'
 - "Automate the Boring Stuff with Python"
@@ -22,12 +22,12 @@ This page tests possibilities.
 - 'Apprenez à programmer en Python'
 - "Automate the Boring Stuff with Python"
 
-## Smart symbols
+# Smart symbols
 
 +/-  -->  <--  <-->  =/=  1/4  1st 2nd 3rd 4th (c) (tm)
 'a' "b"  «c»  ... - -- ---
 
-## Sub/Superscripts
+# Sub/Superscripts
 
 Enter superscript: 2^10^ is 1024.
 
@@ -41,14 +41,14 @@ Enter subscript: The molecular composition of water is H~2~O.
 
 `pip install MarkdownSubscript`
 
-## Embed videos
+# Embed videos
 
 [!embed](https://www.youtube.com/watch?v=nzzHc9J39mw)
 
 `pip install pyembed-markdown`.
 Add `pyembed.markdown`.
 
-## Build tables
+# Build tables
 
 |   |   |
 |---|---|
@@ -77,7 +77,7 @@ First Header | Second Header | Third Header
 Left         | Center        | Right
 Left         | Center        | Right
 
-## Arithmatex
+# Arithmatex
 
 Inline: $\frac{1}{n}$ and...
 
@@ -85,7 +85,7 @@ Block:
 
 $$\sqrt{9}$$
 
-## Footnotes
+# Footnotes
 
 Lorem ipsum[^1]
 
@@ -97,12 +97,12 @@ Lorem ipsum Lorem ipsum[^2]
     Lorem ipsum 2.1
     Lorem ipsum 2.2
 
-## Admonition
+# Admonition
 
 !!! tip
     Lorem ipsum
 
-## Code block
+# Code block
 
 ```python
 a=1
@@ -110,7 +110,7 @@ b=1
 print(a)
 ```
 
-## Code hilite
+# Code hilite
     
 ~~~python hl_lines="1 2"
 a=1
@@ -118,23 +118,23 @@ b=1
 print(a)
 ~~~
 
-## Inline code hilite
+# Inline code hilite
 
 `#!python a=1`
 
-## Bold italic
+# Bold italic
 
 ***Lorem ipsum***
 
-## Underline
+# Underline
 
 ^^Lorem ipsum^^
 
-## Highlight
+# Highlight
 
 ==Lorem ipsum==
 
-## Emoji
+# Emoji
 
 :smile:
 

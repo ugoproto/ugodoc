@@ -16,7 +16,7 @@ Notes. From:
 
 ---
 
-## Blogs
+# Blogs
 
 - [Historyonics](http://historyonics.blogspot.ca/).
 - [Day of Archaeology](https://github.com/benmarwick/dayofarchaeology).
@@ -29,7 +29,7 @@ Notes. From:
 - [ITHAKA S+R](http://www.sr.ithaka.org/).
 	- Provides research and strategic guidance to help the academic community navigate economic and technological change.
 
-## Cases
+# Cases
 
 - [Big Data + Old History](https://www.youtube.com/watch?v=tp4y-_VoXdA).
 	- Video; dig into documents without reading them.
@@ -37,16 +37,16 @@ Notes. From:
 	- The proceedings of the Old Bailey, 1674-1913. A fully searchable edition of the largest body of texts detailing the lives of non-elite people ever published, containing 197,745 criminal trials held at London's central criminal court.
 	- [White paper; Data Mining with Criminal Intent](http://criminalintent.org/wp-content/uploads/2011/09/Data-Mining-with-Criminal-Intent-Final.pdf).
 
-## Courses
+# Courses
 
 - [Python Programming for the Humanities](https://github.com/fbkarsdorp/python-course).
 - **[The Programming Historian Lessons](http://programminghistorian.org/lessons/)**.
 
-## Data and Models
+# Data and Models
 
 - [Open Data](http://opendata-tools.org/en/).
 
-## Datasets and Projects
+# Datasets and Projects
 
 - [Le Programme de recherche en démographie historique](http://www.genealogie.umontreal.ca/fr/LePrdh).
 	- Données généalogiques de la Nouvelle France au Québec contemporain.
@@ -70,7 +70,7 @@ Notes. From:
 	- [Wikipedia](https://en.wikipedia.org/wiki/CLIWOC).
 	- [Royal Netherlands Meteorological Institute](https://www.knmi.nl/over-het-knmi/about).
 
-## Networks
+# Networks
 
 - [Access Linked Open Data](http://programminghistorian.org/lessons/graph-databases-and-SPARQL).
 	- RDF databases, graph databases, and how researchers can access these data though the query language called SPARQL. 
@@ -95,7 +95,7 @@ Notes. From:
 	- [Exporter](https://marketplace.gephi.org/plugin/sigmajs-exporter/).
 	- [Web Export](https://marketplace.gephi.org/plugin/seadragon-web-export/).
 
-## Tools, Data Mining and Analyzing
+# Tools, Data Mining and Analyzing
 
 - [Google Ngram](https://pypi.python.org/pypi/google-ngram-downloader/).
 	- Mine Google Books.
@@ -158,7 +158,7 @@ Notes. From:
 - [Regex can also be done](http://docs.notepad-plus-plus.org/index.php/Regular_Expressions).
 	- Tutorial on how to process regular expressions in Notepad++, on TextWrangler or other text/code editors (Vim, Emacs, etc.).
 
-## Tools, Mining the Web
+# Tools, Mining the Web
 
 - Retrieving Web Archive:
 	- [Internet Archives, Wayback Machine](https://archive.org/web/).
@@ -183,7 +183,7 @@ Notes. From:
 - [Tabula](http://tabula.technology/).
 	- Extract data from PDF.	
 
-## Tools, Referencing
+# Tools, Referencing
 
 - [Zotero](https://www.zotero.org/).
 	- Standalone and add-in to Mozilla Firefox. 
@@ -193,7 +193,7 @@ Notes. From:
 - [JSOR](http://www.jstor.org/).
 	- Journals, primary sources, and now BOOKS.
 
-## Tools, Scanning
+# Tools, Scanning
 
 - OCR scanner
 	- Digitization material documents (from books, letters to maps).
@@ -202,7 +202,7 @@ Notes. From:
 	- It is a subset of a larger set available from NIST. 
 	- The digits have been size-normalized and centered in a fixed-size image. 
 
-## Tools, Visualization
+# Tools, Visualization
 
 - Sparklines are mini-graphics. Add-in to Excel.
 - GIS: the best open-source database for mapping and GIS is PostgreSQL.

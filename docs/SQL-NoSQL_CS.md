@@ -11,7 +11,7 @@ Cheat sheets.
 
 ---
 
-## SQL
+# SQL
 
 - [SQL 1](SQL-Cheatsheet.pdf). PDF.
 
@@ -27,7 +27,7 @@ Cheat sheets.
 ![](img/sql_nosql/SQL-Cheatsheet-2.png)
 </center>
 
-### SQLite
+## SQLite
 
 - [SQLite](richardjh_sqlite3.pdf). PDF.
 
@@ -37,7 +37,7 @@ Cheat sheets.
 ![](img/sql_nosql/richardjh_sqlite3b.png)
 </center>
 
-### MySQL
+## MySQL
 
 - [MySQL](davechild_mysql.pdf). PDF.
 
@@ -61,7 +61,7 @@ Cheat sheets.
 
 - [Essential Admin for MySQL](4107-rc029-010d-essential-admin-mysql5.5_2.pdf). PDF only.
 
-### PostgreSQL
+## PostgreSQL
 
 - [PostgreSQL](tme520_postgresql.pdf). PDF.
 
@@ -85,7 +85,7 @@ Cheat sheets.
 
 - [Essential PostgreSQL](52492-rc071_postgresql_2.pdf). PDF only.
 
-## NoSQL
+# NoSQL
 
 - [NoSQL and Data Scalability](4154-rc105-010d-nosql.pdf). PDF only.
 - [MongoDB](4176-rc171-010d-mongodb-2.pdf). PDF only.

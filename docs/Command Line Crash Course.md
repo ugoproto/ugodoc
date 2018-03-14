@@ -11,13 +11,13 @@ Commands and snippets.
 
 ---
 
-## The Setup
+# The Setup
 
-### Linux
+## Linux
 
 Look through the menu for your window manager for anything named 'shell or 'terminal'.
 
-### Mac OS X
+## Mac OS X
 
 - Hold down the ++command++ key and hit the spacebar.
 - In the top right the blue 'search bar' will pop up.
@@ -26,7 +26,7 @@ Look through the menu for your window manager for anything named 'shell or 'term
 - This will open Terminal.
 - You can now go to your dock and ++ctrl++-click to pull up the menu, then select `Options->Keep` In dock.
 
-### Windows
+## Windows
 
 On Windows we're going to use PowerShell. People used to work with a program called cmd, but it's not nearly as usable as PowerShell. If you have Windows 7 or later, do this:
 
@@ -34,7 +34,7 @@ On Windows we're going to use PowerShell. People used to work with a program cal
 - In Search programs and files type: `powershell`
 - Hit ++enter++. 
 
-### Linux/Mac OS X
+## Linux/Mac OS X
 
 List of commands:
 
@@ -61,7 +61,7 @@ List of commands:
 - `exit`; exit the shell.
 - `sudo`; become super user root.
 
-### Windows
+## Windows
 
 List of commands:
 
@@ -88,7 +88,7 @@ List of commands:
 - `exit`; exit the shell.
 - `runas`; become super user root.
 
-## Paths, Folders, Directories (`pwd`)
+# Paths, Folders, Directories (`pwd`)
 
 `$` (Unix) or `>` (Windows).
 
@@ -98,7 +98,7 @@ You can then see what I have for output followed by another `$` or `>` prompt. T
 
 Let's do a simple first command so you can get the hang of this:
 
-### Linux/Mac OS X
+## Linux/Mac OS X
 
 ```bash
 $ pwd 
@@ -106,7 +106,7 @@ $ pwd
 $
 ```
 
-### Windows
+## Windows
 
 ```bash
 PS C:\> pwd
@@ -116,7 +116,7 @@ C:\Users\zed
 PS C:\>
 ```
 
-## View a File (`less, more`)
+# View a File (`less, more`)
 
 To do this exercise you're going to do some work using the commands you know so far. You'll also need a text editor that can make plain text (.txt) files. Here's what you do:
 
@@ -126,7 +126,7 @@ To do this exercise you're going to do some work using the commands you know so 
 
 Once you've done that, complete this exercise:
 
-### Linux/Mac OS X
+## Linux/Mac OS X
 
 ```bash
 $ less test.txt
@@ -136,7 +136,7 @@ $
 
 That's it. To get out of `less` just type `:q` (as in quit).
 
-### Windows
+## Windows
 
 ```bash
 > more test.txt
@@ -144,11 +144,11 @@ That's it. To get out of `less` just type `:q` (as in quit).
 > 
 ```
 
-## Stream a File (`cat`)
+# Stream a File (`cat`)
 
 You're going to do some more setup for this one so you get used to making files in one program and then accessing them from the command line. With the same text editor from the last exercise, create another file named test2.txt but this time save it directly to your temp directory:
 
-### Linux/Mac OS X
+## Linux/Mac OS X
 
 ```bash
 $ less test2.txt
@@ -163,7 +163,7 @@ Hi there this is cool.
 $
 ```
 
-### Windows
+## Windows
 
 ```bash
 > more test2.txt
@@ -178,7 +178,7 @@ Hi there this is cool.
 > 
 ```
 
-### Edit a file (`cat, nano, pico, vim`)
+## Edit a file (`cat, nano, pico, vim`)
 
 - Unix: try `cat test.txt test2.txt` to concatenate the files on screen.
 - Windows: try `cat test.txt,test2.txt`.
@@ -187,25 +187,25 @@ Hi there this is cool.
 - `cat file1.txt >> file2.txt` to append.
 - Also `nano test.txt`, `pico test.txt`, and `vim test.txt`.
 
-## Exiting Your Terminal (`exit`)
+# Exiting Your Terminal (`exit`)
 
-### Linux/Mac OS X
+## Linux/Mac OS X
 
 ```bash
 $ exit
 ```
 
-### Windows
+## Windows
 
 ```shell
 > exit
 ```
 
-### Unix Bash References
+## Unix Bash References
 
 - [Reference Manual](http://www.gnu.org/software/bash/manual/bashref.html)
 
-### PowerShell References
+## PowerShell References
 
 - [Owner's Manual](http://technet.microsoft.com/en-us/library/ee221100.aspx).
 - [Master PowerShell](http://powershell.com/cs/blogs/ebook/default.aspx).

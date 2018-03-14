@@ -11,7 +11,7 @@ Notes.
 
 ---
 
-## Data (Open)
+# Data (Open)
 
 - [Données Québec](https://www.donneesquebec.ca/fr/).
 - [Open Data Canada](http://open.canada.ca/en/open-data).
@@ -28,12 +28,12 @@ Notes.
 - [Knoema](http://knoema.fr/).
 	- Recherche intelligente avec toutes les statistiques entre vos mains
 
-### Boardgame Data
+## Boardgame Data
 
 - [BGG Data Mining, Data Science Group](http://www.boardgamegeek.com/guild/2128).
 - [BGG Geek Tools](http://boardgamegeek.com/guild/1229).
 
-## Data Mining, Data Wrangling, and Data Munging
+# Data Mining, Data Wrangling, and Data Munging
 
 - [R and Data Mining](http://www.rdatamining.com/).
 	- Links.
@@ -47,7 +47,7 @@ Notes.
 	- Scrape web sites to get information off them. 
 	- An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.
 
-## Data Visualization and Storytelling
+# Data Visualization and Storytelling
 
 - [Data Visualization with JavaScript](http://jsdatav.is/intro.html).
 	- [D3.js Gallery](https://github.com/d3/d3/wiki/Gallery).
@@ -85,18 +85,18 @@ Notes.
 - [Ren'Py](https://www.renpy.org/).
 	- Ren'Py is a visual novel engine used by hundreds of creators from around the world that helps you use words, images, and sounds to tell interactive stories that run on computers and mobile devices.
 
-## GIS & Mapping
+# GIS & Mapping
 
 - [A Free and Open Source Geographic Information System ](http://qgis.org/en/site/).
 - [CARTO](https://carto.com/).
 	- CARTO is an open, powerful, and intuitive platform for discovering and predicting the key insights underlying the location data in our world.
 
-## GUI & Interfaces
+# GUI & Interfaces
 
 - [Kivy](https://kivy.org/#home).
 	- Open source Python library for rapid development of applications that make use of innovative user interfaces, such as multi-touch apps.
 
-## Image Processing
+# Image Processing
 
 - [SimpleCV](http://simplecv.org/).
 	- Computer Vision platform using Python. 
@@ -104,7 +104,7 @@ Notes.
 	- SimpleCV is an open source framework for building computer vision applications. With it, you get access to several high-powered computer vision libraries, such as OpenCV, without having to first learn about bit depths, file formats, color spaces, buffer management, eigenvalues, or matrix versus bitmap storage.
 	-  Book : Practical Computer Vision, O’Reilly.
 
-## Infographics
+# Infographics
 
 - [Piktochart](https://piktochart.com/).
 	- Infographic maker.
@@ -121,7 +121,7 @@ Notes.
 - [Venngage](https://venngage.com/).
 	- verything you need to create and publish infographics is right here.
 
-## Kids and Coding
+# Kids and Coding
 
 - [Codecombat](https://codecombat.com/).
 	- Multi-language.
@@ -138,12 +138,12 @@ Notes.
 - [ClassCraft](https://www.classcraft.com/).
 	- For schools.
 
-## NLP
+# NLP
 
 - [NLTK](http://www.nltk.org/).
 	- Natural Language Tool Kit for analyzing written text and writing things like spam filters and chat bots. NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum.
 
-## Online Programs, Courses, Lessons, and Tutorials
+# Online Programs, Courses, Lessons, and Tutorials
     
 - [Thinkful](https://www.thinkful.com/courses).
 	- Programs: web development bootcamp, frontend, backend (Flask Python-based frameworks), mobile, design, UX, data science, individual, corporate.
@@ -194,7 +194,7 @@ Notes.
 - [List of Bootcamps](http://datascience.community/bootcamps).
 	- [General Assembly](https://generalassemb.ly/education/learn-data-analysis-online).
 
-## Online Reporting & Publishing
+# Online Reporting & Publishing
 
 - [RPubs](https://rpubs.com/).
 	- Write R Markdown documents in RStudio. Share them on RPubs.
@@ -207,7 +207,7 @@ Notes.
 - [GitLab](https://about.gitlab.com/).
 - [Sourceforge](https://sourceforge.net/).
 
-## Parallel and Distributed Computing (Big Data)
+# Parallel and Distributed Computing (Big Data)
 
 - [Bases de données documentaires et distribuées](http://b3d.bdpedia.fr/).
 	- Parallel computing, NoSQL, XML, MapReduce, distributed computing, indexation, Eleasticsearch, JSON, CouchBase, Pig, Spark, MongoDB, replication, scalability, cloud, virtual machine, markov chaine, page rank, Solr, CouchDB, XQuery, 
@@ -216,11 +216,11 @@ Notes.
 - [Hortonworks](http://hortonworks.com/).
 	- Hadoop ecosystem distribution.
 
-## Python Web Frameworks
+# Python Web Frameworks
 
 - [Django vs Flask vs Pyramid: Choosing a Python Web Framework](https://www.airpair.com/python/posts/django-flask-pyramid).
 
-## Statistics, Statistical & Machine Learning
+# Statistics, Statistical & Machine Learning
 
 - [Cours de programmation sous R](http://eric.univ-lyon2.fr/~ricco/cours/cours_programmation_R.html).
 	- Links,
@@ -241,7 +241,7 @@ Notes.
 - [R Documentation](https://www.rdocumentation.org/).
 	- Search all CRAN, BioConductor and Github packages.
 
-## Virtual Console and Virtual Coding
+# Virtual Console and Virtual Coding
 
 - [repl.it](https://repl.it/).
 	- Everything you need to teach coding in your classroom.
@@ -258,7 +258,7 @@ Notes.
 	- Platform for building with modern architectures.
 	- Innovating quickly and scaling precisely to meet demand.
 
-## Visualizing and Inspecting the Code
+# Visualizing and Inspecting the Code
 
 - [Python Tutor](http://www.pythontutor.com/).
 	- Online; Python, Java, JavaScript, TypeScript, Ruby, C, C++.

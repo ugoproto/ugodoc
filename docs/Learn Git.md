@@ -11,11 +11,11 @@ Notes.
 
 ---
 
-## Crash Course
+# Crash Course
 
 - [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1)
 
-## Courses
+# Courses
 
 - [Git - SVN Crash Course](http://git.or.cz/course/svn.html).
 - [Introduction to Git Extensions](https://bytescout.com/blog/beginner-guide-to-git-on-windows-using-git-extensions).
@@ -29,12 +29,12 @@ Notes.
 - [Git, Quick Guide](http://www.tutorialspoint.com/git/git_quick_guide.htm).
 	- By Tutorialspoint.
 
-## Git
+# Git
 
 - [Git, Official Website](https://git-scm.com/).
 - [Good resources for learning Git and GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/).
 
-## References
+# References
 
 - [Git Reference](http://gitref.org/).
 	- Simple documentation webpage.

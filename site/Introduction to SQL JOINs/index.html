@@ -872,7 +872,7 @@
 <p><strong>Foreword</strong></p>
 <p>Notes.</p>
 <hr />
-<h4 id="using-the-code">Using the code<a class="headerlink" href="#using-the-code" title="Permanent link">&para;</a></h4>
+<h3 id="using-the-code">Using the code<a class="headerlink" href="#using-the-code" title="Permanent link">&para;</a></h3>
 <p>Seven different ways you can return data from two relational tables; excluding cross joins and self referencing joins:</p>
 <ol>
 <li><code class="codehilite">INNER JOIN</code></li>
@@ -885,7 +885,7 @@
 </ol>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/Visual_SQL_JOINS_V2.png" /></p>
 <p>For the sake of this article, 5, 6, and 7 are <code class="codehilite">LEFT EXCLUDING JOIN</code>, <code class="codehilite">RIGHT</code> Excluding <code class="codehilite">JOIN</code>, and <code class="codehilite">OUTER</code> Excluding <code class="codehilite">JOIN</code>, respectively. Some may argue that 5, 6, and 7 are not really joining the two tables, but for simplicity, let&rsquo;s refer to these as joins because you use a SQL join in each of these queries (but exclude some records with a <code class="codehilite">WHERE</code> clause).</p>
-<h4 id="inner-join"><code class="codehilite">INNER JOIN</code><a class="headerlink" href="#inner-join" title="Permanent link">&para;</a></h4>
+<h3 id="inner-join"><code class="codehilite">INNER JOIN</code><a class="headerlink" href="#inner-join" title="Permanent link">&para;</a></h3>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/INNER_JOIN.png" /></p>
 <p>This is the simplest, most understood join and is the most common. This query will return all of the records in the left table (<code class="codehilite">Table_A</code>) that have a matching record in the right table (<code class="codehilite">Table_B</code>). This join is written as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -898,7 +898,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="left-join"><code class="codehilite">LEFT JOIN</code><a class="headerlink" href="#left-join" title="Permanent link">&para;</a></h4>
+<h3 id="left-join"><code class="codehilite">LEFT JOIN</code><a class="headerlink" href="#left-join" title="Permanent link">&para;</a></h3>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/LEFT_JOIN.png" /></p>
 <p>This query will return all of the records in the left table (<code class="codehilite">Table_A</code>) regardless if any of those records have a match in the right table (<code class="codehilite">Table_B</code>). It will also return any matching records from the right table. This join is written as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -911,7 +911,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="right-join"><code class="codehilite">RIGHT JOIN</code><a class="headerlink" href="#right-join" title="Permanent link">&para;</a></h4>
+<h3 id="right-join"><code class="codehilite">RIGHT JOIN</code><a class="headerlink" href="#right-join" title="Permanent link">&para;</a></h3>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/RIGHT_JOIN.png" /></p>
 <p>This query will return all of the records in the right table (<code class="codehilite">Table_B</code>) regardless if any of those records have a match in the left table (<code class="codehilite">Table_A</code>). It will also return any matching records from the left table. This join is written as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -924,7 +924,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="outer-join"><code class="codehilite">OUTER JOIN</code><a class="headerlink" href="#outer-join" title="Permanent link">&para;</a></h4>
+<h3 id="outer-join"><code class="codehilite">OUTER JOIN</code><a class="headerlink" href="#outer-join" title="Permanent link">&para;</a></h3>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/FULL_OUTER_JOIN.png" /></p>
 <p>This Join can also be referred to as a <code class="codehilite">FULL OUTER JOIN</code> or a <code class="codehilite">FULL JOIN</code>. This query will return all of the records from both tables, joining records from the left table (<code class="codehilite">Table_A</code>) that match records from the right table (<code class="codehilite">Table_B</code>). This join is written as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -937,7 +937,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="left-excluding-join"><code class="codehilite">LEFT</code> Excluding <code class="codehilite">JOIN</code><a class="headerlink" href="#left-excluding-join" title="Permanent link">&para;</a></h4>
+<h3 id="left-excluding-join"><code class="codehilite">LEFT</code> Excluding <code class="codehilite">JOIN</code><a class="headerlink" href="#left-excluding-join" title="Permanent link">&para;</a></h3>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/LEFT_EXCLUDING_JOIN.png" /></p>
 <p>This query will return all of the records in the left table (<code class="codehilite">Table_A</code>) that do not match any records in the right table (<code class="codehilite">Table_B</code>). This join is written as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -952,7 +952,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="right-excluding-join"><code class="codehilite">RIGHT</code> Excluding <code class="codehilite">JOIN</code><a class="headerlink" href="#right-excluding-join" title="Permanent link">&para;</a></h4>
+<h3 id="right-excluding-join"><code class="codehilite">RIGHT</code> Excluding <code class="codehilite">JOIN</code><a class="headerlink" href="#right-excluding-join" title="Permanent link">&para;</a></h3>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/RIGHT_EXCLUDING_JOIN.png" /></p>
 <p>This query will return all of the records in the right table (<code class="codehilite">Table_B</code>) that do not match any records in the left table (<code class="codehilite">Table_A</code>). This join is written as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -967,7 +967,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="outer-excluding-join"><code class="codehilite">OUTER</code> Excluding <code class="codehilite">JOIN</code><a class="headerlink" href="#outer-excluding-join" title="Permanent link">&para;</a></h4>
+<h3 id="outer-excluding-join"><code class="codehilite">OUTER</code> Excluding <code class="codehilite">JOIN</code><a class="headerlink" href="#outer-excluding-join" title="Permanent link">&para;</a></h3>
 <p><img alt="Joins" src="../img/introduction_to_sql_joins/OUTER_EXCLUDING_JOIN.png" /></p>
 <p>This query will return all of the records in the left table (<code class="codehilite">Table_A</code>) and all of the records in the right table (<code class="codehilite">Table_B</code>) that do not match. I have yet to have a need for using this type of join, but all of the others, I use quite frequently. This join is written as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -982,7 +982,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
 <p>Suppose we have two tables, <code class="codehilite">TABLE_A</code> and <code class="codehilite">TABLE_B</code>. The data in these tables are shown below:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1302,7 +1302,7 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h4>
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
 <p>Note on the <code class="codehilite">OUTER JOIN</code> that the inner joined records are returned first, followed by the right joined records, and then finally the left joined records (at least, that&rsquo;s how my Microsoft SQL Server did it; this, of course, is without using any <code class="codehilite">ORDER BY</code> statement).</p>
 <p><img alt="Joins" src="../Visual_introduction_to_sql_joins_V2" /></p>
                 

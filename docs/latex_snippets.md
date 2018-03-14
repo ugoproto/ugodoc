@@ -11,7 +11,7 @@ Snippets and notes.
 
 ---
 
-## Cheat Sheet
+# Cheat Sheet
 
 - [LaTeX Font Packages](latex-font-packages.pdf). PDF only.
 - [LaTeX Cheat Sheet, 4p](latexcheatsheet_1.pdf). PDF only.
@@ -25,7 +25,7 @@ Snippets and notes.
 ![](img/vade_mecum/latexsheetb.png)
 </center>
 
-## Resources
+# Resources
 
 - [The LATEX Project](http://www.latex-project.org/).
 - [TEX](https://tex.stackexchange.com/) stack exchange.
@@ -37,9 +37,9 @@ Snippets and notes.
 - [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX).
 - [TeX](http://www.xm1math.net/doculatex/index.html).
 
-## Classes
+# Classes
 
-### Article
+## Article
 
 ```tex
 \documentclass[12pt]{article}
@@ -59,7 +59,7 @@ Snippets and notes.
 \end{document}
 ```
 
-### Report
+## Report
 
 ```tex
 \documentclass[12pt]{report}
@@ -83,7 +83,7 @@ Snippets and notes.
 \end{document}
 ```
 
-### Book
+## Book
 
 ```tex
 \documentclass[12pt]{book}
@@ -105,9 +105,9 @@ Snippets and notes.
 \end{document}
 ```
 
-## Figure
+# Figure
 
-### Standard figure
+## Standard figure
 
 ```tex
 %Preamble
@@ -123,7 +123,7 @@ Snippets and notes.
 \ref{fig:default}
 ```
 
-### Side-by-side figure (1x2)
+## Side-by-side figure (1x2)
  
 ```tex
 %Preamble
@@ -147,7 +147,7 @@ Snippets and notes.
 \ref{fig:fig1} and \subref{subfig:fig1}
 ```
 
-### Side-by-side figure (2x2)
+## Side-by-side figure (2x2)
 
 ```tex
 %Preamble
@@ -210,9 +210,9 @@ Wrap text around figure
 \end{wrapfigure}
 ```
 
-## Tables
+# Tables
 
-### Standard table
+## Standard table
 
 ```tex
 \begin{table}[htbp] % h:here; t:top; b:bottom; p:page; default:ht
@@ -230,7 +230,7 @@ Wrap text around figure
 \end{table}%
 ```
 
-### Side-by-side table
+## Side-by-side table
 
 ```tex
 %Preamble
@@ -267,7 +267,7 @@ Wrap text around figure
 \ref{tab:tab1} and \subref{subtab:tab1}
 ```
 
-### Sideways-table
+## Sideways-table
 
 ```tex
 % Preamble
@@ -289,7 +289,7 @@ Wrap text around figure
 \end{sidewaystable}
 ```
 
-### Multi-page table (longtable)
+## Multi-page table (longtable)
 
 ```tex
 %Preamble
@@ -329,9 +329,9 @@ Wrap text around figure
 \end{center}
 ```
 
-## List
+# List
 
-### Bulleted list: itemize
+## Bulleted list: itemize
 
 ```tex
 \begin{itemize}
@@ -341,7 +341,7 @@ Wrap text around figure
 \end{itemize}
 ```
 
-### Numbered list: enumerate
+## Numbered list: enumerate
 
 ```tex
 \begin{enumerate}
@@ -351,7 +351,7 @@ Wrap text around figure
 \end{enumerate}
 ```
 
-### Description
+## Description
 
 ```tex
 \begin{description}
@@ -361,7 +361,7 @@ Wrap text around figure
 \end{description}
 ```
 
-### Inline enumeration
+## Inline enumeration
 
 ```tex
 %Preamble
@@ -375,9 +375,9 @@ Wrap text around figure
 \end{inparaenum}
 ```
 
-## Beamer Presentation
+# Beamer Presentation
 
-### Table of Content
+## Table of Content
 
 ```tex
 \documentclass{beamer}
@@ -403,7 +403,7 @@ Wrap text around figure
 \end{document}
 ```
 
-### List
+## List
 
 ```tex
 \begin{frame}{Enumerate}
@@ -425,7 +425,7 @@ Wrap text around figure
 \end{frame}
 ```
 
-### Side-by-side figure/table/list with columns
+## Side-by-side figure/table/list with columns
 
 ```tex
 \begin{frame}{Side-by-side figure/table/text with columns}
@@ -463,7 +463,7 @@ Side-by-side figure/table/list with minipage
 \end{frame}
 ```
 
-## Installation
+# Installation
 
 - Windows.
     - [proTeXt](http://www.tug.org/protext/) (MiKTeX-based + the editor TeXnicCenter).

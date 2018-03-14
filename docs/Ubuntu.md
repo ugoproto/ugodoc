@@ -11,11 +11,11 @@ Notes.
 
 ---
 
-## Install Ubuntu 16.04
+# Install Ubuntu 16.04
 
 - [Ubuntu](https://www.ubuntu.com/).
 
-## Following the Installation (check list)
+# Following the Installation (check list)
 
 - VirtualBox [guest additions](https://www.youtube.com/watch?v=Q84boOmiPW8). (for a virtual installation).
 - [Tweaks](http://www.2daygeek.com/top-important-things-to-do-after-installing-ubuntu-16-04-lts-xenial-xerus/).

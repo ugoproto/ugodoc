@@ -11,7 +11,7 @@ Notes. The 537-page volume covers the same material as [LinuxCommand.org](http:/
 
 ---
 
-## [1.0 Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php) ##
+# [1.0 Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php) ##
 
 [1.1 What Is "The Shell"?](http://linuxcommand.org/lc3_lts0010.php),
 <sub>terminal</sub>
@@ -43,7 +43,7 @@ Notes. The 537-page volume covers the same material as [LinuxCommand.org](http:/
 [1.10 Job Control](http://linuxcommand.org/lc3_lts0020.php),
 <sub>job, process, ps, kill, jobs, background, bg, foreground, fg</sub>
 
-## [2.0 Writing Shell Scripts](http://linuxcommand.org/lc3_resources.php) ##
+# [2.0 Writing Shell Scripts](http://linuxcommand.org/lc3_resources.php) ##
 
 [2.1 Writing Your First Script And Getting It To Work](http://linuxcommand.org/lc3_wss0010.php),
 <sub>editor, vi, vim, emacs, nano, gedit, kwrite, path</sub>
@@ -90,9 +90,9 @@ Notes. The 537-page volume covers the same material as [LinuxCommand.org](http:/
 [2.15 Errors And Signals And Traps (Oh My!) - Part 2](http://linuxcommand.org/lc3_wss0150.php),
 <sub>clean, cleaning, trap, kill, clean_up, temporary, file</sub>
 
-## [3.0 Resources (some)](http://linuxcommand.org/lc3_resources.php) ##
+# [3.0 Resources (some)](http://linuxcommand.org/lc3_resources.php) ##
 
-### Adventures ###
+## Adventures ###
 
 [3.1 Midnight Commander](http://linuxcommand.org/lc3_adv_mc.php)
 
@@ -134,7 +134,7 @@ Pattern scanning and text processing language. One of the truly classic Unix too
 While most Linux users rely on the bash shell every day, it's not the only game in town. Let's look at some of the others.
 <sub>dash, debian almquist shell, tcsh, texex c shell, ksh, korn shell, zsh, z shell</sub>
 
-### Shell Scripts ###
+## Shell Scripts ###
 
 [3.9 new_script](http://linuxcommand.org/lc3_new_script.php)
 
@@ -156,7 +156,7 @@ Re-sizes large image files (photos) for use as attachments to email messages, bl
 Creates an annotated list of programs in a directory. Useful for exploring your system.
 <sub>script, example, case, program_list, list, whatis, what</sub>
 
-### Manuals ###
+## Manuals ###
 
 - Granneman, Scott, Linux Phrasebook, 2015.
 - Parker, Steve, Shell Scripting: Expert Recipes for Linux, Bash and more, 2011.

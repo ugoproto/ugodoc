@@ -11,7 +11,7 @@ Corpus of documents: titles and keywords.
 
 ---
 
-## Bash, Powershell
+# Bash, Powershell
 
 Learning the bash Shell, Third Edition, O'Reilly, 2005
 
@@ -19,7 +19,7 @@ Managing Projects with GNU Make, Third Edition, O'Reilly, 2005
 
 The Linux Command Line (completed course, notes, snapshots, codes, manual, exercises), No Starch Press, living book!
 
-## Big Data, Spark, Cloud
+# Big Data, Spark, Cloud
 
 Advanced Analytics with Spark, Patterns for learning from Data at Scale, O'Reilly, 2017
 
@@ -35,11 +35,11 @@ Learning PySpark, Packt, 2017
 
 Spark 2.0 for Beginners, Packt, 2016
 
-## Blockchain
+# Blockchain
 
 Diverse...
 
-## DataCamp
+# DataCamp
 
 Introduction to R (Beta) (completed course, slides), <sub>variable, workspace, comments, scripts, data type, logical, numeric, character, double, complex, raw, coercion, coerce, as., create name, vectors, calculus, element, sum, subset, matrix, rbind, cbind, bind, rownames, colnames, colsums, rowsums, scalar, factor, categorical, order, levels, nominal, ordinal, order, list, extend, data frame, data.frame, sort, add column, row, sorting, graphics, plot numerical, plot categorical, hist, bins, barplot, boxplot, pairs, par, parameters, line type, lty, plot symbol, pch, multiple plots, mfrow, mfcol, grid, layout, stack</sub>
 
@@ -121,17 +121,17 @@ Time Series in R The Power of xts and zoo (completed courses, IPython notebook, 
 
 Visualization with Bokeh (completed courses, IPython notebook, datasets)
 
-## Digital Humanities
+# Digital Humanities
 
 Diverse...
 
-## Docker
+# Docker
 
 Docker Cookbook, Packt, 2015
 
 Docker in Action, Manning, 2016
 
-## Econometrics, Spatial, GIS
+# Econometrics, Spatial, GIS
 
 A Primer for Spatial Econometrics with Applications in R, Palgrave, 2014
 
@@ -160,7 +160,7 @@ The Cox Model and Its Applications, Springer, 2016
 
 Think Stat 2, Exploratory Data Analysis in Python, Green Tea Press, 2014
 
-## Employment, Education
+# Employment, Education
 
 21 clés pour activer la transformation numérique de votre entreprise, Eyrolles, 2017
 
@@ -168,11 +168,11 @@ Cracking the Coding Interview, 150 Programming Interview Questions and Solutions
 
 Prévenir plutôt que guérir la révolution de la e-sant, Eyrolles, 2017
 
-## Industry
+# Industry
 
 Big Data Analytics, A Practical Guide for Managers, Auerbach Publications, 2015
 
-## LaTeX, Markdown
+# LaTeX, Markdown
 
 LaTeX pour l'impatient, 4e édition, MiniMax, 2016 (BANQ)
 
@@ -183,11 +183,11 @@ TikZ pour l'impatient, CC, 2017
 
 Tout ce que vous avez toujours voulu savoir sur LaTeX sans jamais oser le demander, CC, 2018
 
-## Linux
+# Linux
 
 Python for Unix and Linux System Administration, O'Reilly, 
 
-## NLP, Text
+# NLP, Text
 
 Analyzing Linguistic Data, A Practical Introduction to Statistics using R, cambridge, 2008
 
@@ -199,13 +199,13 @@ Statistics for Linguistics with R, A Practical Introduction, 2nd edition, 2013
 
 Text Analysis with R for Students of Literature, Springer, 2014
 
-## Neural Networks
+# Neural Networks
 
 diverse...
 
 Hands-On Machine Learning with Scikit-Learn & TensorFlow, O'Reilly, 2017
 
-## No Starch Press Collection
+# No Starch Press Collection
 
 Absolute OpenBSD, Unix For The Practical Paranoid
 
@@ -250,11 +250,11 @@ Write Great Code, Volume II, Thinking Low-Level, Writing High-Level
 
 Write Great Code, Volume I, Understanding The Machine
 
-## Orange
+# Orange
 
 software...
 
-## Predictive Modeling, Data Science, Data Mining, Marketing Analytics
+# Predictive Modeling, Data Science, Data Mining, Marketing Analytics
 
 Analytics for Insurance, The Real Business of Big Data, Wiley, 2016, <sub>risk, management, underwriting, claim, marketing, property, liability, life, pensions, people</sub>
 
@@ -270,7 +270,7 @@ Real-World Machine Learning, Manning, 2017
 
 Think Like a Data Scientist, Manning, 2017
 
-## Programmation pour les kids
+# Programmation pour les kids
 
 Cahier d'activités 3D pour les kids, Eyrolles, 2017
 
@@ -280,7 +280,7 @@ Sylvia présente Super Projets Arduino
 
 Programmer avec Arduino en s'amusant, 2017, First
 
-## Project Management
+# Project Management
 
 An Entire MBA in 1 Book, 2016
 
@@ -290,11 +290,11 @@ Negotiating 101, From Planning Your Strategy
 
 Project Management Metrics, KPIs, and Dashboards, A Guide to Measuring and Monitoring Project Performance, 3rd Edition, Wiley, 2017
 
-### PMI-ACP
+# PMI-ACP
 
 ...
 
-## Python
+# Python
 
 An Introduction to Statistics with Python, With Applications in the Life Sciences, Springer, 2016
 
@@ -365,7 +365,7 @@ Real-World Machine Learning, Manning, 2017
 
 Une introduction à Python 3, CC 
 
-## R, Statistics
+# R, Statistics
 
 An Introduction to Statistical Learning with Applications in R, Springer, 2015
 
@@ -418,7 +418,7 @@ Text Mining with R, O'Reilly, 2017
 
 Web Application Development with R Using Shiny, Packt, 2013
 
-### R Compilation
+## R Compilation
 
 - A Beginner's Guide to R [Zuur, Ieno & Meesters 2009-07-02]
 - A First Course in Statistical Programming with R [Braun & Murdoch 2008-01-28]
@@ -611,7 +611,7 @@ Web Application Development with R Using Shiny, Packt, 2013
 - Wavelet Methods in Statistics with R - Nason G. - 2008
 - XML and Web Technologies for Data Sciences with R [Nolan & Lang 2014-01-27]
 
-## SQL, NoSQL
+# SQL, NoSQL
 
 High Performance MySQL, Second Edition, O'Reilly, 2008
 
@@ -619,13 +619,13 @@ MySQL High Availability, O'Reilly, 2010
 
 PostgreSQL Administration Cookbook, Package, 2017
 
-## Storytelling, Visualization
+# Storytelling, Visualization
 
 Storytelling with data, Wiley, 2015
 
 Excel Sparklines (notes)
 
-## Tableau
+# Tableau
 
 desktop Tableau Getting Started 9.0
 

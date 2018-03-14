@@ -11,13 +11,13 @@ Code Snippets. From Codecademy.
 
 ---
 
-## Specifying Comments
+# Specifying Comments
 
 - Line comment. This is indicated by two negative signs (eg. `--`). The remainder of the text on the line is the comment.
 - Block comment. The start of the block comment is indicated by `/*`, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.
 - `Rem` or `@`. For Oracle, a line starting with either `REM` or `@` is a comment line.
 
-## Manipulation
+# Manipulation
 
 SQL, for Structured Query Language, is a programming language designed to manage data stored in relational databases. SQL operates through simple, declarative statements. This keeps data accurate and secure, and helps maintain the integrity of databases, regardless of size.
 
@@ -128,7 +128,7 @@ DELETE FROM celebs WHERE twitter_handle IS NULL;
 SELECT * FROM celebs;
 ```
 
-### Project Create Table
+# Project Create Table
 
 In this project you will create your own friends table and add and delete data from it.
 
@@ -164,7 +164,7 @@ UPDATE friends SET email = "johndoe@example.com" WHERE id = 4;
 DELETE FROM friends WHERE id = 1;
 ```
 
-## Queries
+# Queries
 
 One of the core purposes of the SQL language is to retrieve information stored in a database. This is commonly referred to as querying. Queries allow us to communicate with the database by asking questions and having the result set return data relevant to the question. In this lesson, you will be querying a database with one table named movies. Let's get started.
 
@@ -239,7 +239,7 @@ SELECT * FROM movies ORDER BY imdb_rating DESC;
 SELECT * FROM movies ORDER BY imdb_rating ASC LIMIT 3;
 ```
 
-### Project Writing Queries
+# Project Writing Queries
 
 In this project you will write queries to retrieve information from the movies table.
 
@@ -325,7 +325,7 @@ SELECT * FROM movies WHERE name LIKE '%Twilight%' ORDER BY year ASC;
 SELECT * FROM movies WHERE year = 2012 AND genre = 'comedy';
 ```
 
-## Aggregate Functions
+# Aggregate Functions
 
 Aggregate functions compute a single result from a set of input values. For instance, when we need the sum or average of a particular column, we can use aggregate functions to quickly compute it for us. We will be learning about different aggregate functions in this lesson.
 
@@ -396,7 +396,7 @@ SELECT price, AVG(downloads) FROM fake_apps GROUP BY price;
 SELECT price, ROUND(AVG(downloads), 2) FROM fake_apps GROUP BY price;
 ```
 
-### Project Fake Apps
+# Project Fake Apps
 
 In this project you will write queries with aggregate functions to retrieve information from the fake_apps table.
 
@@ -484,7 +484,7 @@ SELECT COUNT(*) FROM fake_apps WHERE name LIKE 'A%';
 SELECT SUM(downloads) FROM fake_apps WHERE category = 'Sports' OR category = 'Health & Fitness';
 ```
 
-## Multiple Tables
+# Multiple Tables
 
 Most of the time, data is distributed across multiple tables in the database. Imagine a database with two tables, artists and albums. An artist can produce many different albums, and an album is produced by an artist.
 
@@ -541,7 +541,7 @@ SELECT albums.name, albums.year, artists.name FROM albums JOIN artists ON albums
 SELECT albums.name AS 'Album', albums.year, artists.name AS 'Artist' FROM albums JOIN artists ON albums.artist_id = artists.id WHERE albums.year > 1980;
 ```
 
-### Recap
+# Recap
 
 - Primary Key is a column that serves a unique identifier for row in the table. Values in this column must be unique and cannot be `NULL`.
 - Foreign Key is a column that contains the primary key to another table in the database. It is used to identify a particular row in the referenced table.
@@ -550,7 +550,7 @@ SELECT albums.name AS 'Album', albums.year, artists.name AS 'Artist' FROM albums
 - `LEFT OUTER JOIN` will return every row in the left table, and if the join condition is not met, `NULL` values are used to fill in the columns from the right table.
 - `AS` is a keyword in SQL that allows you to rename a column or table in the result set using an alias.
 
-### Project Querying Tables
+# Project Querying Tables
 
 In this project you will practice querying multiple tables using joins.
 

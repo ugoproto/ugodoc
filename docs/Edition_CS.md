@@ -11,7 +11,7 @@ Cheat sheets.
 
 ---
 
-## Markdown
+# Markdown
 
 - [GitHub Markdown Syntax](markdown-cheatsheet-online.pdf). PDF.
 
@@ -21,9 +21,9 @@ Cheat sheets.
 ![](img/vade_mecum/markdown-cheatsheet-onlinea.png)
 </center>
 
-## Git
+# Git
 
-### Principal commands
+## Principal commands
 
 - `git init`: creates a new Git repository.
 - `git status`: inspects the contents of the working directory and staging area.
@@ -78,7 +78,7 @@ Cheat sheets.
 ![](img/vade_mecum/github-git-cheat-sheetb.png)
 </center>
 
-## LaTeX
+# LaTeX
 
 - [LaTeX Font Packages](latex-font-packages.pdf). PDF only.
 - [LaTeX Cheat Sheet, 4p](latexcheatsheet_1.pdf). PDF only.
@@ -92,7 +92,7 @@ Cheat sheets.
 ![](img/vade_mecum/latexsheetb.png)
 </center>
 
-## Regex
+# Regex
 
 - [Regex](davechild_regular-expressions.pdf). PDF.
 
@@ -100,11 +100,11 @@ Cheat sheets.
 ![](img/vade_mecum/davechild_regular-expressions.png)
 </center>
 
-## Tableau
+# Tableau
 
 - [Tableau Cheat Sheet](Tableau_Cheat_Sheet.pdf). PDF only.
 
-## Vi/Vim
+# Vi/Vim
 
 - [Vi Editor](viEditorCheatSheet.pdf). PDF.
 
@@ -122,7 +122,7 @@ Cheat sheets.
 ![](img/vade_mecum/vim-cheat-sheet-en.png)
 </center>
 
-## Wikipedia
+# Wikipedia
 
 - [Wikipedia Syntax](davechild_wikipedia.pdf). PDF.
 

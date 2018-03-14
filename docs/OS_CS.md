@@ -11,7 +11,7 @@ Cheat sheets.
 
 ---
 
-## Linux
+# Linux
 
 - [Ubuntu Reference](Ubuntu_Ref.pdf). PDF.
 
@@ -43,7 +43,7 @@ Cheat sheets.
     - [Learning the Shell](http://www.linuxcommand.org/lc3_learning_the_shell.php).
     - [bc - An arbitrary precision calculator language](http://x-bc.sourceforge.net/man_bc.html).
 
-## Windows
+# Windows
 
 - [PowerShell Basics](powershell-basic-cheat-sheet2.pdf). PDF.
 

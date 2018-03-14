@@ -11,7 +11,7 @@ Commands and code snippets. From Codecademy.
 
 ---
 
-## Navigation
+# Navigation
 
 - Bash means 'Bourne again shell'.
 - There exists other bash programs : ksh, tcsh, zsh, etc.
@@ -83,7 +83,7 @@ Commands and code snippets. From Codecademy.
 	- `h`; help.
 - For other files extensions like `tar` and GNU archive, use `tvf`.
 
-## Manipulation
+# Manipulation
 
 **List file & dir**
 
@@ -139,7 +139,7 @@ Commands and code snippets. From Codecademy.
 - `rm -rf aaa`; remove directory `aaa` and its files.
 - `rm -i`; interactive, prompt the user.
 
-## Redirection
+# Redirection
 
 - Let's begin by taking a closer look at input and output. In the terminal, after the shell prompt, type :
 
@@ -441,7 +441,7 @@ $ sed 's/snow/rain/g' forests.txt
 - `ls -l | head`; the list shows the 10 top lines only.
 - `ls -l | tail`; the list shows the 10 bottom lines only.
 
-## Environment
+# Environment
 
 - Each time we launch the terminal application, it creates a new session. The session immediately loads settings and preferences that make up the command line environment.
 - We can configure this environment to support the commands and programs, customize greetings and command aliases, and create variables to share across commands and programs.
@@ -458,17 +458,17 @@ $ nano hello.txt
 $ 'Hello, I am nano.'
 ```
 
-- Using the menu at the bottom of the terminal for reference, type `Ctrl + o` (the letter, not the number) to save the file. Press `Enter`, when prompted about the filename to write. Then type `Ctrl + x` to exit `nano`. Finally, type `clear` to clear the terminal window. The command prompt should now be at the top of the window. You just edited a file in the `nano` text editor. Type:
+- Using the menu at the bottom of the terminal for reference, type ++ctrl+o++ (the letter, not the number) to save the file. Press ++enter++, when prompted about the filename to write. Then type ++ctrl+x++ to exit `nano`. Finally, type `clear` to clear the terminal window. The command prompt should now be at the top of the window. You just edited a file in the `nano` text editor. Type:
 
 ```bash
 $ nano hello.txt
 ```
 
 - `nano` is a command line text editor. It works just like a desktop text editor, except that it is accessible from the command line and only accepts keyboard input. The command `nano hello.txt` opens a new text file named `hello.txt` in the `nano` text editor. 'Hello, I am nano' is a text string entered in `nano` through the cursor.
-- The menu of keyboard commands at the bottom of the window allow us to save changes to `hello.txt` and exit `nano`. The `^` stands for the `Ctrl` key.
-	- `Ctrl + o` saves a file. `o` stands for output.
-	- `Ctrl + x` exits the `nano` program. `x` stands for exit.
-	- `Ctrl + g` opens a help menu.
+- The menu of keyboard commands at the bottom of the window allow us to save changes to `hello.txt` and exit `nano`. The `^` stands for the ++ctrl++ key.
+	- ++ctrl+o++ saves a file. `o` stands for output.
+	- ++ctrl+x++ exits the `nano` program. `x` stands for exit.
+	- ++ctrl+g++ opens a help menu.
 	- `Clear` clears the terminal window, moving the command prompt to the top of the screen.
 - [nano editor](http://www.nano-editor.org/)
 - Now that you are familiar with editing text in `nano`, let's create a file to store environment settings. Type :
@@ -483,7 +483,7 @@ $ nano ~/.bash_profile
 $ echo 'Welcome, Jane Doe'
 ```
 
-- You can use your name in place of 'Jane Doe'. Type `Ctrl + o` to save the file. Press `Enter` to write the filename. Type `Ctrl + x` to exit. Finally, type `clear` to clear the terminal window. Type :
+- You can use your name in place of 'Jane Doe'. Type ++ctrl+o++ to save the file. Press ++enter++ to write the filename. Type ++ctrl+x++ to exit. Finally, type `clear` to clear the terminal window. Type :
 
 ```bash
 $ source ~/.bash_profile
@@ -506,7 +506,7 @@ $ nano ~/.bash_profile
 $ alias pd='pwd'
 ```
 
-- Save the file. Press `Enter` to write the filename. Exit `nano`. Clear the terminal window.
+- Save the file. Press ++enter++ to write the filename. Exit `nano`. Clear the terminal window.
 - In the command line, use the source command to activate the changes in the current session.
 
 ```bash
@@ -532,7 +532,7 @@ $ alias pd='pwd'
 $ alias hy='history'
 ```
 
-- Save the file. Press `Enter` to write the filename.
+- Save the file. Press ++enter++ to write the filename.
 - Add another alias:
 
 ```bash
@@ -540,7 +540,7 @@ $ alias ll='ls -la'
 ```
 
 - Save the file.
-- Press `Enter` to write the filename.
+- Press ++enter++ to write the filename.
 - Exit `nano`.
 - Clear the terminal window.
 - In the command line, use source to activate the changes to the bash profile for the current session.
@@ -571,7 +571,7 @@ $ alias ll='ls -la'
 $ export USER='Jane Doe'
 ```
 
-- Feel free to use your own name. Save the file. Press `Enter` to write the filename. Exit `nano`. Finally, clear the terminal.
+- Feel free to use your own name. Save the file. Press ++enter++ to write the filename. Exit `nano`. Finally, clear the terminal.
 - In the command line, use source to activate the changes in the bash profile for the current session. Type :
 
 ```bash
@@ -591,7 +591,7 @@ $ export USER='Jane Doe'
 $ export PS1='>> '
 ```
 
-- Save the file. Press Enter to write the filename. Exit `nano`. Finally, clear the terminal window. In the command line, use source to activate the changes in the bash profile for the current shell session. Let's try out the new command prompt. Type :
+- Save the file. Press ++enter++ to write the filename. Exit `nano`. Finally, clear the terminal window. In the command line, use source to activate the changes in the bash profile for the current shell session. Let's try out the new command prompt. Type :
 
 ```bash
 $ echo 'hello'
@@ -711,7 +711,7 @@ $ env | grep aliasname
 - `export PATH=/home/dir/bin:$PATH` appends the new path to environment variable PATH.
 - `env` returns a list of environment variables.
 
-## Multi-Users
+# Multi-Users
 
 - Linux is multi-user : multiple users at the same time as opposed to OS X or Windows; just like the UNIX mainframe computers with terminals, users and superuser concepts. 
 
@@ -802,7 +802,7 @@ rwx rw- --x
 - `sudo apt-get purge git`; remove 'git' and purge any remainings.
 - `sudo chnow user file`; change the owner.
 
-## Multi-Tasks
+# Multi-Tasks
 
 - Linux is multi-task; multiple tasks can run at the same time like OS X or Windows or UNIX; Linux kernel runs processes; they take turns at the processor(s). All programs and processes can be launched/killed from the GUI and the CLI.
 
@@ -817,14 +817,14 @@ rwx rw- --x
 
 **Manage**
 
-- `ctrl + z`; pause a process, put it in the background.
+- ++ctrl+z++; pause a process, put it in the background.
 - `fg`; foreground, bring back the process.
 - `jobs`; list paused processes.
 - `fg #PID`; bring back process #PID (if there is more than one process on pause, you must identify the process).
-- `ctrl + c`; terminate the active process.
+- ++ctrl+c++; terminate the active process.
 - `xload`; display the system load in a new windows, but jam the current terminal (open another or several terminals then).
 - `xload &`; runs in the background
-- `CTRL + x`; suspend the process and unjam the terminal.
+- ++ctrl+x++`; suspend the process and unjam the terminal.
 - `by`; resume the process.
 - `ps`; show processes and their #PID.
 - `ps x | grep bad_program`; find the bad processes.

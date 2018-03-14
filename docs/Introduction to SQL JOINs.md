@@ -11,7 +11,7 @@ Notes.
 
 ---
 
-## Using the code
+# Using the code
 
 Seven different ways you can return data from two relational tables; excluding cross joins and self referencing joins:
 
@@ -27,7 +27,7 @@ Seven different ways you can return data from two relational tables; excluding c
 
 For the sake of this article, 5, 6, and 7 are `LEFT EXCLUDING JOIN`, `RIGHT` Excluding `JOIN`, and `OUTER` Excluding `JOIN`, respectively. Some may argue that 5, 6, and 7 are not really joining the two tables, but for simplicity, let's refer to these as joins because you use a SQL join in each of these queries (but exclude some records with a `WHERE` clause).
  
-## `INNER JOIN`
+# `INNER JOIN`
 
 ![Joins](img/introduction_to_sql_joins/INNER_JOIN.png)
 
@@ -40,7 +40,7 @@ INNER JOIN Table_B B
 ON A.Key = B.Key
 ```
 
-## `LEFT JOIN`
+# `LEFT JOIN`
 
 ![Joins](img/introduction_to_sql_joins/LEFT_JOIN.png)
 
@@ -53,7 +53,7 @@ LEFT JOIN Table_B B
 ON A.Key = B.Key
 ```
 
-## `RIGHT JOIN`
+# `RIGHT JOIN`
 
 ![Joins](img/introduction_to_sql_joins/RIGHT_JOIN.png)
 
@@ -66,7 +66,7 @@ RIGHT JOIN Table_B B
 ON A.Key = B.Key
 ```
 
-## `OUTER JOIN`
+# `OUTER JOIN`
 
 ![Joins](img/introduction_to_sql_joins/FULL_OUTER_JOIN.png)
 
@@ -79,7 +79,7 @@ FULL OUTER JOIN Table_B B
 ON A.Key = B.Key
 ```
  
-## `LEFT` Excluding `JOIN`
+# `LEFT` Excluding `JOIN`
 
 ![Joins](img/introduction_to_sql_joins/LEFT_EXCLUDING_JOIN.png)
 
@@ -93,7 +93,7 @@ ON A.Key = B.Key
 WHERE B.Key IS NULL
 ```
 
-## `RIGHT` Excluding `JOIN`
+# `RIGHT` Excluding `JOIN`
 
 ![Joins](img/introduction_to_sql_joins/RIGHT_EXCLUDING_JOIN.png)
 
@@ -107,7 +107,7 @@ ON A.Key = B.Key
 WHERE A.Key IS NULL
 ```
  
-## `OUTER` Excluding `JOIN`
+# `OUTER` Excluding `JOIN`
 
 ![Joins](img/introduction_to_sql_joins/OUTER_EXCLUDING_JOIN.png)
 
@@ -121,7 +121,7 @@ ON A.Key = B.Key
 WHERE A.Key IS NULL OR B.Key IS NULL
 ```
 
-## Examples
+# Examples
 
 Suppose we have two tables, `TABLE_A` and `TABLE_B`. The data in these tables are shown below:
 
@@ -326,7 +326,7 @@ NULL NULL       SCOTCH       11
 (6 row(s) affected)
 ```
 
-## Conclusion
+# Conclusion
 
 Note on the `OUTER JOIN` that the inner joined records are returned first, followed by the right joined records, and then finally the left joined records (at least, that's how my Microsoft SQL Server did it; this, of course, is without using any `ORDER BY` statement).
 

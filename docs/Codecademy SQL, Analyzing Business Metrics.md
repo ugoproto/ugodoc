@@ -11,13 +11,13 @@ Code snippets. With SQLite. From Codecademy in collaboration with [Periscope Dat
 
 ---
 
-## Specifying Comments
+# Specifying Comments
 
 - Line comment. This is indicated by two negative signs. The remainder of the text on the line is the comment.
 - Block comment. The start of the block comment is indicated by `/*`, the end of the comment by the same string. A block comment can cover text in part of a line, or can span multiple lines.
 - `Rem` or `@`. For Oracle, a line starting with either REM or @ is a comment line.
 
-## Avanced Aggregates
+# Avanced Aggregates
 
 At the heart of every great business decision is data. Since most businesses store critical data in SQL databases, a deep understanding of SQL is a necessary skill for every data analyst.
 
@@ -279,7 +279,7 @@ Let's generalize what we've learned so far:
 
 - Reorder Rate is the ratio of the total number of orders to the number of people making orders.
 
-## Common Metrics
+# Common Metrics
 
 As a data scientist, when you're not investigating spikes or dips in your data, you might be building dashboards of KPIs, or key performance indicators for a company.
 
