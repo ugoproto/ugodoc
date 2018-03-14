@@ -597,12 +597,18 @@
     Correlated Subqueries
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#what-can-we-generalize-so-far" title="What can we generalize so far?" class="md-nav__link">
     What can we generalize so far?
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -829,12 +835,18 @@
     Correlated Subqueries
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#what-can-we-generalize-so-far" title="What can we generalize so far?" class="md-nav__link">
     What can we generalize so far?
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -951,7 +963,7 @@
 <p>Code snippets. From Codecademy.</p>
 <hr />
 <p>While working with databases, we often need to transform data from one format to achieve a desired result. In SQL, this is often called data transformation or table transformation.</p>
-<h4 id="subqueries">Subqueries<a class="headerlink" href="#subqueries" title="Permanent link">&para;</a></h4>
+<h3 id="subqueries">Subqueries<a class="headerlink" href="#subqueries" title="Permanent link">&para;</a></h3>
 <p>Subqueries, sometimes referred to as inner queries or nested queries, are used to transform table data by nesting one query within another query. </p>
 <p>Two tables: <code class="codehilite">airports</code> and <code class="codehilite">flights</code>.</p>
 <p>Select ten rows from the <code class="codehilite">flights</code> table.</p>
@@ -985,7 +997,7 @@
 </pre></div>
 </td></tr></table>
 
-<h5 id="non-correlated-subqueries">Non-Correlated Subqueries<a class="headerlink" href="#non-correlated-subqueries" title="Permanent link">&para;</a></h5>
+<h3 id="non-correlated-subqueries">Non-Correlated Subqueries<a class="headerlink" href="#non-correlated-subqueries" title="Permanent link">&para;</a></h3>
 <p>A non-correlated subquery is a subquery that can be run independently of the outer query and as we saw, can be used to complete a multi-step transformation.</p>
 <p>Perhaps we&rsquo;d like to look at a selection of <code class="codehilite">flights</code> whose origin airport is a seaplane base, designated by <code class="codehilite">&#39;SEAPLANE_BASE&#39;</code>. The facility type of an airport is located in the <code class="codehilite">fac_type</code> field of the <code class="codehilite">airports</code> table.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -1061,7 +1073,7 @@
 </pre></div>
 </td></tr></table>
 
-<h5 id="correlated-subqueries">Correlated Subqueries<a class="headerlink" href="#correlated-subqueries" title="Permanent link">&para;</a></h5>
+<h3 id="correlated-subqueries">Correlated Subqueries<a class="headerlink" href="#correlated-subqueries" title="Permanent link">&para;</a></h3>
 <p>In a correlated subquery, the subquery can not be run independently of the outer query. The order of operations is important in a correlated subquery:</p>
 <p>A row is processed in the outer query. Then, for that particular row in the outer query, the subquery is executed.</p>
 <p>This means that for each row processed by the outer query, the subquery will also be processed for that row. In this example, we will find the list of all flights whose distance is above average for their carrier (query on a query, same table).</p>
@@ -1129,7 +1141,7 @@
 </pre></div>
 </td></tr></table>
 
-<h5 id="what-can-we-generalize-so-far">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far" title="Permanent link">&para;</a></h5>
+<h4 id="what-can-we-generalize-so-far">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Subqueries are used to complete an SQL transformation by nesting one query within another query.</li>
 <li>A non-correlated subquery is a subquery that can be run independently of the outer query and can be used to complete a multi-step transformation.</li>
@@ -1147,13 +1159,13 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="merging-tables-together">Merging Tables Together<a class="headerlink" href="#merging-tables-together" title="Permanent link">&para;</a></h4>
+<h3 id="merging-tables-together">Merging Tables Together<a class="headerlink" href="#merging-tables-together" title="Permanent link">&para;</a></h3>
 <p>Sometimes, in order to answer certain questions based on data, we need to merge two tables together and then query the merged result. Perhaps we have two tables that contain information about products in an ecommerce store that we would like to combine. There are two ways of doing this:</p>
 <ul>
 <li>Merge the rows, called a <code class="codehilite">JOIN</code>.</li>
 <li>Merge the columns, called a <code class="codehilite">UNION</code>.</li>
 </ul>
-<h5 id="union"><code class="codehilite">UNION</code><a class="headerlink" href="#union" title="Permanent link">&para;</a></h5>
+<h4 id="union"><code class="codehilite">UNION</code><a class="headerlink" href="#union" title="Permanent link">&para;</a></h4>
 <p>We&rsquo;ll focus on unions here. Union combines the result of two or more <code class="codehilite">SELECT</code> statements, using the following syntax:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -1225,7 +1237,7 @@
 </td></tr></table>
 
 <p>Before running the top analysis, create an alias a with the preliminary results, run the <code class="codehilite">avg(a.sale_price)</code>, and group by 1 to view separate records and not a unique aggregate record!!!</p>
-<h5 id="intersect"><code class="codehilite">INTERSECT</code><a class="headerlink" href="#intersect" title="Permanent link">&para;</a></h5>
+<h4 id="intersect"><code class="codehilite">INTERSECT</code><a class="headerlink" href="#intersect" title="Permanent link">&para;</a></h4>
 <p>&hellip;is used to combine two <code class="codehilite">SELECT</code> statements, but returns rows only from the first <code class="codehilite">SELECT</code> statement that are identical to a row in the second <code class="codehilite">SELECT</code> statement. This means that it returns only common rows returned by the two <code class="codehilite">SELECT</code> statements.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -1253,7 +1265,7 @@
 </pre></div>
 </td></tr></table>
 
-<h5 id="except"><code class="codehilite">EXCEPT</code><a class="headerlink" href="#except" title="Permanent link">&para;</a></h5>
+<h4 id="except"><code class="codehilite">EXCEPT</code><a class="headerlink" href="#except" title="Permanent link">&para;</a></h4>
 <p>&hellip;is constructed in the same way, but returns distinct rows from the first <code class="codehilite">SELECT</code> statement that aren’t output by the second <code class="codehilite">SELECT</code> statement.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -1281,14 +1293,14 @@
 </pre></div>
 </td></tr></table>
 
-<h5 id="what-can-we-generalize-so-far_1">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_1" title="Permanent link">&para;</a></h5>
+<h4 id="what-can-we-generalize-so-far_1">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The <code class="codehilite">UNION</code> clause allows us to utilize information from multiple tables in our queries.</li>
 <li>The <code class="codehilite">UNION ALL</code> clause allows us to utilize information from multiple tables in our queries, including duplicate values.</li>
 <li><code class="codehilite">INTERSECT</code> is used to combine two <code class="codehilite">SELECT</code> statements, but returns rows only from the first <code class="codehilite">SELECT</code> statement that are identical to a row in the second <code class="codehilite">SELECT</code> statement.</li>
 <li><code class="codehilite">EXCEPT</code> returns distinct rows from the first <code class="codehilite">SELECT</code> statement that aren’t output by the second <code class="codehilite">SELECT</code> statement</li>
 </ul>
-<h4 id="conditional-aggregates">Conditional Aggregates<a class="headerlink" href="#conditional-aggregates" title="Permanent link">&para;</a></h4>
+<h3 id="conditional-aggregates">Conditional Aggregates<a class="headerlink" href="#conditional-aggregates" title="Permanent link">&para;</a></h3>
 <p>Aggregate functions compute a single result from a set of multiple input values. You can think of aggregate data as data collected from multiple rows at a time. In this lesson, we&rsquo;ll continue learning about aggregate functions by focusing on conditionals, sums, and combining aggregate functions.</p>
 <p>Conditional Aggregates are aggregate functions that compute a result set based on a given set of conditions.</p>
 <p>The count function is an aggregate function, since it aggregates data from multiple rows.</p>
@@ -1409,14 +1421,14 @@
 </pre></div>
 </td></tr></table>
 
-<h5 id="what-can-we-generalize-so-far_2">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_2" title="Permanent link">&para;</a></h5>
+<h4 id="what-can-we-generalize-so-far_2">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Conditional Aggregates are aggregate functions the compute a result set based on a given set of conditions.</li>
 <li><code class="codehilite">NULL</code> can be used to denote an empty field value</li>
 <li><code class="codehilite">CASE</code> statements allow for custom classification of data</li>
 <li><code class="codehilite">CASE</code> statements can be used inside aggregates (like <code class="codehilite">SUM()</code> and <code class="codehilite">COUNT()</code>) to provide filtered measures</li>
 </ul>
-<h4 id="date-number-and-string-functions">Date, Number, and String Functions<a class="headerlink" href="#date-number-and-string-functions" title="Permanent link">&para;</a></h4>
+<h3 id="date-number-and-string-functions">Date, Number, and String Functions<a class="headerlink" href="#date-number-and-string-functions" title="Permanent link">&para;</a></h3>
 <p>Oftentimes, data in columns of tables is not in the exact format we need to complete our desired analysis. We may need to extract a date from a full timestamp, manipulate a number, or combine first and last name columns to create a full name.</p>
 <p>In this lesson, we&rsquo;ll be learning about some of SQL&rsquo;s built-in functions for transforming dates, numbers and strings. We&rsquo;ll be using database of bakeries in this lesson.</p>
 <p>It is important to note that date, number, and string functions are highly database dependent. Here, we focus on built-in functions in the SQLite database management system.</p>
@@ -1562,7 +1574,7 @@ The function returns the string string with all occurrences of the string <code 
 </pre></div>
 </td></tr></table>
 
-<h5 id="what-can-we-generalize-so-far_3">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_3" title="Permanent link">&para;</a></h5>
+<h4 id="what-can-we-generalize-so-far_3">What can we generalize so far?<a class="headerlink" href="#what-can-we-generalize-so-far_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Date Functions:<ul>
 <li><code class="codehilite">DATETIME</code>; Returns the date and time of the column specified. This can be modified to return only the date or only the time.</li>
