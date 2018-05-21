@@ -60,6 +60,7 @@ pages:
     - Learn Git: 'Learn Git.md'
     - Resources for Data Science: 'Resources for Data Science.md'
     - Storytelling with Data: 'Storytelling with Data.md'
+    - Charts: 'Charts.md'
     - Ten Kinds of Stories to Tell with Data: 'Data_Storytelling.md'
     - Infographies: 'Infographies.md'
   - OS & CLI:
@@ -80,6 +81,7 @@ pages:
   - Web:
     - Web Cheat Sheets: 'Web_CS.md'
     - HTML and CSS: 'HTML and CSS.md'
+    - Embedding HTML into HTML: 'embedding.md'
     - Responsive HTML: 'Responsive_HTML.md'
     - Markdown & Pandoc: 'Markdown & Pandoc.md'
     - tests: 'tests.md'
@@ -165,6 +167,7 @@ markdown_extensions:
 ## ++ctrl+alt+delete++
 ## MORE
   - pyembed.markdown
+## videos
   
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
