@@ -496,6 +496,16 @@
             "title": "Wrap up"
         },
         {
+            "location": "/Charts/",
+            "text": "Foreword\n\n\nNotes.\n\n\n\n\nCharts\n\u00b6\n\n\n\n\nChart & Diagrams, 2 pages\n. PDF only.\n\n\nChart & Diagrams, 11x17\n. PDF only. \n\n\nCharts\n. PDF.\n\n\n\n\n\n\n\n\n\n\nColors\n\u00b6",
+            "title": "Charts"
+        },
+        {
+            "location": "/Charts/#colors",
+            "text": "",
+            "title": "Colors"
+        },
+        {
             "location": "/Data_Storytelling/",
             "text": "Foreword\n\n\nNotes. From Harvard Business Review.\n\n\n\n\nTime\n\u00b6\n\n\n1- \nReporting\n: perform descriptive analytics. Tell what happened.\n\n\n2- \nExplanatory survey\n: analyze what people or objects are up to. Ask people what they think about something. Conceive a statistical model; what factors drive others.\n\n\n3- \nPrediction\n: perform predictive analytics. Use historical data, add a statistical model, probabilities, and assumptions,  predict the future. Find out what customers are likely to buy. Assess how likely it is for an event to happen. Forecast economic conditions. \n\n\nFocus\n\u00b6\n\n\n4- \nWhat\n: tell what happened with a \nfocus\n on one issue (\nReporting\n is not as focused).\n\n\n5- \nWhy\n: tell what underlying factors caused the outcome. \nFocus\n on the outcome.\n\n\n6- \nHow\n to address the issue: explore various ways to improve the situation. \nFocus\n on the situation.\n\n\nDepth\n\u00b6\n\n\n7- \nCSI\n: run a small, ad hoc investigation. Find out why something is happening. Find out why some customer are dropping online transactions when they get to the postal code input form; what if some rural locations don\u2019t have postal codes?\n\n\n8- \nEureka\n: invest in long, analytically-driven searches for a solution to a complex problem. Discover the right way to refer and price potential buyers to real estate agents on a website. Since the project is core to the company\u2019s business model, it needs a corporate buy-in. The project involve several different analytical methods, false starts, dead-ends, discoveries.\n\n\nMethods\n\u00b6\n\n\n9- \nCorrelations\n: find why the relationships among variables rise and fall at the same time. \n\n\n10- \nCausation\n: argue that one variable caused the other. Controlled experiment.\n\n\nAfterword\n\u00b6\n\n\n\n\nThese 10 approaches are not mutually exclusive. \n\n\nBegin the report with the result and recommended outcome. Follow with the demonstration.\n\n\nFor the c-suite, keep technical terms to the minimum.",
             "title": "Ten Kinds of Stories to Tell with Data"
@@ -1034,6 +1044,11 @@
             "location": "/HTML and CSS/#web-generator-lists",
             "text": "HTML .  WebdesignerDepot .",
             "title": "Web Generator Lists"
+        },
+        {
+            "location": "/embedding/",
+            "text": "Foreword\n\n\nNotes, snippets, and results.\n\n\n\n\nEmbedding outputs\n\u00b6\n\n\n\n\nEmbedding static visualizations from packages can be done with image outputs (.png, .pdf) or HTML outputs.\n\n\nWe can embed just about any HTML snippet with \n<iframe>\n or \n<embed>\n. \n\n\n\n\n1\n<iframe\n \nseamless\n \nsrc=\n\"../leaflet_frag.html\"\n \nwidth=\n520px\n \nheight=\n520px\n \n></iframe>\n\n\n\n\n\n\n\n\n\n\n1\n<embed\n \nseamless\n \nsrc=\n\"../leaflet_frag.html\"\n \nwidth=\n520px\n \nheight=\n520px\n \n></embed>",
+            "title": "Embedding HTML into HTML"
         },
         {
             "location": "/Responsive_HTML/",
