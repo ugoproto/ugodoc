@@ -14,12 +14,13 @@ Notes.
 # Charts
 
 - [Chart & Diagrams, 2 pages](slide-chooser-2-pager-2.pdf). PDF only.
-- [Chart & Diagrams, 11x17](slide-chooser-11x17). PDF only. 
+- [Chart & Diagrams, 11x17](slide-chooser-11x17). PDF only.
+- [Which Chart v6](which_chart_v6_final_0.pdf). PDF only. 
 - [Charts](viEditorCheatSheet.pdf). PDF.
 
 
 <center>
-![](img/Charts/charts.png)
+![](img/Charts/charts.svg)
 </center>
 
 # Colors

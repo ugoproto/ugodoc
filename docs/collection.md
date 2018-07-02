@@ -11,6 +11,16 @@ Corpus of documents: titles and keywords.
 
 ---
 
+# Arduino, Raspberry
+
+Premiers pas sur Raspberry Pi, BLOGÉCLAIR.COM, 2017
+
+Programmer avec Arduino en s'amusant, Pour les nuls, 2017
+
+Raspberry Pi, Le guide de l’utilisateur, Dunod, 2017
+
+Raspberry Pi pour les Nuls grand format, 2e édition, First Interactive, 2017
+
 # Bash, Powershell
 
 Learning the bash Shell, Third Edition, O'Reilly, 2005
@@ -147,6 +157,8 @@ Event History Analysis with R, CRC Press, 2012 (PAPER)
 
 Introduction to Python for Econometrics, Statistics and Data Analysis, CC, 2014
 
+Machine-learning Techniques in Economics, New Tools for Predicting Economics Growth, Springer, 2017
+
 Introducing Survival and Event History Analysis, SAGE, 2011, <sub>survival, event, history, r, data, exploration, descriptive statistics, data structures, nonparametric, kaplan-meier estimator, 
 Introduction to Stochastic Process with R, Wiley, 2016, <sub>markov chain, stationary, periodicity, ergodic, time, absorbing, branching, probability, extinction, monte carlo, gibbs sampler, sampler, eigenvalue, card shuffling, poisson process, arrival, interarrival, thinning, superposition, uniform distribution, spatial poisson, nonhomogeneous, parting, continuous-time, brownian motion, gaussian process, transformation, properties, variations, applications, ito integral, discrete random variable, joint distribution, continuous random variable, common probability distributions, moment-generating functino, matrix algebra</sub>
 
@@ -157,6 +169,8 @@ Spatial Statistics & Geostatistics, SAGE, 2013 (PAPER)
 Statistics Done Wrong, No Starch Press, 2015
 
 The Cox Model and Its Applications, Springer, 2016
+
+The Economics of Obesity, Poverty, Income Inequality and Health, Springer, 2017
 
 Think Stat 2, Exploratory Data Analysis in Python, Green Tea Press, 2014
 
@@ -174,10 +188,15 @@ Big Data Analytics, A Practical Guide for Managers, Auerbach Publications, 2015
 
 # LaTeX, Markdown
 
+A Crash Course in LaTeX, 2018
+
+LaTeX pour l'impatient, 3e édition, MiniMax, 2009
+
 LaTeX pour l'impatient, 4e édition, MiniMax, 2016 (BANQ)
 
-LaTeX appliqué aux sciences humaines
-, Atramenta, 2012
+LaTeX appliqué aux sciences humaines, Atramenta, 2012
+
+Petit guide pour les débutants en LaTeX, 2008
 
 TikZ pour l'impatient, CC, 2017
 
@@ -258,9 +277,13 @@ software...
 
 Analytics for Insurance, The Real Business of Big Data, Wiley, 2016, <sub>risk, management, underwriting, claim, marketing, property, liability, life, pensions, people</sub>
 
+Artificial Intelligence for Marketing, Practival Applications, Wiley, 2017
+
 Big Data opportunité ou menace pour l'assurance, RB Édition, 2016
 
 Marketing Analytics, A Practical Guide to Real Marketing Science, Wiley, 2015, <sub>statistics, consumer, behaviour, strategy, regression, business case, segmentation, elasticity, test, control, lift, collinearity, logistic, market basket analysis, survival, lifetime, value, ltv, descriptive, predictive, simultaneous equations, segment, k0means, lca, rfm, behavioural, missing value, research, conjoint analysis, structural equation, sem, sample, a/b, testing, factorial, engagement</sub> (BANQ)
+
+Data Science for Business, O'Reilly, 2013
 
 Marketing Data Science, Modeling Techniques in Predictive Analytics with R and Python, Wiley, 2015, <sub>market, consumer choice, customer, retention, acquisition, positioning, promiting, recommending, brands, prices, social networks, competitors, predicting, sales, database, regression, bayesian, data mining, machine learning, data visualization, text, sentiment analysis, time series, market response, sampling, www, social media, surveys, experiments, interviews, focus groups, field search cases</sub>
 
@@ -315,7 +338,11 @@ Data Science from Scratch First Principles with Python, O'Reilly, 2015, <sub>vis
 
 Data Wrangling with Python Tips and Tools to Make Your Life Easier, O'Reilly, 2016, <sub>excel, spreadsheet, pdf, storing, clean, format, outilier, bad, duplicates, match, regex, standardizing, scripting, exploration, presenting, reporting, web, scraping, screen, spiders, api, automation, scaling</sub> 
 
+Flask Building Python Web Services, Packt, 2017
+
 Hands-On Machine Learning with Scikit-Learn & TensorFlow, O'Reilly, 2017
+
+Python Geospatial Analysis Cookbook, Packt, 2015
 
 Introducing Data Science, Big Data, Machine Learning and more, using Python tools, Manning, 2016
 
@@ -347,13 +374,15 @@ Python Data Analysis, 2nd edition, Packt, 2017
 
 Python Data Analysis Cookbook, Packt, 2016
 
+Python Data Analytics and Visualization, Packt, 2017
+
 Python Data Science Handbook, O'Reilly, 2017
 
 Python Data Visualization, 2nd edition, Packt, 2015
 
 Python End-to-end Data Analysis, Packt, 2016
 
-Python Geospatial Analysis Cookbook, Packt, 2015
+Python for R Users, Wiley, 2018
 
 Python Geospatial Analysis Essentials, Packt 2015
 
@@ -365,6 +394,8 @@ Real-World Machine Learning, Manning, 2017
 
 Une introduction à Python 3, CC 
 
+Web Scraping with Python Collecting Data from the Modern Web, O'reilly, 2015
+
 # R, Statistics
 
 An Introduction to Statistical Learning with Applications in R, Springer, 2015
@@ -372,6 +403,10 @@ An Introduction to Statistical Learning with Applications in R, Springer, 2015
 Analyse de données avec R, PUR, 2016, <sub>pca, principal components, fa, factorial, factor, analysis, multiple, correspondence, classifier, classification, visualization</sub> (BANQ)
 
 Applied Spatial Data Analysis with R, Springer, 2nd edition, 2013
+
+A Tiny Handbook of R Springer, 2011
+    
+Basic Data Analysis for Time Series with R, Wiley, 2014
 
 Biostatistique: une approche intuitive, De Boeck, 2013, <sub>tests, hypothesis, p-value, proportion confidence interval, survival analysis, censored, poisson, error, bias, continuous, categorical, spread, gauss, log-normal, geometric, significance, tests, type i, type ii, equivalence, comparison, group, outlier, khi-squared, propective, experimental, relative risk, survey, two mean, groups, correlation, regression, model, nonlinear, logistic, anova, nonparametric, sensitivity, roc, bayes, sample, sampling, cases</sub> (BANQ)
 
@@ -621,14 +656,24 @@ PostgreSQL Administration Cookbook, Package, 2017
 
 # Storytelling, Visualization
 
+Good Charts, The HBR Guide, HBR Press, 2016
+
+How to Use Excel Sparklines (notes)
+
+Information Dashboard Design, The Effective Visual Communication of Data, O'Reilly, 2006
+
+L'histoire du monde en infographie, Marabout, 2017
+
 Storytelling with data, Wiley, 2015
 
 Excel Sparklines (notes)
+
+VIS BOOKS...
 
 # Tableau
 
 desktop Tableau Getting Started 9.0
 
-Learning Tableau (9), Packt, 2015
+Tableau 10 Business Intelligence Cookbook, Packt, 2016
 
 Which chart or graph is right, Tableau (article), 2012
