@@ -81,8 +81,8 @@ Cheat sheets.
 # LaTeX
 
 - [LaTeX Font Packages](latex-font-packages.pdf). PDF only.
-- [LaTeX Cheat Sheet, 4p](latexcheatsheet_1.pdf). PDF only.
-- [LaTeX Cheat Sheet, 2p](latexsheet.pdf). PDF.
+- [LaTeX Cheat Sheet, 4p](latexcheatsheet4.pdf). PDF only.
+- [LaTeX Cheat Sheet, 2p](latexcheatsheet2.pdf). PDF.
 
 </center>
 ![](img/vade_mecum/latexsheeta.png)

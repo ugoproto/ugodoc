@@ -50,7 +50,7 @@ theme:
 #    - 'extra.css'
 ## in the docs
 
-pages:
+nav:
   - Home: 'index.md'
   - Collection: 'collection.md'
   - Vade Mecum:
