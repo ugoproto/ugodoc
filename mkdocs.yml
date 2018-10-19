@@ -78,6 +78,10 @@ nav:
     - Codecademy, SQL, Analyzing Business Metrics: 'Codecademy SQL, Analyzing Business Metrics.md'
     - Codecademy, SQL, Table Transformation: 'Codecademy SQL, Table Transformation.md'
     - Introduction to SQL JOINs: 'Introduction to SQL JOINs.md'
+  - Virtual Machines (Cloud Computing):
+    - Cloud Computing: 'Cloud.md'
+    - AWS: 'AWS.md'
+    - Google Cloud: 'Google_Cloud.md'
   - Web:
     - Web Cheat Sheets: 'Web_CS.md'
     - HTML and CSS: 'HTML and CSS.md'
