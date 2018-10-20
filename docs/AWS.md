@@ -40,7 +40,7 @@ After you have selected your instance type, select Configure Instance Details at
 Here, we will set up your instance to make it easy to access from your computer. Each row describes rules for how one can access your instance. We will use Jupyter notebooks, which are served on port 8888. If you don’t understand this yet, you will see how to make it work soon.  
 For now, click the Add Rule button. In the new column select TCP for the protocol, 8888 for the Port, and 0.0.0.0/0 for the last column, which is the source.
 
-![](img/content_content_security.png)
+![](img/Cloud/content_content_security.png)
 
 Finally click the Review and Launch button on the bottom of your screen. Then press Launch again.  
 You will now get to the last bit of security… which is selecting a key pair. The key is a file you have on your computer, which must match a file stored on the server. This is how you prevent others from using the server you just set up. So, don’t share keys with others or put the file anywhere public.  

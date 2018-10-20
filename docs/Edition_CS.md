@@ -106,7 +106,7 @@ Cheat sheets.
 
 # Vi/Vim
 
-- [Vi Editor](charts.pdf). PDF.
+- [Vi Editor](viEditorCheatSheet.pdf). PDF.
 
 <center>
 ![](img/vade_mecum/viEditorCheatSheeta.png)

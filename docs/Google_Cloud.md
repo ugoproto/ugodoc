@@ -17,7 +17,7 @@ For a deeper understanding of Google Cloud:
 
 # Create an Account and Project
 
-To create your GCP account with the 12-month [free trial](cloud.google.com) and/or [free](https://cloud.google.com/free/).  
+To create your GCP account with the 12-month [free trial](https://cloud.google.com) and/or [free](https://cloud.google.com/free/).  
 Once the account is active, the access page is the [Web console](http://console.cloud.google.com/).
 Go to the [Resource Management page](https://console.cloud.google.com/cloud-resource-manager).  
 Create a new project.  
