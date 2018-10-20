@@ -392,6 +392,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../visual_perception/" title="Visual Perception (visualisation)" class="md-nav__link">
+      Visual Perception (visualisation)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -930,7 +942,7 @@ The instances with GPU’s are those that start with either g2 or p2. We recomme
 After you have selected your instance type, select Configure Instance Details at the bottom of the page. Then select 6. Configure Security Group on the menu towards the top of the page.<br />
 Here, we will set up your instance to make it easy to access from your computer. Each row describes rules for how one can access your instance. We will use Jupyter notebooks, which are served on port 8888. If you don’t understand this yet, you will see how to make it work soon.<br />
 For now, click the Add Rule button. In the new column select TCP for the protocol, 8888 for the Port, and 0.0.0.0/0 for the last column, which is the source.</p>
-<p><img alt="" src="img/content_content_security.png" /></p>
+<p><img alt="" src="../img/Cloud/content_content_security.png" /></p>
 <p>Finally click the Review and Launch button on the bottom of your screen. Then press Launch again.<br />
 You will now get to the last bit of security… which is selecting a key pair. The key is a file you have on your computer, which must match a file stored on the server. This is how you prevent others from using the server you just set up. So, don’t share keys with others or put the file anywhere public.<br />
 Select Create a new key pair (or choose an existing pair) and type in a name for your key («CloudAWSTutorial.pem»). Then press the Download Key Pair button to get a copy of your key, which you will need to access your server.<br />
