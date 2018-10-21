@@ -1,6 +1,12 @@
+<!--
+
+-->
+
+---
+
 **Foreword**
 
-This step-by-step tutorial to set up and use Jupyter Notebook on Amazon Web Services (AWS) Elastic Compute Cloud (EC2) for machine learning [from DataCamp](https://www.datacamp.com/community/tutorials/deep-learning-jupyter-aws)
+A step-by-step tutorial to set up and use Jupyter Notebook on Amazon Web Services (AWS) Elastic Compute Cloud (EC2) for machine learning. From DataCamp.
 
 Also, to find out more about AWS EC2 and a data science environment on a Windows instance, consult [this article from DataCamp](https://www.datacamp.com/community/tutorials/aws-ec2-beginner-tutorial).
 

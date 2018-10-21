@@ -54,24 +54,24 @@ nav:
   - Home: 'index.md'
   - Collection: 'collection.md'
   - Vade Mecum:
-    - Edition Cheat Sheets: 'Edition_CS.md'
-    - LaTeX Snippets: 'latex_snippets.md'
+    - Charts: 'Charts.md'
     - Digital Humanities: 'Digital Humanities.md'
+    - Edition Cheat Sheets: 'Edition_CS.md'
+    - Infographies: 'Infographies.md'
+    - LaTeX Snippets: 'latex_snippets.md'
     - Learn Git: 'Learn Git.md'
     - Resources for Data Science: 'Resources for Data Science.md'
     - Storytelling with Data: 'Storytelling with Data.md'
-    - Charts: 'Charts.md'
     - Ten Kinds of Stories to Tell with Data: 'Data_Storytelling.md'
-    - Infographies: 'Infographies.md'
     - Visual Perception (visualisation): 'visual_perception.md'
   - OS & CLI:
     - OS Cheat Sheets: 'OS_CS.md'
     - Codecademy, Learn the Command Line Notes: 'Codecademy Learn the Command Line Notes.md'
     - Command Line Crash Course: 'Command Line Crash Course.md'
     - Command Shell Snippets : 'Command Shell Snippets.md'
+    - Install & Run on Linux: 'Install_tarball.md'
     - The Linux Command Line: 'The Linux Command Line.md'
     - Ubuntu 16.04: 'Ubuntu.md'
-    - Install & Run on Linux: 'Install_tarball.md'
     - Useful Shell Commands for Data Science: 'Usefull+Shell+Commands+for+Data+Science.md'
   - SQL & NoSQL:
     - SQL-NoSQL Cheat Sheets: 'SQL-NoSQL_CS.md'
@@ -80,16 +80,16 @@ nav:
     - Codecademy, SQL, Table Transformation: 'Codecademy SQL, Table Transformation.md'
     - Introduction to SQL JOINs: 'Introduction to SQL JOINs.md'
   - Virtual Machines (Cloud Computing):
-    - Cloud Computing: 'Cloud.md'
     - AWS: 'AWS.md'
+    - Cloud Computing: 'Cloud.md'
     - Google Cloud: 'Google_Cloud.md'
   - Web:
     - Web Cheat Sheets: 'Web_CS.md'
-    - HTML and CSS: 'HTML and CSS.md'
     - Embedding HTML into HTML: 'embedding.md'
-    - Responsive HTML: 'Responsive_HTML.md'
+    - HTML and CSS: 'HTML and CSS.md'
     - Markdown & Pandoc: 'Markdown & Pandoc.md'
-    - tests: 'tests.md'
+    - Responsive HTML: 'Responsive_HTML.md'
+    - Tests: 'tests.md'
 
 markdown_extensions:
   - def_list

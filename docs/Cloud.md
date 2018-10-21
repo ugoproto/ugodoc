@@ -1,3 +1,8 @@
+<!--
+
+-->
+
+---
 **Foreword**
 
 A note on cloud computing.

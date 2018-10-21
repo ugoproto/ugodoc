@@ -1,6 +1,11 @@
+<!--
+
+-->
+
+---
 **Foreword**
 
-This step-by-step tutorial to set up a data science environment on Google Cloud: create an instance on Google Compute Engine, install Anaconda and run Jupyter Notebook [from DataCamp](https://www.datacamp.com/community/tutorials/google-cloud-data-science).
+A step-by-step tutorial to set up a data science environment on Google Cloud: create an instance on Google Compute Engine, install Anaconda and run Jupyter Notebook. From DataCamp.
 
 ---
 
