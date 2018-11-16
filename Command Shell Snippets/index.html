@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
     
     
       
@@ -60,8 +60,8 @@
       <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -802,57 +802,57 @@
 <p>Code snippets.</p>
 <hr />
 <p>Sort in alphabetical order:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt
 </pre></div>
 </td></tr></table>
 
 <p>Sort in numerical order:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -n myfile.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -n myfile.txt
 </pre></div>
 </td></tr></table>
 
 <p>Sort on multiple column (on column 2 in numerical order, then on column 1 in alphabetical order):</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt -k2n -k1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt -k2n -k1
 </pre></div>
 </td></tr></table>
 
 <p>Sort a comma-separated table:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -k2 -k3 k1 -t <span class="s1">&#39;,&#39;</span> myfile.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -k2 -k3 k1 -t <span class="s1">&#39;,&#39;</span> myfile.txt
 </pre></div>
 </td></tr></table>
 
 <p>Sort in reversed order:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -r myfile.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort -r myfile.txt
 </pre></div>
 </td></tr></table>
 
 <p>Sort a pip-separated file in reverses order by the second column:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt -nrk <span class="m">2</span> -st <span class="s1">&#39;|&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort myfile.txt -nrk <span class="m">2</span> -st <span class="s1">&#39;|&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Search text files for lines matching regular expressions (regex) with <code class="codehilite">grep &lt;matching string&gt; &lt;source&gt;</code>:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep ArticleTitle webpage.html
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep ArticleTitle webpage.html
 </pre></div>
 </td></tr></table>
 
 <p>An asterisk (<code class="codehilite">*</code>) indicates any character (the matching expression starts with <code class="codehilite">Ar</code> and ends with <code class="codehilite">le</code>):</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep Ar*le mytext.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep Ar*le mytext.txt
 </pre></div>
 </td></tr></table>
 
 <p>Search for starting metacharacter <code class="codehilite">&gt;</code>:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep ^<span class="s1">&#39;&gt;&#39;</span> mytext.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep ^<span class="s1">&#39;&gt;&#39;</span> mytext.txt
 </pre></div>
 </td></tr></table>
 
 <p>List the access rights for all files:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -lag
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -lag
 </pre></div>
 </td></tr></table>
 
 <p>Run commands in background, kill the job running in the foreground, suspend the job running in the foreground, and background the suspended job:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -869,7 +869,7 @@ $ <span class="nb">bg</span>
 </td></tr></table>
 
 <p>List the current jobs, foreground job number 1, and kill job number 1:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -882,7 +882,7 @@ $ kill%1
 </td></tr></table>
 
 <p>List current processes, and kill process number 26152:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ps
 
@@ -891,7 +891,7 @@ $ <span class="nb">kill</span> <span class="m">26152</span>
 </td></tr></table>
 
 <p>Help about commands:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ man &lt;<span class="nb">command</span> name&gt;
 
