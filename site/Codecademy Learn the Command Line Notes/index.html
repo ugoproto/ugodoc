@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
     
     
       
@@ -60,8 +60,8 @@
       <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#manipulation" tabindex="1" class="md-skip">
+      <a href="#manipulation" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1056,7 +1056,7 @@
 <ul>
 <li>Let&rsquo;s begin by taking a closer look at input and output. In the terminal, after the shell prompt, type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Hello&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Hello&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1069,14 +1069,14 @@
 </li>
 <li>Redirection (<code class="codehilite">&gt;</code>) reroutes standard input, standard output, and standard error to or from a different location. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Hello&#39;</span> &gt; hello.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Hello&#39;</span> &gt; hello.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat hello.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat hello.txt
 </pre></div>
 </td></tr></table>
 
@@ -1089,49 +1089,49 @@
 <p>Type :</p>
 </li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -l
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -l
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>This is the filesystem we&rsquo;ll work with. Create a file. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch ocean.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch ocean.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Fill the file with values (ocean names). Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat oceans.txt &gt; continents.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat oceans.txt &gt; continents.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Use <code class="codehilite">cat</code> to view the contents of <code class="codehilite">continents.txt</code>. Notice that we only see oceans as output:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat continents.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat continents.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">&gt;</code> takes the standard output of the command on the left, and redirects it to the file on the right. Here the standard output of cat <code class="codehilite">oceans.txt</code> is redirected to <code class="codehilite">continents.txt</code>. Note that <code class="codehilite">&gt;</code> OVERWRITES all original content in <code class="codehilite">continents.txt</code>. When you view the output data by typing cat on <code class="codehilite">continents.txt</code>, you will see only the contents of <code class="codehilite">oceans.txt</code>. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat glaciers.txt &gt;&gt; rivers.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat glaciers.txt &gt;&gt; rivers.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Use <code class="codehilite">cat</code> to view the contents of <code class="codehilite">rivers.txt</code>:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat rivers.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat rivers.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Notice that we see both rivers and glaciers as output. Type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat glaciers.txt &gt;&gt; rivers.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat glaciers.txt &gt;&gt; rivers.txt
 </pre></div>
 </td></tr></table>
 
@@ -1143,49 +1143,49 @@
 <p>Type :</p>
 </li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch lakes.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch lakes.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Fill the files with values (lake names). Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat &lt; lakes.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat &lt; lakes.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">&lt;</code> takes the standard input from the file on the right and inputs it into the program on the left. Here, <code class="codehilite">lakes.txt</code> is the standard input for the <code class="codehilite">cat</code> command. The standard output appears in the terminal. Let&rsquo;s try some more redirection commands. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch volcanoes.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch volcanoes.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Fill the files with values (volcano names). Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>You get the count for: lines, words, bytes. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc <span class="p">|</span> cat &gt; islands.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc <span class="p">|</span> cat &gt; islands.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Use <code class="codehilite">cat</code> to output the contents in <code class="codehilite">islands.txt</code>. The next command should now equals <code class="codehilite">$ cat volcanoes.txt <span class="p">|</span> wc</code>.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">|</code> is a &lsquo;pipe&rsquo; or &lsquo;pipeline&rsquo; The <code class="codehilite">|</code> takes the standard output of the command on the left, and PIPES it as standard input to the command on the right. You can think of this as &lsquo;command to command&rsquo; redirection. Here, again, the output of cat <code class="codehilite">volcanoes.txt</code> is the standard input of <code class="codehilite">wc</code>. In turn, the <code class="codehilite">wc</code> command outputs the number of lines, words, and characters in <code class="codehilite">volcanoes.txt</code>, respectively:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat volcanoes.txt <span class="p">|</span> wc <span class="p">|</span> cat &gt; islands.txt
 $ less islands.txt
 </pre></div>
@@ -1195,7 +1195,7 @@ $ less islands.txt
 <li>Multiple <code class="codehilite">|</code>s can be chained together. Here the standard output of cat <code class="codehilite">volcanoes.txt</code> is &lsquo;piped&rsquo; to the <code class="codehilite">wc</code> command. The standard output of <code class="codehilite">wc</code> is then &lsquo;piped&rsquo; to cat. Finally, the standard output of cat is redirected to <code class="codehilite">islands.txt</code>. You can view the output data of this chain by typing cat <code class="codehilite">islands.txt</code>. </li>
 <li>A few commands are particularly powerful when combined with redirection. Let&rsquo;s try them out. First, use <code class="codehilite">cat</code> to output the contents of <code class="codehilite">lakes.txt</code>. Then, <code class="codehilite">sort</code> it. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt
 $ sort lakes.txt
 </pre></div>
@@ -1204,7 +1204,7 @@ $ sort lakes.txt
 <ul>
 <li>The lakes in <code class="codehilite">lakes.txt</code> are listed in alphabetical order. Type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt <span class="p">|</span> sort
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt <span class="p">|</span> sort
 </pre></div>
 </td></tr></table>
 
@@ -1212,28 +1212,28 @@ $ sort lakes.txt
 <li><code class="codehilite">sort</code> takes the standard input and orders it alphabetically for the standard output. The lakes in <code class="codehilite">lakes.txt</code> are listed in alphabetical order.</li>
 <li>Use cat to output the contents of <code class="codehilite">sorted-lakes.txt</code>.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt <span class="p">|</span> sort &gt; sorted-lakes.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat lakes.txt <span class="p">|</span> sort &gt; sorted-lakes.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>The command takes the standard output from cat <code class="codehilite">lakes.txt</code> and &lsquo;pipes&rsquo; it to sort in ascending order. The standard output of <code class="codehilite">sort</code> is redirected to <code class="codehilite">sorted-lakes.txt</code>. You can view the output data by typing:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat sorted-lakes.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat sorted-lakes.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch deserts.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ touch deserts.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Fill the file with values. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat deserts.txt
 $ uniq deserts.txt
 </pre></div>
@@ -1247,14 +1247,14 @@ $ uniq deserts.txt
 <p>Type :</p>
 </li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort deserts.txt <span class="p">|</span> uniq
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort deserts.txt <span class="p">|</span> uniq
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>You get to see  unique entries sorted. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort deserts.txt <span class="p">|</span> uniq &gt; uniq-deserts.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sort deserts.txt <span class="p">|</span> uniq &gt; uniq-deserts.txt
 </pre></div>
 </td></tr></table>
 
@@ -1264,42 +1264,42 @@ $ uniq deserts.txt
 <li><code class="codehilite">uniq</code> stands for &lsquo;unique&rsquo; and filters out ADJACENT, duplicate lines in a file. Here <code class="codehilite">uniq deserts.txt</code> filters out duplicates of &lsquo;Sahara Desert&rsquo;, because the duplicate of &lsquo;Sahara Desert&rsquo; directly follows the previous instance. The &lsquo;Kalahari Desert&rsquo; duplicates are not adjacent, and thus remain.</li>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep Mount mountains.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep Mount mountains.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">grep</code> stands for &lsquo;global regular expression print&rsquo;. It searches files for lines that match a pattern and returns the results. It is also case sensitive. Here, <code class="codehilite">grep</code> searches for &lsquo;Mount&rsquo; in <code class="codehilite">mountains.txt</code>. Type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -i Mount mountains.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -i Mount mountains.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">grep -i</code> enables the command to be case insensitive. Here, <code class="codehilite">grep</code> searches for capital or lowercase strings that match &lsquo;Mount&rsquo; in <code class="codehilite">mountains.txt</code>. The above commands are a great way to get started with <code class="codehilite">grep</code>. If you are familiar with regular expressions, you can use regular expressions to search for patterns in files. <code class="codehilite">grep</code> can also be used to search within a directory. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Arctic /home/ccuser/workspace/geography
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Arctic /home/ccuser/workspace/geography
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>ype :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Arctic /home/ccuser/workspace/geography
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Arctic /home/ccuser/workspace/geography
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">grep -R</code> searches files in a directory and outputs filenames and lines containing matched results. <code class="codehilite">-R</code> stands for &lsquo;recursive&rsquo;. Here <code class="codehilite">grep -R</code> searches the <code class="codehilite">/home/ccuser/workspace/geography</code> directory for the string &lsquo;Arctic&rsquo; and outputs filenames and lines with matched results. Type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Gambino .
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -R Gambino .
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">grep -R</code> searches ALL files recursively and outputs filenames and lines containing matched results.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -Rl Arctic /home/ccuser/workspace/geography
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ grep -Rl Arctic /home/ccuser/workspace/geography
 </pre></div>
 </td></tr></table>
 
@@ -1320,7 +1320,7 @@ $ uniq deserts.txt
 <p>If you search for one &ldquo;file&rdquo; in the current directory, type:</p>
 </li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>find . _name <span class="s2">&quot;file.txt&quot;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>find . _name <span class="s2">&quot;file.txt&quot;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1328,7 +1328,7 @@ $ uniq deserts.txt
 <li><code class="codehilite">find / _name &quot;file.txt&quot;</code> searches &ldquo;file&rdquo; in multiple directories.</li>
 <li><code class="codehilite">find dirA dirB dirC _name &quot;file.txt&quot;</code> search &ldquo;file&rdquo; in one or more directories. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sed <span class="s1">&#39;s/snow/rain/&#39;</span> forests.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sed <span class="s1">&#39;s/snow/rain/&#39;</span> forests.txt
 </pre></div>
 </td></tr></table>
 
@@ -1342,7 +1342,7 @@ $ uniq deserts.txt
 </li>
 <li>In this case, <code class="codehilite">sed</code> searches <code class="codehilite">forests.txt</code> for the word <code class="codehilite">&#39;snow&#39;</code> and replaces it with <code class="codehilite">&#39;rain&#39;</code>. Importantly, the above command will only replace the FIRST instance of <code class="codehilite">&#39;snow&#39;</code> on a line.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sed <span class="s1">&#39;s/snow/rain/g&#39;</span> forests.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ sed <span class="s1">&#39;s/snow/rain/g&#39;</span> forests.txt
 </pre></div>
 </td></tr></table>
 
@@ -1424,21 +1424,21 @@ $ uniq deserts.txt
 <p>A simple, command line text editor: <code class="codehilite">nano</code>. It is more powerful than <code class="codehilite">less</code>. Type :</p>
 </li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano hello.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano hello.txt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>In <code class="codehilite">nano</code>, at the top of the window, type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="s1">&#39;Hello, I am nano.&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="s1">&#39;Hello, I am nano.&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Using the menu at the bottom of the terminal for reference, type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span> (the letter, not the number) to save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span>, when prompted about the filename to write. Then type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span> to exit <code class="codehilite">nano</code>. Finally, type <code class="codehilite">clear</code> to clear the terminal window. The command prompt should now be at the top of the window. You just edited a file in the <code class="codehilite">nano</code> text editor. Type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano hello.txt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano hello.txt
 </pre></div>
 </td></tr></table>
 
@@ -1454,28 +1454,28 @@ $ uniq deserts.txt
 <li><a href="http://www.nano-editor.org/">nano editor</a></li>
 <li>Now that you are familiar with editing text in <code class="codehilite">nano</code>, let&rsquo;s create a file to store environment settings. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano ~/.bash_profile
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano ~/.bash_profile
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>This opens up a new file in <code class="codehilite">nano</code>. In <code class="codehilite">~/.bash_profile</code>, at the top of the file, type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Welcome, Jane Doe&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;Welcome, Jane Doe&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>You can use your name in place of &lsquo;Jane Doe&rsquo;. Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span> to save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Type <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span> to exit. Finally, type <code class="codehilite">clear</code> to clear the terminal window. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>You should see the greeting you entered. You created a file in <code class="codehilite">nano</code> called <code class="codehilite">~/.bash_profile</code> and added a greeting.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano ~/.bash_profile
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ nano ~/.bash_profile
 </pre></div>
 </td></tr></table>
 
@@ -1489,7 +1489,7 @@ $ uniq deserts.txt
 <li>The command <code class="codehilite">nano ~/.bash_profile</code> opens up <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. The text echoes &lsquo;Welcome, Jane Doe&rsquo; and creates a greeting in the bash profile, which is saved. It tells the command line to echo the string &lsquo;Welcome, Jane Doe&rsquo; when a terminal session begins. The command source <code class="codehilite">~/.bash_profile</code> ACTIVATES the changes in <code class="codehilite">~/.bash_profile</code> for the current session.</li>
 <li>Now that we know what bash profile is, let&rsquo;s continue configuring the environment by adding command aliases. Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. In <code class="codehilite">~/.bash_profile</code>, beneath the greeting you created, type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">pd</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">pd</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1497,21 +1497,21 @@ $ uniq deserts.txt
 <li>Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Exit <code class="codehilite">nano</code>. Clear the terminal window.</li>
 <li>In the command line, use the source command to activate the changes in the current session.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">source</span> ~/.bash_profile
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Let&rsquo;s try out the alias. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pd
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pd
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>You should see the same output as you would by typing the <code class="codehilite">pwd</code> command. What happens when you store this alias in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">pd</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">pd</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1519,7 +1519,7 @@ $ uniq deserts.txt
 <li>The alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands. Here alias <code class="codehilite">pd=&#39;pwd&#39;</code> creates the alias <code class="codehilite">pd</code> for the <code class="codehilite">pwd</code> command, which is then saved in the bash profile. Each time you enter <code class="codehilite">pd</code>, the output will be the same as the pwd command. The command source <code class="codehilite">~/.bash_profile</code> makes the alias <code class="codehilite">pd</code> available in the current session. Each time we open up the terminal, we can use the <code class="codehilite">pd</code> alias.</li>
 <li>Let&rsquo;s practice aliases some more. Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. In the bash profile, beneath the previous alias, add :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">hy</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">hy</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1527,7 +1527,7 @@ $ uniq deserts.txt
 <li>Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename.</li>
 <li>Add another alias:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1539,21 +1539,21 @@ $ uniq deserts.txt
 <li>In the command line, use source to activate the changes to the bash profile for the current session.</li>
 <li>Let&rsquo;s try out the aliases. Type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ hy
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ hy
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>What happens when you store the following aliases in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">hy</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">hy</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li><code class="codehilite">hy</code> is set as alias for the history command in the bash profile. The alias is then made available in the current session through source. By typing <code class="codehilite">hy</code>, the command line outputs a history of commands that were entered in the current session. Type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -la&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1563,7 +1563,7 @@ $ uniq deserts.txt
 <li>Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>.</li>
 <li>In the bash profile, beneath the aliases, on a new line, type:</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">USER</span><span class="o">=</span><span class="s1">&#39;Jane Doe&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">USER</span><span class="o">=</span><span class="s1">&#39;Jane Doe&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1571,14 +1571,14 @@ $ uniq deserts.txt
 <li>Feel free to use your own name. Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal.</li>
 <li>In the command line, use source to activate the changes in the bash profile for the current session. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$USER</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$USER</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>This should return the value of the variable that you set. What happens when you store this in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">USER</span><span class="o">=</span><span class="s1">&#39;Jane Doe&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">USER</span><span class="o">=</span><span class="s1">&#39;Jane Doe&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1586,28 +1586,28 @@ $ uniq deserts.txt
 <li>Environment variables are variables that can be used across commands and programs and hold information about the environment. The line <code class="codehilite">USER=&#39;Jane Doe&#39;</code> sets the environment variable <code class="codehilite">USER</code> to a name <code class="codehilite">&#39;Jane Doe&#39;</code>. Usually the <code class="codehilite">USER</code> variable is set to the name of the computer&rsquo;s owner. The line export makes the variable to be available to all child sessions initiated from the session you are in. This is a way to make the variable persist across programs. At the command line, the command echo <code class="codehilite">$USER</code> returns the value of the variable. Note that <code class="codehilite">$</code> is always used when returning a variable&rsquo;s value. Here, the command echo <code class="codehilite">$USER</code> returns the name set for the variable.</li>
 <li>Let&rsquo;s learn a few more environment variables, starting with the variable for the command prompt. Open <code class="codehilite">~/.bash_profile</code> in <code class="codehilite">nano</code>. On a new line, beneath the last entry, type</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;&gt;&gt; &#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;&gt;&gt; &#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Save the file. Press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to write the filename. Exit <code class="codehilite">nano</code>. Finally, clear the terminal window. In the command line, use source to activate the changes in the bash profile for the current shell session. Let&rsquo;s try out the new command prompt. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;hello&#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="s1">&#39;hello&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -alt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -alt
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Did you notice that the prompt has changed? What happens when this is stored in <code class="codehilite">~/.bash_profile</code>?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;&gt;&gt; &#39;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s1">&#39;&gt;&gt; &#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1617,42 +1617,42 @@ $ uniq deserts.txt
 <li><code class="codehilite">PS1=&quot;value&quot;</code> changes the variable value.</li>
 <li><code class="codehilite">PS1=&#39;&gt;&gt; &#39;</code> sets the command prompt variable and exports the variable. It makes the variable available in all sub programs of the current shell. Here we change the default command prompt from <code class="codehilite">$</code> to <code class="codehilite">&gt;&gt;</code>. After using the source command, the command line displays the new command prompt. Let&rsquo;s learn about two more environment variables. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$HOME</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$HOME</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>This returns the value of the <code class="codehilite">HOME</code> variable. What happens when you type this command?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$HOME</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$HOME</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>The <code class="codehilite">HOME</code> variable is an environment variable that displays the path of the home directory. Here by typing echo <code class="codehilite">$HOME</code>, the terminal displays the path <code class="codehilite">/home/ccuser</code> as output. <code class="codehilite">cd $HOME</code> goes to the home directory. You can customize the <code class="codehilite">HOME</code> variable if needed, but in most cases this is not necessary. In the command line, type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$PATH</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$PATH</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/bin/pwd
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/bin/pwd
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/bin/ls
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/bin/ls
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>What happens when you type this command?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$PATH</span>
 /home/ccuser/.gem/ruby/2.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin
 </pre></div>
@@ -1671,42 +1671,42 @@ $ uniq deserts.txt
 </li>
 <li>Each directory contains scripts for the command line to execute. The <code class="codehilite">PATH</code> variable simply lists which directories contain scripts. For example, many COMMANDS we&rsquo;ve learned are scripts stored in the <code class="codehilite">/bin</code> directory.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ /bin/pwd
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ /bin/pwd
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>This is the script that is executed when you type the <code class="codehilite">pwd</code> command.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ /bin/ls
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ /bin/ls
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>This is the script that is executed when you type the ls command. In advanced cases, you can customize the <code class="codehilite">PATH</code> variable when adding scripts of your own. Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env <span class="p">|</span> grep PATH
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env <span class="p">|</span> grep PATH
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>What happens when you type this command?</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env
 </pre></div>
 </td></tr></table>
 
 <ul>
 <li>The <code class="codehilite">env</code> command stands for &lsquo;environment&rsquo;, and returns a list of the environment variables for the current user. Here, the <code class="codehilite">env</code> command returns a number of variables, including <code class="codehilite">PATH</code>, <code class="codehilite">PWD</code>, <code class="codehilite">PS1</code>, and <code class="codehilite">HOME</code>.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ env <span class="p">|</span> grep PATH
 $ env <span class="p">|</span> grep aliasname
 </pre></div>
@@ -1739,7 +1739,7 @@ $ env <span class="p">|</span> grep aliasname
 <ul>
 <li>Type :</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -l
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ls -l
 </pre></div>
 </td></tr></table>
 
@@ -1822,7 +1822,7 @@ For example, using levels:</li>
 </li>
 <li>How are the values calculated?</li>
 </ul>
-<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1836,7 +1836,7 @@ r+w   <span class="o">=</span> <span class="m">4</span>+2   <span class="o">=</s
 </pre></div>
 </td></tr></table><br />
 Once you have the values, you can set the access rights:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span> u   g   o  

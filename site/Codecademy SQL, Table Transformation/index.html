@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
     
     
       
@@ -60,8 +60,8 @@
       <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#non-correlated-subqueries" tabindex="1" class="md-skip">
+      <a href="#non-correlated-subqueries" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1068,7 +1068,7 @@
 <p>Subqueries, sometimes referred to as inner queries or nested queries, are used to transform table data by nesting one query within another query. </p>
 <p>Two tables: <code class="codehilite">airports</code> and <code class="codehilite">flights</code>.</p>
 <p>Select ten rows from the <code class="codehilite">flights</code> table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1085,14 +1085,14 @@
 </td></tr></table>
 
 <p>Next, we take the result set of the inner query and use it to filter on the <code class="codehilite">flights</code> table, to find the flight detail that meets the elevation criteria.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">flights</span> <span class="k">WHERE</span> <span class="n">origin</span> <span class="k">in</span> <span class="p">(</span>
     <span class="k">SELECT</span> <span class="n">code</span> <span class="k">FROM</span> <span class="n">airports</span> <span class="k">WHERE</span> <span class="n">elevation</span> <span class="o">&gt;</span> <span class="mi">2000</span><span class="p">);</span>
 </pre></div>
 </td></tr></table>
 
 <p>Find flight information about <code class="codehilite">flights</code> where the origin elevation is less than 2000 feet.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">flights</span> <span class="k">WHERE</span> <span class="n">origin</span> <span class="k">in</span> <span class="p">(</span>
     <span class="k">SELECT</span> <span class="n">code</span> <span class="k">FROM</span> <span class="n">airports</span> <span class="k">WHERE</span> <span class="n">elevation</span> <span class="o">&lt;</span> <span class="mi">2000</span><span class="p">);</span>
 </pre></div>
@@ -1101,14 +1101,14 @@
 <h3 id="non-correlated-subqueries">Non-Correlated Subqueries<a class="headerlink" href="#non-correlated-subqueries" title="Permanent link">&para;</a></h3>
 <p>A non-correlated subquery is a subquery that can be run independently of the outer query and as we saw, can be used to complete a multi-step transformation.</p>
 <p>Perhaps we&rsquo;d like to look at a selection of <code class="codehilite">flights</code> whose origin airport is a seaplane base, designated by <code class="codehilite">&#39;SEAPLANE_BASE&#39;</code>. The facility type of an airport is located in the <code class="codehilite">fac_type</code> field of the <code class="codehilite">airports</code> table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">flights</span> <span class="k">WHERE</span> <span class="n">origin</span> <span class="k">in</span> <span class="p">(</span>
     <span class="k">SELECT</span> <span class="n">code</span> <span class="k">FROM</span> <span class="n">airports</span> <span class="k">WHERE</span> <span class="n">fac_type</span> <span class="o">=</span> <span class="s1">&#39;SEAPLANE_BASE&#39;</span><span class="p">);</span>
 </pre></div>
 </td></tr></table>
 
 <p>Using the same pattern, find flight information about <code class="codehilite">flights</code> where the Federal Aviation Administration region (<code class="codehilite">faa_region</code>) is the Southern region (<code class="codehilite">&#39;ASO&#39;</code>).</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">flights</span> <span class="k">WHERE</span> <span class="n">origin</span> <span class="k">in</span> <span class="p">(</span>
     <span class="k">SELECT</span> <span class="n">code</span> <span class="k">FROM</span> <span class="n">airports</span> <span class="k">WHERE</span> <span class="n">faa_region</span> <span class="o">=</span> <span class="s1">&#39;ASO&#39;</span><span class="p">);</span>
 </pre></div>
@@ -1116,7 +1116,7 @@
 
 <p>Perform transformations on a single table. For instance, sometimes we need to aggregate in multiple steps &ndash; like taking an average of a count.</p>
 <p>Imagine you’d like to know how many <code class="codehilite">flights</code> there are on average, for all Fridays in a given month from the <code class="codehilite">flights</code> table. First, we’d need to calculate the number of <code class="codehilite">flights</code> per day, and then we’d need to calculate the average based on the daily flight count for each day of the week. We can do this all in one step using a subquery:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1146,7 +1146,7 @@
 
 <p>The inner query provides the count of flights by day, and the outer query uses the inner query’s result set to compute the average by day of week of a given month.</p>
 <p>Using a subquery, find the average total distance flown by day of week and month. Be sure to alias the outer query as <code class="codehilite">average_distance</code> and the inner query as <code class="codehilite">flight_distance</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1178,7 +1178,7 @@
 <p>In a correlated subquery, the subquery can not be run independently of the outer query. The order of operations is important in a correlated subquery:</p>
 <p>A row is processed in the outer query. Then, for that particular row in the outer query, the subquery is executed.</p>
 <p>This means that for each row processed by the outer query, the subquery will also be processed for that row. In this example, we will find the list of all flights whose distance is above average for their carrier (query on a query, same table).</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1194,7 +1194,7 @@
 
 <p>In the above query the inner query has to be re-executed for each flight. Correlated subqueries may appear elsewhere besides the <code class="codehilite">WHERE</code> clause, they can also appear in the <code class="codehilite">SELECT</code>.</p>
 <p>Find the id of the flights whose distance is below average for their carrier.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1209,7 +1209,7 @@
 </td></tr></table>
 
 <p>It would also be interesting to order flights by giving them a sequence number based on time, by carrier. For instance, assuming flight_id increments with each additional flight, we could use the following query to view flights by carrier, flight id, and sequence number:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1226,7 +1226,7 @@
 </td></tr></table>
 
 <p>Using the same pattern, write a query to view flights by origin, flight id, and sequence number. Alias the sequence number column as <code class="codehilite">flight_sequence_number</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1256,7 +1256,7 @@
 <p>Unions allow us to utilize information from multiple tables in our queries. In this lesson, we’ll utilize data from an e-commerce store. Let’s explore the available data we’ll be using. </p>
 <p>Four tables: <code class="codehilite">new_products</code>, <code class="codehilite">legacy_products</code>, <code class="codehilite">order_items</code> and <code class="codehilite">order_items_historic</code>.</p>
 <p>In our database, we have products tables that contain metadata about each product in the store. Select ten rows from the <code class="codehilite">new_products</code> table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">new_products</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">new_products</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1268,7 +1268,7 @@
 </ul>
 <h4 id="union"><code class="codehilite">UNION</code><a class="headerlink" href="#union" title="Permanent link">&para;</a></h4>
 <p>We&rsquo;ll focus on unions here. Union combines the result of two or more <code class="codehilite">SELECT</code> statements, using the following syntax:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table1</span>
 <span class="k">UNION</span>
@@ -1278,7 +1278,7 @@
 
 <p>Each <code class="codehilite">SELECT</code> statement within the <code class="codehilite">UNION</code> must have the same number of columns with similar data types. The columns in each <code class="codehilite">SELECT</code> statement must be in the same order. By default, the <code class="codehilite">UNION</code> operator selects only distinct values.</p>
 <p>Suppose we are a growing ecommerce store and recently acquired another store to diversify our offering. The product data still exists in two separate tables: a <code class="codehilite">legacy_products</code> table and a <code class="codehilite">new_products</code> table. To get the complete list of product names from both tables, we can perform the following union.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">item_name</span> <span class="k">FROM</span> <span class="n">legacy_products</span>
 <span class="k">UNION</span> 
@@ -1287,7 +1287,7 @@
 </td></tr></table>
 
 <p>Select a complete list of brand names from the <code class="codehilite">legacy_products</code> and <code class="codehilite">new_products</code> tables.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">brand</span> <span class="k">FROM</span> <span class="n">legacy_products</span>
 <span class="k">UNION</span>
@@ -1296,7 +1296,7 @@
 </td></tr></table>
 
 <p>What if we wanted to allow duplicate values? We can do this by using the <code class="codehilite">ALL</code> keyword with <code class="codehilite">UNION</code>, with the following syntax:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table1</span>
 <span class="k">UNION</span> <span class="k">ALL</span>
@@ -1305,7 +1305,7 @@
 </td></tr></table>
 
 <p>In our ecommerce store, if we learned that we had records from historic order items in an additional table, we could use the following query to combine the tables for a complete analysis of sale price:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">sale_price</span> <span class="k">FROM</span> <span class="n">order_items</span>
 <span class="k">UNION</span> <span class="k">ALL</span>
@@ -1314,7 +1314,7 @@
 </td></tr></table>
 
 <p>Then we can perform an analysis on top of the combined result set, like finding the total count of order items.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="p">(</span>
@@ -1325,7 +1325,7 @@
 </td></tr></table>
 
 <p>Using the same pattern, utilize a subquery to find the average sale price over both <code class="codehilite">order_items</code> and <code class="codehilite">order_items_historic</code> tables.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1340,7 +1340,7 @@
 <p>Before running the top analysis, create an alias a with the preliminary results, run the <code class="codehilite">avg(a.sale_price)</code>, and group by 1 to view separate records and not a unique aggregate record!!!</p>
 <h4 id="intersect"><code class="codehilite">INTERSECT</code><a class="headerlink" href="#intersect" title="Permanent link">&para;</a></h4>
 <p>&hellip;is used to combine two <code class="codehilite">SELECT</code> statements, but returns rows only from the first <code class="codehilite">SELECT</code> statement that are identical to a row in the second <code class="codehilite">SELECT</code> statement. This means that it returns only common rows returned by the two <code class="codehilite">SELECT</code> statements.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table1</span>
 <span class="k">INTERSECT</span>
@@ -1349,7 +1349,7 @@
 </td></tr></table>
 
 <p>For instance, we might want to know what brands in our newly acquired store are also in our legacy store. We can do so using the following query:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">brand</span> <span class="k">FROM</span> <span class="n">new_products</span>
 <span class="k">INTERSECT</span>
@@ -1358,7 +1358,7 @@
 </td></tr></table>
 
 <p>Select the items in the category column that are both in the newly acquired <code class="codehilite">new_products</code> table and the <code class="codehilite">legacy_products</code> table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">category</span> <span class="k">FROM</span> <span class="n">new_products</span>
 <span class="k">INTERSECT</span>
@@ -1368,7 +1368,7 @@
 
 <h4 id="except"><code class="codehilite">EXCEPT</code><a class="headerlink" href="#except" title="Permanent link">&para;</a></h4>
 <p>&hellip;is constructed in the same way, but returns distinct rows from the first <code class="codehilite">SELECT</code> statement that aren’t output by the second <code class="codehilite">SELECT</code> statement.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">table1</span>
 <span class="k">EXCEPT</span>
@@ -1377,7 +1377,7 @@
 </td></tr></table>
 
 <p>Suppose we want to see if there are any categories that are in the <code class="codehilite">new_products</code> table that aren&rsquo;t in the <code class="codehilite">legacy_products</code> table. We can use an <code class="codehilite">EXCEPT</code> query to perform this analysis:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">category</span> <span class="k">FROM</span> <span class="n">new_products</span>
 <span class="k">EXCEPT</span>
@@ -1386,7 +1386,7 @@
 </td></tr></table>
 
 <p>Conversely, select the items in the category column that are in the <code class="codehilite">legacy_products</code> table and not in the <code class="codehilite">new_products</code> table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">category</span> <span class="k">FROM</span> <span class="n">legacy_products</span>
 <span class="k">EXCEPT</span>
@@ -1406,19 +1406,19 @@
 <p>Conditional Aggregates are aggregate functions that compute a result set based on a given set of conditions.</p>
 <p>The count function is an aggregate function, since it aggregates data from multiple rows.</p>
 <p>Count the number of rows in the <code class="codehilite">flights</code> table, representing the total number of <code class="codehilite">flights</code> contained in the table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">flights</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">flights</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>While working with databases, it&rsquo;s common to have empty or unknown &ldquo;cells&rdquo; in data tables.</p>
 <p>What do we do when we need to test whether a value is or is not null? We use the special keywords <code class="codehilite">IS NULL</code> or <code class="codehilite">IS NOT NULL</code> in the <code class="codehilite">WHERE</code> clause (<code class="codehilite">= NULL</code> does not work).</p>
 <p>Count the number of rows from the <code class="codehilite">flights</code> table, where <code class="codehilite">arr_time</code> is not null and the destination is <code class="codehilite">&#39;ATL&#39;</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">flights</span> <span class="k">WHERE</span> <span class="n">arr_time</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">AND</span> <span class="n">destination</span> <span class="o">=</span> <span class="s1">&#39;ATL&#39;</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">flights</span> <span class="k">WHERE</span> <span class="n">arr_time</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">AND</span> <span class="n">destination</span> <span class="o">=</span> <span class="s1">&#39;ATL&#39;</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Almost every programming language has a way to represent &ldquo;if, then, else&rdquo;, or conditional logic. In SQL, we represent this logic with the <code class="codehilite">CASE</code> statement, as follows:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1443,7 +1443,7 @@
 <p>In the above statement, <code class="codehilite">END</code> is required to terminate the statement, but <code class="codehilite">ELSE</code> is optional. If <code class="codehilite">ELSE</code> is not included, the result will be <code class="codehilite">NULL</code>. Also notice the shorthand method of referencing columns to use in <code class="codehilite">GROUP BY</code>, so we don&rsquo;t have to rewrite the entire <code class="codehilite">CASE</code> Statement.</p>
 <p>Modify the case statement&rsquo;s such that when the elevation is less than 250, the <code class="codehilite">elevation_tier</code> column returns <code class="codehilite">&#39;Low&#39;</code>, when between 250 and 1749 it returns <code class="codehilite">&#39;Medium&#39;</code>, and when greater than or equal to 1750 it returns <code class="codehilite">&#39;High&#39;</code>.</p>
 <p>Be sure to alias the conditional statement as <code class="codehilite">elevation_tier</code>, in your query.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1467,7 +1467,7 @@
 
 <p>Sometimes you want to look at an entire result set, but want to implement conditions on certain aggregates.</p>
 <p>For instance, maybe you want to identify the total amount of airports as well as the total amount of airports with high elevation in the same result set. We can accomplish this by putting a <code class="codehilite">CASE WHEN</code> statement in the aggregate.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">state</span><span class="p">,</span> 
@@ -1478,7 +1478,7 @@
 </td></tr></table>
 
 <p>Using the same pattern, write a query to count the number of low elevation airports by state where low elevation is defined as less than 1000 ft. Be sure to alias the counted airports as <code class="codehilite">count_low_elevation_airports</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">state</span><span class="p">,</span> 
@@ -1491,7 +1491,7 @@
 <p>We can do that same thing for other aggregates like <code class="codehilite">SUM()</code>. For instance, if we wanted to sum the total flight distance and compare that to the sum of flight distance from a particular airline (in this case, United Airlines) by origin airport, we could run the following query:<br />
 <code class="codehilite">sum(distance)</code> for all carriers (<code class="codehilite">total_flight_distance</code>)<br />
 <code class="codehilite">sum(distance)</code> for <code class="codehilite">&#39;UA&#39;</code> only (others are turned to 0) (<code class="codehilite">total_united_flight_distance</code>).</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">origin</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span> <span class="k">as</span> <span class="n">total_flight_distance</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">carrier</span> <span class="o">=</span> <span class="s1">&#39;UA&#39;</span> <span class="k">THEN</span> <span class="n">distance</span> <span class="k">ELSE</span> <span class="mi">0</span> <span class="k">END</span><span class="p">)</span> <span class="k">as</span> <span class="n">total_united_flight_distance</span> 
 <span class="k">FROM</span> <span class="n">flights</span> 
@@ -1501,7 +1501,7 @@
 
 <p>Using the same pattern, find both the total flight distance as and flight distance by origin for Delta (<code class="codehilite">carrier = &#39;DL&#39;</code>).</p>
 <p>Alias the flight distance as <code class="codehilite">total_flight_distance</code> and the and flight distance by origin as <code class="codehilite">total_delta_flight_distance</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">origin</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span> <span class="k">as</span> <span class="n">total_flight_distance</span><span class="p">,</span> <span class="k">sum</span><span class="p">(</span><span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">carrier</span> <span class="o">=</span> <span class="s1">&#39;DL&#39;</span> <span class="k">THEN</span> <span class="n">distance</span> <span class="k">ELSE</span> <span class="mi">0</span> <span class="k">END</span><span class="p">)</span> <span class="k">as</span> <span class="n">total_delta_flight_distance</span> 
 <span class="k">FROM</span> <span class="n">flights</span> 
@@ -1510,7 +1510,7 @@
 </td></tr></table>
 
 <p>Using the same pattern, find the percentage of <code class="codehilite">flights</code> from Delta by origin (<code class="codehilite">carrier = &#39;DL&#39;</code>):</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">origin</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">0</span><span class="o">*</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">carrier</span> <span class="o">=</span> <span class="s1">&#39;DL&#39;</span> <span class="k">THEN</span> <span class="n">distance</span> <span class="k">ELSE</span> <span class="mi">0</span> <span class="k">END</span><span class="p">)</span><span class="o">/</span><span class="k">sum</span><span class="p">(</span><span class="n">distance</span><span class="p">))</span> <span class="k">as</span> <span class="n">percentage_flight_distance_from_delta</span> <span class="k">FROM</span> <span class="n">flights</span> 
 <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">origin</span><span class="p">;</span>
 </pre></div>
@@ -1518,7 +1518,7 @@
 
 <p>Find the percentage of high elevation airports (<code class="codehilite">elevation &gt;= 2000</code>) by state from the <code class="codehilite">airports</code> table. In the query, alias the percentage column as <code class="codehilite">percentage_high_elevation_airports</code>.<br />
 <code class="codehilite">(sum of &#39;1&#39;) / count(*)</code> and not <code class="codehilite">(count of &#39;1&#39;) / count(*)</code>:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">state</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">elevation</span> <span class="o">&gt;=</span> <span class="mi">2000</span> <span class="k">THEN</span> <span class="mi">1</span> <span class="k">ELSE</span> <span class="mi">0</span> <span class="k">END</span><span class="p">)</span> <span class="o">/</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>  <span class="k">as</span> <span class="n">percentage_high_elevation_airports</span> <span class="k">FROM</span> <span class="n">airports</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="k">state</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">state</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">elevation</span> <span class="o">&gt;=</span> <span class="mi">2000</span> <span class="k">THEN</span> <span class="mi">1</span> <span class="k">ELSE</span> <span class="mi">0</span> <span class="k">END</span><span class="p">)</span> <span class="o">/</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>  <span class="k">as</span> <span class="n">percentage_high_elevation_airports</span> <span class="k">FROM</span> <span class="n">airports</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="k">state</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1534,7 +1534,7 @@
 <p>In this lesson, we&rsquo;ll be learning about some of SQL&rsquo;s built-in functions for transforming dates, numbers and strings. We&rsquo;ll be using database of bakeries in this lesson.</p>
 <p>It is important to note that date, number, and string functions are highly database dependent. Here, we focus on built-in functions in the SQLite database management system.</p>
 <p>Select ten rows from the bakeries table:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">bakeries</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">bakeries</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1544,17 +1544,17 @@
 <li>Datetime or Timestamp: &ldquo;YYYY-MM-DD hh: mm:ss&rdquo;</li>
 </ol>
 <p>We can use SQL&rsquo;s date functions to transform data into a desired format. Since date functions can be database specific, verify the functions that exist on your relational database management system. For example, this statement:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">DATETIME</span><span class="p">(</span><span class="n">manufacture_time</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">DATETIME</span><span class="p">(</span><span class="n">manufacture_time</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Using the datetime function, select the date and time of all deliveries in the <code class="codehilite">baked_goods</code> table using the column <code class="codehilite">delivery_time</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">DATETIME</span><span class="p">(</span><span class="n">delivery_time</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">DATETIME</span><span class="p">(</span><span class="n">delivery_time</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Now let&rsquo;s assume that we have a column in our <code class="codehilite">baked_goods</code> table named <code class="codehilite">manufacture_time</code> in the format &ldquo;YYYY-MM-DD hh: mm:ss&rdquo;. We&rsquo;d like to know the number of baked_goods manufactured by day, and not by second. We can use the <code class="codehilite">DATE()</code> function to easily convert timestamps to dates and complete the following query:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="nb">DATE</span><span class="p">(</span><span class="n">manufacture_time</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">count_baked_goods</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span>
@@ -1563,7 +1563,7 @@
 </td></tr></table>
 
 <p>Similarly, we can query the time with:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">TIME</span><span class="p">(</span><span class="n">manufacture_time</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">count_baked_goods</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span>
@@ -1572,25 +1572,25 @@
 </td></tr></table>
 
 <p>Find the number of baked goods by date of delivery. Be sure to alias the total count of baked goods as <code class="codehilite">count_baked_goods</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="nb">DATE</span><span class="p">(</span><span class="n">delivery_time</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">count_baked_goods</span> <span class="k">FROM</span> <span class="n">baked_goods</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="nb">DATE</span><span class="p">(</span><span class="n">delivery_time</span><span class="p">);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="nb">DATE</span><span class="p">(</span><span class="n">delivery_time</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">as</span> <span class="n">count_baked_goods</span> <span class="k">FROM</span> <span class="n">baked_goods</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="nb">DATE</span><span class="p">(</span><span class="n">delivery_time</span><span class="p">);</span>
 </pre></div>
 </td></tr></table>
 
 <p>Given a datepart and a column of date or timestamp data type, we can increment date or timestamp values by a specified interval. For example, in SQLite, the statement:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">DATETIME</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="s1">&#39;+3 hours&#39;</span><span class="p">,</span> <span class="s1">&#39;40 minutes&#39;</span><span class="p">,</span> <span class="s1">&#39;2 days&#39;</span><span class="p">);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">DATETIME</span><span class="p">(</span><span class="n">time1</span><span class="p">,</span> <span class="s1">&#39;+3 hours&#39;</span><span class="p">,</span> <span class="s1">&#39;40 minutes&#39;</span><span class="p">,</span> <span class="s1">&#39;2 days&#39;</span><span class="p">);</span>
 </pre></div>
 </td></tr></table>
 
 <p>Would return a time 3 hours, 20 minutes, and 2 days after time1.</p>
 <p>Imagine that each dessert in our <code class="codehilite">baked_goods</code> table is inspected 2 hours, 30 minutes, and 1 day after the manufacture time. To derive the inspection date for each baked good, we can use the following query:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">DATETIME</span><span class="p">(</span><span class="n">manufacture_time</span><span class="p">,</span> <span class="s1">&#39;+2 hours&#39;</span><span class="p">,</span> <span class="s1">&#39;30 minutes&#39;</span><span class="p">,</span> <span class="s1">&#39;1 day&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">inspection_time</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Each of the baked goods is packaged by Baker&rsquo;s Market exactly five hours, twenty minutes, and two days after the delivery (designated by delivery_time). Create a query returning all the packaging times for the goods in the <code class="codehilite">baked_goods</code> table. Be sure to alias the package time column as <code class="codehilite">package_time</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">DATETIME</span><span class="p">(</span><span class="n">delivery_time</span><span class="p">,</span> <span class="s1">&#39;+5 hours&#39;</span><span class="p">,</span> <span class="s1">&#39;20 minutes&#39;</span><span class="p">,</span> <span class="s1">&#39;2 days&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">package_time</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
@@ -1603,14 +1603,14 @@
 <li><code class="codehilite">SELECT ROUND(number, precision);</code>: returns the numeric value rounded off to the next value specified.</li>
 </ul>
 <p>In our <code class="codehilite">baked_goods</code> table, we have information about cost designated by <code class="codehilite">ingredients_cost</code>. For accounting purposes, we&rsquo;d like to make sure that each ingredient cost is rounded to four decimal places rather than two, to account for currency fluctuations.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">ROUND</span><span class="p">(</span><span class="n">ingredients_cost</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="k">as</span> <span class="n">rounded_cost</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Find the bakery&rsquo;s distance from the market rounded to two decimal places. Be sure to alias the column as <code class="codehilite">distance_from_market</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">ROUND</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">as</span> <span class="n">distance_from_market</span>
 <span class="k">FROM</span> <span class="n">bakeries</span><span class="p">;</span>
 </pre></div>
@@ -1618,21 +1618,21 @@
 
 <p>A couple more useful numeric SQL functions are included below: <code class="codehilite">MAX</code> and <code class="codehilite">MIN</code>. <code class="codehilite">MAX(n1,n2,n3,...)</code>: returns the greatest value in the set of the input numeric expressions <code class="codehilite">MIN(n1,n2,n3,...)</code>: returns the least value in the set of the input numeric expressions</p>
 <p>In our <code class="codehilite">baked_goods table</code>, in addition to the numeric <code class="codehilite">ingredients_cost</code> we have information about the packaging cost located in the packaging_cost column. We can use the MAX function to determine the overall greatest value of cost for each item using the following query:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">ingredients_cost</span><span class="p">,</span> <span class="n">packaging_cost</span><span class="p">)</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>We also have information about cook time designated as cook_time and cool down time designated as <code class="codehilite">cool_down_time</code> in the <code class="codehilite">baked_goods</code> table. Find the greatest time value for each item in the table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">cook_time</span><span class="p">,</span> <span class="n">cool_down_time</span><span class="p">)</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Find the least time value for each item in the table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">cook_time</span><span class="p">,</span> <span class="n">cool_down_time</span><span class="p">)</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
@@ -1640,12 +1640,12 @@
 
 <p>String manipulation can be useful to derive information from columns. We&rsquo;ll cover a couple of the common string functions here.</p>
 <p>A common use case for string manipulation in SQL is concatenation of strings. In SQLite, this is written as:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">string1</span> <span class="o">||</span> <span class="s1">&#39; &#39;</span> <span class="o">||</span> <span class="n">string2</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">string1</span> <span class="o">||</span> <span class="s1">&#39; &#39;</span> <span class="o">||</span> <span class="n">string2</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>For example, the bakeries table contains both city and state columns. In order to create a route for these columns, we use the <code class="codehilite">||</code> function to concatenate them as in the following query:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">city</span> <span class="o">||</span> <span class="s1">&#39; &#39;</span> <span class="o">||</span> <span class="k">state</span> <span class="k">as</span> <span class="k">location</span>
 <span class="k">FROM</span> <span class="n">bakeries</span><span class="p">;</span>
 </pre></div>
@@ -1653,23 +1653,23 @@
 
 <p>String functions are again, very database specific, and it is best practice to consult documentation before proceeding. </p>
 <p>Combine the <code class="codehilite">first_name</code> and <code class="codehilite">last_name</code> columns from the bakeries table as the full_name to identify the owners of the bakeries. Be sure to add a space between the names in the <code class="codehilite">full_name</code> as shown in the example.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">first_name</span> <span class="o">||</span> <span class="s1">&#39; &#39;</span> <span class="o">||</span> <span class="n">last_name</span> <span class="k">as</span> <span class="n">full_name</span> <span class="k">FROM</span> <span class="n">bakeries</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">first_name</span> <span class="o">||</span> <span class="s1">&#39; &#39;</span> <span class="o">||</span> <span class="n">last_name</span> <span class="k">as</span> <span class="n">full_name</span> <span class="k">FROM</span> <span class="n">bakeries</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Another useful string function in SQL is <code class="codehilite">REPLACE()</code>:</p>
-<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">REPLACE</span><span class="p">(</span><span class="n">string</span><span class="p">,</span><span class="n">from_string</span><span class="p">,</span><span class="n">to_string</span><span class="p">)</span>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">REPLACE</span><span class="p">(</span><span class="n">string</span><span class="p">,</span><span class="n">from_string</span><span class="p">,</span><span class="n">to_string</span><span class="p">)</span>
 </pre></div>
 </td></tr></table><br />
 The function returns the string string with all occurrences of the string <code class="codehilite">from_string</code> replaced by the string to_string. For example in <code class="codehilite">baked_goods</code>, there is a column named ingredients. The ingredients strings are formatted with underscores, such as <code class="codehilite">baking_soda</code> and <code class="codehilite">vanilla_extract</code>. To make these values more readable, we might like to replace the underscores with spaces. We can do so by using the following query:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="k">REPLACE</span><span class="p">(</span><span class="n">ingredients</span><span class="p">,</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">item_ingredients</span>
 <span class="k">from</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Any time <code class="codehilite">enriched_flour</code> appears in the ingredients list, we’d like to replace it with just flour. Apply this transformation and also be sure to remove the underscore in <code class="codehilite">enriched_flour</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">REPLACE</span><span class="p">(</span><span class="n">ingredients</span><span class="p">,</span><span class="s1">&#39;enriched_&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">item_ingredients</span>
 <span class="k">FROM</span> <span class="n">baked_goods</span><span class="p">;</span>
 </pre></div>

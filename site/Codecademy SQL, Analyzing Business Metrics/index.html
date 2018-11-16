@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.5">
     
     
       
@@ -60,8 +60,8 @@
       <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#avanced-aggregates" tabindex="1" class="md-skip">
+      <a href="#avanced-aggregates" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -888,7 +888,7 @@
 <p>Complete each query by replacing the comments <code class="codehilite"><span class="cm">/**/</span><span class="w"></span></code> with SQL code.</p>
 <p>We&rsquo;ll start by looking at SpeedySpoon&rsquo;s data. The orders table has a row for each order of a SpeedySpoon delivery. It says when the order took place, and who ordered it.</p>
 <p>Add code to the select statement to select all columns in the orders table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">select</span> <span class="o">*</span>
@@ -899,26 +899,26 @@
 </td></tr></table>
 
 <p>Note that the order and limit clauses keep the data organized.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">orders</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">100</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">orders</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">100</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>The order_items table lists the individual foods and their prices in each order. Complete the query to select all columns in the order_items table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">order_items</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">100</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">order_items</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">100</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Now that we have a good handle on our data, let&rsquo;s dive into some common business queries. We&rsquo;ll begin with the Daily Count of orders placed. To make our Daily Count metric, we&rsquo;ll focus on the date function and the ordered_at field.</p>
 <p>To get the Daily Metrics we need the date. Most dates in databases are timestamps, which have hours and minutes, as well as the year, month, and day. Timestamps look like <code class="codehilite">2015-01-05 14:43:31</code>, while dates are the first part: <code class="codehilite">2015-01-05</code>.</p>
 <p>We can easily select the date an item was ordered at with the date function and the ordered_at field:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="nb">date</span><span class="p">(</span><span class="n">ordered_at</span><span class="p">)</span>
 <span class="k">FROM</span> <span class="n">orders</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>Let&rsquo;s get a Daily Count of orders from the orders table. Complete the query using the date function to cast the timestamps in ordered_at to dates.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">​</span><span class="k">SELECT</span> <span class="nb">date</span><span class="p">(</span><span class="n">ordered_at</span><span class="p">)</span>
@@ -930,7 +930,7 @@
 
 <p>The order by 1 statement is a shortcut for order by date(ordered_at). The 1 refers to the first column.</p>
 <p>Now that we can convert timestamps to dates, we can count the Orders Per Date. Generally, when we count all records in a table we run a query with the count function, as follows:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="k">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="k">FROM</span> <span class="n">users</span><span class="p">;</span>
 </pre></div>
@@ -939,7 +939,7 @@
 <p>This will treat all rows as a single group, and return one row in the result set - the total count.</p>
 <p>To count orders by their dates, we&rsquo;ll use the date and count functions and pair them with the group by clause. Together this will count the records in the table, grouped by date.</p>
 <p>For example, to see the user records counted by the date created, we use the date and count functions and group by clause as follows:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="nb">date</span><span class="p">(</span><span class="n">created_at</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="k">FROM</span> <span class="n">users</span>
@@ -948,7 +948,7 @@
 </td></tr></table>
 
 <p>Use the date and count functions and group by clause to count and group the orders by the dates they were ordered_at.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="nb">date</span><span class="p">(</span><span class="n">ordered_at</span><span class="p">),</span> <span class="k">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -964,7 +964,7 @@
 <p>First, instead of using count(1) to count the rows per date, we&rsquo;ll use round(sum(amount_paid), 2) to add up the revenue per date. Complete the query by adding revenue per date.</p>
 <p>Second, we need to join in the order_items table because that table has an amount_paid column representing revenue. Complete the query by adding a join clause where orders.id = order_items.order_id.</p>
 <p>Note that the round function rounds decimals to digits, based on the number passed in. Here round(&hellip;, 2) rounds the sum paid to two digits.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -977,7 +977,7 @@
 </td></tr></table>
 
 <p>Now with a small change, we can find out how much we&rsquo;re making per day for any single dish. What&rsquo;s the daily revenue from customers ordering kale smoothies? Complete the query by using a where clause to filter the daily sums down to orders where the name = &lsquo;kale-smoothie&rsquo;.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -994,7 +994,7 @@
 <p>It looks like the smoothies might not be performing well, but to be sure we need to see how they&rsquo;re doing in the context of the other order items. We&rsquo;ll look at the data several different ways, the first of which is determining what percent of revenue these smoothies represent.</p>
 <p>To get the percent of revenue that each item represents, we need to know the total revenue of each item. We will later divide the per-item total with the overall total revenue.</p>
 <p>The following query groups and sum the products by price to get the total revenue for each item. Complete the query by passing in sum(amount_paid) into the round function and rounding to two decimal places.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">round</span><span class="p">(</span><span class="k">sum</span><span class="p">(</span><span class="n">amount_paid</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
@@ -1008,7 +1008,7 @@
 <p>Subqueries are useful when you want to perform an aggregation outside the context of the current query. This will let us calculate the overall total and per-item total at the same time.</p>
 <p>Complete the denominator in the subquery, which is the total revenue from order_items. Use the sum function to query the amount_paid from the order_items table.</p>
 <p>We now have the percent or revenue each product represents!</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1025,7 +1025,7 @@
 <p>To see if our smoothie suspicion has merit, let&rsquo;s look at purchases by category. We can group the order items by what type of food they are, and go from there. Since our order_items table does not include categories already, we&rsquo;ll need to make some!</p>
 <p>Previously we&rsquo;ve been using group by with a column (like order_items.name) or a function (like date(orders.ordered_at)).</p>
 <p>We can also use group by with expressions. In this case a case statement is just what we need to build our own categories. case statements are similar to if/else in other languages. Here&rsquo;s the basic structure of a case statement:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1038,7 +1038,7 @@
 </td></tr></table>
 
 <p>We&rsquo;ll build our own categories using a case statement. Complete the query below with a case condition of name that lists out each product, and decides its group.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1071,7 +1071,7 @@
 </td></tr></table>
 
 <p>Complete the query by using the category column created by the case statement in our previous revenue percent calculation. Add the denominator that will sum the amount_paid.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1111,7 +1111,7 @@
 <p>Let&rsquo;s calculate the reorder ratio for all of SpeedySpoon&rsquo;s products and take a look at the results. Counting the total orders per product is straightforward. We count the distinct order_ids (different) in the order_items table.</p>
 <p>Complete the query by passing in the distinct keyword and the order_id column name into the count function</p>
 <p>Here&rsquo;s a hint on how to use the count function to count distinct columns in a table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1130,7 +1130,7 @@
 <p>Now we need the number of people making these orders.</p>
 <p>To get that information, we need to join in the orders table and count unique values in the delivered_to field, and sort by the reorder_rate.</p>
 <p>Complete the query below. The numerator should count the distinct order_ids. The denominator should count the distinct values of the orders table&rsquo;s delivered_to field (orders.delivered_to).</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1176,19 +1176,19 @@
 <p>KPIs are often displayed on TVs on the walls of the office, and serve as high level health metrics for the business. While every company&rsquo;s metrics are defined slightly differently, the basics are usually very similar.</p>
 <p>In this lesson we&rsquo;ll take a look at basic KPIs like Daily Revenue, Daily Active Users, ARPU, and Retention for a video game, Mineblocks.</p>
 <p>This company has two tables, gameplays and purchases. The purchases table lists all purchases made by players while they&rsquo;re playing Mineblocks. Complete the query to select from purchases.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">purchases</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">purchases</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>The gameplays table lists the date and platform for each session a user plays. Select from gameplays.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">gameplays</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">gameplays</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">id</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 
 <p>At the heart of every company is revenue, and Mineblocks is no exception. For our first KPI we&rsquo;ll calculate daily revenue.</p>
 <p>Daily Revenue is simply the sum of money made per day.</p>
 <p>To get close to Daily Revenue, we calculate the daily sum of the prices in the purchases table. Complete the query by using the sum function and passing the price column from the purchases table. </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1208,7 +1208,7 @@
 <p>Likewise, Weekly Active Users (WAU) and Monthly Active Users (MAU) are in the same family.</p>
 <p>For Mineblocks, we&rsquo;ll use the gameplays table to calculate DAU. Each time a user plays the game, their session is recorded in gameplays. Thus, a distinct count of users per day from gameplays will give us DAU.</p>
 <p>Calculate Daily Active Users for Mineblocks. Complete the query&rsquo;s count function by passing in the distinct keyword and the user_id column name.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1225,7 +1225,7 @@
 <p>Since Mineblocks is on multiple platforms, we can calculate DAU per-platform.</p>
 <p>Previously we calculated DAU only per day, so the output we wanted was [date, dau_count]. Now we want DAU per platform, making the desired output [date, platform, dau_count].</p>
 <p>Calculate DAU for Mineblocks per-platform. Complete the query below. You will need to select the platform column and add a count function by passing in the distinct keyword and the user_id column name.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1255,7 +1255,7 @@
 <p>Daily ARPPU is defined as the sum of revenue divided by the number of purchasers per day.</p>
 <p>To get Daily ARPPU, modify the daily revenue query from earlier to divide by the number of purchasers.</p>
 <p>Complete the query by adding a numerator and a denominator. The numerator will display daily revenue, or sum the price columns. The denominator will display the number of purchasers by passing the distinct keyword and the user_id column name into the count function.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1276,7 +1276,7 @@
 <p>No one metric can tell the whole story. That&rsquo;s why it&rsquo;s so helpful to have many KPIs on the same dashboard.</p>
 <p>Daily ARPU is defined as revenue divided by the number of players, per-day. To get that, we&rsquo;ll need to calculate the daily revenue and daily active users separately, and then join them on their dates.</p>
 <p>One way to easily create and organize temporary results in a query is with CTEs, Common Table Expressions, also known as with clauses. The with clauses make it easy to define and use results in a more organized way than subqueries. These clauses usually look like this:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1291,7 +1291,7 @@
 </td></tr></table>
 
 <p>Use a with clause to define daily_revenue and then select from it.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1312,7 +1312,7 @@
 </td></tr></table>
 
 <p>Use a with clause to define daily_revenue and then select from it.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1335,7 +1335,7 @@
 <p>Now you&rsquo;re familiar with using the with clause to create temporary result sets.</p>
 <p>You just built the first part of ARPU, daily_revenue. From here we can build the second half of ARPU in our with clause, daily_players, and use both together to create ARPU.</p>
 <p>Building on this CTE, we can add in DAU from earlier. Complete the query by calling the DAU query we created earlier, now aliased as daily_players:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1372,7 +1372,7 @@
 </td></tr></table>
 
 <p>Now that we have the revenue and DAU, join them on their dates and calculate daily ARPU. Complete the query by adding the keyword using in the join clause.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1418,12 +1418,12 @@
 
 <p>In the final select statement, daily_revenue.dt represents the date, while daily_revenue.rev / daily_players.players is the daily revenue divided by the number of players that day. In full, it represents how much the company is making per player, per day.</p>
 <p>In our ARPU query, we used using instead of on in the join clause. This is a special case join.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">FROM</span> <span class="n">daily_revenue</span> <span class="k">JOIN</span> <span class="n">daily_players</span> <span class="k">USING</span> <span class="p">(</span><span class="n">dt</span><span class="p">);</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">FROM</span> <span class="n">daily_revenue</span> <span class="k">JOIN</span> <span class="n">daily_players</span> <span class="k">USING</span> <span class="p">(</span><span class="n">dt</span><span class="p">);</span>
 </pre></div>
 </td></tr></table>
 
 <p>When the columns to join have the same name in both tables you can use USING instead of on. Our use of the using keyword is in this case equivalent to this clause:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">FROM</span> <span class="n">daily_revenue</span> <span class="k">JOIN</span> <span class="n">daily_players</span> <span class="k">ON</span> <span class="n">daily_revenue</span><span class="p">.</span><span class="n">dt</span> <span class="o">=</span> <span class="n">daily_players</span><span class="p">.</span><span class="n">dt</span><span class="p">;</span>
@@ -1442,7 +1442,7 @@
 <p>By using a self-join, we can make multiple gameplays available on the same row of results. This will enable us to calculate retention.</p>
 <p>The power of self-join comes from joining every row to every other row. This makes it possible to compare values from two different rows in the new result set. In our case, we&rsquo;ll compare rows that are one date apart from each user.</p>
 <p>To calculate retention, start from a query that selects the date(created_at) as dt and user_id columns from the gameplays table.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1460,7 +1460,7 @@
 <p>This is known as a self-join and will let us connect the players on Day N to the players on Day N+1. In order to join a table to itself, it must be aliased so we can access each copy separately.</p>
 <p>We aliased gameplays in the query above because in the next step, we need to join gameplays to itself so we can get a result selecting [date, user_id, user_id_if_retained].</p>
 <p>Complete the query by using a join statement to join gameplays to itself on user_id using the aliases g1 and g2.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
@@ -1483,7 +1483,7 @@
 <p>1 Day Retention is defined as the number of players who returned the next day divided by the number of original players, per day. Suppose 10 players played Mineblocks on Dec 10<sup>th</sup>. If 4 of them play on Dec 11<sup>th</sup>, the 1 day retention for Dec 10<sup>th</sup> is 40%.</p>
 <p>The previous query joined all rows in gameplays against all other rows for each user, making a massive result set that we don&rsquo;t need.</p>
 <p>We&rsquo;ll need to modify this query.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1506,12 +1506,12 @@
 </td></tr></table>
 
 <p>Complete the query above such that the join clause includes a date join:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">date</span><span class="p">(</span><span class="n">g1</span><span class="p">.</span><span class="n">created_at</span><span class="p">)</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="n">g2</span><span class="p">.</span><span class="n">created_at</span><span class="p">,</span> <span class="s1">&#39;-1 day&#39;</span><span class="p">))</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">date</span><span class="p">(</span><span class="n">g1</span><span class="p">.</span><span class="n">created_at</span><span class="p">)</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="n">g2</span><span class="p">.</span><span class="n">created_at</span><span class="p">,</span> <span class="s1">&#39;-1 day&#39;</span><span class="p">))</span>
 </pre></div>
 </td></tr></table>
 
 <p>This means &ldquo;only join rows where the date in g1 is one less than the date in g2&rdquo;, which makes it possible to see if users have returned!</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1536,7 +1536,7 @@
 <p>The query above won&rsquo;t return meaningful results because we&rsquo;re using an inner join. This type of join requires that the condition be met for all rows, effectively limiting our selection to only the users that have returned.</p>
 <p>Instead, we want to use a left join, this way all rows in g1 are preserved, leaving nulls in the rows from g2 where users did not return to play the next day.</p>
 <p>Change the join clause to use left join and count the distinct number of users from g1 and g2 per date.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
@@ -1561,7 +1561,7 @@
 </td></tr></table>
 
 <p>Now that we have retained users as count(distinct g2.user_id) and total users as count(distinct g1.user_id), divide retained users by total users to calculate 1 day retention!</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
  4
