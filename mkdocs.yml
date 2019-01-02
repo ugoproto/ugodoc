@@ -52,7 +52,6 @@ theme:
 
 nav:
   - Home: 'index.md'
-  - Collection: 'collection.md'
   - Vade Mecum:
     - Charts: 'Charts.md'
     - Digital Humanities: 'Digital Humanities.md'
