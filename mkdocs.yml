@@ -126,7 +126,6 @@ markdown_extensions:
 ## additional characters: ' "  «  ... -- ---
 ## watch when copy-pasted
   - toc:
-      title: CONTENT
       permalink: true
       anchorlink: false
       baselevel: 3
