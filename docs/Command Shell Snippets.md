@@ -108,3 +108,25 @@ $ man <command name>
 
 $ whatis <command name>
 ```
+
+Find and delete
+
+```bash
+# 1 find
+find . -name "*.bak" -type f
+find /dir/here...
+
+# 2 delete
+find . -name "*.bak" -type f -delete
+find . -name "*.bak" -print0 | xargs -0 rm -rf
+```
+
+Rename many files
+
+```bash
+# 's/_13/_15/' replaces _13 by _15 in all files starting with 'cc' in the directory
+rename 's/_13/_15/' cc*
+
+# ... finishing by .jpg in the directory
+rename 's/_13/_15/' *.jpg
+```
