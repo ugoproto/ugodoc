@@ -887,6 +887,36 @@ $ <span class="nb">kill</span> <span class="m">26152</span>
 $ whatis &lt;<span class="nb">command</span> name&gt;
 </pre></div>
 </td></tr></table>
+
+<p>Find and delete</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># 1 find</span>
+find . -name <span class="s2">&quot;*.bak&quot;</span> -type f
+find /dir/here...
+
+<span class="c1"># 2 delete</span>
+find . -name <span class="s2">&quot;*.bak&quot;</span> -type f -delete
+find . -name <span class="s2">&quot;*.bak&quot;</span> -print0 <span class="p">|</span> xargs -0 rm -rf
+</pre></div>
+</td></tr></table>
+
+<p>Rename many files</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># &#39;s/_13/_15/&#39; replaces _13 by _15 in all files starting with &#39;cc&#39; in the directory</span>
+rename <span class="s1">&#39;s/_13/_15/&#39;</span> cc*
+
+<span class="c1"># ... finishing by .jpg in the directory</span>
+rename <span class="s1">&#39;s/_13/_15/&#39;</span> *.jpg
+</pre></div>
+</td></tr></table>
                 
                   
                 
