@@ -49,9 +49,8 @@ Cheat sheets.
 
 ---
 
-- [Linux Bash Shell](bash_cheat_sheet.pdf). PDF only.
-    - [Learning the Shell](http://www.linuxcommand.org/lc3_learning_the_shell.php).
-    - [bc - An arbitrary precision calculator language](http://x-bc.sourceforge.net/man_bc.html).
+- [Learning the Shell](http://www.linuxcommand.org/lc3_learning_the_shell.php).
+- [bc - An arbitrary precision calculator language](http://x-bc.sourceforge.net/man_bc.html).
 
 # Windows
 

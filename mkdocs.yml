@@ -91,7 +91,6 @@ nav:
     - HTML and CSS: 'HTML and CSS.md'
     - Markdown & Pandoc: 'Markdown & Pandoc.md'
     - Responsive HTML: 'Responsive_HTML.md'
-    - Tests: 'tests.md'
 
 markdown_extensions:
   - def_list
