@@ -13,7 +13,7 @@ google_analytics:
   - 'auto'
 
 theme: 
-  name: 'material' # 'readthedocs'
+  name: 'material' # 'readthedocs' 
   language: 'en'
   search:
     language: 'en, fr' 
