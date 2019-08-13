@@ -1,13 +1,13 @@
 site_name: 'ugodoc'
 site_url: 'https://ugoproto.github.io/ugodoc/'
-repo_name: 'ugodoc' # see doc, for bitbucket, gitlab
+repo_name: 'ugoproto/ugodoc' # see doc, for bitbucket, gitlab
 repo_url: 'https://github.com/ugoproto/ugodoc.git'
 # include a link to the repository of your project 
 # repository is hosted in a private environment, the service logo can be set explicitly by setting
 # extra.repo_icon to github, gitlab or bitbucket
 site_description: 'A Data Science documentation website.'
-site_author: 'Ugo Sparks'
-copyright: '© Ugo Sparks'
+#site_author:
+#copyright:
 google_analytics: 
   - 'UA-93008985-3'
   - 'auto'
@@ -37,10 +37,10 @@ theme:
 ## another layer on top of the main navigation for larger screens in the form of tabs.
           
 ## Les icônes gitlab, twitter, linkedin dans le bandeau du bas.
-#extra:
-#  social:
-#    - type: 'gitlab'
-#      link: ''
+extra:
+  social:
+    - type: 'github'
+      link: 'https://ugoproto.github.io'
 #    - type: 'twitter'
 #      link: ''
 #    - type: 'linkedin'
