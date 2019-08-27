@@ -1,4 +1,4 @@
-site/*.*
-new/*.*
+site/
+new/
 *.txt
 *.pdf

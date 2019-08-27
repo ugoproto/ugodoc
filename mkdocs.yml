@@ -1,9 +1,7 @@
 site_name: 'ugodoc'
-site_url: 'https://ugoproto.github.io/ugodoc/'
+#site_url:
 repo_name: 'ugoproto/ugodoc' # see doc, for bitbucket, gitlab
 repo_url: 'https://github.com/ugoproto/ugodoc.git'
-# include a link to the repository of your project 
-# repository is hosted in a private environment, the service logo can be set explicitly by setting
 # extra.repo_icon to github, gitlab or bitbucket
 site_description: 'A Data Science documentation website.'
 #site_author:
@@ -33,14 +31,13 @@ theme:
   favicon: 'img/favicon.ico' 
 ## default, assets/images/favicon.png
   feature:
-    tabs: false 
-## another layer on top of the main navigation for larger screens in the form of tabs.
+    tabs: false
           
 ## Les icônes gitlab, twitter, linkedin dans le bandeau du bas.
-extra:
-  social:
-    - type: 'github'
-      link: 'https://ugoproto.github.io'
+#extra:
+#  social:
+#    - type: 'github'
+#      link: 'https://ugoproto.github.io'
 #    - type: 'twitter'
 #      link: ''
 #    - type: 'linkedin'
@@ -49,137 +46,80 @@ extra:
 ## https://disqus.com/
 ## repo_icon: 'github' # gitlab, bitbucket
 
-#extra_css: 
-#    - 'extra.css'
-## in the docs
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+extra_css:
+  - extra.css
 
 nav:
   - Home: 'index.md'
   - Vade Mecum:
-    - Charts: 'Charts.md'
-    - Digital Humanities: 'Digital Humanities.md'
-    - Edition Cheat Sheets: 'Edition_CS.md'
-    - Infographies: 'Infographies.md'
+    - Charts: 'charts.md'
+    - Digital Humanities: 'digital_humanities.md'
+    - Edition Cheat Sheets: 'edition_cs.md'
+    - Infographies: 'infographies.md'
     - LaTeX Snippets: 'latex_snippets.md'
-    - Learn Git: 'Learn Git.md'
-    - Resources for Data Science: 'Resources for Data Science.md'
-    - Storytelling with Data: 'Storytelling with Data.md'
-    - Ten Kinds of Stories to Tell with Data: 'Data_Storytelling.md'
+    - Resources for Data Science: 'resources_for_data_science.md'
+    - Storytelling with Data: 'storytelling_with_data.md'
+    - Ten Kinds of Stories to Tell with Data: 'ten_stories_data.md'
+    - Dix trames de récits avec des données: 'dix_recits_donnees.md'
     - Visual Perception (visualisation): 'visual_perception.md'
   - OS & CLI:
-    - OS Cheat Sheets: 'OS_CS.md'
-    - Codecademy, Learn the Command Line Notes: 'Codecademy Learn the Command Line Notes.md'
-    - Command Line Crash Course: 'Command Line Crash Course.md'
-    - Command Shell Snippets : 'Command Shell Snippets.md'
-    - Install & Run on Linux: 'Install_tarball.md'
-    - The Linux Command Line: 'The Linux Command Line.md'
-    - Ubuntu 16.04: 'Ubuntu.md'
-    - Useful Shell Commands for Data Science: 'Usefull+Shell+Commands+for+Data+Science.md'
+    - OS Cheat Sheets: 'os_cs.md'
+    - Codecademy, Learn the Command Line Notes: 'codecademy_learn_the_command_line_notes.md'
+    - Command Line Crash Course: 'command_line_crash_course.md'
+    - Command Shell Snippets: 'command_shell_snippets.md'
+    - CLI, regex, and Git: 'cli_regex_git.md'
+    - The Linux Command Line: 'the_linux_command_line.md'
+    - Useful Shell Commands for Data Science: 'usefull_shell_commands_for_data_science.md'
   - SQL & NoSQL:
-    - SQL-NoSQL Cheat Sheets: 'SQL-NoSQL_CS.md'
-    - Codecademy, Learn SQL: 'Codecademy Learn SQL.md'
-    - Codecademy, SQL, Analyzing Business Metrics: 'Codecademy SQL, Analyzing Business Metrics.md'
-    - Codecademy, SQL, Table Transformation: 'Codecademy SQL, Table Transformation.md'
-    - Introduction to SQL JOINs: 'Introduction to SQL JOINs.md'
-  - Virtual Machines (Cloud Computing):
-    - AWS: 'AWS.md'
-    - Cloud Computing: 'Cloud.md'
-    - Google Cloud: 'Google_Cloud.md'
+    - SQL-NoSQL Cheat Sheets: 'sql_nosql_cs.md'
+    - Codecademy, Learn SQL: 'codecademy_learn_sql.md'
+    - Codecademy, SQL, Analyzing Business Metrics: 'codecademy_sql_analyzing_business_metrics.md'
+    - Codecademy, SQL, Table Transformation: 'codecademy_sql_table_transformation.md'
+    - Introduction to SQL JOINs: 'introduction_to_sql_joins.md'
   - Web:
-    - Web Cheat Sheets: 'Web_CS.md'
     - Embedding HTML into HTML: 'embedding.md'
-    - HTML and CSS: 'HTML and CSS.md'
-    - Markdown & Pandoc: 'Markdown & Pandoc.md'
-    - Responsive HTML: 'Responsive_HTML.md'
+    - HTML and CSS: 'html_and_css.md'
+    - Responsive HTML: 'responsive_html.md'
 
 markdown_extensions:
+# python-markdown
   - def_list
-## to make glossaries
   - fenced_code
-## ```python, ~~~~python, ~~~{.python}
   - footnotes
-## [^1]: Lorem ipsum
-## [^2]:
-##     Lorem ipsum 1 (multiline)
-##
-##     Lorem ipsum 2
   - tables
-## |First Header  | Second Header|
-## |------------- | -------------|
-## |Content Cell  | Content Cell |
-## |Content Cell  | Content Cell |
   - admonition 
-## https://squidfunk.github.io/mkdocs-material/extensions/admonition/
   - codehilite:
       linenums: true
-## ```python hl_lines="1 2"
-## a=1
-## ```
-## https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
   - meta
-## https://python-markdown.github.io/extensions/meta_data/
-## https://squidfunk.github.io/mkdocs-material/extensions/metadata/
   - nl2br
-## break the line with a new line or return
   - sane_lists
-## numbers vs. bullets
-## https://python-markdown.github.io/extensions/sane_lists/
   - smarty
-## additional characters: ' "  «  ... -- ---
-## watch when copy-pasted
   - toc:
       permalink: true
-      anchorlink: false
-      baselevel: 3
-## permalink link to a subpart of the document
-## anchorlink causes all headers to link to themselves.
-## https://python-markdown.github.io/extensions/toc/
-## https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
-##
-## Third Party Extensions: https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
-##
+#      toc_depth: 2
+#      title: CONTENU
+      baselevel: 2
+
+# pymdown-extensions
   - pymdownx.arithmatex
-## extra_javascript, see below
   - pymdownx.betterem
-## bold, italic, both
-## https://facelessuser.github.io/pymdown-extensions/extensions/betterem/
   - pymdownx.caret
-## ^^ ^^ underline
   - pymdownx.critic
-## markup for commenting, correcting
   - pymdownx.details
-## alike admonition, can be nested!
-## https://facelessuser.github.io/pymdown-extensions/extensions/details/
   - pymdownx.emoji
-## https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
-## https://www.emojicopy.com/
-## :smile: :heart: :thumbsup:
   - pymdownx.inlinehilite
-## https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
-## `#!python `
-#  - pymdownx.magiclink
-## detects links in Markdown and auto-generates the necessary markup
+  - pymdownx.keys
   - pymdownx.mark
-## == == highlight
+  - attr_list
+  - pymdownx.progressbar
+  - pymdownx.snippets
   - pymdownx.smartsymbols
-## https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
-## +/-  -->  <--  <-->  =/=  1/4  1st 2nd
   - pymdownx.superfences
-## nest code blocks under blockquotes
   - pymdownx.tasklist:
       clickable_checkbox: true
-## https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
-## - [ ]  - [x]
   - pymdownx.tilde
-## https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
-## ~~ ~~ crossover
-  - pymdownx.keys
-## https://facelessuser.github.io/pymdown-extensions/extensions/keys/
-## ++ctrl+alt+delete++
-## MORE
-#  - pyembed.markdown
-## videos
-  
-extra_javascript:
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-   
+
+# pyembed-markdown
+  - pyembed.markdown

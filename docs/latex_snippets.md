@@ -1,38 +1,8 @@
-<!--
----
-
-[TOC]
--->
----
-
-**Foreword**
-
-Snippets and notes.
-
----
-
-# Cheat Sheet
-
-- [LaTeX Font Packages](latex-font-packages.pdf). PDF only.
-- [LaTeX Cheat Sheet, 4p](latexcheatsheet2.pdf). PDF only.
-- [LaTeX Cheat Sheet, 2p](latexcheatsheet4.pdf). PDF.
-
-</center>
-![](img/vade_mecum/latexsheeta.png)
-
----
-
-![](img/vade_mecum/latexsheetb.png)
-</center>
-
 # Resources
 
 - [The LATEX Project](http://www.latex-project.org/).
 - [TEX](https://tex.stackexchange.com/) stack exchange.
-- [Write memos](http://blog.oak-tree.us/index.php/2010/08/02/texmemo#more-1740).
-- [TeXcount web service](http://app.uio.no/ifi/texcount/online.php).
 - [Pense-bete pour natbib](http://merkel.texture.rocks/Latex/natbib.php?lang=fr).
-- [TEXample](http://texample.net/).
 - [CTAN](http://www.ctan.org/).
 - [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX).
 - [TeX](http://www.xm1math.net/doculatex/index.html).
@@ -462,22 +432,3 @@ Side-by-side figure/table/list with minipage
     \end{minipage}
 \end{frame}
 ```
-
-# Installation
-
-- Windows.
-    - [proTeXt](http://www.tug.org/protext/) (MiKTeX-based + the editor TeXnicCenter).
-    - [MiKTeX](https://miktex.org/).
-    - TeXnicCenter (from proTeXt).
-    - [LEd](http://www.latexeditor.org/).
-    - TeXstudio.
-    - Texmaker.
-    - LyX.
-    - JabRef.
-- Linux.
-    - [TeX Live](http://www.tug.org/texlive/).
-    - TeXstudio.
-    - Texmaker.
-    - Kile.
-    - Latexila.
-    - LyX.

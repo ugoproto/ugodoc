@@ -1,11 +1,8 @@
-<!--
-
--->
-
 ---
+
 **Foreword**
 
-Notes. A summary from [this article](visual_perception.pdf).
+Notes. A summary from [this article](pdf/visual_perception.pdf).
 
 ---
 
