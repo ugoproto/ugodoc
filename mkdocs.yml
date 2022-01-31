@@ -1,37 +1,39 @@
 site_name: 'ugodoc'
 #site_url:
-repo_name: 'ugoproto/ugodoc' # see doc, for bitbucket, gitlab
+repo_name: 'ugodoc' # see doc, for bitbucket, gitlab
 repo_url: 'https://github.com/ugoproto/ugodoc.git'
 # extra.repo_icon to github, gitlab or bitbucket
 site_description: 'A Data Science documentation website.'
 #site_author:
 #copyright:
-google_analytics: 
-  - 'UA-93008985-3'
-  - 'auto'
 
 theme: 
   name: 'material' # 'readthedocs' 
-  language: 'en'
-  search:
-    language: 'en, fr' 
+  locale: 'en'
+  analytics: 
+    gtag: 'UA-93008985-3'
 ## 'Volkorn' 'Libre Baskerville' 'Merriweather'
 ## https://fonts.google.com
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-## https://fonts.google.com
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
   palette:
     primary: 'blue-grey'
     accent: 'red'
 ## red, pink, purple, deep purple, indigo, blue, light-blue, cyan, teal, green, light-green, lime, yellow, amber, orange, deep-orange, brown, grey and blue-grey
-  logo:
-    icon: 'layers'
+  icon:
+    logo: 'material/layers'
 ## https://material.io/icons/
   favicon: 'img/favicon.ico' 
 ## default, assets/images/favicon.png
   feature:
     tabs: false
+
+plugins:
+    - search:
+        lang:
+          - en
+          - fr
           
 ## Les icônes gitlab, twitter, linkedin dans le bandeau du bas.
 #extra:
